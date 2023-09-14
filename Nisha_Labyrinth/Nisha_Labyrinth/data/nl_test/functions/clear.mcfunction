@@ -1,1 +1,0 @@
-execute as @e[type=marker,tag=!origin,tag=redstone] run function nl_test:clear_macro with entity @s data
