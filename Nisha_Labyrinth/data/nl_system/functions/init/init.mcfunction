@@ -25,4 +25,6 @@ team modify NL_ghost prefix {"text":"[아웃]","color":"dark_blue","bold":true}
 team modify prisoner prefix {"text":"[감옥]","color":"dark_gray","bold":true}
 
 
+function nl_lobby:lobby/settings/default/init
+
 say start

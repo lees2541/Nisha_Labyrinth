@@ -1,0 +1,1 @@
+function nl_lobby:lobby/settings/apply_setting
