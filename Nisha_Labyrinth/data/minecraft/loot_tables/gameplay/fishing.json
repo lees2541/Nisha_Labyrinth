@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:fishing",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cod",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type": "minecraft:player",
+                  "nbt": "{Tags:[\"fisher\"]}",
+                  "team": "explorer"
+                }
+              }
+            ]
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance",
+            "chance": 1.0
+          }
+        ]
+      }
+    ]
+  }
+  
