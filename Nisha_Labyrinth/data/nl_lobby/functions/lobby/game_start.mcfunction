@@ -1,1 +1,2 @@
 function nl_lobby:lobby/settings/apply_setting
+function nl_lobby:modules/redstone_generator/redstone_generator_start
