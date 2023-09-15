@@ -1,0 +1,3 @@
+execute unless data storage nl:settings redstone.rolls{red:0} run function nl_lobby:modules/redstone_generator/macro/choose_roll_type {"tag":"red"}
+execute unless data storage nl:settings redstone.rolls{green:0} run function nl_lobby:modules/redstone_generator/macro/choose_roll_type {"tag":"green"}
+execute unless data storage nl:settings redstone.rolls{yellow:0} run function nl_lobby:modules/redstone_generator/macro/choose_roll_type {"tag":"yellow"}

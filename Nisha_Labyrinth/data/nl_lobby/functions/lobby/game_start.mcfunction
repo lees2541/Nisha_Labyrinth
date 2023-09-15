@@ -1,2 +1,3 @@
 function nl_lobby:lobby/settings/apply_setting
+function nl_lobby:lobby/settings/maps/cave/entities/area_markers/set_area_markers
 function nl_lobby:modules/redstone_generator/redstone_generator_start
