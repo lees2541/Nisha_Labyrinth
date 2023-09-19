@@ -1,3 +1,9 @@
-summon marker 10 -58 -3 {Invulnerable:1b,CustomNameVisible:1b,Tags:["NL","marker","area","area1"],CustomName:'{"text":"Area 1"}',data:{tag:area1}}
-summon marker 20 -58 -25 {Invulnerable:1b,CustomNameVisible:1b,Tags:["NL","marker","area","area2"],CustomName:'{"text":"Area 2"}',data:{tag:area2}}
-summon marker 30 -58 -12 {Invulnerable:1b,CustomNameVisible:1b,Tags:["NL","marker","area","area3"],CustomName:'{"text":"Area 3"}',data:{tag:area3}}
+summon marker 708. 51. 581. {CustomNameVisible:1b,Tags:["NL","area1","area"],CustomName:'{"text":"Area1","color":"red","bold":true}',data:{tag:area1}}
+summon marker 683. 50. 600. {CustomNameVisible:1b,Tags:["NL","area2","area"],CustomName:'{"text":"Area2","color":"red","bold":true}',data:{tag:area2}}
+summon marker 671 55 621 {CustomNameVisible:1b,Tags:["NL","area3","area"],CustomName:'{"text":"Area3","color":"red","bold":true}',data:{tag:area3}}
+summon marker 665 47 624 {CustomNameVisible:1b,Tags:["NL","area4","area"],CustomName:'{"text":"Area4","color":"red","bold":true}',data:{tag:area4}}
+summon marker 685 46 615 {CustomNameVisible:1b,Tags:["NL","area5","area"],CustomName:'{"text":"Area5","color":"red","bold":true}',data:{tag:area5}}
+summon marker 715 48 596 {CustomNameVisible:1b,Tags:["NL","area6","area"],CustomName:'{"text":"Area6","color":"red","bold":true}',data:{tag:area6}}
+summon marker 705 48 593 {CustomNameVisible:1b,Tags:["NL","area7","area"],CustomName:'{"text":"Area7","color":"red","bold":true}',data:{tag:area7}}
+
+summon marker 708 38.5 580 {CustomNameVisible:1b,Tags:["NL","prison","area"],CustomName:'{"text":"Prison","color":"red","bold":true}'}
