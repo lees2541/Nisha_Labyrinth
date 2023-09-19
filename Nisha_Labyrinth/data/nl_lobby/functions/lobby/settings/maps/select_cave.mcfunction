@@ -1,7 +1,7 @@
 맵 단위로 구분 및 저장해야 할 것 
 ######################################
 
-## area 1/2/3/4 위치
+## area 1/2/3/4/5/6/7 위치
 summon marker 708. 51. 581. {CustomNameVisible:1b,Tags:["NL","area1","area"],CustomName:'{"text":"Area1","color":"red","bold":true}'}
 summon marker 685 46 615 {CustomNameVisible:1b,Tags:["NL","area2","area"],CustomName:'{"text":"Area2","color":"red","bold":true}'}
 summon marker 671 55 621 {CustomNameVisible:1b,Tags:["NL","area3","area"],CustomName:'{"text":"Area3","color":"red","bold":true}'}
