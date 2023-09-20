@@ -1,0 +1,20 @@
+{
+    "values": [
+      "#minecraft:replaceable",
+      "#minecraft:all_signs",
+      "#minecraft:climbable",
+      "#minecraft:fences",
+      "#minecraft:buttons",
+      "#minecraft:crops",
+      "#minecraft:leaves",
+      "#minecraft:pressure_plates",
+      "#minecraft:rails",
+      "minecraft:redstone_wire",
+      "#minecraft:saplings",
+      "#minecraft:candles",
+      "#minecraft:wool_carpets",
+      "#minecraft:flowers",
+      "#nl_system:unblockable_partial"
+    ]
+  }
+  
