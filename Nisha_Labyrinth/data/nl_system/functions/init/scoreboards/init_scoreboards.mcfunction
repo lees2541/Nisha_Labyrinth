@@ -1,0 +1,1 @@
+function nl_system:init/scoreboards/system_init

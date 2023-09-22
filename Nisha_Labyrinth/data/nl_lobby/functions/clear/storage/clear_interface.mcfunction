@@ -14,7 +14,7 @@ data remove storage nl:buffer settings
 data merge storage nl:settings {\
     map:{type:""},\
     redstone:{rolls:{red:0,yellow:0,green:0,area:0}},\
-    players:{player:{id:0,character:0,UUID:[]}},\
+    players:{player:{id:0,character:0,UUID:[],name:""}},\
     perk:{}\
 }
 

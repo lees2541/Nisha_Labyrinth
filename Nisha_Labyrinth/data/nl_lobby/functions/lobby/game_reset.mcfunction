@@ -5,8 +5,8 @@ execute as @e[type=marker,tag=!origin,tag=redstone,tag=redstone_gen] at @s run f
 function nl_lobby:clear/storage/clear_interface
 data modify storage nl:lobby settings set from storage nl:default settings
 
-## test
-
+## 클리어 스코어보드
+function nl_lobby:clear/scoreboard/clear_scoreboard
 
 
 kill @e[type=marker,tag=NL]
