@@ -1,2 +1,3 @@
-scoreboard players reset @a NL_player_id
-scoreboard players reset #lobby NL_player_id
+scoreboard objectives remove NL_player_id
+scoreboard objectives add NL_player_id dummy
+scoreboard players set #lobby NL_player_id 0
