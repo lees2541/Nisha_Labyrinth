@@ -1,27 +1,22 @@
+## 상태 클리어
 effect clear @s
 clear @s
-function nishalabyrinth:item/explorer/explorer_boots
-team join explorer @s
-
-
-give @s cooked_beef 2
-
 advancement revoke @a everything
-function nishalabyrinth:system/advancements/set_advancements
 function nishalabyrinth:tags/removetags
-function nishalabyrinth:item/explorer/jump_pickaxe
-function nishalabyrinth:item/info_book/give_book
-function nishalabyrinth:item/explorer/flashlight
-
-
-
+## 상태 셋팅
+team join explorer @s
+tag @s add NL
+function nishalabyrinth:system/advancements/set_advancements
 spawnpoint @s[team=explorer] 712 53 623
-effect give @s saturation 2 10
-effect give @s regeneration 1 50
 gamemode adventure @s
 
 
+## 아이템 지급
+function nl_char:items/explorer/explorer
+give @s cooked_beef 2
 
-execute unless entity @a[team=explorer,tag=blind] run kill @e[type=bat,tag=NL]
+
+
+
 
 

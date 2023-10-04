@@ -1,20 +1,14 @@
+## 상태 클리어
 effect clear @s
 clear @s
-scoreboard players reset @s NL_chance
-
-team join gate_keeper @s
-give @s cooked_beef 64
-bossbar set nl:lighted_time players @a
+advancement revoke @a everything
 function nishalabyrinth:tags/removetags
-advancement revoke @s everything
+## 상태 셋팅
+team join roamer @s
 function nishalabyrinth:system/advancements/set_advancements
-function nishalabyrinth:item/info_book/give_book
+gamemode adventure @s
 
 
-
-
-
-
-
-
-
+## 아이템 지급
+function nl_char:items/roamer/roamer
+give @s cooked_beef 64
