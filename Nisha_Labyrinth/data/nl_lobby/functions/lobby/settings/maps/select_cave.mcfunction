@@ -1,3 +1,9 @@
+#alias vector c_spawnpoint 715 39 580
+#alias vector c_shop 670 38 626
+#alias vector c_lifestone 716 45 608
+
+
+
 ##맵 단위로 구분 및 저장해야 할 것 
 ######################################
 
