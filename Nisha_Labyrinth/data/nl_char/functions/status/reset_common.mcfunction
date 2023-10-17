@@ -27,6 +27,7 @@ scoreboard players set @s NL_temp 0
 
 scoreboard players set @a NL_debuff_stat 0
 scoreboard players set @a NL_buff_stat 0
+scoreboard players set @a E_efficiency 0
 
 ######################################################
 
@@ -49,3 +50,5 @@ scoreboard players reset @s NL_chance
 execute as @s at @s run particle minecraft:entity_effect ~ ~ ~ 0.9960784313725490196078431372549 0.9803921569627451 1 1 0 force @s
 execute as @s at @s run particle minecraft:entity_effect ~ ~ ~ 0.9960784313725490196078431372549 0.9725490196078431 1 1 0 force @s
 execute as @s at @s run particle minecraft:entity_effect ~ ~ ~ 0.9960784313725490196078431372549 0.98823529411764705882352941176471 1 1 0 force @s
+
+effect clear @s

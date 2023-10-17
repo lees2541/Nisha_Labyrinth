@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "nl_char:items/explorer/explorer_pickaxe"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

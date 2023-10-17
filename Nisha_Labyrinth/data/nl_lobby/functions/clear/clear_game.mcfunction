@@ -1,1 +1,0 @@
-function nl_lobby:clear/storage/clear_interface
