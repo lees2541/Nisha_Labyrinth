@@ -32,3 +32,6 @@ kill @e[type=text_display,tag=NL]
 kill @e[type=block_display,tag=NL]
 
 execute as @a run function nl_char:items/give_info_book
+
+
+say 게임이 리셋 되었습니다

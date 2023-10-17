@@ -6,4 +6,4 @@ function nl_char:items/explorer/explorer/give_pickaxe
 ## 손전등
 
 ## 책
-
+function nl_char:items/give_info_book
