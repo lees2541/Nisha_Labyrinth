@@ -31,6 +31,9 @@ kill @e[type=item_display,tag=NL]
 kill @e[type=text_display,tag=NL]
 kill @e[type=block_display,tag=NL]
 
+
+clear @a
+advancement revoke @a everything
 execute as @a run function nl_char:items/give_info_book
 
 

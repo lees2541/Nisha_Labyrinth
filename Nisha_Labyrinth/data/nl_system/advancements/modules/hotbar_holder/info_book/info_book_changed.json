@@ -1,0 +1,30 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:stone"
+      },
+      "title": "",
+      "description": "",
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:written_book"
+              ],
+              "nbt": "{Info:1b,NL:1b}"
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "nl_system:modules/hotbar_holder/info_book/info_book_changed_adv"
+    }
+  }
+  
