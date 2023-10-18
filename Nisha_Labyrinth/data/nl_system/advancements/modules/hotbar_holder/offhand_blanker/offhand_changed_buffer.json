@@ -1,0 +1,15 @@
+{
+    "parent": "nl_system:modules/hotbar_holder/offhand_blanker/offhand_changed",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": {}
+        }
+      }
+    },
+    "rewards": {
+      "function": "nl_system:modules/hotbar_holder/offhand_blanker/offhand_changed_buffer_adv"
+    }
+  }
+  

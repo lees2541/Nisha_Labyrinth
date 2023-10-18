@@ -5,6 +5,7 @@ data remove storage nl:settings players
 data remove storage nl:settings perk
 
 data remove storage nl:buffer settings
+data remove storage nl:buffer player
 
 
 

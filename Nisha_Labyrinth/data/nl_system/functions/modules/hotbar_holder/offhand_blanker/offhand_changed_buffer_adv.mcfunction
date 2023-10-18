@@ -1,0 +1,2 @@
+execute if entity @s[advancements={nl_system:modules/hotbar_holder/offhand_blanker/offhand_changed=false}] run return 0
+advancement revoke @s only nl_system:modules/hotbar_holder/offhand_blanker/offhand_changed
