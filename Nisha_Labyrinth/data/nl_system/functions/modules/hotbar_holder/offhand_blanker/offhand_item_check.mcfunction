@@ -1,11 +1,12 @@
-$say $(nbt)
-$data get storage nl:buffer player.inventory[$(nbt)]    
+  
 $execute if data storage nl:buffer player.inventory[$(nbt)] store result storage nl:buffer player.item.switch.slot int 1 run data get storage nl:buffer player.inventory[$(nbt)].Slot
 data modify storage nl:buffer player.item.switch.id set from storage nl:buffer player.item.switch.nbt.id
 data remove storage nl:buffer player.item.switch.nbt.id
+data modify storage nl:buffer player.item.switch.count set from storage nl:buffer player.item.switch.nbt.Count
+data remove storage nl:buffer player.item.switch.nbt.Count
 
 ## 슬롯 번호 컨버터
-execute if data storage nl:buffer player.item.switch{slot:-106} run data modify storage nl:buffer player.item.switch.slot set value "weapon.offhand"
+#execute if data storage nl:buffer player.item.switch{slot:-106} run data modify storage nl:buffer player.item.switch.slot set value "weapon.offhand"
 execute if data storage nl:buffer player.item.switch{slot:0} run data modify storage nl:buffer player.item.switch.slot set value "hotbar.0"
 execute if data storage nl:buffer player.item.switch{slot:1} run data modify storage nl:buffer player.item.switch.slot set value "hotbar.1"
 execute if data storage nl:buffer player.item.switch{slot:2} run data modify storage nl:buffer player.item.switch.slot set value "hotbar.2"

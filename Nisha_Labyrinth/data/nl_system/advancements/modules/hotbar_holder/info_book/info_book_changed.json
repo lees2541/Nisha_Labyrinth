@@ -1,30 +1,55 @@
 {
-    "display": {
-      "icon": {
-        "item": "minecraft:stone"
-      },
-      "title": "책감지",
-      "description": "",
-      "show_toast": true,
-      "announce_to_chat": true
+  "display": {
+    "icon": {
+      "item": "minecraft:stone"
     },
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:inventory_changed",
-        "conditions": {
-          "items": [
-            {
+    "title": "책감지",
+    "description": "",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "info_book_changed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{tag:{NL:1b,info:1b}}"
+          }
+        ]
+      }
+    },
+    "info_book_missing": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "offhand": {
               "items": [
-                "minecraft:written_book"
-              ],
-              "nbt": "{Info:1b,NL:1b}"
+                "minecraft:air"
+              ]
             }
-          ]
+          }
         }
       }
     },
-    "rewards": {
-      "function": "nl_system:modules/hotbar_holder/info_book/info_book_changed_adv"
+    "impossible": {
+      "trigger": "minecraft:impossible"
     }
+  },
+  "requirements": [
+    [
+      "info_book_missing",
+      "info_book_changed"
+    ],
+    [
+      "impossible"
+    ]
+  ],
+  "rewards": {
+    "function": "nl_system:modules/hotbar_holder/info_book/info_book_changed_adv"
   }
-  ASDASDS
+}

@@ -1,21 +1,22 @@
 [
-    {
-      "function": "minecraft:reference",
-      "name": "nl_char:items/explorer/alarm",
-      "conditions": [
-        {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "team": "explorer",
-            "equipment": {
-              "offhand": {
-                "nbt": "{tag:{offhand:1b}}"
-              }
+  {
+    "function": "minecraft:reference",
+    "name": "nl_char:items/explorer/alarm",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "team": "explorer",
+          "equipment": {
+            "offhand": {
+              "items": [
+                "minecraft:diamond_hoe"
+              ]
             }
           }
         }
-      ]
-    }
-  ]
-  
+      }
+    ]
+  }
+]

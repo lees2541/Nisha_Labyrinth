@@ -1,4 +1,4 @@
-say 왼손 이물질 감지!
+
 execute unless data entity @s Inventory[{Slot:-106b}] run return 0
 data modify storage nl:buffer player.item.switch.nbt set from entity @s Inventory[{Slot:-106b}]
 data remove storage nl:buffer player.item.switch.nbt.Slot
