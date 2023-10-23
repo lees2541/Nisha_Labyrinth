@@ -1,0 +1,1 @@
+advancement revoke @s only nl_system:modules/hotbar_holder/base/inventory_changed_detection

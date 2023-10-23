@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:stone"
+    },
+    "title": "인벤토리바뀜감지",
+    "description": "",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "inventory_changed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"NL\"]}"
+        },
+        "items": [
+          {}
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "nl_system:modules/hotbar_holder/base/inventory_changed_detection_adv"
+  }
+}

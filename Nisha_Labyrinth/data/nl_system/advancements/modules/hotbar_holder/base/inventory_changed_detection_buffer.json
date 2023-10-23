@@ -1,0 +1,15 @@
+{
+    "parent": "nl_system:modules/hotbar_holder/base/inventory_changed_detection",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": {}
+        }
+      }
+    },
+    "rewards": {
+      "function": "nl_system:modules/hotbar_holder/base/inventory_changed_detection_buffer_adv"
+    }
+  }
+  

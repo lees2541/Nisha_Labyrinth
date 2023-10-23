@@ -13,3 +13,5 @@ execute unless score @s NL_player_id matches 1.. run function nl_lobby:lobby/set
 
 ## 입력한 캐릭터의 시작함수 실행
 $function nl_char:jobs/explorer/$(character)/$(character) with storage nl:buffer settings.player
+
+

@@ -2,6 +2,8 @@
 function nl_lobby:lobby/settings/apply_setting
 
 ## 플레이어 캐릭터 및 퍽 설정 로딩
+execute as @a[tag=NL,scores={NL_player_id=1..}] run advancement grant @s only nl_system:modules/hotbar_holder/base/inventory_changed_detection
+
 
 ## 맵 종류에 따라 맵 불러오기
 execute if data storage nl_settings map{type:"cave"} run function nl_lobby:lobby/settings/maps/select_cave

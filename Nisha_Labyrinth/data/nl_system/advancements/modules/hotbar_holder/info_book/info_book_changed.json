@@ -3,7 +3,7 @@
       "icon": {
         "item": "minecraft:stone"
       },
-      "title": "",
+      "title": "책감지",
       "description": "",
       "show_toast": true,
       "announce_to_chat": true
@@ -27,4 +27,4 @@
       "function": "nl_system:modules/hotbar_holder/info_book/info_book_changed_adv"
     }
   }
-  
+  ASDASDS
