@@ -28,7 +28,7 @@
     },
     {
       "function": "minecraft:set_nbt",
-      "tag": "{HideFlags:255}"
+      "tag": "{HideFlags:255,NL:1b}"
     }
   ]
   

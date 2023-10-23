@@ -22,7 +22,7 @@ effect give @s mining_fatigue infinite 3 true
 
 ## 아이템 지급
 function nl_char:items/explorer/explorer/explorer
-give @s cooked_beef 2
+give @s cooked_beef{NL:1b} 10
 
 
 

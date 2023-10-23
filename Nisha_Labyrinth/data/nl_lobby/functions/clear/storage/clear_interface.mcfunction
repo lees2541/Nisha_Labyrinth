@@ -1,3 +1,7 @@
+#declare storage nl:settings map
+#declare storage nl:buffer player
+#declare storage nl:in_game player
+#declare storage nl:lobby
 
 ## 스토리지 초기화
 data remove storage nl:settings map
@@ -7,6 +11,7 @@ data remove storage nl:settings perk
 
 data remove storage nl:buffer settings
 data remove storage nl:buffer player
+data remove storage nl:buffer entity
 
 data remove storage nl:in_game player
 
