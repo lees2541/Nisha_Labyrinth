@@ -1,8 +1,13 @@
+#> nl_system:modules/hotbar_holder/base/macro/item_check
+# 고정되었어야할 아이템 칸에 있는 아이템 불러오기 / nl:buffer player.item.switch
+#@within nl_system:modules/hotbar_holder/**
 
+say 아이템체크
 $execute store success storage nl:buffer player.item.switch.stack int 1 run data get storage nl:buffer player.inventory[$(nbt)]
 
-execute if data storage nl:buffer player.item.switch{stack:0} run function nl_system:modules/hotbar_holder/offhand_blanker/give_item
-execute if data storage nl:buffer player.item.switch{stack:0} run return 0
+#execute if data storage nl:buffer player.item.switch{stack:0} run function nl_system:modules/hotbar_holder/offhand_blanker/give_item
+#execute if data storage nl:buffer player.item.switch{stack:0} run return 0
+
 
 
 $execute if data storage nl:buffer player.inventory[$(nbt)] store result storage nl:buffer player.item.switch.slot int 1 run data get storage nl:buffer player.inventory[$(nbt)].Slot
@@ -14,7 +19,7 @@ data modify storage nl:buffer player.item.switch.nbt merge from storage nl:buffe
 data remove storage nl:buffer player.item.switch.nbt.tag
 
 ## 슬롯 번호 컨버터
-#execute if data storage nl:buffer player.item.switch{slot:-106} run data modify storage nl:buffer player.item.switch.slot set value "weapon.offhand"
+
 execute if data storage nl:buffer player.item.switch{slot:0} run data modify storage nl:buffer player.item.switch.slot set value "hotbar.0"
 execute if data storage nl:buffer player.item.switch{slot:1} run data modify storage nl:buffer player.item.switch.slot set value "hotbar.1"
 execute if data storage nl:buffer player.item.switch{slot:2} run data modify storage nl:buffer player.item.switch.slot set value "hotbar.2"
