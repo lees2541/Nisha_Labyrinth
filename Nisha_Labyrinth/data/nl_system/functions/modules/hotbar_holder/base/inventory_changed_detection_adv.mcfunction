@@ -7,8 +7,8 @@ function nl_system:modules/hotbar_holder/base/load_inven_to_buffer with storage 
 function nl_system:modules/hotbar_holder/base/update_inventory_info with storage nl:buffer player
 
 ## 왼손 감지
-execute unless data entity @s Inventory[{Slot:-106b}] run function nl_system:systems/offhand/item/item_update
-execute unless entity @s[nbt={Inventory:[{Slot:-106b,tag:{offhand:1b,NL:1b}}]}] run function nl_system:modules/hotbar_holder/offhand/offhand_update with storage nl:buffer player
+execute unless data entity @s Inventory[{Slot:-106b}] run function nl_system:systems/item/update/offhand
+execute unless entity @s[nbt={Inventory:[{Slot:-106b,tag:{offhand:1b,NL:1b}}]}] run advancement grant @s only nl_system:systems/actions/key_events/f_key/offhand_changed_detected
 
 
 

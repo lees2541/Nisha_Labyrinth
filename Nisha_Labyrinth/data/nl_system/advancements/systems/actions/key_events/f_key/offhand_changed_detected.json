@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:stone"
+      },
+      "title": "왼손감지",
+      "description": "",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "nl_system:systems/actions/key_events/f_key/offhand_changed_detected_adv"
+    }
+  }
+  
