@@ -11,14 +11,12 @@ execute unless data entity @s Inventory[{Slot:-106b}] run function nl_system:sys
 execute unless entity @s[nbt={Inventory:[{Slot:-106b,tag:{offhand:1b,NL:1b}}]}] run advancement grant @s only nl_system:systems/actions/key_events/f_key/offhand_changed_detected
 
 
-
-
-
-
-## 버퍼 리셋
-
-
 ## 인벤토리 정보 업데이트
 function nl_system:modules/hotbar_holder/base/update_inventory_info with storage nl:buffer player
+
+## 버퍼 리셋
 data remove storage nl:buffer player
+
+
+##
 advancement revoke @s only nl_system:modules/hotbar_holder/base/inventory_changed_detection_buffer
