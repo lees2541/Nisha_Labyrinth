@@ -5,16 +5,13 @@
 say 아이템체크
 $execute store success storage nl:buffer player.item.switch.stack int 1 run data get entity @s Inventory[$(nbt)]
 
-#execute if data storage nl:buffer player.item.switch{stack:0} run function nl_system:modules/hotbar_holder/offhand_blanker/give_item
-#execute if data storage nl:buffer player.item.switch{stack:0} run return 0
+
 
 
 
 $execute if data storage nl:buffer player.inventory[$(nbt)] store result storage nl:buffer player.item.switch.slot int 1 run data get storage nl:buffer player.inventory[$(nbt)].Slot
 data modify storage nl:buffer player.item.switch.id set from storage nl:buffer player.item.switch.nbt.id
 data remove storage nl:buffer player.item.switch.nbt.id
-#data modify storage nl:buffer player.item.switch.count set from storage nl:buffer player.item.switch.nbt.Count
-#data remove storage nl:buffer player.item.switch.nbt.Count
 data modify storage nl:buffer player.item.switch.nbt merge from storage nl:buffer player.item.switch.nbt.tag
 data remove storage nl:buffer player.item.switch.nbt.tag
 

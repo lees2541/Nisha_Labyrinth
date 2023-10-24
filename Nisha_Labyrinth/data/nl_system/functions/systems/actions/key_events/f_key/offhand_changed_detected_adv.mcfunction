@@ -1,5 +1,8 @@
+## 스킬 감지
 
 
+
+## 스위치 감지
 function nl_system:modules/hotbar_holder/offhand/offhand_update with storage nl:buffer player
 
 

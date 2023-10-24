@@ -10,7 +10,7 @@ execute if score @s NL_player_id matches 1.. run function nl_lobby:lobby/jobs/ch
 ## 플레이어 아이디가 등록되어 있지 않은 경우
 execute unless score @s NL_player_id matches 1.. run function nl_lobby:lobby/settings/players/join_game with storage nl:buffer settings.player
 
-
+execute as @s[tag=NL,scores={NL_player_id=1..}] run advancement grant @s only nl_system:modules/hotbar_holder/base/inventory_changed_detection
 ## 입력한 캐릭터의 시작함수 실행
 $function nl_char:jobs/explorer/$(character)/$(character) with storage nl:buffer settings.player
 
