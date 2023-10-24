@@ -1,3 +1,4 @@
+
 $execute store success storage nl:buffer player.item.switch.stack int 1 run data get storage nl:buffer player.inventory[$(nbt)]
 
 execute if data storage nl:buffer player.item.switch{stack:0} run function nl_system:modules/hotbar_holder/offhand_blanker/give_item
