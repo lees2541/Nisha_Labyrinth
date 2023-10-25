@@ -1,8 +1,8 @@
-## 스킬 감지
+#> nl_system:systems/actions/key_events/f_key/offhand_changed_detected_adv
+#
+#declare predicate 
 
-
-
-## 스위치 감지
+## 원상복구
 function nl_system:modules/hotbar_holder/offhand/offhand_update with storage nl:buffer player
 
 
