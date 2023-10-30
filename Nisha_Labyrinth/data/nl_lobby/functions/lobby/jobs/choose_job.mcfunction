@@ -2,6 +2,8 @@
 data remove storage nl:buffer settings.player
 
 $data modify storage nl:buffer settings.player.character set value "$(character)"
+$data modify storage nl:buffer settings.player.team set value "$(team)"
+
 data modify storage nl:buffer settings.player.UUID set from entity @s UUID
 execute store result storage nl:buffer settings.player.id int 1 run scoreboard players get @s NL_player_id
 

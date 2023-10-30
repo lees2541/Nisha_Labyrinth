@@ -1,3 +1,8 @@
+#> nl_system:modules/hotbar_holder/base/inventory_changed_detection_adv
+# 물건을 떨어뜨리거나 인벤토리의 변화를 감지하면 발동, 감지칸에따라 그에 맞는 함수 발동
+#@public
+#@context 인벤토리의 변화가 감지된 플레이어
+
 
 execute store result storage nl:buffer player.id int 1 run scoreboard players get @s NL_player_id
 execute store result storage nl:buffer player.selectedSlot int 1 run data get entity @s SelectedItemSlot

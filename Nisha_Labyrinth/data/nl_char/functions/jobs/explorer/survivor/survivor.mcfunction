@@ -1,3 +1,4 @@
+function nl_char:jobs/explorer/survivor/set_stats
 function nl_char:jobs/explorer/explorer
 
 tag @s add survivor

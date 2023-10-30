@@ -6,7 +6,7 @@ execute as @a[tag=NL,scores={NL_player_id=1..}] run advancement grant @s only nl
 
 
 ## 맵 종류에 따라 맵 불러오기
-execute if data storage nl_settings map{type:"cave"} run function nl_lobby:lobby/settings/maps/select_cave
+execute if data storage nl:settings map{type:"cave"} run function nl_lobby:lobby/settings/maps/select_cave
 
 
 tellraw @a [{"text":"\"","color":"blue"},{"nbt":"map.type","storage":"nl:settings","color":"green","bold":true},{"text":"\"","color":"blue"},{"text":" 맵에서 시작합니다","color":"white"},{"text":"\n"},{"selector":"@a[tag=NL]","separator":" "},{"text":"\n"},{"text":"게임이 시작됩니다","color":"white","bold":true}]

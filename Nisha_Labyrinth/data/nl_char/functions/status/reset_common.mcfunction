@@ -1,4 +1,5 @@
-
+#> nl_char:status/reset_common
+#
 ## 다른 캐릭터로 옮길 수 있도록 초기화를 진행한다.##
 #####################################################
 
@@ -12,21 +13,13 @@
 scoreboard players reset @s NL_chance
 
 # 스킬 쿨 클리어
-scoreboard players set @s NL_cool1 1
-scoreboard players set @s NL_cool2 1
-scoreboard players set @s NL_cool3 1
+scoreboard players set @s NL_skill_cool1 -1
+scoreboard players set @s NL_skill_cool2 -1
+scoreboard players set @s NL_skill_cool3 -1
 
 
 # 기타 스코어보드 클리어
-scoreboard players reset @s NL_being_lighted
-scoreboard players set @s NL_fear 0
-scoreboard players set @s NL_music 0
-scoreboard players set @s flashlight 0
-scoreboard players set @s NL_stack 0
-scoreboard players set @s NL_temp 0
 
-scoreboard players set @a NL_debuff_stat 0
-scoreboard players set @a NL_buff_stat 0
 scoreboard players set @a E_efficiency 0
 
 ######################################################

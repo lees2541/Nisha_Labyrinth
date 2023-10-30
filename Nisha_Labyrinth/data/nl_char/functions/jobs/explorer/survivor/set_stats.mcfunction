@@ -1,0 +1,1 @@
+scoreboard players set @s NL_skill_cool2 0

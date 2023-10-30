@@ -1,0 +1,3 @@
+scoreboard objectives add NL_skill_cool1 dummy
+scoreboard objectives add NL_skill_cool2 dummy
+scoreboard objectives add NL_skill_cool3 dummy

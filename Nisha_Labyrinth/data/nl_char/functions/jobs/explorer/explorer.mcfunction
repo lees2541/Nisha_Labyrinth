@@ -4,7 +4,7 @@
 ## 상태 초기화
 effect clear @s
 clear @s
-advancement revoke @a everything
+advancement revoke @s everything
 function nishalabyrinth:tags/removetags
 team join explorer @s
 tag @s add NL
