@@ -1,8 +1,18 @@
-#> nl_system:modules/hotbar_holder/offhand/offhand_update
-# 왼손이 감지되었을 때 실행
-#@within 
-# nl_system:modules/hotbar_holder/base/inventory_changed_detection_adv
+#> nl_system:modules/hotbar_holder/lifestone/lifestone_update
+# 설명 
+# @context 슬롯6의 변화를 감지한 플레이어
+# @input  
+#   score 대상 {3:objective} 
+#       설명 
+# @output 
+#   storage nl:buffer 
+#       player.id: int 
+#           설명 
+#       player.character: string 
+#           설명
+# @within nl_system:modules/hotbar_holder/base/inventory_changed_detection_adv
 
+function nl_system:modules/storage/load_to_buffer/player_info/load_player_info
 
 execute unless data entity @s Inventory[{Slot:-106b}] run return 0
 data modify storage nl:buffer player.item.switch.nbt set from entity @s Inventory[{Slot:-106b}]
@@ -24,5 +34,4 @@ item replace entity @s weapon.offhand with air
 #execute if data storage nl:buffer player.item.switch.nbt run say nbt 이따
 function nl_system:modules/hotbar_holder/base/macro/item_refresh with storage nl:buffer player.item.switch
 
-function nl_system:systems/item/update/offhand
-
+function nl_system:systems/item/update/lifestone

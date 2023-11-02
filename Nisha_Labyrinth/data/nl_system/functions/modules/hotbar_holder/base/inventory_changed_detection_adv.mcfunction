@@ -4,16 +4,27 @@
 #@context 인벤토리의 변화가 감지된 플레이어
 
 
+
 execute store result storage nl:buffer player.id int 1 run scoreboard players get @s NL_player_id
 execute store result storage nl:buffer player.selectedSlot int 1 run data get entity @s SelectedItemSlot
 #function nl_system:modules/hotbar_holder/base/update_inventory_info with storage nl:buffer player
+function nl_system:modules/hotbar_holder/base/update_resource with storage nl:buffer player
 function nl_system:modules/hotbar_holder/base/load_inven_to_buffer with storage nl:buffer player
 
 function nl_system:modules/hotbar_holder/base/update_inventory_info with storage nl:buffer player
 
+
+
 ## 왼손 감지
 execute unless data entity @s Inventory[{Slot:-106b}] run function nl_system:systems/item/update/offhand
 execute unless entity @s[nbt={Inventory:[{Slot:-106b,tag:{offhand:1b,NL:1b}}]}] run advancement grant @s only nl_system:systems/actions/key_events/f_key/offhand_changed_detected
+
+## 생명석 감지
+execute unless data entity @s Inventory[{Slot:6b}] run function nl_system:systems/item/update/lifestone
+
+execute unless entity @s[nbt={Inventory:[{Slot:6b,tag:{lifestone:1b,NL:1b}}]}] run function nl_system:modules/hotbar_holder/base/slot_update {"Slot":"6b","slotPath":"hotbar.6","Path":"lifestone"}
+
+
 
 
 ## 인벤토리 정보 업데이트

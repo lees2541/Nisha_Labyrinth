@@ -12,6 +12,7 @@ data remove storage nl:settings perk
 data remove storage nl:buffer settings
 data remove storage nl:buffer player
 data remove storage nl:buffer entity
+data remove storage nl:buffer operation
 
 data remove storage nl:in_game player
 
@@ -30,13 +31,12 @@ data merge storage nl:settings {\
 }
 
 data merge storage nl:in_game {\
-    players:[\
-        {id: 0,character:"", inventory:{}, status:{}, effects:{}}\
+    player:[\
+        {id: 0,character:"", Inventory:{}, status:{resource:{redstone:0,lifestone:0}}, effects:{}}\
     ]\
 }
 
 ## 버퍼 클리어
-
 
 
 
