@@ -17,7 +17,7 @@
 
 $execute store result storage nl:in_game player[{id:$(id)}].status.resource.lifestone int 1 run scoreboard players get @s NL_lifestone_count
 
-$execute if score @s NL_lifestone_count matches 0..9 run data modify storage nl:buffer operation.result set value "10000$(result)"
-$execute if score @s NL_lifestone_count matches 10..99 run data modify storage nl:buffer operation.result set value "1000$(result)"
+$execute if score @s NL_lifestone_count matches 0..9 run data modify storage nl:buffer operation.result set value 10000$(result)
+execute if score @s NL_lifestone_count matches 10..99 run data modify storage nl:buffer operation.result set value 100010
 
-data remove storage nl:buffer operation
+

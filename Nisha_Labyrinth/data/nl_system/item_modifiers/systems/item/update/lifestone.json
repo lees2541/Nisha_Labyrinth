@@ -15,7 +15,7 @@
     },
     {
       "function": "minecraft:set_nbt",
-      "tag": "{NL:1b,lifestone:1b}"
+      "tag": "{NL:1b,lifestone:1b,drop:1b}"
     },
     {
       "function": "minecraft:copy_nbt",
