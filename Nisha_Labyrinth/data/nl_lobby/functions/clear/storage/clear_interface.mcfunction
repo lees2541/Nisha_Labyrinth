@@ -13,6 +13,7 @@ data remove storage nl:buffer settings
 data remove storage nl:buffer player
 data remove storage nl:buffer entity
 data remove storage nl:buffer operation
+data remove storage nl:buffer item
 
 data remove storage nl:in_game player
 
@@ -31,11 +32,35 @@ data merge storage nl:settings {\
 }
 
 data merge storage nl:in_game {\
-    player:[\
-        {id: 0,character:"", Inventory:{}, status:{resource:{redstone:0,lifestone:0}}, effects:{}}\
-    ]\
+    player:{\
+        {id:0,character:"(str)", Inventory:{}, status:{resource:{redstone:0,lifestone:0}}, effects:{}}\
+    }\
 }
 
+
+data merge storage nl:buffer {\
+    settings:{\
+        player:{id:"(int)",character:"(string)",team:"(string)",UUID:[]},\
+        rolls:"(int)"\
+    },\
+    player:{\
+        id:"(int)",\
+        selectedSlot:"(int)",\
+        item:{switch:{id:"(str)",slot:"(int|str)",stack:"(int)",nbt:{tag:{},Slot:"(byte)",Count:"(int)"}}},\
+        inventory:{},\
+        status:{},\
+        team:"(str)"\
+    },\
+    entity:{},\
+    operation:{\
+        id:"(int)",\
+        item:"(str)",\
+        operator:"(str)",\
+        operand:"(int)",\
+        result:"(int)"\    
+    },\
+    item:{CustomModelData:"(int)"}\
+}
 ## 버퍼 클리어
 
 
