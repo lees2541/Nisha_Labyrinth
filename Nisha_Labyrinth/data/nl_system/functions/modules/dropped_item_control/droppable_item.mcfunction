@@ -1,8 +1,10 @@
 #> nl_system:modules/dropped_item_control/droppable_item
 #
 
+## 공통
+data merge entity @s[type=item] {PickupDelay:1000s}
 ## 생명석
-say hi
+
 execute if entity @s[nbt={Item:{tag:{lifestone:1b}}}] on origin if entity @s[scores={NL_lifestone_count=..0}] run return 0
 execute if entity @s[nbt={Item:{tag:{lifestone:1b}}}] on origin run function nl_system:modules/storage/scoreboard/operation/lifestone_count/calc_lifestone {operator:remove,operand:1} 
 

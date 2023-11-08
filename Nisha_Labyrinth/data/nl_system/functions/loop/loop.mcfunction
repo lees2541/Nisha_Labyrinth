@@ -3,3 +3,5 @@ execute as @e[type=item,nbt=!{Item:{tag:{drop:0b}}},nbt={Item:{tag:{NL:1b}}}] if
 
 ## 왼손에 아무것도 없을떄 대처
 execute as @a[tag=NL,nbt=!{Inventory:[{Slot:-106b}]}] at @s run function nl_system:systems/item/update/offhand
+
+execute as @a[tag=explorer,tag=NL] at @s run function nl_system:loop/explorer/explorer_loop
