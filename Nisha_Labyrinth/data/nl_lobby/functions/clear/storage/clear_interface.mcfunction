@@ -13,6 +13,7 @@ data remove storage nl:buffer settings
 data remove storage nl:buffer player
 data remove storage nl:buffer entity
 data remove storage nl:buffer operation
+data remove storage nl:buffer item
 
 data remove storage nl:in_game player
 

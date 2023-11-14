@@ -26,5 +26,8 @@ team modify prisoner prefix {"text":"[감옥]","color":"dark_gray","bold":true}
 
 function nl_system:init/scoreboards/init_scoreboards
 function nl_lobby:lobby/settings/default/init
+function nl_system:loop/sec_loop
 
 say start
+
+scoreboard objectives add damage custom:damage_dealt
