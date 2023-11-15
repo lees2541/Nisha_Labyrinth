@@ -11,7 +11,7 @@
 #       player.character: string 
 #           설명
 # @within nl_system:modules/hotbar_holder/base/inventory_changed_detection_adv
-
+say hoho
 function nl_system:modules/storage/load_to_buffer/player_info/load_player_info
 
 execute unless data entity @s Inventory[{Slot:-106b}] run return 0
