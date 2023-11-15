@@ -1,0 +1,35 @@
+[
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": "주술의 흔적"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "text": "주술의 흔적이다"
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{NL:1b,redstone:1b}"
+    },
+    {
+      "function": "minecraft:copy_nbt",
+      "source": {
+        "type": "minecraft:storage",
+        "source": "nl:buffer"
+      },
+      "ops": [
+        {
+          "source": "operation.result",
+          "target": "CustomModelData",
+          "op": "replace"
+        }
+      ]
+    }
+  ]
+  
