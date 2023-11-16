@@ -1,15 +1,8 @@
 #> nl_system:loop/explorer/explorer_loop
 # 틱당 모든 탐험가들이 실행
 # @context @a[tag=explorer,tag=NL]
-# @input  
-#   score 대상 {3:objective} 
-#       설명 
-# @output 
-#   storage nl:buffer 
-#       player.id: int 
-#           설명 
-#       player.character: string 
-#           설명
+#
+# @within nl_system:loop/loop
 
 ## 생명석 및 레드스톤 칸 감지
 execute as @a[tag=NL,nbt=!{Inventory:[{Slot:6b}]}] at @s run function nl_system:systems/item/update/lifestone
