@@ -7,4 +7,6 @@ execute if entity @s[tag=magician] run function nl_char:char_functions/explorer/
 ## 공통
 execute as @s run function nl_char:status/reset_common
 tag @s remove NL
+tag @s remove explorer
+tag @s remove roamer
 clear @s

@@ -1,12 +1,25 @@
 [
-    {
-      "function": "minecraft:set_nbt",
-      "tag": "{NL:1b,offhand:1b,alarm:1b}"
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{NL:1b,offhand:1b,alarm:1b}"
+  },
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": "경고기"
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "nl:buffer"
     },
-    {
-      "function": "minecraft:set_name",
-      "entity": "this",
-      "name": "경고기"
-    }
-  ]
-  
+    "ops": [
+      {
+        "source": "item.CustomModelData",
+        "target": "CustomModelData",
+        "op": "replace"
+      }
+    ]
+  }
+]

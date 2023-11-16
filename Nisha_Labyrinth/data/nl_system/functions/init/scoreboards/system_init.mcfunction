@@ -8,6 +8,7 @@
 scoreboard objectives add NL_player_id dummy
 
 scoreboard objectives add NL_lifestone_count dummy
+scoreboard objectives add NL_redstone_count dummy
 
 scoreboard objectives add NL_temp dummy
 

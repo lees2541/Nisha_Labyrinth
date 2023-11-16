@@ -1,4 +1,4 @@
-#data modify storage nl:buffer entity.item set from entity @s Item
+
 execute on origin if entity @s[tag=!NL] run return 0
 execute on origin store result storage nl:buffer player.id int 1 run scoreboard players get @s NL_player_id
 execute if entity @s[nbt={Item:{tag:{drop:1b,NL:1b}}}] unless function nl_system:modules/dropped_item_control/droppable_item run return run data remove entity @s Item.tag.drop

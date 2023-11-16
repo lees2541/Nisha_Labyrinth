@@ -30,6 +30,8 @@ kill @e[type=armor_stand,tag=NL]
 kill @e[type=item_display,tag=NL]
 kill @e[type=text_display,tag=NL]
 kill @e[type=block_display,tag=NL]
+kill @e[type=item,nbt={Item:{tag:{NL:1b}}}]
+kill @e[type=item,tag=NL]
 
 
 clear @a
