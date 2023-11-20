@@ -1,0 +1,50 @@
+[
+	{
+		"condition": "minecraft:all_of",
+		"terms": [
+			{
+				"condition": "minecraft:inverted",
+				"term": {
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"type": "minecraft:player",
+						"team": "explorer",
+						"equipment": {
+							"offhand": {
+								"items": [
+									"minecraft:diamond_hoe"
+								],
+								"nbt": "{CustomModelData:10003}"
+							}
+						}
+					}
+				}
+			},
+			{
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"type": "minecraft:player",
+					"type_specific": {
+						"type": "player"
+					},
+					"team": "explorer",
+					"distance": {
+						"absolute": {
+							"max": 8
+						}
+					},
+					"equipment": {
+						"offhand": {
+							"items": [
+								"minecraft:diamond_hoe"
+							],
+							"nbt": "{NL:1b,alarm:1b}"
+						}
+					}
+				}
+			}
+		]
+	}
+]
