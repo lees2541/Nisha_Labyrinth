@@ -1,1 +1,0 @@
-scoreboard objectives add NL_chance dummy
