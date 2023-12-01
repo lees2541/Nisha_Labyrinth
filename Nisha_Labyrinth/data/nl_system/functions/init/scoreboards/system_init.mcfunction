@@ -17,6 +17,7 @@ scoreboard objectives add NL_redstone_count dummy
 
 scoreboard objectives add NL_status_gui dummy
 #declare objective NL_status_gui 플레이어 화면의 오른쪽에 보이는 상태아이콘
+ 
 
 
 scoreboard objectives add NL_temp dummy

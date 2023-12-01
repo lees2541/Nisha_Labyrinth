@@ -2,6 +2,6 @@
 #
 # 
 
-data modify storage nl:image_code player.survivor set value {font:{icon1:"\uE003"}}
+data modify storage nl:image_code player.survivor set value {font:{icon1:"\uS001"}}
 
 scoreboard players set @s NL_skill_cool2 0
