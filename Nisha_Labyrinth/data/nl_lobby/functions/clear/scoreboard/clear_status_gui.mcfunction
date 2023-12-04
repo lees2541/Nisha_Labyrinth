@@ -7,6 +7,7 @@ scoreboard players set player1_2 NL_status_gui 3
 scoreboard players display numberformat player1 NL_status_gui fixed "-"
 scoreboard players display numberformat player1_1 NL_status_gui fixed ""
 scoreboard players display numberformat player1_2 NL_status_gui fixed ""
+scoreboard players display name player1 NL_status_gui "<플레이어1>"
 scoreboard players display name player1_1 NL_status_gui ""
 scoreboard players display name player1_2 NL_status_gui ""
 
@@ -16,6 +17,7 @@ scoreboard players set player2_2 NL_status_gui 6
 scoreboard players display numberformat player2 NL_status_gui fixed "-"
 scoreboard players display numberformat player2_1 NL_status_gui fixed ""
 scoreboard players display numberformat player2_2 NL_status_gui fixed ""
+scoreboard players display name player2 NL_status_gui "<플레이어2>"
 scoreboard players display name player2_1 NL_status_gui ""
 scoreboard players display name player2_2 NL_status_gui ""
 
@@ -25,6 +27,7 @@ scoreboard players set player3_2 NL_status_gui 9
 scoreboard players display numberformat player3 NL_status_gui fixed "-"
 scoreboard players display numberformat player3_1 NL_status_gui fixed ""
 scoreboard players display numberformat player3_2 NL_status_gui fixed ""
+scoreboard players display name player3 NL_status_gui "<플레이어3>"
 scoreboard players display name player3_1 NL_status_gui ""
 scoreboard players display name player3_2 NL_status_gui ""
 
@@ -34,6 +37,7 @@ scoreboard players set player4_2 NL_status_gui 12
 scoreboard players display numberformat player4 NL_status_gui fixed "-"
 scoreboard players display numberformat player4_1 NL_status_gui fixed ""
 scoreboard players display numberformat player4_2 NL_status_gui fixed ""
+scoreboard players display name player4 NL_status_gui "<플레이어4>"
 scoreboard players display name player4_1 NL_status_gui ""
 scoreboard players display name player4_2 NL_status_gui ""
 

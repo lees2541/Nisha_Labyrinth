@@ -1,6 +1,6 @@
 #> nl_lobby:lobby/jobs/choose_job
 # 플레이어의 캐릭터 선택 및 게임 참가 절차 실행(id 부여 등)
-# @context 이 함수를 실행한 자 with {character: survivor|magician, team: explorer|roamer}
+# @context 이 함수를 실행한 자 with {character: survivor|magician|swordsman|blind, team: explorer|roamer}
 # @input
 #   storage  
 # @output
