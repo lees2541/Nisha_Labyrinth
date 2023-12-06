@@ -5,12 +5,12 @@
 effect clear @s
 clear @s
 advancement revoke @s everything
-function nishalabyrinth:tags/removetags
+#function nishalabyrinth:tags/removetags
 team join explorer @s
 tag @s add NL
 tag @s add explorer
 
-function nishalabyrinth:system/advancements/set_advancements
+#function nishalabyrinth:system/advancements/set_advancements
 
 execute if score @s E_efficiency matches ..1 run scoreboard players set @s E_efficiency 16
 

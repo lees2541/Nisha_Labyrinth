@@ -2,7 +2,7 @@
 # 고정되었어야할 아이템 칸에 있는 아이템 불러오기 / nl:buffer player.item.switch
 #@within nl_system:modules/hotbar_holder/**
 
-say 아이템체크
+#say 아이템체크
 $execute store success storage nl:buffer player.item.switch.stack int 1 run data get entity @s Inventory[$(nbt)]
 
 
