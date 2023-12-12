@@ -1,4 +1,4 @@
-function nl_char:jobs/explorer/survivor/set_stats
+#function nl_char:jobs/explorer/survivor/set_stats
 function nl_char:jobs/explorer/explorer
 
 scoreboard players display name @s NL_status_gui {"text":"\uE111","color":"white"}
