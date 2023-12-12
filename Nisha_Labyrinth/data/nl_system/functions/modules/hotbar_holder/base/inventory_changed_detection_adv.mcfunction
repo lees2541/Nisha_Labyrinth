@@ -4,21 +4,14 @@
 #@context 인벤토리의 변화가 감지된 플레이어
 
 ## 플레이어 id 로드
-say 감지
+#say 감지
 execute store result storage nl:buffer player.id int 1 run scoreboard players get @s NL_player_id
 execute store result storage nl:buffer player.selectedSlot int 1 run data get entity @s SelectedItemSlot
 ## 아이템 종류 체크
-<<<<<<< HEAD
-execute if data entity @s Inventory[{id:"minecraft:iron_hoe",tag:{NL:1b,drop:0b,lifestone:1b}}] run function nl_system:modules/storage/scoreboard/operation/lifestone_count/calc_lifestone {operator:add,operand:1}
-execute if data entity @s Inventory[{id:"minecraft:iron_hoe",tag:{NL:1b,drop:0b,lifestone:1b}}] run say 이따
-execute if data entity @s Inventory[{id:"minecraft:iron_hoe",tag:{NL:1b,drop:0b,lifestone:1b}}] run clear @s iron_hoe{NL:1b,drop:0b,lifestone:1b} 1
-=======
 
 execute if data entity @s Inventory[{id:"minecraft:iron_hoe",tag:{NL:1b,drop:0b,lifestone:1b}}] run function nl_system:modules/storage/scoreboard/operation/resource_count/calc_resource {resource:lifestone,operator:add,operand:1}
-execute if data entity @s Inventory[{id:"minecraft:iron_hoe",tag:{NL:1b,drop:0b,lifestone:1b}}] as lees2541 run say 이따
 execute if data entity @s Inventory[{id:"minecraft:iron_hoe",tag:{NL:1b,drop:0b,lifestone:1b}}] run clear @s iron_hoe{NL:1b,drop:0b,lifestone:1b} 1
 
->>>>>>> 69c5baf2c58988616020bda4913f1c3613816955
 ## drop:0b 아이템이 덜 정리됐을 경우 다시 이 함수를 실행
 execute if data entity @s Inventory[{tag:{drop:0b,NL:1b}}] run return run function nl_system:modules/hotbar_holder/base/inventory_changed_detection_adv
 ## 플레이어 정보 로드

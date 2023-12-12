@@ -19,9 +19,11 @@ $execute if data storage nl:lobby player{character:$(character)} run return run 
 
 ## 플레이어 정보 버퍼에 불러오기
 data remove storage nl:buffer settings.player
-
+execute if score @s NL_player_id matches 1.. run function nl_system:modules/storage/load_to_buffer/player_info/load_player_info
+data modify storage nl:buffer settings.player.prev_character set from storage nl:buffer player.character
 $data modify storage nl:buffer settings.player.character set value "$(character)"
 $data modify storage nl:buffer settings.player.team set value "$(team)"
+
 
 data modify storage nl:buffer settings.player.UUID set from entity @s UUID
 execute store result storage nl:buffer settings.player.id int 1 run scoreboard players get @s NL_player_id
@@ -30,7 +32,7 @@ execute store result storage nl:buffer settings.player.id int 1 run scoreboard p
 execute if score @s NL_player_id matches 1.. run function nl_lobby:lobby/jobs/change_job with storage nl:buffer settings.player
 ## 플레이어 아이디가 등록되어 있지 않은 경우
 execute unless score @s NL_player_id matches 1.. run function nl_lobby:lobby/settings/players/join_game with storage nl:buffer settings.player
-
+execute as @s[tag=NL,scores={NL_player_id=1..}] run advancement revoke @s only nl_system:modules/hotbar_holder/base/inventory_changed_detection
 execute as @s[tag=NL,scores={NL_player_id=1..}] run advancement grant @s only nl_system:modules/hotbar_holder/base/inventory_changed_detection
 
 ## 입력한 캐릭터의 시작함수 실행
