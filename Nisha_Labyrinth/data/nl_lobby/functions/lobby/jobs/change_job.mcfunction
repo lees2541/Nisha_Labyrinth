@@ -20,8 +20,10 @@
 #           설명 
 #       player.character: string 
 #           설명
+# @within nl_lobby:lobby/jobs/choose_job
 
 say 바꿈
+
 $function nl_char:jobs/$(team)/$(prev_character)/reset_stats
 
 $execute if data storage nl:settings player[{id:$(id)}] run data modify storage nl:settings player[{id:$(id)}].character set from storage nl:buffer settings.player.character

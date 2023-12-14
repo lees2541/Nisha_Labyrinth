@@ -3,6 +3,7 @@
 #declare storage nl:in_game player
 #declare storage nl:lobby
 
+say 초기화
 ## 스토리지 초기화
 data remove storage nl:settings map
 data remove storage nl:settings redstone
