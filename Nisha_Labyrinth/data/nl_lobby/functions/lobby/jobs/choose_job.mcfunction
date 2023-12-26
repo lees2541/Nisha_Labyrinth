@@ -23,7 +23,7 @@ execute if score @s NL_player_id matches 1.. run function nl_system:modules/stor
 $data modify storage nl:buffer settings.player.prev_character set value "$(character)"
 $data modify storage nl:buffer settings.player.character set value "$(character)"
 $data modify storage nl:buffer settings.player.team set value "$(team)"
-data modify storage nl:buffer settings.player.prev_character set from storage nl:buffer player.character
+execute if score @s NL_player_id matches 1.. run data modify storage nl:buffer settings.player.prev_character set from storage nl:buffer player.character
 
 data modify storage nl:buffer settings.player.UUID set from entity @s UUID
 execute store result storage nl:buffer settings.player.id int 1 run scoreboard players get @s NL_player_id
