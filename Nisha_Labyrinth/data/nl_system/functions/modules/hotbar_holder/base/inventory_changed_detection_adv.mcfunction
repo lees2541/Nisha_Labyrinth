@@ -35,6 +35,10 @@ execute unless entity @s[nbt={Inventory:[{Slot:6b,tag:{lifestone:1b,NL:1b}}]}] r
 execute unless data entity @s Inventory[{Slot:7b}] run function nl_system:systems/item/update/redstone
 execute unless entity @s[nbt={Inventory:[{Slot:7b,tag:{redstone:1b,NL:1b}}]}] run function nl_system:modules/hotbar_holder/base/slot_update {"Slot":"7b","slotPath":"hotbar.7","Path":"redstone"}
 
+## 정보창 감지
+execute unless data entity @s Inventory[{Slot:8b}] run function nl_system:systems/item/update/info_book
+execute unless entity @s[nbt={Inventory:[{Slot:8b,tag:{info_book:1b,NL:1b}}]}] run function nl_system:modules/hotbar_holder/base/slot_update {"Slot":"8b","slotPath":"hotbar.8","Path":"info_book"}
+
 ## 인벤토리 정보 업데이트
 function nl_system:modules/hotbar_holder/base/update_inventory_info with storage nl:buffer player
 
