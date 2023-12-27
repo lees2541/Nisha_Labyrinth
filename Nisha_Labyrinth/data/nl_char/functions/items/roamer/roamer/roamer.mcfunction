@@ -1,0 +1,1 @@
+function nl_char:items/give_info_book

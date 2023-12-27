@@ -1,0 +1,21 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "text": ""
+        }
+      ],
+      "replace": true
+    },
+    {
+      "function": "minecraft:set_name",
+      "name": " "
+    },
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{NL:1b,offhand:1b,default:1b}"
+    }
+  ]
+  

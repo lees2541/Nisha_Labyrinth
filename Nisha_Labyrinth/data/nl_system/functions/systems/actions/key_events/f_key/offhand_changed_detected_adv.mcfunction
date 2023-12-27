@@ -3,6 +3,8 @@
 #@context 왼손의 변화가 감지된 플레이어
 #@within nl_system:modules/hotbar_holder/base/inventory_changed_detection_adv
 #declare predicate nl_system:player/skill/skill2_ready 스킬사용 가능조건 체크
+
+
 #say 왼손감지
 function nl_system:modules/storage/load_to_buffer/player_info/load_player_info
 

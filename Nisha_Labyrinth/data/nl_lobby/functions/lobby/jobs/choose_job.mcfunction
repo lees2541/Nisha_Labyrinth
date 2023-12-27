@@ -1,6 +1,6 @@
 #> nl_lobby:lobby/jobs/choose_job
 # 플레이어의 캐릭터 선택 및 게임 참가 절차 실행(id 부여 등)
-# @context 이 함수를 실행한 자 with {character: survivor|magician|swordsman|blind, team: explorer|roamer}
+# @context 이 함수를 실행한 자 with {character: survivor|magician|swordsman|blind|chopper|hunter, team: explorer|roamer}
 # @input
 #   storage  
 # @output
@@ -13,10 +13,11 @@
 #           설명
 
 ## 중복된 캐릭터가 있을 시 리턴
-
+$data modify storage nl:buffer settings.player.team set value "$(team)"
 $execute if data storage nl:lobby player{character:$(character)} run return run title @s actionbar "해당 캐릭터를 선택한 플레이어가 이미 있습니다."
-
-
+execute unless score @s NL_player_id matches 5 if data storage nl:buffer settings.player{team:"roamer"} if data storage nl:lobby player{team:"roamer"} run return run title @s actionbar "이미 배회자를 선택한 플레이어가 있습니다."
+execute if score @s NL_player_id matches 1..4 if data storage nl:buffer settings.player{team:"roamer"} run return run title @s actionbar "정해진 팀은 바꿀 수 없습니다."
+execute if score @s NL_player_id matches 5 if data storage nl:buffer settings.player{team:"explorer"} run return run title @s actionbar "정해진 팀은 바꿀 수 없습니다."
 ## 플레이어 정보 버퍼에 불러오기
 data remove storage nl:buffer settings.player
 execute if score @s NL_player_id matches 1.. run function nl_system:modules/storage/load_to_buffer/player_info/load_player_info
