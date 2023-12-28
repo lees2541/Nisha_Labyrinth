@@ -1,0 +1,1 @@
+$execute if entity @s[tag=$(character)] run function nl_char:char_functions/$(team)/$(character)/reset

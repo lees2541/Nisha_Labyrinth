@@ -10,6 +10,9 @@ execute if data storage nl:settings map{type:"cave"} run function nl_lobby:lobby
 
 
 tellraw @a [{"text":"\"","color":"blue"},{"nbt":"map.type","storage":"nl:settings","color":"green","bold":true},{"text":"\"","color":"blue"},{"text":" 맵에서 시작합니다","color":"white"},{"text":"\n"},{"selector":"@a[tag=NL]","separator":" "},{"text":"\n"},{"text":"게임이 시작됩니다","color":"white","bold":true}]
+
+## 플레이어 상태 및 설정 리셋
+
 ## nl:settings에서 불러온 레드스톤을 맵에 적용
 function nl_lobby:modules/redstone_generator/redstone_generator_start
 

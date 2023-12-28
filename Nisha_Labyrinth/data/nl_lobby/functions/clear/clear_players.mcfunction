@@ -1,5 +1,9 @@
-execute if entity @s[tag=survivor] run function nl_char:char_functions/explorer/survivor/reset
-execute if entity @s[tag=magician] run function nl_char:char_functions/explorer/magician/reset
+function nl_system:modules/storage/load_to_buffer/player_info/load_player_info
+
+
+function nl_lobby:clear/indiv_reset_character with storage nl:buffer player
+
+
 
 
 
