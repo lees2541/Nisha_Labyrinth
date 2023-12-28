@@ -34,8 +34,11 @@ data merge storage nl:settings {\
 
 data merge storage nl:in_game {\
     player:[\
-        {id:0,character:"(str)", Inventory:{}, status:{resource:{redstone:0,lifestone:0}}, effects:{}}\
-    ]\
+        {id:1,character:"(str)", Inventory:{}, status:{resource:{redstone:0,lifestone:0}}, effects:{}}\
+    ],\
+    status:{\
+        ongoing:0,location:{altar:{},cave:{},library:{}}\
+    }\
 }
 
 

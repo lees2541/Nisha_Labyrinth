@@ -1,4 +1,5 @@
-## 대충 모닥불 죽이는 내용
-#say 모닥불 킬
+#> nl_char:char_functions/explorer/survivor/reset
+# 해당 캐릭터가 생성한 맵, 엔티티, 오브젝트 관련의 변화를 리셋
+say 모닥불 킬
 
 

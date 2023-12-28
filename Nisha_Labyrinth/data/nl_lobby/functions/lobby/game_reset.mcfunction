@@ -1,4 +1,4 @@
-
+data modify storage nl:in_game status.ongoing set value 0
 
 ##
 execute as @e[type=marker,tag=!origin,tag=redstone,tag=redstone_gen] at @s run function nl_lobby:modules/redstone_generator/clear_redstone with entity @s data

@@ -13,6 +13,7 @@
 #           설명
 
 ## 중복된 캐릭터가 있을 시 리턴
+execute if data storage nl:in_game status{ongoing:1} run return run title @s actionbar {"text":"게임 진행 중에는 캐릭터를 바꿀 수 없습니다."}
 $data modify storage nl:buffer settings.player.team set value "$(team)"
 $execute if data storage nl:lobby player{character:$(character)} run return run title @s actionbar "해당 캐릭터를 선택한 플레이어가 이미 있습니다."
 execute unless score @s NL_player_id matches 5 if data storage nl:buffer settings.player{team:"roamer"} if data storage nl:lobby player{team:"roamer"} run return run title @s actionbar "이미 배회자를 선택한 플레이어가 있습니다."
