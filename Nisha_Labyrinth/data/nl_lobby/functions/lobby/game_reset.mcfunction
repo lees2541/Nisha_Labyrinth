@@ -1,5 +1,9 @@
+
 data modify storage nl:in_game status.ongoing set value 0
 
+## 스케쥴된 함수 취소
+schedule clear nl_system:loop/countdown/rm_enterance_last_count
+schedule clear nl_system:loop/countdown/rm_enterance
 ##
 execute as @e[type=marker,tag=!origin,tag=redstone,tag=redstone_gen] at @s run function nl_lobby:modules/redstone_generator/clear_redstone with entity @s data
 
