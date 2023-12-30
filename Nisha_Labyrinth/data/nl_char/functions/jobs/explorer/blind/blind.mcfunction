@@ -1,7 +1,9 @@
 function nl_char:jobs/explorer/blind/set_stats
 function nl_char:jobs/explorer/explorer
 
-scoreboard players display name @s NL_status_gui {"text":"\uE141","color":"white"}
-scoreboard players display numberformat @s NL_status_gui fixed "-"
+
 tag @s add blind
+
+function nl_system:modules/status_gui/change_icon/default
+scoreboard players display numberformat @s NL_status_gui fixed "-"
 say 안녕 난 리신

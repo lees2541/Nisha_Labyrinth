@@ -2,5 +2,5 @@
 #
 # 
 
-data modify storage nl:image_code player.magician set value {font:{icon1:"\uE121"}}
+data modify storage nl:image_code player.magician.font.icon1 set value "uE121"
 

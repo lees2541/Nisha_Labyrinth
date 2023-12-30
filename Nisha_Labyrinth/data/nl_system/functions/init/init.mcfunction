@@ -33,6 +33,7 @@ team modify NL_ghost prefix ""
 team modify prisoner prefix ""
 
 function nl_system:init/scoreboards/init_scoreboards
+function nl_system:init/storage/init_storage
 function nl_lobby:lobby/settings/default/init
 function nl_system:loop/sec_loop
 

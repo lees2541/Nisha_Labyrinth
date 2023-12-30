@@ -2,5 +2,5 @@
 #
 # 
 
-data modify storage nl:image_code player.blind set value {font:{icon1:"\uE141"}}
+data modify storage nl:image_code player.blind.font.icon1 set value "uE141"
 

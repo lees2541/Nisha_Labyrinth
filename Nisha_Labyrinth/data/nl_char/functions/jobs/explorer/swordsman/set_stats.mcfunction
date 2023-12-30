@@ -2,5 +2,5 @@
 #
 # 
 
-data modify storage nl:image_code player.swordsman set value {font:{icon1:"\uE131"}}
+data modify storage nl:image_code player.swordsman.font.icon1 set value "uE131"
 
