@@ -36,6 +36,9 @@ kill @e[type=text_display,tag=NL]
 kill @e[type=block_display,tag=NL]
 kill @e[type=item,nbt={Item:{tag:{NL:1b}}}]
 kill @e[type=item,tag=NL]
+kill @e[type=interaction,tag=NL]
+
+execute as @e[type=glow_item_frame,tag=NL] run data merge entity @s {Fixed:1b,Invulnerable:1b,Tags:["NL","cave"]}
 
 
 clear @a

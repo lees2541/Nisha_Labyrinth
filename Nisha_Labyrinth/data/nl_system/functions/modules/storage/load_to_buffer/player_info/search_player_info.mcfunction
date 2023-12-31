@@ -16,6 +16,7 @@
 $data modify storage nl:buffer player.character set from storage nl:in_game player[{id:$(id)}].character
 $data modify storage nl:buffer player.status set from storage nl:in_game player[{id:$(id)}].status
 $data modify storage nl:buffer player.team set from storage nl:in_game player[{id:$(id)}].team
+$data modify storage nl:buffer player.UUID set from storage nl:in_game player[{id:$(id)}].UUID
 
 
 

@@ -49,7 +49,7 @@ spawnpoint @a[tag=NL] 715 39 580
 
 
 ## 발판 태그
-
+execute as @e[type=glow_item_frame,tag=NL,tag=cave] at @s run summon interaction ~ ~ ~ {width:0.9f,height:0.08f,response:1b,Tags:["NL","swamp"]}
 ################################
 
 ## 도서관 경비병 및 루트

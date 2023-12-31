@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "interact": {
+        "trigger": "minecraft:player_interacted_with_entity",
+        "conditions": {
+          "player": {
+            "nbt": "{Tags:[\"NL\"]}"
+          },
+          "entity": {
+            "type": "interaction",
+            "nbt": "{Tags:[\"swamp\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "nl_system:systems/actions/interactions/swamp/interact_adv"
+    }
+  }
+  

@@ -1,0 +1,2 @@
+$execute as @e[type=interaction,limit=1,sort=nearest,nbt={interaction:{player:$(UUID)}},tag=NL,tag=swamp] at @s unless function nl_char:char_functions/$(team)/$(character)/skill/swamp/interact run return run data remove entity @s interaction
+$execute as @e[type=interaction,limit=1,sort=nearest,nbt={interaction:{player:$(UUID)}},tag=NL,tag=swamp] run data remove entity @s interaction
