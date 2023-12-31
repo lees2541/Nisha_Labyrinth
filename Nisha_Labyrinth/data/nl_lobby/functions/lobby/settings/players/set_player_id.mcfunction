@@ -1,5 +1,5 @@
 ## 배회자일떄
-execute if data storage nl:buffer settings.player{team:"roamer"} run scoreboard players set @s NL_player_id 5
+execute if data storage nl:buffer settings.player{team:"roamer"} store result storage nl:buffer settings.player.id int 1 run scoreboard players set @s NL_player_id 5
 execute if data storage nl:buffer settings.player{team:"roamer"} run return run scoreboard objectives modify NL_status_gui displayname "\uE101"
 
 ## 탐험가일때
