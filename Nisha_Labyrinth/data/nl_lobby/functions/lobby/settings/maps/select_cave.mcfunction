@@ -72,3 +72,41 @@ execute as @e[type=glow_item_frame,tag=NL,tag=cave] at @s run summon interaction
 
 ################################
 
+## 제단 interaction 엔티티 설치
+summon interaction 686 49.1 577 {Tags:["altar","NL"]}
+summon interaction 685 49.1 577 {Tags:["altar","NL"]}
+summon interaction 684 49.1 577 {Tags:["altar","NL"]}
+summon interaction 683 49.1 577 {Tags:["altar","NL"]}
+summon interaction 682 49.1 577 {Tags:["altar","NL"]}
+summon interaction 681 49.1 577 {Tags:["altar","NL"]}
+summon interaction 679 49.1 577 {Tags:["altar","NL"]}
+
+
+
+summon interaction 678 49.1 578 {Tags:["altar","NL","altar_side"]}
+
+summon interaction 677 49.1 576 {Tags:["altar","NL","altar_side"]}
+
+summon interaction 676 49.1 578 {Tags:["altar","NL","altar_side"]}
+
+summon interaction 675 49.1 576 {Tags:["altar","NL","altar_side"]}
+
+summon interaction 674 49.1 578 {Tags:["altar","NL","altar_side"]}
+
+summon interaction 673 49.1 576 {Tags:["altar","NL","altar_side"]}
+
+summon interaction 672 49.1 578 {Tags:["altar","NL","altar_side"]}
+
+summon interaction 671 49.1 576 {Tags:["altar","NL","altar_side"]}
+
+summon interaction 669 50.1 577 {Tags:["altar","NL","altar_side"]}
+
+summon interaction 676 52.1 629 {Tags:["altar","NL","altar_side"]}
+
+summon interaction 677 52.1 629 {Tags:["altar","NL","altar_side"]}
+
+summon interaction 678 52.1 629 {Tags:["altar","NL","altar_side"]}
+
+summon interaction 679 52.1 629 {Tags:["altar","NL","altar_side"]}
+
+summon interaction 680 52.1 629 {Tags:["altar","NL","altar_side"]}

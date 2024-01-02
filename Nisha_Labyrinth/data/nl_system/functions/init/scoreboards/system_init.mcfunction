@@ -21,6 +21,9 @@ scoreboard objectives add NL_status_gui dummy
 scoreboard objectives add NL_rm_enterance dummy
 #declare objective NL_rm_enterance 게임시작 후 배회자가 맵에 입장할때까지 걸리는 시간
 
+scoreboard objectives add NL_altar_progress dummy
+#declare objective NL_altar_progress 제단 진행도, 0단계부터 10단계까지 쓰인다
+
 scoreboard objectives add NL_temp dummy
 #declare objective NL_temp 버퍼 개념의 스코어보드, 아무데서나 쓰인다.
 

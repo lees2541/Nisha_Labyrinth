@@ -11,3 +11,7 @@ execute as @a[tag=NL,nbt=!{Inventory:[{Slot:-106b}]}] at @s run function nl_syst
 
 
 execute as @a[tag=explorer,tag=NL] at @s run function nl_system:loop/explorer/explorer_loop
+
+
+
+execute if data storage nl:in_game status{ongoing:1} run function nl_system:loop/altar/altar_loop

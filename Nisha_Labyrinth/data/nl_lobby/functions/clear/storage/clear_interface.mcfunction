@@ -9,6 +9,7 @@ data remove storage nl:settings map
 data remove storage nl:settings redstone
 data remove storage nl:settings players
 data remove storage nl:settings perk
+data remove storage nl:settings altar
 
 data remove storage nl:buffer settings
 data remove storage nl:buffer player
@@ -17,6 +18,7 @@ data remove storage nl:buffer operation
 data remove storage nl:buffer item
 
 data remove storage nl:in_game player
+data remove storage nl:in_game status
 
 
 
@@ -37,7 +39,7 @@ data merge storage nl:in_game {\
         {id:1,character:"(str)", Inventory:{}, status:{resource:{redstone:0,lifestone:0}}, effects:{}}\
     ],\
     status:{\
-        ongoing:0,location:{altar:{},cave:{},library:{}}\
+        ongoing:0,altar:{mode:"(int)",speed:"(float)"},location:{cave:{},library:{}}\
     }\
 }
 

@@ -12,6 +12,9 @@ execute if data storage nl:settings map{type:"cave"} run function nl_lobby:lobby
 
 tellraw @a [{"text":"\"","color":"blue"},{"nbt":"map.type","storage":"nl:settings","color":"green","bold":true},{"text":"\"","color":"blue"},{"text":" 맵에서 시작합니다","color":"white"},{"text":"\n"},{"selector":"@a[tag=NL]","separator":" "},{"text":"\n"},{"text":"게임이 시작됩니다","color":"white","bold":true}]
 
+## 게임 시스템 설정
+function nl_lobby:lobby/settings/systems/set_altar_system
+
 ## 플레이어 상태 및 설정 리셋
 function nl_lobby:clear/clear_players
 tp @a[team=explorer] 691 50 577.5 -90 0

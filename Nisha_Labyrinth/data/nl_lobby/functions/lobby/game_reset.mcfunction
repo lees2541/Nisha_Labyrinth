@@ -16,7 +16,7 @@ data modify storage nl:lobby settings set from storage nl:default settings
 
 ## 클리어 스코어보드
 function nl_lobby:clear/scoreboard/clear_scoreboard
-
+function nl_lobby:clear/bossbar/clear_bossbar
 
 
 
