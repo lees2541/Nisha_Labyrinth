@@ -1,0 +1,1 @@
+advancement revoke @s from nl_system:systems/actions/interactions/base/hit

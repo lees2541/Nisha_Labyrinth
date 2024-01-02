@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:stone"
+      },
+      "title": "Interact Interaction",
+      "description": "Interact with interaction entity",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+      "interact": {
+        "trigger": "minecraft:player_interacted_with_entity",
+        "conditions": {
+          "player": {
+            "type_specific": {
+              "type": "player"
+            },
+            "nbt": "{Tags:[\"NL\"]}"
+          },
+          "entity": {
+            "type": "minecraft:interaction",
+            "nbt": "{Tags:[\"NL\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "nl_system:systems/actions/interactions/base/interact_adv"
+    }
+  }
+  

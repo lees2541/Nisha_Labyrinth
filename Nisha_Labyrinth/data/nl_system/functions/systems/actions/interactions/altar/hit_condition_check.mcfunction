@@ -1,0 +1,2 @@
+execute unless score @s NL_redstone_count matches 1.. run return run title @s actionbar {"text":"주술의 흔적이 부족합니다!"}
+$execute as @e[type=interaction,limit=1,sort=nearest,nbt={attack:{player:$(UUID)}},tag=NL,tag=altar] at @s run return run say 제단상호작용!

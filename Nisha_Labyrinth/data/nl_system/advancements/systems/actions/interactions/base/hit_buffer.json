@@ -3,13 +3,13 @@
       "icon": {
         "item": "minecraft:stone"
       },
-      "title": "",
-      "description": "",
+      "title": "Hit Interaction Buffer",
+      "description": "Buffer",
       "show_toast": false,
       "announce_to_chat": false,
       "hidden": true
     },
-    "parent": "nl_system:systems/actions/interactions/swamp/interact",
+    "parent": "nl_system:systems/actions/interactions/base/hit",
     "criteria": {
       "buffer": {
         "trigger": "minecraft:tick",
@@ -18,7 +18,7 @@
             "type_specific": {
               "type": "player",
               "advancements": {
-                "nl_system:systems/actions/interactions/swamp/interact": true
+                "nl_system:systems/actions/interactions/base/hit": true
               }
             }
           }
@@ -26,7 +26,7 @@
       }
     },
     "rewards": {
-      "function": "nl_system:systems/actions/interactions/swamp/interact_buffer_adv"
+      "function": "nl_system:systems/actions/interactions/base/hit_buffer_adv"
     }
   }
   

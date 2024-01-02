@@ -1,20 +1,39 @@
 {
-    "criteria": {
-      "interact": {
-        "trigger": "minecraft:player_interacted_with_entity",
-        "conditions": {
-          "player": {
-            "nbt": "{Tags:[\"NL\"]}"
-          },
-          "entity": {
-            "type": "interaction",
-            "nbt": "{Tags:[\"swamp\"]}"
-          }
+  "display": {
+    "icon": {
+      "item": "minecraft:stone"
+    },
+    "title": "Interact with Swamp",
+    "description": "",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "nl_system:systems/actions/interactions/base/interact",
+  "criteria": {
+    "interact": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"NL\"]}"
+        },
+        "entity": {
+          "type": "interaction",
+          "nbt": "{Tags:[\"swamp\",\"NL\"]}"
         }
       }
     },
-    "rewards": {
-      "function": "nl_system:systems/actions/interactions/swamp/interact_adv"
+    "impossible": {
+      "trigger": "minecraft:impossible"
     }
+  },
+  "requirements": [
+    [
+      "interact",
+      "impossible"
+    ]
+  ],
+  "rewards": {
+    "function": "nl_system:systems/actions/interactions/swamp/interact_adv"
   }
-  
+}
