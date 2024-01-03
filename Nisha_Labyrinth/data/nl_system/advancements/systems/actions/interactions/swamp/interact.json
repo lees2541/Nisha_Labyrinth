@@ -29,7 +29,9 @@
   },
   "requirements": [
     [
-      "interact",
+      "interact"
+    ],
+    [
       "impossible"
     ]
   ],

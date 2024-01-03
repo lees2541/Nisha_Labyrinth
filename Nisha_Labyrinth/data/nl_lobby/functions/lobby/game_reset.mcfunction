@@ -28,6 +28,8 @@ function nl_lobby:clear/bossbar/clear_bossbar
 ## 태그 클리어
 function nl_lobby:clear/tags/clear_all
 
+## 맵 리셋
+execute as @e[type=interaction,tag=NL,tag=altar] at @s run setblock ~ ~1 ~ air destroy
 ## 엔티티 제거
 kill @e[type=marker,tag=NL]
 kill @e[type=armor_stand,tag=NL]

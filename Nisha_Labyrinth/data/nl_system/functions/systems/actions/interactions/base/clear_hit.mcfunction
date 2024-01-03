@@ -1,0 +1,1 @@
+$execute at @s as @e[type=interaction,limit=1,sort=nearest,nbt={attack:{player:$(UUID)}},tag=NL] run data remove entity @s attack

@@ -1,0 +1,1 @@
+$execute as @e[type=interaction,limit=1,sort=nearest,nbt={interaction:{player:$(UUID)}},tag=NL] run data entity remove @s interaction
