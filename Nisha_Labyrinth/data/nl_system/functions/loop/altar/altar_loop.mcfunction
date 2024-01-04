@@ -5,4 +5,6 @@
 
 
 
-function nl_system:systems/altar/gauge/gauge_value_calc
+execute if data storage nl:in_game status.altar{mode:1} run function nl_system:systems/altar/gauge/gauge_value_calc
+
+

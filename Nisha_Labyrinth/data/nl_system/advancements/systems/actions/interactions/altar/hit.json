@@ -6,7 +6,7 @@
     "title": "Hit Interaction Altar",
     "description": "제단에 주흔 올림",
     "show_toast": false,
-    "announce_to_chat": true,
+    "announce_to_chat": false,
     "hidden": true
   },
   "parent": "nl_system:systems/actions/interactions/base/hit",

@@ -30,6 +30,17 @@ function nl_lobby:clear/tags/clear_all
 
 ## 맵 리셋
 execute as @e[type=interaction,tag=NL,tag=altar] at @s run setblock ~ ~1 ~ air destroy
+
+# 제단의 레드스톤 제거
+setblock 678 43 575 minecraft:air replace
+setblock 677 39 581 minecraft:air replace
+setblock 676 44 575 minecraft:air replace
+setblock 675 40 579 minecraft:air replace
+setblock 674 43 575 minecraft:air replace
+setblock 673 40 579 minecraft:air replace
+setblock 672 44 575 minecraft:air replace
+setblock 671 40 579 minecraft:air replace
+setblock 670 44 575 minecraft:air replace
 ## 엔티티 제거
 kill @e[type=marker,tag=NL]
 kill @e[type=armor_stand,tag=NL]

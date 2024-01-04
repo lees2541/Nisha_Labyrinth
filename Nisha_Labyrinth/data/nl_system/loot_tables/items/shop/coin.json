@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:acacia_button",
+            "functions": [
+              {
+                "function": "minecraft:reference",
+                "name": "nl_system:systems/item/shop/coin"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

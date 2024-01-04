@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:advancement_reward",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "nishalabyrinth:items/explorer/magician_wp1"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:player",
+                "type_specific": {
+                  "type": "player"
+                },
+                "nbt": "{Tags:[\"magician\"]}",
+                "team": "explorer"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "nishalabyrinth:items/explorer/police_wp1"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:player",
+                "nbt": "{Tags:[\"police\"]}"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

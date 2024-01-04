@@ -1,0 +1,22 @@
+[
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": "뽑기코인"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "text": "상점에서 아이템을 얻을 수 있다"
+        }
+      ],
+      "replace": true
+    },
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{CanPlaceOn:[\"minecraft:bricks\"],HideFlags:207}"
+    }
+  ]
+  
