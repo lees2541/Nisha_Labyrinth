@@ -27,11 +27,11 @@ scoreboard objectives add NL_altar_progress dummy
 scoreboard objectives add NL_temp dummy
 #declare objective NL_temp 버퍼 개념의 스코어보드, 아무데서나 쓰인다.
 
+scoreboard objectives add NL_mined_red minecraft.mined:minecraft.deepslate_redstone_ore
+#declare objective NL_mined_red 레드스톤 캔 횟수, 개인 이벤트 트리거는 플레이어 스코어보드,개인은 #(id),그리고 총합은 #explorer 에 기록
 
-
-
-
-
+scoreboard objectives add NL_mined_life minecraft.mined:minecraft.bone_block
+#declare objective NL_mined_life 생명석 캔 횟수, 개인 이벤트 트리거는 플레이어 스코어보드,개인은 #(id),그리고 총합은 #explorer 에 기록
 
 
 

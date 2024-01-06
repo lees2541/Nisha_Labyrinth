@@ -1,3 +1,4 @@
+
 ## 로비에서 한 세팅 적용 (nl:lobby.settings -> nl:settings)
 function nl_lobby:lobby/settings/apply_setting
 data modify storage nl:in_game status.ongoing set value 2
@@ -16,6 +17,7 @@ tellraw @a [{"text":"\"","color":"blue"},{"nbt":"map.type","storage":"nl:setting
 function nl_lobby:lobby/settings/systems/set_altar_system
 
 ## 플레이어 상태 및 설정 리셋
+effect clear @a
 function nl_lobby:clear/clear_players
 tp @a[team=explorer] 691 50 577.5 -90 0
 scoreboard players set #game NL_rm_enterance 81

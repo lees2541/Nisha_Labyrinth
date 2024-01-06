@@ -4,6 +4,9 @@
 #
 # @within nl_system:loop/loop
 
+execute if entity @a[scores={NL_mined_red=1..},tag=NL] run function nl_system:systems/actions/mined/mined_redstone
+execute if entity @a[scores={NL_mined_life=1..},tag=NL] run function nl_system:systems/actions/mined/mined_lifestone
+
 
 ## 생명석 및 레드스톤 칸 감지
 execute as @a[tag=NL,nbt=!{Inventory:[{Slot:6b}]}] at @s run function nl_system:systems/item/update/lifestone

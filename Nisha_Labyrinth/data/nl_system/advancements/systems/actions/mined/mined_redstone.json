@@ -1,0 +1,20 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:stone"
+      },
+      "title": "주술의 흔적을 캤습니다!",
+      "description": {
+        "text": "남은 주술의 흔적:  "
+      },
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+      "mined_red": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

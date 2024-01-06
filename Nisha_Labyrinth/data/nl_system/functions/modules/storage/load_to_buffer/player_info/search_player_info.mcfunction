@@ -11,6 +11,7 @@
 #           실행 캐릭터 정보 
 #       player.status: array
 #           실행 캐릭터의 인게임 상태
+#@private
 # @within nl_system:modules/storage/load_to_buffer/player_info/load_player_info
 
 $data modify storage nl:buffer player.character set from storage nl:in_game player[{id:$(id)}].character

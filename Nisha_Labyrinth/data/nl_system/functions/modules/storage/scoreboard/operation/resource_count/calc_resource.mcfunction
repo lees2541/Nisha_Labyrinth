@@ -1,6 +1,6 @@
 #> nl_system:modules/storage/scoreboard/operation/resource_count/calc_resource
 # 생명석 개수의 조절과 데이터베이스 업데이트, 개수가 부족하면 0을 리턴
-# @context 실행하는 엔티티 {resource: $(resource)|redstone, operator: add|remove, operand:(int)} 
+# @context 실행하는 엔티티 {resource: lifestone|redstone, operator: add|remove, operand:(int)} 
 # @api
 # @input
 #   storage nl:buffer

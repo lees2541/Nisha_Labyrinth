@@ -11,7 +11,7 @@ execute as @e[type=marker,tag=!origin,tag=redstone,tag=redstone_gen] at @s run f
 execute as @a[tag=NL] at @s run function nl_lobby:clear/clear_players
 
 ## 게임진행 스토리지 리셋
-function nl_lobby:clear/storage/clear_interface
+execute unless function nl_lobby:clear/storage/clear_interface run say 스토리지 초기화 실패!
 data modify storage nl:lobby settings set from storage nl:default settings
 
 ## 클리어 스코어보드
@@ -26,7 +26,7 @@ function nl_lobby:clear/bossbar/clear_bossbar
 
 
 ## 태그 클리어
-function nl_lobby:clear/tags/clear_all
+function nl_lobby:clear/tags/clear_all_tags
 
 ## 맵 리셋
 execute as @e[type=interaction,tag=NL,tag=altar] at @s run setblock ~ ~1 ~ air destroy
@@ -55,6 +55,7 @@ execute as @e[type=glow_item_frame,tag=NL] run data merge entity @s {Fixed:1b,In
 
 
 clear @a
+effect clear @a
 advancement revoke @a everything
 execute as @a run function nl_char:items/give_info_book
 

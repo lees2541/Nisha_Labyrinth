@@ -19,7 +19,7 @@ data remove storage nl:buffer item
 
 data remove storage nl:in_game player
 data remove storage nl:in_game status
-
+data remove storage nl:in_game records
 
 
 
@@ -40,6 +40,15 @@ data merge storage nl:in_game {\
     ],\
     status:{\
         ongoing:0,altar:{mode:"(int)",speed:"(float)"},location:{cave:{},library:{}}\
+    },\
+    records:{\
+        player:[{ex:"플레이어별 스킬, 각종 상호작용 횟수"}],\
+        explorer:{\
+            mined:{redstone:"(int)",lifestone:"(int)"}\
+        },\
+        roamer:{\
+            mined:{lifestone:"(int)"}\
+        }\
     }\
 }
 
@@ -70,4 +79,4 @@ data merge storage nl:buffer {\
 ## 버퍼 클리어
 
 
-
+return 1
