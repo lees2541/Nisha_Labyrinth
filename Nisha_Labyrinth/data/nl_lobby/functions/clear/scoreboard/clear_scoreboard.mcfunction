@@ -3,7 +3,7 @@ scoreboard objectives add NL_player_id dummy
 scoreboard players set #lobby NL_player_id 0
 scoreboard players set #game NL_rm_enterance 81
 scoreboard objectives remove NL_mined_red
-scoreboard objectives add NL_mined_red minecraft.mined:minecraft.deepslate_redstone_ore
+scoreboard objectives add NL_mined_red minecraft.mined:minecraft.redstone_ore
 scoreboard objectives remove NL_mined_life
 scoreboard objectives add NL_mined_life minecraft.mined:minecraft.bone_block
 scoreboard players reset @a NL_redstone_count
