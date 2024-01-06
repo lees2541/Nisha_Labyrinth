@@ -1,16 +1,15 @@
-#> nl_system:loop/explorer/explorer_loop
+#> nl_system:loop/player/roamer/roamer_loop
 # 틱당 모든 탐험가들이 실행
-# @context @a[tag=explorer,tag=NL]
+# @context @a[tag=roamer,tag=NL]
 #
 # @within nl_system:loop/loop
 
-execute if entity @a[scores={NL_mined_red=1..},tag=NL] run function nl_system:systems/actions/mined/mined_redstone
-execute if entity @a[scores={NL_mined_life=1..},tag=NL] run function nl_system:systems/actions/mined/mined_lifestone
+
 
 
 ## 생명석 및 레드스톤 칸 감지
-execute as @a[tag=NL,nbt=!{Inventory:[{Slot:6b}]}] at @s run function nl_system:systems/item/update/lifestone
-execute as @a[tag=NL,nbt=!{Inventory:[{Slot:7b}]}] at @s run function nl_system:systems/item/update/redstone
+execute as @s[tag=NL,nbt=!{Inventory:[{Slot:6b}]}] at @s run function nl_system:systems/item/update/lifestone
+
 
 ## 떨어진 템 줍기
 execute if entity @e[type=item,nbt={Item:{tag:{drop:0b,NL:1b}}}] as @e[type=item,nbt={Item:{tag:{drop:0b,NL:1b}}},nbt=!{PickupDelay:0s},distance=..0.5,limit=1] run data merge entity @s {PickupDelay:0s} 
