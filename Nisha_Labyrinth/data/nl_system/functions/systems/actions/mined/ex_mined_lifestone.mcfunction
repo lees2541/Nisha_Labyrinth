@@ -1,6 +1,18 @@
 #> nl_system:systems/actions/mined/ex_mined_lifestone
 # 플레이어가 생명석을 캘 때 호출
 #@context 생명석 캔 플레이어 with storage nl:buffer player
+# @input
+#   storage nl:buffer
+#       settings.player.id
+#           플레이어 id
+#       settings.player.team
+#           플레이어 팀
+#       settings.player.character
+#           현재 캐릭터
+#@output
+#   storage nl:in_game
+#       records.player[{id:$(id)}].mined.lifestone
+#       records.explorer.mined.lifestone
 #@private
 #@within nl_system:systems/actions/mined/mined_lifestone
 

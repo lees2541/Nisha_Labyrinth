@@ -1,3 +1,7 @@
+#> nl_lobby:lobby/game_reset
+# 게임의 모든 설정과 플레이어들을 초기화 한다
+# 설정은 nl:default settings 안의 세팅으로 돌아간다
+#@api
 
 data modify storage nl:in_game status.ongoing set value 0
 

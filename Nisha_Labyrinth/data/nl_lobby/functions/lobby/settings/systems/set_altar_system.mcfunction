@@ -1,3 +1,9 @@
+#> nl_lobby:lobby/settings/systems/set_altar_system
+# 게임 시작 시 제단의 상태를 리셋
+#@private
+#@within nl_lobby:lobby/game_start
+
+
 ## 제단 게이지 세팅
 data modify storage nl:in_game status.altar.speed set from storage nl:settings altar.gauge.speed
 execute store result bossbar nl:altar_gauge max run data get storage nl:settings altar.gauge.max
