@@ -51,6 +51,9 @@ data merge storage nl:in_game {\
         }\
     }\
 }
+data remove storage nl:in_game player
+
+data merge storage nl:inven {}
 
 
 data merge storage nl:buffer {\
