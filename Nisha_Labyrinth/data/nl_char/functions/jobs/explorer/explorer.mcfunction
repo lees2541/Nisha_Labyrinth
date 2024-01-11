@@ -13,7 +13,8 @@ tag @s add explorer
 #function nishalabyrinth:system/advancements/set_advancements
 
 execute if score @s E_efficiency matches ..1 run scoreboard players set @s E_efficiency 16
-
+scoreboard players set @s NL_lifestone_count 0
+scoreboard players set @s NL_redstone_count 0
 ## 상태 셋팅
 spawnpoint @s[team=explorer] 712 53 623
 gamemode adventure @s

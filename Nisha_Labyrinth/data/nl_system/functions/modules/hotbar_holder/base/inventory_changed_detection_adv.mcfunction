@@ -14,6 +14,7 @@ execute unless entity @s[team=roamer] if data entity @s Inventory[{id:"minecraft
 
 ## drop:0b 아이템이 덜 정리됐을 경우 다시 이 함수를 실행
 execute unless entity @s[team=roamer] if data entity @s Inventory[{tag:{drop:0b,NL:1b}}] run return run function nl_system:modules/hotbar_holder/base/inventory_changed_detection_adv
+execute unless function nl_system:systems/item/check_duplicate/lifestone run function nl_system:systems/item/update/lifestone
 ## 플레이어 정보 로드
 function nl_system:modules/hotbar_holder/base/update_resource with storage nl:buffer player
 function nl_system:modules/hotbar_holder/base/load_inven_to_buffer with storage nl:buffer player
@@ -23,6 +24,7 @@ function nl_system:modules/hotbar_holder/base/update_inventory_info with storage
 
 
 ## 왼손 감지
+
 execute unless data entity @s Inventory[{Slot:-106b}] run function nl_system:systems/item/update/offhand
 execute unless entity @s[nbt={Inventory:[{Slot:-106b,tag:{offhand:1b,NL:1b}}]}] run advancement grant @s only nl_system:systems/actions/key_events/f_key/offhand_changed_detected
 

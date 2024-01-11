@@ -30,7 +30,7 @@ function nl_lobby:clear/bossbar/clear_bossbar
 
 
 ## 태그 클리어
-function nl_lobby:clear/tags/clear_all_tags
+execute as @a run function nl_lobby:clear/tags/clear_all_tags
 
 ## 맵 리셋
 execute as @e[type=interaction,tag=NL,tag=altar] at @s run setblock ~ ~1 ~ air destroy

@@ -3,7 +3,7 @@
 #declare storage nl:in_game player
 #declare storage nl:lobby
 
-say 초기화
+say 스토리지 초기화
 ## 스토리지 초기화
 data remove storage nl:settings map
 data remove storage nl:settings redstone
@@ -21,6 +21,7 @@ data remove storage nl:in_game player
 data remove storage nl:in_game status
 data remove storage nl:in_game records
 
+data remove storage nl:inven player
 
 
 
@@ -33,10 +34,12 @@ data merge storage nl:settings {\
     players:{player:{id:0,character:0,UUID:[],name:""}},\
     perk:{}\
 }
+data remove storage nl:settings players
+
 
 data merge storage nl:in_game {\
     player:[\
-        {id:1,character:"(str)", Inventory:{}, status:{resource:{redstone:0,lifestone:0}}, effects:{}}\
+        {id:1,character:"(str)", status:{resource:{redstone:0,lifestone:0}}, effects:{}}\
     ],\
     status:{\
         ongoing:0,altar:{mode:"(int)",speed:"(float)"},location:{cave:{},library:{}}\
@@ -53,7 +56,7 @@ data merge storage nl:in_game {\
 }
 data remove storage nl:in_game player
 
-data merge storage nl:inven {}
+
 
 
 data merge storage nl:buffer {\
