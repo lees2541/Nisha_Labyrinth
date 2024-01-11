@@ -12,6 +12,9 @@ scoreboard objectives add NL_stun_time dummy
 scoreboard objectives add NL_attack_cool dummy
 #declare objective NL_attack_cool 배회자가 다음공격을 시도할 수 있을때까지 남은 시간
 
+scoreboard objectives add NL_blindness_time dummy
+#declare objective NL_blindness_time 남은 실명시간을 표시
+
 
 
 

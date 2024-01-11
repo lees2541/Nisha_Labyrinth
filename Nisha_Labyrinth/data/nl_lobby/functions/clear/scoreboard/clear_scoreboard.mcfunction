@@ -1,3 +1,15 @@
+
+## 상태이상 관련
+scoreboard players set @a NL_stun_time 0
+scoreboard players set @a NL_blindness_time 0
+##스킬 관련
+scoreboard players set @a NL_skill_cool1 -1
+scoreboard players set @a NL_skill_cool2 -1
+scoreboard players set @a NL_skill_cool3 -1
+
+
+execute if data storage nl:in_game status{ongoing:2} run return 1
+
 scoreboard objectives remove NL_player_id
 scoreboard objectives add NL_player_id dummy
 scoreboard players set #lobby NL_player_id 0
@@ -10,10 +22,11 @@ scoreboard players reset @a NL_redstone_count
 scoreboard players reset @a NL_lifestone_count
 scoreboard players reset @a NL_chance
 
-##스킬 관련
-scoreboard players set @a NL_skill_cool1 -1
-scoreboard players set @a NL_skill_cool2 -1
-scoreboard players set @a NL_skill_cool3 -1
+
+
+
+
+
 
 
 scoreboard players set @a E_efficiency 0

@@ -10,6 +10,14 @@ execute if entity @s[scores={NL_attack_cool=1}] run tag @s remove hitstun
 execute if entity @s[scores={NL_attack_cool=1}] run function nl_system:modules/status_effect/base/update_storage
 scoreboard players remove @s[scores={NL_attack_cool=1..}] NL_attack_cool 1
 
+
+execute if entity @s[scores={NL_stun_time=1}] run function nl_system:modules/status_effect/base/clear_status {type:stun}
+
+scoreboard players remove @s[scores={NL_stun_time=1..}] NL_stun_time 1
+
+execute if entity @s[scores={NL_blindness_time=1}] run effect clear @s blindness
+scoreboard players remove @s[scores={NL_blindness_time=1..}] NL_blindness_time 1
+
 ## 아이템이 버려질때 인벤토리 변화감지 발전과제 갱신
 execute as @e[type=item,nbt=!{Item:{tag:{drop:0b}}},nbt={Item:{tag:{NL:1b}}}] if data entity @s Thrower run function nl_system:modules/dropped_item_control/dropped_item_check with entity @s
 

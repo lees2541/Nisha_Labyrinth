@@ -39,7 +39,7 @@ data remove storage nl:settings players
 
 data merge storage nl:in_game {\
     player:[\
-        {id:1,character:"(str)", status:{resource:{redstone:0,lifestone:0}}, effects:{}}\
+        {id:1,character:"(str)", status:{resource:{redstone:0,lifestone:0},status:{},effects:{}}}\
     ],\
     status:{\
         ongoing:0,altar:{mode:"(int)",speed:"(float)"},location:{cave:{},library:{}}\

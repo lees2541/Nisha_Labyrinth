@@ -13,6 +13,6 @@
 #           우선 표기 순위
 
 
-$execute unless data storage nl:in_game player[{id:$(id)}].status.effects[{type:"$(type)"}] run data modify storage nl:in_game player[{id:$(id)}].status.effects $(sort) value {type:"$(type)",time:$(time)}
+$execute unless data storage nl:in_game player[{id:$(id)}].status.status[{type:"$(type)"}] run data modify storage nl:in_game player[{id:$(id)}].status.status $(sort) value {type:"$(type)",time:$(time)}
 
-$data modify storage nl:buffer status.type set from storage nl:in_game player[{id:$(id)}].status.effects[0].type
+$data modify storage nl:buffer status.type set from storage nl:in_game player[{id:$(id)}].status.status[0].type

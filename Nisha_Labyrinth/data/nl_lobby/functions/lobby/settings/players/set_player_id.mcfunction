@@ -5,7 +5,7 @@
 ## 배회자일떄 (id:5)
 execute if data storage nl:buffer settings.player{team:"roamer"} store result storage nl:buffer settings.player.id int 1 run scoreboard players set @s NL_player_id 5
 execute if data storage nl:buffer settings.player{team:"roamer"} run return run scoreboard objectives modify NL_status_gui displayname "\uE101"
-execute if data storage nl:buffer settings.player{team:"roamer"} run attribute @s minecraft:generic.luck base set 5
+execute if score @s NL_player_id matches 5 run attribute @s minecraft:generic.luck base set 5
 
 ## 탐험가일때 (id: 1~3)
 scoreboard players add #lobby NL_player_id 1

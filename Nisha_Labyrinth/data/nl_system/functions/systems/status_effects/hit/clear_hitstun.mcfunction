@@ -1,1 +1,0 @@
-execute as @a[tag=hitstun] run tag @s remove hitstun

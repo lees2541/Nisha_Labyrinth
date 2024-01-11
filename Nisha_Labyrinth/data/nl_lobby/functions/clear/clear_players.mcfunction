@@ -6,6 +6,7 @@
 #   nl_lobby:lobby/game_start
 say clear_players
 execute as @a run function nl_char:status/reset_attribute
+function nl_lobby:clear/scoreboard/clear_scoreboard
 effect clear @a
 
 execute if data storage nl:lobby settings.player[0] run data modify storage nl:buffer player.character set from storage nl:lobby settings.player[0].character
