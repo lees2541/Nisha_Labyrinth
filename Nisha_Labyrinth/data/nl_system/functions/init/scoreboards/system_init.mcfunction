@@ -33,5 +33,6 @@ scoreboard objectives add NL_mined_red minecraft.mined:minecraft.redstone_ore
 scoreboard objectives add NL_mined_life minecraft.mined:minecraft.bone_block
 #declare objective NL_mined_life 생명석 캔 횟수, 개인 이벤트 트리거는 플레이어 스코어보드,개인은 #(id),그리고 총합은 #explorer 에 기록
 
-
+scoreboard objectives add NL_timer dummy
+#declare objective NL_timer 범용 타이머, #(주제)를 이용해 시간을 잰다.
 

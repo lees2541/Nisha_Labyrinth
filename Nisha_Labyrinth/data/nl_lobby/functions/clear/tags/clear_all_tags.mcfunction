@@ -21,3 +21,5 @@ tag @s remove skill_ready
 tag @s remove hit
 tag @s remove attack
 tag @s remove attacked
+tag @s remove hitstun
+tag @s remove stun
