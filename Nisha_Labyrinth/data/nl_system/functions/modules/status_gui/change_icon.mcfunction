@@ -1,5 +1,6 @@
 #> nl_system:modules/status_gui/change_icon
 #
+#@context 대상 with storage nl:buffer icon
 # @input
 #   storage nl:buffer icon
 #       character
