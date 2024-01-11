@@ -1,0 +1,22 @@
+{
+    "parent": "nl_system:systems/hit/hit_explorer",
+    "criteria": {
+      "buffer": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": {
+            "type_specific": {
+              "type": "player",
+              "advancements": {
+                "nl_system:systems/hit/hit_explorer": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "nl_system:systems/hit/hit_explorer_buffer_adv"
+    }
+  }
+  

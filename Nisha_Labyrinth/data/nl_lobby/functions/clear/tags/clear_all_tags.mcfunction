@@ -15,3 +15,9 @@ tag @s remove roamer
 
 ## 스킬관련 초기화
 tag @s remove skill_ready
+
+
+## 시스템 관련 초기화
+tag @s remove hit
+tag @s remove attack
+tag @s remove attacked

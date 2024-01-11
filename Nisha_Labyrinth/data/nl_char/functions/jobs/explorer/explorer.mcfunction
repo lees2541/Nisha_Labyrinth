@@ -21,7 +21,7 @@ gamemode adventure @s
 effect give @s haste infinite 1 true
 effect give @s mining_fatigue infinite 3 true
 
-
+function nl_char:status/explorer/set_explorer
 ## 아이템 지급
 function nl_char:items/explorer/explorer/explorer
 give @s cooked_beef{NL:1b} 10

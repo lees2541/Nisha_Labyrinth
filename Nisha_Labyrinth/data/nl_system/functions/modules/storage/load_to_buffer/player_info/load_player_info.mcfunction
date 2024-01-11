@@ -10,6 +10,7 @@
 #           플레이어 id 저장
 #       player.character: string
 # @api
+#@declare function nl_system:modules/storage/load_to_buffer/player_info/load_player_info
 
 execute store result storage nl:buffer player.id int 1 run scoreboard players get @s NL_player_id
 function nl_system:modules/storage/load_to_buffer/player_info/search_player_info with storage nl:buffer player

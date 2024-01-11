@@ -28,7 +28,7 @@
     },
     {
       "function": "minecraft:set_nbt",
-      "tag": "{HideFlags:255,NL:1b}"
+      "tag": "{HideFlags:255,NL:1b,CanDestroy:[\"minecraft:redstone_ore\",\"minecraft:bone_block\"]}"
     }
   ]
   

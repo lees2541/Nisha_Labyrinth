@@ -1,0 +1,1 @@
+advancement revoke @s from nl_system:systems/hit/hit_explorer

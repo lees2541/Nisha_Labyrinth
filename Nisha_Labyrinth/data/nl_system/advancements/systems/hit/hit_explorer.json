@@ -1,42 +1,37 @@
 {
-    "display": {
-      "icon": {
-        "item": "minecraft:stone"
-      },
-      "title": "hit_explorer",
-      "description": "배회자가 탐험가에게 기본공격을 가할 시 발동(탐험의 피격판정 전 실행)",
-      "show_toast": false,
-      "announce_to_chat": false,
-      "hidden": true
+  "display": {
+    "icon": {
+      "item": "minecraft:stone"
     },
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:player_hurt_entity",
-        "conditions": {
-          "player": {
-            "type": "minecraft:player",
-            "team": "roamer"
-          },
-          "damage": {
-            "blocked": false,
-            "type": {
-              "tags": [
-                {
-                  "id": "nl_system:is_generic",
-                  "expected": true
-                }
+    "title": "hit_explorer",
+    "description": "배회자가 탐험가에게 기본공격을 가할 시 발동(탐험의 피격판정 전 실행)",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player",
+          "team": "roamer",
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:warped_fungus_on_a_stick"
               ]
             }
-          },
-          "entity": {
-            "type": "minecraft:player",
-            "team": "explorer"
           }
+        },
+        "entity": {
+          "type": "minecraft:player",
+          "team": "explorer"
         }
       }
-    },
-    "rewards": {
-      "function": "nl_system:systems/hit/hit_explorer_adv"
     }
+  },
+  "rewards": {
+    "function": "nl_system:systems/hit/hit_explorer_adv"
   }
-  
+}
