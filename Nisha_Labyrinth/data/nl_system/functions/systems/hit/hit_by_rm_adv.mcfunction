@@ -3,7 +3,7 @@
 #@private
 #@within nl_system:systems/hit/hit_explorer_adv
 
-say 나 탐험간데 맞았덩
+#say 나 탐험간데 맞았덩
 function nl_system:modules/storage/load_to_buffer/player_info/load_player_info
 tag @s add hit
 tag @s add attacked

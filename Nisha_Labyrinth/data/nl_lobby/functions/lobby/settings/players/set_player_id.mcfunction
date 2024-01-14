@@ -2,11 +2,14 @@
 # 처음 게임에 등록하는 플레이어게 id를 부여한다
 # 
 
+data modify storage nl:buffer settings.player.status merge value {status:[]}
+
 ## 배회자일떄 (id:5)
 execute if data storage nl:buffer settings.player{team:"roamer"} store result storage nl:buffer settings.player.id int 1 run scoreboard players set @s NL_player_id 5
 execute if data storage nl:buffer settings.player{team:"roamer"} run return run scoreboard objectives modify NL_status_gui displayname "\uE101"
 execute if score @s NL_player_id matches 5 run attribute @s minecraft:generic.luck base set 5
 
+execute if data storage nl:buffer settings.player{team:"roamer"} run return 1
 ## 탐험가일때 (id: 1~3)
 scoreboard players add #lobby NL_player_id 1
 execute store result storage nl:buffer settings.player.id int 1 run scoreboard players operation @s NL_player_id = #lobby NL_player_id

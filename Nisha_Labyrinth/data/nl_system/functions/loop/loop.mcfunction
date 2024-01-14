@@ -12,3 +12,8 @@ execute as @a[tag=NL] at @s run function nl_system:loop/player/player_loop
 
 
 execute if data storage nl:in_game status{ongoing:1} run function nl_system:loop/altar/altar_loop
+
+
+#> 기타 엔티티 루프
+## 부쉬 관련
+execute as @e[type=area_effect_cloud,tag=NL,tag=NL_grass,nbt={Age:99}] at @s run setblock ~ ~1 ~ minecraft:tall_grass[half=upper] keep

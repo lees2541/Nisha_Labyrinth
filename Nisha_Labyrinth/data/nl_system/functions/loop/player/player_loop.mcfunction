@@ -5,24 +5,31 @@
 #@within nl_system:loop/loop
 
 
-## 스코어보드
+#> 스코어보드
+# 공격스턴 관련
 execute if entity @s[scores={NL_attack_cool=1}] run tag @s remove hitstun
-execute if entity @s[scores={NL_attack_cool=1}] run function nl_system:modules/status_effect/base/update_storage
+execute if entity @s[scores={NL_attack_cool=1}] run function nl_system:modules/status_effect/update/update_status with entity @s Attributes[{Name:"minecraft:generic.luck"}]
 scoreboard players remove @s[scores={NL_attack_cool=1..}] NL_attack_cool 1
 
-
+# 스턴 관련
 execute if entity @s[scores={NL_stun_time=1}] run function nl_system:modules/status_effect/base/clear_status {type:stun}
 
 scoreboard players remove @s[scores={NL_stun_time=1..}] NL_stun_time 1
 
 execute if entity @s[scores={NL_blindness_time=1}] run effect clear @s blindness
-scoreboard players remove @s[scores={NL_blindness_time=1..}] NL_blindness_time 1
+execute unless score @s NL_blindness_time matches 100 run scoreboard players remove @s[scores={NL_blindness_time=1..}] NL_blindness_time 1
 
-## 아이템이 버려질때 인벤토리 변화감지 발전과제 갱신
+#> 아이템이 버려질때 인벤토리 변화감지 발전과제 갱신
 execute as @e[type=item,nbt=!{Item:{tag:{drop:0b}}},nbt={Item:{tag:{NL:1b}}}] if data entity @s Thrower run function nl_system:modules/dropped_item_control/dropped_item_check with entity @s
 
-## 왼손에 아무것도 없을떄 대처
+#> 왼손에 아무것도 없을떄 대처
 execute if entity @s[tag=NL,nbt=!{Inventory:[{Slot:-106b}]}] at @s run function nl_system:systems/item/update/offhand
+
+
+#> 부쉬 안에서의 행동
+
+execute if entity @s[predicate=nl_system:status/action/sprinting,predicate=nl_system:status/location/block/in_tall_grass,predicate=nl_system:status/location/block/on_dirt] at @s run function nl_system:systems/bush/running_on_bush 
+
 
 
 execute if entity @s[tag=explorer,tag=NL] at @s run function nl_system:loop/player/explorer/explorer_loop

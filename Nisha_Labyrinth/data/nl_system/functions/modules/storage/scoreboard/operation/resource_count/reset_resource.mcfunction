@@ -1,7 +1,7 @@
 #> nl_system:modules/storage/scoreboard/operation/resource_count/reset_resource
 #
 #@context 실행하는플레이어 with storage nl:buffer player.id
-say 리소스초기화
+#say 리소스초기화
 
 scoreboard players set @s NL_redstone_count 0
 scoreboard players set @s NL_lifestone_count 0
