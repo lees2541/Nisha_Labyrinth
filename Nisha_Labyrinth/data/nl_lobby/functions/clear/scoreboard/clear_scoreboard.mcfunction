@@ -6,6 +6,7 @@ scoreboard players set @a NL_blindness_time 0
 scoreboard players set @a NL_skill_cool1 -1
 scoreboard players set @a NL_skill_cool2 -1
 scoreboard players set @a NL_skill_cool3 -1
+scoreboard players set @a NL_sneaking_time 0
 
 
 execute if data storage nl:in_game status{ongoing:2} run return 1
@@ -23,7 +24,7 @@ scoreboard players reset @a NL_lifestone_count
 scoreboard players reset @a NL_chance
 
 
-
+scoreboard players set @a NL_alarm_timer 0
 
 
 

@@ -36,3 +36,5 @@ scoreboard objectives add NL_mined_life minecraft.mined:minecraft.bone_block
 scoreboard objectives add NL_timer dummy
 #declare objective NL_timer 범용 타이머, #(주제)를 이용해 시간을 잰다.
 
+scoreboard objectives add NL_flashlight dummy
+#declare objective NL_flashlight 현재 손전등 상태 혹은 시야 상태를 조절한다(쉐이더 연동)

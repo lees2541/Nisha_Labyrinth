@@ -1,0 +1,22 @@
+{
+    "criteria": {
+      "sneaking": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": {
+            "type_specific": {
+              "type": "player"
+            },
+            "nbt": "{Tags:[\"NL\"]}",
+            "flags": {
+              "is_sneaking": true
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "nl_system:systems/actions/sneaking/sneaking_adv"
+    }
+  }
+  

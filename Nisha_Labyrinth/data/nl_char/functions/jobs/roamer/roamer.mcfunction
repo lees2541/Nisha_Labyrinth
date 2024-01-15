@@ -9,6 +9,10 @@ tag @s add NL
 tag @s add roamer
 #function nishalabyrinth:system/advancements/set_advancements
 gamemode adventure @s
+
+scoreboard players set @s NL_flashlight 1
+
+
 function nl_char:status/roamer/set_roamer
 
 ## 아이템 지급

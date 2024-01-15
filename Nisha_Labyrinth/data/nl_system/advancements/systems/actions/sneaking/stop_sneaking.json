@@ -1,0 +1,26 @@
+{
+    "parent": "nl_system:systems/actions/sneaking/sneaking",
+    "criteria": {
+      "stop_sneaking": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": {
+            "type_specific": {
+              "type": "player",
+              "advancements": {
+                "nl_system:systems/actions/sneaking/sneaking": true
+              }
+            },
+            "nbt": "{Tags:[\"NL\"]}",
+            "flags": {
+              "is_sneaking": false
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "nl_system:systems/actions/sneaking/stop_sneaking_adv"
+    }
+  }
+  

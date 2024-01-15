@@ -21,5 +21,10 @@ execute at @e[team=roamer,limit=1,sort=nearest] if predicate nl_system:status/ex
 
 
 execute if data storage nl:buffer item.CustomModelData run item modify entity @s weapon.offhand nl_char:items/explorer/alarm
-
 data remove storage nl:buffer item.CustomModelData
+
+## 배회자쪽으로 시선옮기면 불 깜박거리기
+execute if score @s NL_alarm_timer matches 0 at @e[team=roamer,limit=1,sort=nearest] unless predicate nl_system:status/explorer/alarm_distance/alarm1 at @s anchored eyes if function nl_system:systems/flashlight/alarm/condition_check run scoreboard players set @s NL_alarm_timer 20
+
+## 타이머 루프
+function nl_system:loop/player/explorer/explorer_timer

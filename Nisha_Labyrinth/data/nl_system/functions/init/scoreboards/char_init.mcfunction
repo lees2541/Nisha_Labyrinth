@@ -15,6 +15,12 @@ scoreboard objectives add NL_attack_cool dummy
 scoreboard objectives add NL_blindness_time dummy
 #declare objective NL_blindness_time 남은 실명시간을 표시
 
+scoreboard objectives add NL_sneaking_time dummy
+#declare objective NL_sneaking_time 앉아있는 시간, 일어나면 초기화된다
+
+scoreboard objectives add NL_alarm_timer dummy
+#declare objective NL_alarm_timer 배회자가 앞에 있을 시 손전등이 깜박깜박하는 동작의 간격을 통제 
+
 
 
 

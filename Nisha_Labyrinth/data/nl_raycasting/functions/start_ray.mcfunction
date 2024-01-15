@@ -1,3 +1,6 @@
+## 밑의 커맨드로 레이캐스팅 실행
+#execute as <shooter> at @s anchored eyes positioned ^ ^ ^ anchored feet run function vdv_raycast:start_ray
+
 #Setting up the raycasting data.
 
 tag @s add raycasting
