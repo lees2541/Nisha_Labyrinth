@@ -6,9 +6,10 @@ scoreboard players set @a NL_blindness_time 0
 scoreboard players set @a NL_skill_cool1 -1
 scoreboard players set @a NL_skill_cool2 -1
 scoreboard players set @a NL_skill_cool3 -1
+## 행동 상태 관련
 scoreboard players set @a NL_sneaking_time 0
 
-
+## 게임 설정 관련
 execute if data storage nl:in_game status{ongoing:2} run return 1
 
 scoreboard objectives remove NL_player_id
@@ -21,11 +22,11 @@ scoreboard objectives remove NL_mined_life
 scoreboard objectives add NL_mined_life minecraft.mined:minecraft.bone_block
 scoreboard players reset @a NL_redstone_count
 scoreboard players reset @a NL_lifestone_count
-scoreboard players reset @a NL_chance
 
 
+## 기타
 scoreboard players set @a NL_alarm_timer 0
-
+scoreboard players reset @a NL_mode
 
 
 

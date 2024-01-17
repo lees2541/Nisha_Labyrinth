@@ -16,7 +16,7 @@ function nl_lobby:maps/cave/entities/area_markers/set_area_markers
 function nl_lobby:maps/cave/entities/area_markers/set_origin_markers
 
 ## 알레이 위치 및 루트
-
+function nl_lobby:maps/cave/entities/set_allays/set_allays
 ###########################
 
 ## 생명석 위치
