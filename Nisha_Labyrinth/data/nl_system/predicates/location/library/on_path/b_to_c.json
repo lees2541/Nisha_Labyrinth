@@ -1,0 +1,29 @@
+[
+  {
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:all_of",
+        "terms": [
+          {
+            "condition": "minecraft:reference",
+            "name": "nl_system:maps/cave/location/library/on_path/b_to_c"
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#map"
+              },
+              "score": "NL_mode",
+              "scale": 1
+            },
+            "range": 1
+          }
+        ]
+      }
+    ]
+  }
+]

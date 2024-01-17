@@ -7,11 +7,15 @@
 execute if entity @a[scores={NL_mined_red=1..},tag=NL] run function nl_system:systems/actions/mined/mined_redstone
 execute if entity @a[scores={NL_mined_life=1..},tag=NL] run function nl_system:systems/actions/mined/mined_lifestone
 
+## 플레이어 루프
 execute as @a[tag=NL] at @s run function nl_system:loop/player/player_loop
 
 
-
+## 제단 시스템 루프
 execute if data storage nl:in_game status{ongoing:1} run function nl_system:loop/altar/altar_loop
+
+## 도서관 시스템 루프
+function nl_system:loop/library/library_loop
 #테스트
 
 

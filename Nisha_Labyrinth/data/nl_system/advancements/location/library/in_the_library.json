@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:written_book",
+      "nbt": "{CustomModelData:302001}"
+    },
+    "title": "도서관",
+    "description": "무언가들이 배회하고 있습니다",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "in_the_library": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "nl_system:location/library/in_the_library"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "nl_system:systems/location/library/in_the_library_adv"
+  }
+}

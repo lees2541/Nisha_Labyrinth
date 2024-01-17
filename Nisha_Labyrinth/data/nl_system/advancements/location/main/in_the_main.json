@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:stone"
+      },
+      "title": "동굴 안",
+      "description": "스산한 느낌이 듭니다",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "nl_system:systems/location/main/in_the_main_adv"
+    }
+  }
+  

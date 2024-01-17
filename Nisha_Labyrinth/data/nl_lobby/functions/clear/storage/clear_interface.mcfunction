@@ -1,7 +1,7 @@
-#declare storage nl:settings map
-#declare storage nl:buffer player
-#declare storage nl:in_game player
-#declare storage nl:lobby
+#declare storage nl:settings 게임시작 전 맵 또는 게임설정등을 정한다
+#declare storage nl:buffer 계산 혹은 데이터 로드를 위한 임시 버퍼
+#declare storage nl:in_game 인 게임의 데이터를 저장
+#declare storage nl:lobby 로비에서 조작할 수 있는 설정들
 
 say 스토리지 초기화
 ## 스토리지 초기화
@@ -16,6 +16,7 @@ data remove storage nl:buffer player
 data remove storage nl:buffer entity
 data remove storage nl:buffer operation
 data remove storage nl:buffer item
+data remove storage nl:buffer position
 
 data remove storage nl:in_game player
 data remove storage nl:in_game status
@@ -80,7 +81,8 @@ data merge storage nl:buffer {\
         operand:"(int)",\
         result:"(int)"\    
     },\
-    item:{CustomModelData:"(int)"}\
+    item:{CustomModelData:"(int)"},\
+    position:{X:"(double)",Y:"(double)",Z:"(double)"}\
 }
 ## 버퍼 클리어
 

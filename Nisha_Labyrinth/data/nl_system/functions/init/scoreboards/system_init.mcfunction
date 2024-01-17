@@ -41,3 +41,4 @@ scoreboard objectives add NL_flashlight dummy
 
 scoreboard objectives add NL_mode dummy
 #declare objective NL_mode 범용 모드저장 스코어보드, 현재 상태를 기록한다.
+

@@ -3,6 +3,8 @@
 #alias vector c_lifestone 716 45 608
 
 
+## 맵 번호 저장
+scoreboard players set #map NL_mode 1
 
 ##맵 단위로 구분 및 저장해야 할 것 
 ######################################
@@ -30,7 +32,7 @@ summon marker 670 38 626 {CustomNameVisible:0b,Tags:["NL","shop","marker"],Custo
 ################################
 
 ##상자 위치
-function nl_lobby:lobby/settings/maps/cave/lib_chests_pos
+function nl_lobby:maps/cave/locations/library/set_lib_chests
 
 ###############################
 
@@ -54,6 +56,8 @@ execute as @e[type=glow_item_frame,tag=NL,tag=cave] at @s run summon interaction
 
 ## 도서관 경비병 및 루트
 
+function nl_lobby:maps/cave/locations/library/set_route_point
+function nl_lobby:maps/cave/locations/library/set_lib_guardians
 ###############################
 
 ## 스폰 위치

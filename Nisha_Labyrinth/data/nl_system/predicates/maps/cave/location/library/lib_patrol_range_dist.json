@@ -1,0 +1,21 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:player",
+      "type_specific": {
+        "type": "player"
+      },
+      "distance": {
+        "y": {
+          "min": 0,
+          "max": 2.5
+        },
+        "horizontal": {
+          "min": 0,
+          "max": 6
+        }
+      }
+    }
+  }
+  

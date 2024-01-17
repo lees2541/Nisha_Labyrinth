@@ -1,0 +1,3 @@
+execute as @e[tag=patrol,tag=route_A,scores={NL_mode=2},limit=1] unless data entity @s WanderTarget run data merge entity @s {WanderTarget:{X:689,Y:39,Z:566}}
+execute at @e[type=text_display,tag=point3,limit=1] run scoreboard players set @e[type=wandering_trader,tag=route_A,scores={NL_mode=2},distance=..3.5] NL_mode 3
+#execute at @e[type=text_display,tag=point3,limit=1] run scoreboard players set @e[type=wandering_trader,tag=route_A,scores={NL_mode=2},distance=..2.5,predicate=nishalabyrinth:system/library/on_path/c_to_d] NL_mode 3

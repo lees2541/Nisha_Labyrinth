@@ -1,0 +1,1 @@
+execute if score r NL_lib_alarm_gauge matches 5.. run scoreboard players remove r NL_lib_alarm_gauge 5
