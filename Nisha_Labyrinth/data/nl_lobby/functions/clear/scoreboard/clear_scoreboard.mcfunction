@@ -27,6 +27,7 @@ scoreboard players reset @a NL_lifestone_count
 ## 도서관 관련 
 
 scoreboard players set #library NL_lib_alarm_gauge 0
+scoreboard players set @a NL_lib_alarm_gauge 0
 
 ## 기타
 scoreboard players set @a NL_alarm_timer 0

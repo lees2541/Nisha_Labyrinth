@@ -1,0 +1,23 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:written_book",
+        "nbt": "{CustomModelData:302002}"
+      },
+      "title": "폐쇄!",
+      "description": "경비병들이 옵니다",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "parent": "nl_system:location/library/in_the_library",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "nl_system:systems/library/alarm/alarm_red_adv"
+    }
+  }
+  

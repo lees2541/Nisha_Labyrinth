@@ -43,7 +43,7 @@ data merge storage nl:in_game {\
         {id:1,character:"(str)", status:{resource:{redstone:0,lifestone:0},status:{},effects:{}}}\
     ],\
     status:{\
-        ongoing:0,altar:{mode:"(int)",speed:"(float)"},location:{cave:{},library:{}}\
+        ongoing:0,altar:{mode:0,speed:"(float)"},location:{cave:{},library:{alarm:0}}\
     },\
     records:{\
         player:[{ex:"플레이어별 스킬, 각종 상호작용 횟수"}],\

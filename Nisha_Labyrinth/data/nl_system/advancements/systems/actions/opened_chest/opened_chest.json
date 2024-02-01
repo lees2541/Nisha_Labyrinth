@@ -1,0 +1,38 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:chest"
+      },
+      "title": "opened_chest",
+      "description": "",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:item_used_on_block",
+        "conditions": {
+          "player": {
+            "nbt": "{Tags:[\"NL\"]}"
+          },
+          "location": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "minecraft:chest"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "nl_system:systems/actions/opened_chest/opened_chest_adv"
+    }
+  }
+  

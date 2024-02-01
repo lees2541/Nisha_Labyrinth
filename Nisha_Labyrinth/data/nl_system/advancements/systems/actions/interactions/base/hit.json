@@ -6,7 +6,7 @@
       "title": "Hit Interaction",
       "description": "Hit interaction entity",
       "show_toast": false,
-      "announce_to_chat": true,
+      "announce_to_chat": false,
       "hidden": true
     },
     "criteria": {

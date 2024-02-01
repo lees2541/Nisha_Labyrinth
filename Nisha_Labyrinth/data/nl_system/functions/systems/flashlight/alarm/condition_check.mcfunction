@@ -21,4 +21,6 @@ execute positioned ^ ^ ^5 if entity @e[team=roamer,distance=..2.0] run return 1
 execute positioned ^ ^ ^6 if entity @e[team=roamer,distance=..2.4] run return 1
 execute positioned ^ ^ ^7 if entity @e[team=roamer,distance=..2.8] run return 1
 execute positioned ^ ^ ^8 if entity @e[team=roamer,distance=..3.2] run return 1
+execute positioned ^ ^ ^9 if entity @e[team=roamer,distance=..3.6] run return 1
+execute positioned ^ ^ ^10 if entity @e[team=roamer,distance=..4.0] run return 1
 return 0

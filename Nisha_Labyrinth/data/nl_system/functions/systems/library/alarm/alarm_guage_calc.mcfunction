@@ -1,5 +1,0 @@
-execute as @a[team=explorer,scores={NL_open_chest=1..},advancements={nishalabyrinth:system/location/in_the_lib=true}] run scoreboard players add r NL_lib_alarm_gauge 600
-execute as @a[team=explorer,scores={NL_open_chest=1..},advancements={nishalabyrinth:system/location/in_the_lib=true},tag=lib_range] run scoreboard players add r NL_lib_alarm_gauge 100
-execute unless score r NL_lib_alarm_gauge matches 1000.. as @a[team=explorer,advancements={nishalabyrinth:system/location/in_the_lib=true},predicate=!nishalabyrinth:sneak,tag=lib_range] run scoreboard players add r NL_lib_alarm_gauge 10
-execute unless score r NL_lib_alarm_gauge matches 1000.. as @a[team=explorer,advancements={nishalabyrinth:system/location/in_the_lib=true}] at @s if entity @e[tag=patrol,distance=..2] run scoreboard players add r NL_lib_alarm_gauge 50
-execute unless score r NL_lib_alarm_gauge matches ..0 unless entity @a[team=explorer,tag=lib_range] run scoreboard players remove r NL_lib_alarm_gauge 5

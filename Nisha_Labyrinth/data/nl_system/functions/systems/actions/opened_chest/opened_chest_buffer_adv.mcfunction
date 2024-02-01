@@ -1,0 +1,1 @@
+advancement revoke @s through nl_system:systems/actions/opened_chest/opened_chest

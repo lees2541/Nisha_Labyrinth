@@ -5,6 +5,7 @@
 
 
 data modify storage nl:in_game status.altar.mode set value 2
+bossbar set nl:altar_gauge color red
 scoreboard players set #altar NL_altar_gauge 0
 
 ## 제단 모래 올리기
