@@ -10,7 +10,7 @@ execute unless score #library NL_lib_alarm_gauge matches 1000.. as @a[team=explo
 execute unless score #library NL_lib_alarm_gauge matches ..0 unless entity @a[team=explorer,tag=lib_range] run scoreboard players remove #library NL_lib_alarm_gauge 5
 
 
-execute as @a run scoreboard players operation #library NL_lib_alarm_gauge += @s NL_lib_alarm_gauge
+execute as @a[tag=NL] run scoreboard players operation #library NL_lib_alarm_gauge += @s NL_lib_alarm_gauge
 
 scoreboard players set @a NL_lib_alarm_gauge 0
 

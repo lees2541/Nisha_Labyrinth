@@ -1,1 +1,5 @@
+#> nl_system:systems/actions/interactions/swamp/interact_condition_check
+# 늪이랑 상호작용 했을때의 이벤트 발생 체크
+
+$execute if entity @s[team=roamer,tag=NL] as @e[type=interaction,limit=1,sort=nearest,nbt={interaction:{player:$(UUID)}},tag=NL,tag=swamp,tag=tainted,tag=occupied] at @s run return run function nl_system:systems/swamp/tainted_swamp/active_tainted
 $execute as @e[type=interaction,limit=1,sort=nearest,nbt={interaction:{player:$(UUID)}},tag=NL,tag=swamp] at @s run return run function nl_char:char_functions/$(team)/$(character)/skill/swamp/interact

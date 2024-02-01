@@ -2,7 +2,7 @@
 #declare storage nl:buffer 계산 혹은 데이터 로드를 위한 임시 버퍼
 #declare storage nl:in_game 인 게임의 데이터를 저장
 #declare storage nl:lobby 로비에서 조작할 수 있는 설정들
-
+#declare storage nl:default 게임의 기본설정
 say 스토리지 초기화
 ## 스토리지 초기화
 data remove storage nl:settings map
@@ -10,6 +10,7 @@ data remove storage nl:settings redstone
 data remove storage nl:settings players
 data remove storage nl:settings perk
 data remove storage nl:settings altar
+data remove storage nl:settings swamp
 
 data remove storage nl:buffer settings
 data remove storage nl:buffer player
@@ -43,7 +44,7 @@ data merge storage nl:in_game {\
         {id:1,character:"(str)", status:{resource:{redstone:0,lifestone:0},status:{},effects:{}}}\
     ],\
     status:{\
-        ongoing:0,altar:{mode:0,speed:"(float)"},location:{cave:{},library:{alarm:0}}\
+        ongoing:0,altar:{mode:0,speed:"(float)"},location:{main:{},library:{alarm:0}}\
     },\
     records:{\
         player:[{ex:"플레이어별 스킬, 각종 상호작용 횟수"}],\
