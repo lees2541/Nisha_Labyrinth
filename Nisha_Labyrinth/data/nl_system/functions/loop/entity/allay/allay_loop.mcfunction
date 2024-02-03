@@ -6,8 +6,6 @@
 #> 모드변경조건 체크
 execute if score @s NL_mode matches ..1 at @s run function nl_system:systems/entity/allay/condition_check with entity @s Passengers[{id:"minecraft:marker"}].data
 
-execute if score @s NL_mode matches 2 run effect give @s glowing infinite
-execute unless score @s NL_mode matches 2 run effect clear @s glowing
 
 #> 모드 별 실행
 execute if score @s NL_mode matches 0 at @s run function nl_system:systems/entity/allay/mode/mode_0 with entity @s Passengers[{id:"minecraft:marker"}].data

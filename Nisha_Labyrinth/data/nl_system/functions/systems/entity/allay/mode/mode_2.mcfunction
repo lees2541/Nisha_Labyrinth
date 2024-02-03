@@ -9,5 +9,5 @@ $execute if entity @a[tag=NL,distance=2.5..,nbt={Attributes:[{Name:"minecraft:ge
 
 
 
-$execute unless entity @a[tag=NL,tag=$(tag),nbt={Attributes:[{Name:"minecraft:generic.luck",Base:$(id).0d}]},scores={NL_flashlight=1..}] run data remove entity @e[type=marker,tag=allay,tag=$(tag),limit=1,sort=nearest] data.id
-$execute unless entity @a[tag=NL,tag=$(tag),nbt={Attributes:[{Name:"minecraft:generic.luck",Base:$(id).0d}]},scores={NL_flashlight=1..}] run scoreboard players set @s NL_mode 1
+$execute unless entity @a[tag=NL,tag=$(tag),nbt={Attributes:[{Name:"minecraft:generic.luck",Base:$(id).0d}]}] run data remove entity @e[type=marker,tag=allay,tag=$(tag),limit=1,sort=nearest] data.id
+$execute unless entity @a[tag=NL,tag=$(tag),nbt={Attributes:[{Name:"minecraft:generic.luck",Base:$(id).0d}]}] run scoreboard players set @s NL_mode 1
