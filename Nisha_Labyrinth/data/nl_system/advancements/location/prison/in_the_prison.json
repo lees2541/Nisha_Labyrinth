@@ -1,0 +1,38 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:written_book",
+        "nbt": "{CustomModelData:302004}"
+      },
+      "title": "감옥",
+      "description": "나올 수 있을까요...",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "parent": "nl_system:location/library/in_the_library",
+    "criteria": {
+      "in_the_prison": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:reference",
+              "name": "nl_system:location/prison/in_the_prison"
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "prisoner"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "nl_system:systems/location/prison/in_the_prison_adv"
+    }
+  }
+  

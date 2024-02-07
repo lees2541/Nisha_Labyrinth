@@ -1,0 +1,43 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:lapis_lazuli",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "생명석",
+                  "color": "dark_blue",
+                  "bold": true
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "알 수 없는 힘이 담긴 돌이다",
+                    "color": "blue",
+                    "italic": true
+                  }
+                ]
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

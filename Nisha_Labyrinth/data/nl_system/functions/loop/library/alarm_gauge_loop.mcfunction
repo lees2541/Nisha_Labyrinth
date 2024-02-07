@@ -3,11 +3,11 @@
 
 
 #> 경보 게이지 계산
-execute as @a[team=explorer,scores={NL_open_chest=1..},advancements={nl_system:location/library/in_the_library=true}] at @s if predicate nl_system:location/library/lib_patrol_range_dist run scoreboard players add @s NL_lib_alarm_gauge 100
+execute as @a[tag=explorer,scores={NL_open_chest=1..},advancements={nl_system:location/library/in_the_library=true}] at @s if predicate nl_system:location/library/lib_patrol_range_dist run scoreboard players add @s NL_lib_alarm_gauge 100
 
-execute unless score #library NL_lib_alarm_gauge matches 1000.. as @a[team=explorer,advancements={nl_system:location/library/in_the_library=true},predicate=!nl_system:status/action/sneaking] at @s at @e[type=wandering_trader,tag=NL,tag=patrol] if predicate nl_system:location/library/lib_patrol_range_dist run scoreboard players add @s NL_lib_alarm_gauge 10
-execute unless score #library NL_lib_alarm_gauge matches 1000.. as @a[team=explorer,advancements={nl_system:location/library/in_the_library=true}] at @s if entity @e[tag=patrol,distance=..2] run scoreboard players add @s NL_lib_alarm_gauge 50
-execute unless score #library NL_lib_alarm_gauge matches ..0 unless entity @a[team=explorer,tag=lib_range] run scoreboard players remove #library NL_lib_alarm_gauge 5
+execute unless score #library NL_lib_alarm_gauge matches 1000.. as @a[tag=explorer,advancements={nl_system:location/library/in_the_library=true},predicate=!nl_system:status/action/sneaking] at @s at @e[type=wandering_trader,tag=NL,tag=patrol] if predicate nl_system:location/library/lib_patrol_range_dist run scoreboard players add @s NL_lib_alarm_gauge 10
+execute unless score #library NL_lib_alarm_gauge matches 1000.. as @a[tag=explorer,advancements={nl_system:location/library/in_the_library=true}] at @s if entity @e[tag=patrol,distance=..2.5] run scoreboard players add @s NL_lib_alarm_gauge 50
+execute unless score #library NL_lib_alarm_gauge matches ..0 unless entity @a[tag=explorer,tag=lib_range] run scoreboard players remove #library NL_lib_alarm_gauge 5
 
 
 execute as @a[tag=NL] run scoreboard players operation #library NL_lib_alarm_gauge += @s NL_lib_alarm_gauge

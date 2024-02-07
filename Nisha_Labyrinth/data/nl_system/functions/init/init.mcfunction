@@ -8,14 +8,15 @@
 
 team add roamer
 team add explorer
+team add prisoner
 team add NL_red
 team add NL_white
 team add NL_blue
 team add NL_yellow
 team add NL_ghost
-team add prisoner
 team add NL_rm_only
 team add NL_ex_only
+
 
 team modify NL_red color dark_red
 team modify NL_white color white

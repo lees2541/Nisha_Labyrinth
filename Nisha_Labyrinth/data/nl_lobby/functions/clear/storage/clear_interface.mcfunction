@@ -1,8 +1,8 @@
 #declare storage nl:settings 게임시작 전 맵 또는 게임설정등을 정한다
 #declare storage nl:buffer 계산 혹은 데이터 로드를 위한 임시 버퍼
 #declare storage nl:in_game 인 게임의 데이터를 저장
-#declare storage nl:lobby 로비에서 조작할 수 있는 설정들
-#declare storage nl:default 게임의 기본설정
+#declare storage nl:lobby 로비에서 조작할 수 있는 설정들, 게임 시작 시 nl:settings에 들어간다
+#declare storage nl:default 게임의 기본설정, 게임 초기화 시 이 저장소의 내용이 로비로 병합된다
 say 스토리지 초기화
 ## 스토리지 초기화
 data remove storage nl:settings map
@@ -11,6 +11,7 @@ data remove storage nl:settings players
 data remove storage nl:settings perk
 data remove storage nl:settings altar
 data remove storage nl:settings swamp
+data remove storage nl:settings etc
 
 data remove storage nl:buffer settings
 data remove storage nl:buffer player
@@ -34,7 +35,9 @@ data merge storage nl:settings {\
     map:{type:""},\
     redstone:{rolls:{red:0,yellow:0,green:0,area:0}},\
     players:{player:{id:0,character:0,UUID:[],name:""}},\
-    perk:{}\
+    perk:{},\
+    altar:{gauge:{max:0,speed:0},\
+    etc:{earlydeath:0}\
 }
 data remove storage nl:settings players
 

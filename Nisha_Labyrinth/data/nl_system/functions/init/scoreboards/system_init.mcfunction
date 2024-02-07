@@ -42,3 +42,9 @@ scoreboard objectives add NL_flashlight dummy
 scoreboard objectives add NL_mode dummy
 #declare objective NL_mode 범용 모드저장 스코어보드, 현재 상태를 기록한다.
 
+scoreboard objectives add NL_death deathCount
+#declare objective NL_death 죽음감지 스코어보드
+
+scoreboard objectives add NL_count dummy
+#declare objective NL_count 범용 횟수 카운트 스코어보드, #xxx 형식으로 기록한다
+

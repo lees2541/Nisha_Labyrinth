@@ -9,3 +9,6 @@ data modify storage nl:default settings.swamp.tainted.max set value 3
 ## 제단 게이지 설정
 data modify storage nl:default settings.altar.gauge.max set value 12000
 data modify storage nl:default settings.altar.gauge.speed set value 10
+
+## 이른 죽음 횟수 설정
+data modify storage nl:default settings.etc.earlydeath set value 1

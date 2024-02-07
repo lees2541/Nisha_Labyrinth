@@ -1,0 +1,21 @@
+[
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": "도서관 열쇠"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "text": "도서관 열쇠이다"
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{tag:{NL:1b,library_key:1b,lib:1b}}"
+    }
+  ]
+  

@@ -28,6 +28,10 @@ function nl_system:modules/hotbar_holder/base/update_inventory_info with storage
 execute unless data entity @s Inventory[{Slot:-106b}] run function nl_system:systems/item/update/offhand
 execute unless entity @s[nbt={Inventory:[{Slot:-106b,tag:{offhand:1b,NL:1b}}]}] run advancement grant @s only nl_system:systems/actions/key_events/f_key/offhand_changed_detected
 
+## 도서관 상자 처리
+advancement grant @s only nl_system:systems/library/chest_looting/obtained_lib_item impossible
+
+
 ## 탐험가용
 execute unless entity @s[team=roamer] run function nl_system:modules/hotbar_holder/base/explorer/item_detection
 

@@ -11,6 +11,8 @@
 execute as @s[tag=NL,nbt=!{Inventory:[{Slot:6b}]}] at @s run function nl_system:systems/item/update/lifestone
 execute as @s[tag=NL,nbt=!{Inventory:[{Slot:7b}]}] at @s run function nl_system:systems/item/update/redstone
 
+execute if score @s NL_death matches 1.. run function nl_system:systems/death/death_trigger
+
 ## 떨어진 템 줍기
 execute if entity @e[type=item,nbt={Item:{tag:{drop:0b,NL:1b}}}] as @e[type=item,nbt={Item:{tag:{drop:0b,NL:1b}}},nbt=!{PickupDelay:0s},distance=..0.5,limit=1] run data merge entity @s {PickupDelay:0s} 
 

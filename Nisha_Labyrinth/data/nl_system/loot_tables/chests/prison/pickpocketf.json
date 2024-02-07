@@ -1,0 +1,153 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:group",
+            "children": [
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:stone",
+                "functions": [
+                  {
+                    "function": "minecraft:set_lore",
+                    "entity": "this",
+                    "lore": [
+                      {
+                        "text": "1"
+                      }
+                    ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 1
+                  }
+                ]
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:wheat",
+                "functions": [
+                  {
+                    "function": "minecraft:set_lore",
+                    "entity": "this",
+                    "lore": [
+                      {
+                        "text": "퇴비에 넣거나 4조각으로 빵을 만들 수 있다"
+                      }
+                    ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.7
+                  }
+                ]
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "minecraft:chests/special_pieces",
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.5
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "name": "1"
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#route_A"
+              },
+              "score": "NL_temp",
+              "scale": 1
+            },
+            "range": 1
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:group",
+            "children": [
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:stone",
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 1
+                  }
+                ]
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:wheat",
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.5
+                  }
+                ]
+              }
+            ],
+            "functions": [
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "퇴비에 넣거나 4조각으로 빵을 만들 수 있다"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "name": "2"
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#route_A"
+              },
+              "score": "NL_temp",
+              "scale": 1
+            },
+            "range": 2
+          }
+        ]
+      }
+    ]
+  }
+  
