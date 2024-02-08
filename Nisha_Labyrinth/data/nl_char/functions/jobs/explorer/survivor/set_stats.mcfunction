@@ -8,4 +8,5 @@ data modify storage nl:image_code player.survivor.font.icon1 set value "uE111"
 data modify storage nl:image_code player.survivor.font.icon2 set value "uE112"
 #> 스턴됐을 떄 이미지 (우측 gui)
 data modify storage nl:image_code player.survivor.font.icon3 set value "uE113"
-
+#> 제물이 됐을 때 이미지 (우측 gui)
+data modify storage nl:image_code player.survivor.font.icon4 set value "uE114"

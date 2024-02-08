@@ -14,8 +14,16 @@ bossbar set nl:altar_gauge color white
 $bossbar set nl:altar_gauge name {"text":"\uE50$(progress)\uE512"}
 
 title @a title {"text":"제단","color":"dark_red","bold":true}
-
+## 오염된 늪 스폰
 function nl_system:systems/swamp/tainted_swamp/set_tainted_swamp
+## 뽑기코인 지급
 execute if predicate nl_system:status/altar/coin run loot give @a[tag=explorer,tag=NL] loot nl_system:items/shop/coin
+
+## 감옥에 사람이 있을 시 도서관에 열쇠 스폰
+execute if entity @a[team=prisoner,tag=prisoner] as @e[type=marker,tag=library,tag=chest,tag=!library_key,tag=!prison_key,limit=1,sort=random] at @s run function nl_system:modules/chest/insert_loot/insert_loot_table {tag:prison_key,path:"keys/prison_key"}
+
+## 생명석 스폰
 execute as @e[type=marker,tag=NL,tag=lifestone] at @s run setblock ~ ~ ~ bone_block destroy
+
+## 제단에 올린사람 발광
 execute as @a[advancements={nl_system:systems/actions/interactions/altar/hit=true}] run effect give @s glowing 8

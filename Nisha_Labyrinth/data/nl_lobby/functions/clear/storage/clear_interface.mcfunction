@@ -36,7 +36,7 @@ data merge storage nl:settings {\
     redstone:{rolls:{red:0,yellow:0,green:0,area:0}},\
     players:{player:{id:0,character:0,UUID:[],name:""}},\
     perk:{},\
-    altar:{gauge:{max:0,speed:0},\
+    altar:{gauge:{max:0,speed:0}},\
     etc:{earlydeath:0}\
 }
 data remove storage nl:settings players

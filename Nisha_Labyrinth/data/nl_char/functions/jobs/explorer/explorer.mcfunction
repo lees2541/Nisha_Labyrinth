@@ -17,7 +17,7 @@ scoreboard players set @s NL_lifestone_count 0
 scoreboard players set @s NL_redstone_count 0
 scoreboard players set @s NL_flashlight 1
 ## 상태 셋팅
-spawnpoint @s[team=explorer] 712 53 623
+
 gamemode adventure @s
 
 effect give @s haste infinite 1 true

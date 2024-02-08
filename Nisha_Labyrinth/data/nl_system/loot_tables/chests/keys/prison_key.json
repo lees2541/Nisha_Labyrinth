@@ -9,14 +9,8 @@
             "name": "minecraft:paper",
             "functions": [
               {
-                "function": "minecraft:set_nbt",
-                "tag": "{NL:1b,piece:1b,prison_key:1b,CustomModelData:3000005}"
-              }
-            ],
-            "conditions": [
-              {
-                "condition": "minecraft:random_chance",
-                "chance": 1
+                "function": "minecraft:reference",
+                "name": "nl_system:library/chests/prison_key"
               }
             ]
           }

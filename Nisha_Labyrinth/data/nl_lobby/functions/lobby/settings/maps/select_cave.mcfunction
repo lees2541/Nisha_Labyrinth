@@ -37,7 +37,7 @@ function nl_lobby:maps/cave/locations/library/set_lib_chests
 ###############################
 
 ## 죽은 후 좌표 
-spawnpoint @a[tag=NL] 715 39 580
+spawnpoint @a[tag=NL] 715 39 575
 ##############################
 
 ## 감옥 좌표

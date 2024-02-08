@@ -3,10 +3,10 @@
 #@context 열쇠 두조각 모은 탐험가
 
 
-tag @s remove early_death
+tag @s remove sacrifice 
 
 team join explorer @s
 
-
+function nl_system:modules/status_gui/change_icon/default
 
 function nl_system:systems/library/access_control/open_library

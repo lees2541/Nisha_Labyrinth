@@ -30,7 +30,8 @@ tag @s remove chopper
 tag @s remove explorer
 tag @s remove roamer
 
-
+tag @s remove prisoner
+tag @s remove sacrifice
 
 ## 기본태그 초기화
 tag @s remove NL
