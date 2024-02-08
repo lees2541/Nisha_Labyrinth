@@ -13,3 +13,11 @@ execute as @e[type=allay,tag=NL,tag=allay] at @s run function nl_system:loop/ent
 
 ## 부쉬 관련
 execute as @e[type=area_effect_cloud,tag=NL,tag=NL_grass,nbt={Age:99}] at @s run setblock ~ ~1 ~ minecraft:tall_grass[half=upper] keep
+
+
+
+
+
+## 상호작용 엔티티의 interaction nbt 삭제
+execute as @e[type=interaction,tag=NL] run data remove entity @s attack
+execute as @e[type=interaction,tag=NL] run data remove entity @s interaction

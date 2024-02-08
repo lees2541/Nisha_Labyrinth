@@ -1,1 +1,3 @@
-advancement revoke @s from nl_system:systems/actions/interactions/base/interact
+advancement revoke @s through nl_system:systems/actions/interactions/base/interact
+
+
