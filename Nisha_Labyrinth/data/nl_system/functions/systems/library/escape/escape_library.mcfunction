@@ -6,3 +6,7 @@
 tag @s remove early_death
 
 team join explorer @s
+
+
+
+function nl_system:systems/library/access_control/open_library

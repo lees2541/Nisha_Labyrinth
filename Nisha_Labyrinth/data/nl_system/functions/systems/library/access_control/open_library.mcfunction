@@ -4,3 +4,4 @@
 function nl_vfx:map/cave/trigger/open_library
 
 data modify storage nl:in_game status.location.library.alarm set value 1
+data modify storage nl:in_game status.location.library.opened set value 1b

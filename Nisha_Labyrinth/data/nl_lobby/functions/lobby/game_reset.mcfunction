@@ -35,6 +35,7 @@ execute as @a run function nl_lobby:clear/tags/clear_all_tags
 ## 맵 리셋
 execute as @e[type=interaction,tag=NL,tag=altar] at @s run setblock ~ ~1 ~ air destroy
 execute as @e[type=area_effect_cloud,tag=NL,tag=NL_grass] at @s run setblock ~ ~1 ~ minecraft:tall_grass[half=upper] keep
+function nl_system:systems/library/access_control/close_library
 
 # 제단의 레드스톤 제거
 setblock 678 43 575 minecraft:air replace

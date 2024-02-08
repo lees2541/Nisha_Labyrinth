@@ -1,4 +1,6 @@
-
+#> nl_system:systems/library/chest_looting/obtained_function/obtained_lib_key
+# 플레이어가 도서관 열쇠가 든 상자에서 열쇠를 꺼냈을 때 발동
+#@context @e[type=marker,tag=library_key]
 
 
 
