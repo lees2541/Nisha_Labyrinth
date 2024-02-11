@@ -1,0 +1,47 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:stone"
+      },
+      "title": "스타캐치",
+      "description": "",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "nl_system:systems/actions/interactions/base/interact",
+    "criteria": {
+      "interact_star_catch": {
+        "trigger": "minecraft:player_interacted_with_entity",
+        "conditions": {
+          "player": {
+            "nbt": "{Tags:[\"NL\"]}"
+          },
+          "entity": {
+            "type": "minecraft:interaction",
+            "vehicle": {
+              "passenger": {
+                "type": "minecraft:text_display",
+                "nbt": "{Tags:[\"NL\",\"gauge_bar\"]}"
+              }
+            }
+          }
+        }
+      },
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "requirements": [
+      [
+        "interact_star_catch"
+      ],
+      [
+        "impossible"
+      ]
+    ],
+    "rewards": {
+      "function": "nl_system:systems/actions/interactions/star_catch/interact_adv"
+    }
+  }
+  

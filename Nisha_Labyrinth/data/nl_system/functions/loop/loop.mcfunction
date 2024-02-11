@@ -16,8 +16,8 @@ execute if data storage nl:in_game status{ongoing:1} run function nl_system:loop
 
 ## 도서관 시스템 루프
 function nl_system:loop/library/library_loop
-#테스트
-
+## 스타캐치 루프
+function nl_system:loop/star_catch/starcatch_loop
 
 #> 기타 엔티티 루프
 function nl_system:loop/entity/entity_loop
