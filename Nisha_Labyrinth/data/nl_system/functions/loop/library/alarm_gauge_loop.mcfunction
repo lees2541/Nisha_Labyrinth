@@ -2,7 +2,10 @@
 # 도서관 경보 시스템 게이지 바 루프
 
 
+#> 탈옥중인 경우 리턴
+execute if data storage nl:in_game status.location.library{alarm:3} run return run scoreboard players set @a NL_lib_alarm_gauge 0
 #> 경보 게이지 계산
+
 execute as @a[tag=explorer,scores={NL_open_chest=1..},advancements={nl_system:location/library/in_the_library=true}] at @s if predicate nl_system:location/library/lib_patrol_range_dist run scoreboard players add @s NL_lib_alarm_gauge 100
 
 execute unless score #library NL_lib_alarm_gauge matches 1000.. as @a[tag=explorer,advancements={nl_system:location/library/in_the_library=true},predicate=!nl_system:status/action/sneaking] at @s at @e[type=wandering_trader,tag=NL,tag=patrol] if predicate nl_system:location/library/lib_patrol_range_dist run scoreboard players add @s NL_lib_alarm_gauge 10

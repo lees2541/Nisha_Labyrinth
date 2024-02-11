@@ -9,7 +9,9 @@ function nl_lobby:clear/tags/clear_buff
 
 team join prisoner @s[team=explorer]
 
-execute unless data storage nl:settings etc{earlydeath:0} run return run function nl_system:systems/death/early_death
+summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Glowing:1b,Small:1b,Tags:["NL","coordinate","nl_vfx","imprison"]}
 
+execute unless data storage nl:settings etc{earlydeath:0} run return run function nl_system:systems/death/early_death
+spawnpoint @a 715 39 580
 tag @s add prisoner
 

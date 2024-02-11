@@ -15,7 +15,7 @@ tellraw @a [{"text":"\"","color":"blue"},{"nbt":"map.type","storage":"nl:setting
 
 ## 게임 시스템 설정
 function nl_lobby:lobby/settings/systems/set_altar_system
-
+function nl_lobby:lobby/settings/systems/set_lib_system
 ## 플레이어 상태 및 설정 리셋
 effect clear @a
 function nl_lobby:clear/clear_players

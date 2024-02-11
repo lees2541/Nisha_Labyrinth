@@ -10,7 +10,6 @@
       "announce_to_chat": false,
       "hidden": true
     },
-    "parent": "nl_system:systems/actions/interactions/allay/interact",
     "criteria": {
       "give_prison_key": {
         "trigger": "minecraft:player_interacted_with_entity",

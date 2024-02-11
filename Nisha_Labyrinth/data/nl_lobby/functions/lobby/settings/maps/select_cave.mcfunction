@@ -40,7 +40,10 @@ function nl_lobby:maps/cave/locations/library/set_lib_chests
 spawnpoint @a[tag=NL] 715 39 575
 ##############################
 
-## 감옥 좌표
+## 감옥 문 관련
+summon minecraft:block_display 713. 41 577.5 {Rotation:[0F,90F],Tags:["NL","prison_door","prison_door1"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,2f]},block_state:{Name:"minecraft:spruce_trapdoor"}}
+summon block_display 703 41 585. {Rotation:[90F,90F],Tags:["NL","prison_door","prison_door2"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,2f]},block_state:{Name:"minecraft:spruce_trapdoor"}}
+function nl_vfx:map/cave/prison/jail_break/set_barrier
 
 ##############################
 

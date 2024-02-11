@@ -4,7 +4,7 @@
 #@within nl_system:systems/death/death_trigger
 
 tag @s add sacrifice
-spawnpoint @a 715 39 580
+
 execute store result score #operand NL_temp run data get storage nl:settings etc.earlydeath 1
 execute store result storage nl:settings etc.earlydeath int 1 run scoreboard players remove #operand NL_temp 1
 function nl_system:modules/status_gui/change_icon/sacrifice
