@@ -11,7 +11,7 @@ execute as @e[type=armor_stand,tag=coordinate,tag=NL,tag=imprison,tag=nl_vfx,tag
 execute as @e[type=armor_stand,tag=coordinate,tag=NL,tag=imprison,tag=nl_vfx,tag=imp_arm,limit=1] at @s run summon item_display ~1 ~ ~1 {Silent:1b,Tags:["nl_vfx","NL","vind"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1f,0f],scale:[2f,2f,2f]},item:{id:"minecraft:diamond_axe",Count:1b,tag:{CustomModelData:80000}}}
 execute as @e[type=armor_stand,tag=coordinate,tag=NL,tag=imprison,tag=nl_vfx,tag=imp_arm,limit=1] at @s run summon item_display ~-1 ~ ~-1 {Silent:1b,Tags:["nl_vfx","NL","vind"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1f,0f],scale:[2f,2f,2f]},item:{id:"minecraft:diamond_axe",Count:1b,tag:{CustomModelData:80000}}}
 execute as @e[type=armor_stand,tag=coordinate,tag=NL,tag=imprison,tag=nl_vfx,tag=imp_arm,limit=1] at @s run summon item_display ~ ~ ~ {Silent:1b,Tags:["nl_vfx","NL","vind","imp0"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1f,0f],scale:[2f,2f,2f]},item:{id:"minecraft:diamond_axe",Count:1b,tag:{CustomModelData:80001}}}
-execute as @e[type=armor_stand,tag=coordinate,tag=NL,tag=imprison,tag=nl_vfx,tag=imp_arm,limit=1] at @s run playsound minecraft:imprison_choir master @p 
+execute as @e[type=armor_stand,tag=coordinate,tag=NL,tag=imprison,tag=nl_vfx,tag=imp_arm,limit=1] at @s run playsound minecraft:imprison_choir master @a
 execute as @e[tag=vind] at @s run tp @s ~ ~ ~ facing entity @e[type=armor_stand,tag=coordinate,tag=NL,tag=imprison,tag=nl_vfx,limit=1,sort=nearest]
 
 schedule function nl_vfx:map/cave/prison/imprison/imprison1 20t 

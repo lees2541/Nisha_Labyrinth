@@ -59,6 +59,7 @@ kill @e[type=item,tag=NL]
 kill @e[type=interaction,tag=NL]
 kill @e[type=allay,tag=NL]
 kill @e[type=wandering_trader,tag=NL]
+kill @e[type=vindicator,tag=NL]
 
 execute as @e[type=glow_item_frame,tag=NL,tag=cave] run data merge entity @s {Fixed:1b,Invulnerable:1b,Tags:["NL","cave"]}
 
