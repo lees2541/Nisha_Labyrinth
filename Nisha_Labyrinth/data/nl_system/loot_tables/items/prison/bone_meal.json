@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bone_meal",
+            "functions": [
+              {
+                "function": "minecraft:reference",
+                "name": "nl_system:prison/bone_meal"
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

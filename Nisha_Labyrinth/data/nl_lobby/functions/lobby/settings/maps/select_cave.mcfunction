@@ -76,7 +76,11 @@ function nl_lobby:maps/cave/locations/library/set_lib_guardians
 ################################
 
 ## 도서관 비상탈출구 지정
-
+function nl_vfx:map/cave/prison/unseal_break/chainup/chainsp
+setblock 708 45 580 minecraft:barrier
+setblock 708 45 581 minecraft:barrier
+setblock 707 45 581 minecraft:barrier
+setblock 707 45 580 minecraft:barrier
 ################################
 
 ## 제단 interaction 엔티티 설치

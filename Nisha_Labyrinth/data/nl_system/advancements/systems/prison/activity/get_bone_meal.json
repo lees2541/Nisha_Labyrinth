@@ -1,0 +1,41 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:chest"
+      },
+      "title": "뼛가루얻기",
+      "description": "",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+      "get_bone_meal": {
+        "trigger": "minecraft:item_used_on_block",
+        "conditions": {
+          "player": {
+            "team": "prisoner"
+          },
+          "location": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "minecraft:composter"
+                  ],
+                  "state": {
+                    "level": "0"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "nl_system:systems/prison/activity/get_bone_meal_adv"
+    }
+  }
+  
