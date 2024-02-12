@@ -47,8 +47,8 @@ function nl_vfx:map/cave/prison/jail_break/set_barrier
 
 ##############################
 
-## 감옥 문열림 좌표
-
+## 감옥 덩굴
+summon interaction 707 39 580 {width:0.8f,height:7f,response:1b,Tags:["NL","vine"]}
 #############################
 
 

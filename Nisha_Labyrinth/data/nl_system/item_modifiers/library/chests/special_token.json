@@ -1,0 +1,22 @@
+[
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": "검은 천조각"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "text": "상인에게서 아이템과 교환할 수 있다"
+        }
+      ],
+      "replace": true
+    },
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{NL:1b,drop:1b,piece:1b,special_token:1b,CustomModelData:123134}"
+    }
+  ]
+  

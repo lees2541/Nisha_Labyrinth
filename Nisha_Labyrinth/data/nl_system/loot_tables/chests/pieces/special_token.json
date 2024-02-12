@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": 6,
+        "bonus_rolls": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#game"
+          },
+          "score": "NL_altar_progress",
+          "scale": 0.49
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:emerald",
+            "functions": [
+              {
+                "function": "minecraft:reference",
+                "name": "nl_system:library/chests/special_token"
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.02
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

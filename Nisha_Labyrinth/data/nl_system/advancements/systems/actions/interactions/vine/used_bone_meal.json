@@ -1,0 +1,43 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:twisting_vines"
+      },
+      "title": "1회용탈출",
+      "description": "",
+      "show_toast": true,
+      "hidden": true
+    },
+    "parent": "nl_system:systems/actions/interactions/base/interact",
+    "criteria": {
+      "twisting_vines": {
+        "trigger": "minecraft:player_interacted_with_entity",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:bone_meal"
+            ]
+          },
+          "entity": {
+            "type": "minecraft:interaction",
+            "nbt": "{Tags:[\"NL\",\"vine\"]}"
+          }
+        }
+      },
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "requirements": [
+      [
+        "twisting_vines"
+      ],
+      [
+        "impossible"
+      ]
+    ],
+    "rewards": {
+      "function": "nl_system:systems/actions/interactions/vine/used_bone_meal_adv"
+    }
+  }
+  

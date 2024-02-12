@@ -14,6 +14,9 @@ bossbar set nl:altar_gauge color white
 $bossbar set nl:altar_gauge name {"text":"\uE50$(progress)\uE512"}
 
 title @a title {"text":"제단","color":"dark_red","bold":true}
+## 도서관 상자 리셋
+execute as @e[type=marker,tag=NL,tag=library,tag=chest] at @s align xyz run function nl_system:systems/library/chest_looting/content/reset_chest_content
+
 ## 오염된 늪 스폰
 function nl_system:systems/swamp/tainted_swamp/set_tainted_swamp
 ## 뽑기코인 지급

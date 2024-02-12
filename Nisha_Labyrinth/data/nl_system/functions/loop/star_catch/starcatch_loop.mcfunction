@@ -17,4 +17,4 @@ execute as @e[type=text_display,tag=point,tag=gauge_bar,scores={NL_timer=15}] if
 
 
 ##
-scoreboard players add @e[type=text_display,tag=gauge_bar,tag=point,tag=!pause] NL_timer 1
+scoreboard players add @e[type=text_display,tag=gauge_bar,tag=point,tag=!pause,scores={NL_timer=0..}] NL_timer 1

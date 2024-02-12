@@ -3,4 +3,4 @@ data merge entity @s[tag=right] {start_interpolation:0,interpolation_duration:20
 tag @s remove right
 tag @s add left
 
-scoreboard players set @s NL_entity_timer 1
+scoreboard players set @s NL_timer 1

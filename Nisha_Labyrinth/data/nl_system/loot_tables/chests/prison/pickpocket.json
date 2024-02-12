@@ -11,9 +11,13 @@
       ],
       "functions": [
         {
-          "function": "minecraft:set_name",
+          "function": "minecraft:set_lore",
           "entity": "this",
-          "name": "1"
+          "lore": [
+            {
+              "text": "퇴비에 넣거나 4조각으로 빵을 만들 수 있다"
+            }
+          ]
         }
       ],
       "conditions": [
@@ -23,7 +27,7 @@
             "type": "minecraft:score",
             "target": {
               "type": "minecraft:fixed",
-              "name": "#prisoner"
+              "name": "#starcatch"
             },
             "score": "NL_temp",
             "scale": 1
@@ -32,7 +36,7 @@
         },
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.6
+          "chance": 0.7
         }
       ]
     },
@@ -61,13 +65,6 @@
           ]
         }
       ],
-      "functions": [
-        {
-          "function": "minecraft:set_name",
-          "entity": "this",
-          "name": "2"
-        }
-      ],
       "conditions": [
         {
           "condition": "minecraft:value_check",
@@ -75,7 +72,7 @@
             "type": "minecraft:score",
             "target": {
               "type": "minecraft:fixed",
-              "name": "#prisoner"
+              "name": "#starcatch"
             },
             "score": "NL_temp",
             "scale": 1
@@ -89,7 +86,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "minecraft:chests/special_pieces"
+          "name": "nl_system:chests/pieces/special_token"
         }
       ],
       "conditions": [
@@ -99,7 +96,7 @@
             "type": "minecraft:score",
             "target": {
               "type": "minecraft:fixed",
-              "name": "#prisoner"
+              "name": "#starcatch"
             },
             "score": "NL_temp",
             "scale": 1
@@ -108,7 +105,7 @@
         },
         {
           "condition": "minecraft:random_chance",
-          "chance": 1
+          "chance": 0.7
         }
       ]
     }
