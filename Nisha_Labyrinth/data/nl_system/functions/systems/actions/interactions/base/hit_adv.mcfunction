@@ -10,4 +10,7 @@ advancement grant @s only nl_system:systems/actions/interactions/allay/hit impos
 
 #function nl_system:systems/actions/interactions/base/clear_hit with storage nl:buffer player
 
+#> 상점 타격 시 호출
+advancement grant @s only nl_system:systems/actions/interactions/shop/hit impossible
+
 advancement revoke @s only nl_system:systems/actions/interactions/base/hit_buffer

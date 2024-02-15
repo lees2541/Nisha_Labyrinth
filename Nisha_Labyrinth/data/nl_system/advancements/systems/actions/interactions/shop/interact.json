@@ -1,0 +1,39 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:stone"
+      },
+      "title": "석상이 반응합니다",
+      "description": "",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "parent": "nl_system:systems/actions/interactions/base/interact",
+    "criteria": {
+      "interact_shop": {
+        "trigger": "minecraft:player_interacted_with_entity",
+        "conditions": {
+          "player": {
+            "nbt": "{Tags:[\"NL\"]}"
+          },
+          "entity": {
+            "type": "minecraft:interaction",
+            "nbt": "{Tags:[\"NL\",\"shop\"]}"
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "interact_shop"
+      ],
+      [
+        "impossible"
+      ]
+    ],
+    "rewards": {
+      "function": "nl_system:systems/actions/interactions/shop/interact_adv"
+    }
+  }
+  

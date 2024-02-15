@@ -1,0 +1,81 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:redstone",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NL:1b,redstone:1b}"
+              },
+              {
+                "function": "minecraft:set_count",
+                "count": 2,
+                "add": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_hoe",
+            "functions": [
+              {
+                "function": "minecraft:reference",
+                "name": "nl_system:systems/item/resources/lifestone"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cooked_beef",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 64,
+                "add": false
+              },
+              {
+                "function": "minecraft:reference",
+                "name": "nl_char:items/common/cooked_beef"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 6,
+        "entries": [
+          {
+            "type": "minecraft:sequence",
+            "children": [
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:cooked_beef",
+                "functions": [
+                  {
+                    "function": "minecraft:reference",
+                    "name": "nl_char:items/common/cooked_beef"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

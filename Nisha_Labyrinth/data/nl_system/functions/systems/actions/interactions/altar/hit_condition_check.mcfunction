@@ -7,3 +7,4 @@ $execute as @e[type=interaction,nbt={attack:{player:$(UUID)}},tag=NL,tag=altar,l
 
 
 $execute as @e[type=interaction,nbt={attack:{player:$(UUID)}},tag=NL,tag=altar,limit=1,sort=nearest] at @s run return run function nl_system:systems/altar/structure/set_on_altar
+

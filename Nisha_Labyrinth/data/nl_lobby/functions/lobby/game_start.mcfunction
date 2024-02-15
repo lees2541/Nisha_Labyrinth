@@ -12,7 +12,7 @@ execute if data storage nl:settings map{type:"cave"} run function nl_lobby:lobby
 
 
 tellraw @a [{"text":"\"","color":"blue"},{"nbt":"map.type","storage":"nl:settings","color":"green","bold":true},{"text":"\"","color":"blue"},{"text":" 맵에서 시작합니다","color":"white"},{"text":"\n"},{"selector":"@a[tag=NL]","separator":" "},{"text":"\n"},{"text":"게임이 시작됩니다","color":"white","bold":true}]
-
+execute at @e[type=marker,tag=marker,tag=NL,tag=shop,limit=1] run loot replace block ~ ~ ~ container.0 loot nl_system:chests/shop/drawing
 ## 게임 시스템 설정
 function nl_lobby:lobby/settings/systems/set_altar_system
 function nl_lobby:lobby/settings/systems/set_lib_system

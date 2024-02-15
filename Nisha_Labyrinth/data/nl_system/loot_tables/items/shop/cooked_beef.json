@@ -6,11 +6,11 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "minecraft:emerald",
+            "name": "minecraft:cooked_beef",
             "functions": [
               {
                 "function": "minecraft:reference",
-                "name": "nl_system:systems/item/shop/coin"
+                "name": "nl_char:items/common/cooked_beef"
               }
             ]
           }

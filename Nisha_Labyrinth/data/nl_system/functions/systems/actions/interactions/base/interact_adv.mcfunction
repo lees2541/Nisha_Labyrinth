@@ -5,6 +5,7 @@ advancement grant @s only nl_system:systems/actions/interactions/swamp/interact 
 advancement grant @s only nl_system:systems/actions/interactions/allay/interact impossible
 advancement grant @s only nl_system:systems/actions/interactions/star_catch/interact impossible
 advancement grant @s only nl_system:systems/actions/interactions/vine/used_bone_meal impossible
+advancement grant @s only nl_system:systems/actions/interactions/shop/interact impossible
 
 advancement revoke @s only nl_system:systems/actions/interactions/base/interact_buffer
 
