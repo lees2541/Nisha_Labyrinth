@@ -27,7 +27,7 @@ summon marker 671 53 631 {Invulnerable:1b,CustomNameVisible:1b,Tags:["origin","N
 
 
 summon marker 660 52 628 {Invulnerable:1b,CustomNameVisible:1b,Tags:["origin","NL","yellow","area3","marker","redstone_gen"],CustomName:'{"text":"옐로"}',data:{block:yellow_concrete}}
-summon marker 674 46 624 {Invulnerable:1b,CustomNameVisible:1b,Tags:["origin","NL","yellow","area3","marker","redstone_gen"],CustomName:'{"text":"옐로"}',data:{block:yellow_concrete}}
+#summon marker 674 46 624 {Invulnerable:1b,CustomNameVisible:1b,Tags:["origin","NL","yellow","area3","marker","redstone_gen"],CustomName:'{"text":"옐로"}',data:{block:yellow_concrete}}
 
 summon marker 660 51 624 {Invulnerable:1b,CustomNameVisible:1b,Tags:["origin","NL","red","area3","marker","redstone_gen"],CustomName:'{"text":"레드"}',data:{block:red_concrete}}
 summon marker 666 48 631 {Invulnerable:1b,CustomNameVisible:1b,Tags:["origin","NL","red","area3","marker","redstone_gen"],CustomName:'{"text":"레드"}',data:{block:red_concrete}}

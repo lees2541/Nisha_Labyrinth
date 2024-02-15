@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=origin,sort=random,tag=redstone_gen] at @s run summon armor_stand ~ ~ ~ {CustomNameVisible:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:1b,Small:1b,Tags:["NL"],CustomName:'{"text":"레드스톤 모듈 시작점"}'}
