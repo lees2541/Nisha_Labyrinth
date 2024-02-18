@@ -17,7 +17,13 @@ scoreboard objectives add NL_redstone_count dummy
 
 scoreboard objectives add NL_status_gui dummy
 #declare objective NL_status_gui 플레이어 화면의 오른쪽에 보이는 상태아이콘
+
+scoreboard objectives add NL_status_update dummy
+#declare objective NL_status_update 오른쪽 GUI 업데이트 타이밍을 알려주는 스코어보드 (가장 빨리끝날 상태의 남은시간을 반영한다, 틱당 변화 x)
  
+scoreboard objectives add NL_status_update_count dummy
+#declare objective NL_status_update_count 틱당 1씩 올라간다, NL_status_updat와 같은 값이되면 업데이트
+
 scoreboard objectives add NL_rm_enterance dummy
 #declare objective NL_rm_enterance 게임시작 후 배회자가 맵에 입장할때까지 걸리는 시간
 

@@ -1,5 +1,8 @@
 
 ## 상태이상 관련
+scoreboard players set @a NL_status_update 0
+scoreboard players set @a NL_status_update_count 0
+
 scoreboard players set @a NL_stun_time 0
 scoreboard players set @a NL_blindness_time 0
 ##스킬 관련

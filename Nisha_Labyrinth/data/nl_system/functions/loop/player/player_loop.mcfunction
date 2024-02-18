@@ -40,3 +40,4 @@ execute if entity @s[tag=explorer,tag=NL] at @s run function nl_system:loop/play
 execute if entity @s[tag=roamer,tag=NL] at @s run function nl_system:loop/player/roamer/roamer_loop
 
 execute at @s run function nl_system:loop/shader/shader_loop
+function nl_system:loop/status_gui/profile/profile_storage_loop

@@ -1,3 +1,6 @@
+
+
+#> GUI 외형 초기화
 scoreboard objectives remove NL_status_gui
 scoreboard objectives add NL_status_gui dummy
 scoreboard objectives modify NL_status_gui displayautoupdate true

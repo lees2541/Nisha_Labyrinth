@@ -3,6 +3,8 @@
 #declare storage nl:in_game 인 게임의 데이터를 저장
 #declare storage nl:lobby 로비에서 조작할 수 있는 설정들, 게임 시작 시 nl:settings에 들어간다
 #declare storage nl:default 게임의 기본설정, 게임 초기화 시 이 저장소의 내용이 로비로 병합된다
+#declare storage nl:image_code 이미지 폰트 및 커스텀 모델 데이터 값을 저장한다
+#declare storage nl:status_data 상태이상(포괄적인 이름, 스턴 같은거)가 함유하는 실질적인 mob effect와 수치를 저장 
 say 스토리지 초기화
 ## 스토리지 초기화
 data remove storage nl:settings map

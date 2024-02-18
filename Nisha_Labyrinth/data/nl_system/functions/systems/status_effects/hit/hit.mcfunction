@@ -1,6 +1,9 @@
 #> nl_system:systems/status_effects/hit/hit
 #
 #@context 이미지를 바꿀 플레이어
+#@within
+#   nl_system:systems/hit/being_damaged
+#   nl_system:systems/hit/hit_explorer_adv
 
 function nl_system:modules/status_gui/change_icon/hit
 
