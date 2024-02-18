@@ -1,1 +1,1 @@
-data modify storage nl:status_data effect append value {stun:[{id:"minecraft:blindness",amplifier:1,hide:"true"},{id:"minecraft:slowness",amplifier:50,hide:"true"}]}
+data modify storage nl:status_data effect set value {stun:[{id:"minecraft:blindness",amplifier:1,hide:"true"},{id:"minecraft:slowness",amplifier:50,hide:"true"}]}

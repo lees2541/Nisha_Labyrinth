@@ -3,9 +3,9 @@
 #@context 대상 {type: stun}
 
 
-execute store result storage nl:buffer status.id int 1 run scoreboard players get @s NL_player_id
-$data modify storage nl:buffer status.type set value "$(type)"
-function nl_system:modules/status_effect/base/delete_status with storage nl:buffer status
+execute store result storage nl:buffer status.set.id int 1 run scoreboard players get @s NL_player_id
+$data modify storage nl:buffer status.set.type set value "$(type)"
+function nl_system:modules/status_effect/base/delete_status with storage nl:buffer status.set
 
 #$say $(type) 없애기
 

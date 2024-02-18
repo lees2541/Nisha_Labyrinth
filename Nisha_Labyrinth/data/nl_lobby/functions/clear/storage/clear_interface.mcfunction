@@ -21,6 +21,7 @@ data remove storage nl:buffer entity
 data remove storage nl:buffer operation
 data remove storage nl:buffer item
 data remove storage nl:buffer position
+data remove storage nl:buffer status
 
 data remove storage nl:in_game player
 data remove storage nl:in_game status
