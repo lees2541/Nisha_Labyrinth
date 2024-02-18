@@ -84,6 +84,10 @@ setblock 707 45 581 minecraft:barrier
 setblock 707 45 580 minecraft:barrier
 ################################
 
+## 점프강화 울타리 interaction 설치
+function nl_lobby:maps/cave/interactions/set_fences
+
+
 ## 제단 interaction 엔티티 설치
 summon interaction 686 49.1 577 {Tags:["altar","NL"]}
 summon interaction 685 49.1 577 {Tags:["altar","NL"]}

@@ -1,0 +1,45 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:stone"
+      },
+      "title": "Hit Interaction Fence",
+      "description": "울타리 상호작용",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "parent": "nl_system:systems/actions/interactions/base/hit",
+    "criteria": {
+      "hit": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "player": {
+            "type_specific": {
+              "type": "player"
+            },
+            "nbt": "{Tags:[\"NL\"]}"
+          },
+          "entity": {
+            "type": "minecraft:interaction",
+            "nbt": "{Tags:[\"NL\",\"fence\"]}"
+          }
+        }
+      },
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "requirements": [
+      [
+        "hit"
+      ],
+      [
+        "impossible"
+      ]
+    ],
+    "rewards": {
+      "function": "nl_system:systems/actions/interactions/fence/hit_adv"
+    }
+  }
+  

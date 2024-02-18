@@ -1,5 +1,6 @@
 #> nl_system:modules/status_effect/base/change_status
 # 상태를 업데이트 한다
+#@api
 #@context 대상 {time:(int),type: stun | skill, sort: prepend | append}
 
 $data modify storage nl:buffer status merge value {time:$(time),type:$(type),sort:$(sort)}
