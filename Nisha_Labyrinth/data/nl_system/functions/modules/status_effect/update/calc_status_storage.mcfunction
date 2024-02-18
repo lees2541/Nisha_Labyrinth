@@ -25,48 +25,48 @@ scoreboard players set @s NL_status_update 100000
 
 execute unless data storage nl:buffer status.array[0] run return 1
 execute store result score #temp NL_status_update run data get storage nl:buffer status.array[0].time
-execute if score #temp NL_status_update <= #temp NL_status_update_count run data modify storage nl:buffer status.subarray prepend string storage nl:buffer status.array[0]
-$execute store result storage nl:in_game player[{id:$(Base)}].status.status[0].time int 1 run scoreboard players operation #temp NL_status_update -= temp NL_status_update_count
+execute if score #temp NL_status_update <= #temp NL_status_update_count run data modify storage nl:buffer status.subarray prepend from storage nl:buffer status.array[0]
+$execute store result storage nl:in_game player[{id:$(Base)}].status.status[0].time int 1 run scoreboard players operation #temp NL_status_update -= #temp NL_status_update_count
 execute if score #temp NL_status_update matches 1.. run scoreboard players operation @s NL_status_update < #temp NL_status_update
 
 execute unless data storage nl:buffer status.array[1] run return 1
 execute store result score #temp NL_status_update run data get storage nl:buffer status.array[1].time
-execute if score #temp NL_status_update <= #temp NL_status_update_count run data modify storage nl:buffer status.subarray prepend string storage nl:buffer status.array[1]
+execute if score #temp NL_status_update <= #temp NL_status_update_count run data modify storage nl:buffer status.subarray prepend from storage nl:buffer status.array[1]
 $execute store result storage nl:in_game player[{id:$(Base)}].status.status[1].time int 1 run scoreboard players operation #temp NL_status_update -= #temp NL_status_update_count
 execute if score #temp NL_status_update matches 1.. run scoreboard players operation @s NL_status_update < #temp NL_status_update
 
 execute unless data storage nl:buffer status.array[2] run return 1
 execute store result score #temp NL_status_update run data get storage nl:buffer status.array[2].time
-execute if score #temp NL_status_update <= #temp NL_status_update_count run data modify storage nl:buffer status.subarray prepend string storage nl:buffer status.array[2]
+execute if score #temp NL_status_update <= #temp NL_status_update_count run data modify storage nl:buffer status.subarray prepend from storage nl:buffer status.array[2]
 $execute store result storage nl:in_game player[{id:$(Base)}].status.status[2].time int 1 run scoreboard players operation #temp NL_status_update -= #temp NL_status_update_count
 execute if score #temp NL_status_update matches 1.. run scoreboard players operation @s NL_status_update < #temp NL_status_update
 
 execute unless data storage nl:buffer status.array[3] run return 1
 execute store result score #temp NL_status_update run data get storage nl:buffer status.array[3].time
-execute if score #temp NL_status_update <= #temp NL_status_update_count run data modify storage nl:buffer status.subarray prepend string storage nl:buffer status.array[3]
+execute if score #temp NL_status_update <= #temp NL_status_update_count run data modify storage nl:buffer status.subarray prepend from storage nl:buffer status.array[3]
 $execute store result storage nl:in_game player[{id:$(Base)}].status.status[3].time int 1 run scoreboard players operation #temp NL_status_update -= #temp NL_status_update_count
 execute if score #temp NL_status_update matches 1.. run scoreboard players operation @s NL_status_update < #temp NL_status_update
 
 execute unless data storage nl:buffer status.array[4] run return 1
 execute store result score #temp NL_status_update run data get storage nl:buffer status.array[4].time
-execute if score #temp NL_status_update <= #temp NL_status_update_count run data modify storage nl:buffer status.subarray prepend string storage nl:buffer status.array[4]
+execute if score #temp NL_status_update <= #temp NL_status_update_count run data modify storage nl:buffer status.subarray prepend from storage nl:buffer status.array[4]
 $execute store result storage nl:in_game player[{id:$(Base)}].status.status[4].time int 1 run scoreboard players operation #temp NL_status_update -= #temp NL_status_update_count
 execute if score #temp NL_status_update matches 1.. run scoreboard players operation @s NL_status_update < #temp NL_status_update
 
 execute unless data storage nl:buffer status.array[5] run return 1
 execute store result score #temp NL_status_update run data get storage nl:buffer status.array[5].time
-execute if score #temp NL_status_update <= #temp NL_status_update_count run data modify storage nl:buffer status.subarray prepend string storage nl:buffer status.array[5]
+execute if score #temp NL_status_update <= #temp NL_status_update_count run data modify storage nl:buffer status.subarray prepend from storage nl:buffer status.array[5]
 $execute store result storage nl:in_game player[{id:$(Base)}].status.status[5].time int 1 run scoreboard players operation #temp NL_status_update -= #temp NL_status_update_count
 execute if score #temp NL_status_update matches 1.. run scoreboard players operation @s NL_status_update < #temp NL_status_update
 
 execute unless data storage nl:buffer status.array[6] run return 1
 execute store result score #temp NL_status_update run data get storage nl:buffer status.array[6].time
-execute if score #temp NL_status_update <= #temp NL_status_update_count run data modify storage nl:buffer status.subarray prepend string storage nl:buffer status.array[6]
+execute if score #temp NL_status_update <= #temp NL_status_update_count run data modify storage nl:buffer status.subarray prepend from storage nl:buffer status.array[6]
 $execute store result storage nl:in_game player[{id:$(Base)}].status.status[6].time int 1 run scoreboard players operation #temp NL_status_update -= #temp NL_status_update_count
 execute if score #temp NL_status_update matches 1.. run scoreboard players operation @s NL_status_update < #temp NL_status_update
 
 execute unless data storage nl:buffer status.array[7] run return 1
 execute store result score #temp NL_status_update run data get storage nl:buffer status.array[7].time
-execute if score #temp NL_status_update <= #temp NL_status_update_count run data modify storage nl:buffer status.subarray prepend string storage nl:buffer status.array[7]
+execute if score #temp NL_status_update <= #temp NL_status_update_count run data modify storage nl:buffer status.subarray prepend from storage nl:buffer status.array[7]
 $execute store result storage nl:in_game player[{id:$(Base)}].status.status[7].time int 1 run scoreboard players operation #temp NL_status_update -= #temp NL_status_update_count
 execute if score #temp NL_status_update matches 1.. run scoreboard players operation @s NL_status_update < #temp NL_status_update

@@ -12,7 +12,7 @@ execute if entity @s[scores={NL_attack_cool=1}] run function nl_system:modules/s
 scoreboard players remove @s[scores={NL_attack_cool=1..}] NL_attack_cool 1
 
 # 스턴 관련
-execute if entity @s[scores={NL_stun_time=1}] run function nl_system:modules/status_effect/base/clear_status {type:stun}
+#execute if entity @s[scores={NL_stun_time=1}] run function nl_system:modules/status_effect/base/clear_status {type:stun}
 
 scoreboard players remove @s[scores={NL_stun_time=1..}] NL_stun_time 1
 

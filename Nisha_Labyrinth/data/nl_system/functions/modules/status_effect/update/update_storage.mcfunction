@@ -11,9 +11,10 @@
 # 상태이상 업데이트 타이머가 재설정 되고 nl:buffer status.subarray 안에 지속시간이 끝난 상태이상이 저장된다.
 
 $function nl_system:modules/status_effect/update/calc_status_storage {Base:$(Base)}
-
+scoreboard players set @s[scores={NL_status_update=100000}] NL_status_update 0 
+scoreboard players set @s NL_status_update_count 0
 $data modify storage nl:buffer status.subarray[].id set value $(Base)
-$function nl_system:modules/status_effect/update/clear_expired_status/clear_expired_status {Base:$(Base)}
+function nl_system:modules/status_effect/update/clear_expired_status/clear_expired_status
 
 
 

@@ -9,13 +9,12 @@ execute store result storage nl:buffer status.set.id int 1 run scoreboard player
 $data modify storage nl:buffer status.set.effect set from storage nl:status_data effect.$(tag)
 
 #> 상태 업데이트 타이머 갱신
-$execute if score @s NL_status_update matches $(time).. run scoreboard players set @s NL_status_update $(time)
 
 
 
 function nl_system:modules/status_effect/base/update_storage with storage nl:buffer status.set
 execute if entity @s[tag=hitstun] run function nl_system:modules/status_gui/change_icon/hit
-execute unless entity @s[tag=hitstun] if data storage nl:buffer status{type:"stun"} run function nl_system:modules/status_gui/change_icon/stun
+execute unless entity @s[tag=hitstun] if data storage nl:buffer status.set{type:"stun"} run function nl_system:modules/status_gui/change_icon/stun
 
 
 
