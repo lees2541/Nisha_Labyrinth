@@ -50,7 +50,8 @@ data merge storage nl:in_game {\
         {id:1,character:"(str)", status:{resource:{redstone:0,lifestone:0},status:{},effects:{}}}\
     ],\
     status:{\
-        ongoing:0,altar:{mode:0,speed:"(float)"},location:{main:{},library:{alarm:0,opened:0b}}\
+        ongoing:0,altar:{mode:0,speed:"(float)"},location:{main:{},library:{alarm:0,opened:0b}},\
+        status:[{type:"(str)",tag:"(str)",time:"(int)"}],\
     },\
     records:{\
         player:[{ex:"플레이어별 스킬, 각종 상호작용 횟수"}],\
@@ -60,7 +61,12 @@ data merge storage nl:in_game {\
         roamer:{\
             mined:{lifestone:"(int)"}\
         }\
-    }\
+    },\
+    icons{\
+            lf_slot:[{}],\
+            buff_slot:[{}],\
+            debuff_slot[{}],\
+        }\
 }
 data remove storage nl:in_game player
 

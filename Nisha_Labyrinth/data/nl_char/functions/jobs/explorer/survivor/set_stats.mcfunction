@@ -10,3 +10,5 @@ data modify storage nl:image_code player.survivor.font.icon2 set value "uE112"
 data modify storage nl:image_code player.survivor.font.icon3 set value "uE113"
 #> 제물이 됐을 때 이미지 (우측 gui)
 data modify storage nl:image_code player.survivor.font.icon4 set value "uE114"
+#> 스킬 이미지
+data modify storage nl:image_code player.survivor.font.lf_slot.skill1 set value "uE611"
