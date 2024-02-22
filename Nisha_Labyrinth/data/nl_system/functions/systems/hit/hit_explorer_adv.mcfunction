@@ -20,8 +20,8 @@ execute at @s run function nl_system:systems/hit/character_hit_function_call wit
 ## 마무리
 execute at @s run function nl_system:systems/status_effects/hit/hit
 execute as @a[limit=1,advancements={nl_system:systems/hit/hit_by_rm=true},team=explorer,tag=NL,tag=hit,tag=attacked] at @s run function nl_system:systems/hit/being_damaged
-#execute at @s as @a[limit=1,advancements={nl_system:systems/hit/hit_by_rm=true},team=explorer,tag=NL,tag=hit,tag=attacked,sort=nearest] run function nl_system:modules/status_gui/change_icon/hit
-function nl_system:modules/status_gui/change_icon/hit
+#execute at @s as @a[limit=1,advancements={nl_system:systems/hit/hit_by_rm=true},team=explorer,tag=NL,tag=hit,tag=attacked,sort=nearest] run function nl_system:modules/status_gui/profile_icon/hit
+function nl_system:modules/status_gui/profile_icon/case/hit
 tag @a[tag=NL] remove hit
 tag @a[tag=NL] remove attack
 tag @a[tag=NL] remove attacked

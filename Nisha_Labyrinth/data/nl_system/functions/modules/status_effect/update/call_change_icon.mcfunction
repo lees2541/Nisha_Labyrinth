@@ -5,7 +5,7 @@
 #   storage nl:buffer
 #       status.type
 
-execute if data storage nl:buffer status.set{type:"stun"} run return run function nl_system:modules/status_gui/change_icon/stun
+execute if data storage nl:buffer status.set{type:"stun"} run return run function nl_system:modules/status_gui/profile_icon/case/stun
 
 
 ## 스킬일때 부르는 함수

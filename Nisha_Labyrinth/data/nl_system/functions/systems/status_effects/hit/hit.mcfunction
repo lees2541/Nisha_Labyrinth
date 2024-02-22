@@ -5,7 +5,7 @@
 #   nl_system:systems/hit/being_damaged
 #   nl_system:systems/hit/hit_explorer_adv
 
-function nl_system:modules/status_gui/change_icon/hit
+function nl_system:modules/status_gui/profile_icon/case/hit
 
 tag @s add hitstun
 ## 탐험가

@@ -5,7 +5,7 @@ function nl_char:jobs/explorer/explorer
 
 tag @s add survivor
 
-function nl_system:modules/status_gui/change_icon/default
+function nl_system:modules/status_gui/profile_icon/case/default
 scoreboard players display numberformat @s NL_status_gui fixed "-"
 
 say 안녕 난 생존가

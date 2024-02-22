@@ -1,4 +1,4 @@
-#> nl_system:modules/status_gui/change_lifestone_icon/change_lifestone_icon
+#> nl_system:modules/status_gui/lifestone_icon/change_icon
 #
 #@context 대상 with storage nl:buffer icon
 # @input

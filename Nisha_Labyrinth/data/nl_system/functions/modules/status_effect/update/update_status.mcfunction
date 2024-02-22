@@ -15,9 +15,9 @@ $function nl_system:modules/status_effect/update/update_storage {Base:$(Base)}
 
 
 ## GUI 업데이트
-execute if entity @s[tag=hitstun] run return run function nl_system:modules/status_gui/change_icon/hit
+execute if entity @s[tag=hitstun] run return run function nl_system:modules/status_gui/profile_icon/case/hit
 
-$execute unless data storage nl:in_game player[{id:$(Base)}].status.status[0] run return run function nl_system:modules/status_gui/change_icon/default
+$execute unless data storage nl:in_game player[{id:$(Base)}].status.status[0] run return run function nl_system:modules/status_gui/profile_icon/case/default
 
 $data modify storage nl:buffer status.set.type set from storage nl:in_game player[{id:$(Base)}].status.status[0].type
 

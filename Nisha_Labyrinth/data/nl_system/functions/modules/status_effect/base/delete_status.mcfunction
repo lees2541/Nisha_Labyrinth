@@ -7,5 +7,5 @@
 #           플레이어 id
 #       status.type
 #           지울 타입
-#say 지워어ㅓㅓㅓ
+
 $data remove storage nl:in_game player[{id:$(id)}].status.status[{type:"$(type)"}]

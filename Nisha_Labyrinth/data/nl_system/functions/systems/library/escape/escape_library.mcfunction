@@ -7,6 +7,6 @@ tag @s remove sacrifice
 
 team join explorer @s
 
-function nl_system:modules/status_gui/change_icon/default
+function nl_system:modules/status_gui/profile_icon/case/default
 
 function nl_system:systems/library/access_control/open_library

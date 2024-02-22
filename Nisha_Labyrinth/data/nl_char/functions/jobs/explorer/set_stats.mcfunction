@@ -5,6 +5,6 @@ attribute @s minecraft:generic.attack_speed base set 4
 
 
 ## 
-#data modify storage nl:image_code player.explorer.lifestone.icon1 set value "uE601"
+data modify storage nl:image_code player.explorer.font.buff_slot.icon1 set value "uE111"
 
 

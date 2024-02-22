@@ -9,7 +9,7 @@ tag @s add occupied
 tag @s add campfire
 setblock ~ ~ ~ soul_campfire[signal_fire=false,waterlogged=false]{CookingTotalTimes:[I;0,100000,100000,100000],Items:[{Slot:1b,id:"minecraft:bowl",Count:1b},{Slot:2b,id:"minecraft:bowl",Count:1b},{Slot:3b,id:"minecraft:bowl",Count:1b}]}
 ## ui 바꾸기
-$execute on target run function nl_system:modules/status_gui/change_lifestone_icon/update/input_storage {id:$(id),tag:"skill1",character:"$(character)"}
+$execute on target run function nl_system:modules/status_gui/lifestone_icon/update/input_storage {id:$(id),tag:"skill1",character:"$(character)"}
 
 
 return 1

@@ -13,8 +13,8 @@ $data modify storage nl:buffer status.set.effect set from storage nl:status_data
 
 
 function nl_system:modules/status_effect/base/update_storage with storage nl:buffer status.set
-execute if entity @s[tag=hitstun] run function nl_system:modules/status_gui/change_icon/hit
-execute unless entity @s[tag=hitstun] if data storage nl:buffer status.set{type:"stun"} run function nl_system:modules/status_gui/change_icon/stun
+execute if entity @s[tag=hitstun] run function nl_system:modules/status_gui/profile_icon/case/hit
+execute unless entity @s[tag=hitstun] if data storage nl:buffer status.set{type:"stun"} run function nl_system:modules/status_gui/profile_icon/case/stun
 
 
 
