@@ -17,6 +17,7 @@ execute as @e[tag=vind] at @s run tp @s ~ ~ ~ facing entity @e[type=armor_stand,
 schedule function nl_vfx:map/cave/prison/imprison/imprison1 20t 
 schedule function nl_vfx:map/cave/prison/imprison/imprison2 40t 
 schedule function nl_vfx:map/cave/prison/imprison/imprison3 60t 
+schedule function nl_vfx:map/cave/prison/imprison/imprison_end 80t
 
 
 #> 대상을 바라보는 예시
