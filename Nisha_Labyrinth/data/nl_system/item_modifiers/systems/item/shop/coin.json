@@ -15,7 +15,7 @@
       "replace": true
     },
     {
-      "function": "minecraft:set_nbt",
+      "function": "minecraft:set_custom_data",
       "tag": "{NL:1b,shop_coin:1b,drop:1b}"
     }
   ]

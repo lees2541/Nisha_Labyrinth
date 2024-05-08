@@ -1,22 +1,25 @@
 [
-    {
-      "function": "minecraft:set_name",
-      "entity": "this",
-      "name": "감옥열쇠"
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        {
-          "text": "알레이에게 가져다주면 감옥문을 열어 줄 수도?"
-        }
-      ],
-      "replace": true
-    },
-    {
-      "function": "minecraft:set_nbt",
-      "tag": "{CustomModelData:30000005,NL:1b,lib:1b,prison_key:1b}"
-    }
-  ]
-  
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": "감옥열쇠"
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "알레이에게 가져다주면 감옥문을 열어 줄 수도?"
+      }
+    ],
+    "mode": "replace_all"
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{NL:1b,lib:1b,prison_key:1b}"
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "value": 30000005
+  }
+]

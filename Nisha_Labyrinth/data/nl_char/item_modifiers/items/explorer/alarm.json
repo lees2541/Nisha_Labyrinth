@@ -1,25 +1,19 @@
 [
   {
-    "function": "minecraft:set_nbt",
+    "function": "minecraft:set_custom_model_data",
+    "value": {
+      "type": "minecraft:storage",
+      "storage": "nl:buffer",
+      "path": "item.CustomModelData"
+    }
+  },
+  {
+    "function": "minecraft:set_custom_data",
     "tag": "{NL:1b,offhand:1b,alarm:1b}"
   },
   {
     "function": "minecraft:set_name",
     "entity": "this",
     "name": "경고기"
-  },
-  {
-    "function": "minecraft:copy_nbt",
-    "source": {
-      "type": "minecraft:storage",
-      "source": "nl:buffer"
-    },
-    "ops": [
-      {
-        "source": "item.CustomModelData",
-        "target": "CustomModelData",
-        "op": "replace"
-      }
-    ]
   }
 ]
