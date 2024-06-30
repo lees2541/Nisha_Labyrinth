@@ -62,10 +62,10 @@ data merge storage nl:in_game {\
             mined:{lifestone:"(int)"}\
         }\
     },\
-    icons{\
+    icons:{\
             lf_slot:[{}],\
             buff_slot:[{}],\
-            debuff_slot[{}],\
+            debuff_slot:[{}],\
         }\
 }
 data remove storage nl:in_game player
