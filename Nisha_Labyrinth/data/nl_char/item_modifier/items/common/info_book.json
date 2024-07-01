@@ -1,0 +1,178 @@
+[
+    {
+        "function": "minecraft:set_book_cover",
+        "title": "니샤라비린스"
+    },
+    {
+        "function": "minecraft:set_custom_data",
+        "tag": "{NL:1b,info_book:1b}"
+    },
+    {
+        "function": "minecraft:set_written_book_pages",
+        "pages": [
+            {
+                "extra": [
+                    {
+                        "bold": true,
+                        "clickEvent": {
+                            "action": "run_command",
+                            "value": "/function nl_lobby:lobby/game_start"
+                        },
+                        "color": "gold",
+                        "text": "[게임시작]"
+                    },
+                    "\n",
+                    {
+                        "bold": true,
+                        "clickEvent": {
+                            "action": "run_command",
+                            "value": ""
+                        },
+                        "color": "dark_red",
+                        "text": "<레드스톤 지급> "
+                    },
+                    {
+                        "clickEvent": {
+                            "action": "run_command",
+                            "value": "/scoreboard players add @s NL_mined_red 1"
+                        },
+                        "color": "green",
+                        "text": "<↑> "
+                    },
+                    {
+                        "clickEvent": {
+                            "action": "run_command",
+                            "value": "/function #nl_system:calc_resource {resource:redstone,operator:remove,operand:1}"
+                        },
+                        "color": "red",
+                        "text": "<↓>   "
+                    },
+                    "\n",
+                    {
+                        "bold": true,
+                        "clickEvent": {
+                            "action": "run_command",
+                            "value": ""
+                        },
+                        "color": "blue",
+                        "text": "<생명석 지급> "
+                    },
+                    {
+                        "clickEvent": {
+                            "action": "run_command",
+                            "value": "/scoreboard players add @s NL_mined_life 1"
+                        },
+                        "color": "green",
+                        "text": "<↑> "
+                    },
+                    {
+                        "clickEvent": {
+                            "action": "run_command",
+                            "value": "/function #nl_system:calc_resource {resource:lifestone,operator:remove,operand:1}"
+                        },
+                        "color": "red",
+                        "text": "<↓>   "
+                    },
+                    "\n",
+                    {
+                        "bold": true,
+                        "clickEvent": {
+                            "action": "run_command",
+                            "value": "/effect give @s minecraft:instant_health 1 100"
+                        },
+                        "color": "light_purple",
+                        "text": "<체력회복>"
+                    },
+                    "\n",
+                    {
+                        "bold": true,
+                        "clickEvent": {
+                            "action": "run_command",
+                            "value": "/effect give @s minecraft:saturation 1 105"
+                        },
+                        "color": "dark_red",
+                        "text": "<포만감 버프>"
+                    },
+                    "\n",
+                    "\n",
+                    "\n",
+                    {
+                        "bold": true,
+                        "clickEvent": {
+                            "action": "run_command",
+                            "value": "/function nl_lobby:lobby/game_reset"
+                        },
+                        "color": "blue",
+                        "text": "[게임리셋]"
+                    }
+                ],
+                "text": ""
+            },
+            {
+                "extra": [
+                    {
+                        "clickEvent": {
+                            "action": "run_command",
+                            "value": "/function nl_lobby:lobby/jobs/choose_job {character:survivor,team:explorer}"
+                        },
+                        "color": "red",
+                        "text": "[생존가]"
+                    },
+                    "\n",
+                    {
+                        "clickEvent": {
+                            "action": "run_command",
+                            "value": "/function nl_lobby:lobby/jobs/choose_job {character:magician,team:explorer}"
+                        },
+                        "color": "red",
+                        "text": "[주술사]"
+                    },
+                    "\n",
+                    {
+                        "clickEvent": {
+                            "action": "run_command",
+                            "value": "/function nl_lobby:lobby/jobs/choose_job {character:swordsman,team:explorer}"
+                        },
+                        "color": "red",
+                        "text": "[검객]"
+                    },
+                    "\n",
+                    {
+                        "clickEvent": {
+                            "action": "run_command",
+                            "value": "/function nl_lobby:lobby/jobs/choose_job {character:blind,team:explorer}"
+                        },
+                        "color": "red",
+                        "text": "[맹인]"
+                    }
+                ],
+                "text": ""
+            },
+            {
+                "extra": [
+                    {
+                        "bold": true,
+                        "clickEvent": {
+                            "action": "run_command",
+                            "value": "/function nl_lobby:lobby/jobs/choose_job {character:hunter,team:roamer}"
+                        },
+                        "color": "dark_red",
+                        "text": "[헌터]"
+                    },
+                    "\n",
+                    {
+                        "bold": true,
+                        "clickEvent": {
+                            "action": "run_command",
+                            "value": "/function nl_lobby:lobby/jobs/choose_job {character:chopper,team:roamer}"
+                        },
+                        "color": "dark_red",
+                        "text": "[쵸퍼]"
+                    }
+                ],
+                "text": ""
+            }
+        ],
+        "mode": "replace_all"
+    }
+]

@@ -14,7 +14,7 @@
       ]
     },
     {
-      "function": "minecraft:set_nbt",
+      "function": "minecraft:set_custom_data",
       "tag": "{tag:{NL:1b,library_key:1b,lib:1b}}"
     }
   ]
