@@ -1,39 +1,4 @@
 [
-<<<<<<< HEAD
-    {
-      "function": "minecraft:set_name",
-      "entity": "this",
-      "name": "탐험가의 곡괭이"
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        {
-          "text": "곡괭이이다"
-        }
-      ]
-    },
-    {
-      "function": "minecraft:set_enchantments",
-      "enchantments": {
-        "minecraft:efficiency": {
-          "type": "minecraft:score",
-          "target": "this",
-          "score": "E_efficiency",
-          "scale": 1
-        },
-        "minecraft:unbreaking": 1
-      },
-      "add": false
-    },
-    {
-      "function": "minecraft:set_nbt",
-      "tag": "{HideFlags:255,NL:1b,CanDestroy:[\"minecraft:redstone_ore\",\"minecraft:bone_block\"]}"
-    }
-  ]
-  
-=======
   {
     "function": "minecraft:set_components",
     "components": {
@@ -76,11 +41,10 @@
   },
   {
     "function": "minecraft:set_custom_data",
-    "tag": "{NL:1b]}"
+    "tag": "{NL:1b}"
   },
   {
     "function": "minecraft:set_item",
     "item": "minecraft:acacia_wood"
   }
 ]
->>>>>>> newItemFormatUpdate
