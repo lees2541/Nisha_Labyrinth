@@ -10,7 +10,7 @@ execute store result storage nl:buffer player.selectedSlot int 1 run data get en
 ## 아이템 종류 체크
 
 execute unless entity @s[team=roamer] if data entity @s Inventory[{id:"minecraft:iron_hoe",tag:{NL:1b,drop:0b,lifestone:1b}}] run function nl_system:modules/storage/scoreboard/operation/resource_count/calc_resource {resource:lifestone,operator:add,operand:1}
-execute unless entity @s[team=roamer] if data entity @s Inventory[{id:"minecraft:iron_hoe",tag:{NL:1b,drop:0b,lifestone:1b}}] run clear @s iron_hoe{NL:1b,drop:0b,lifestone:1b} 1
+execute unless entity @s[team=roamer] if data entity @s Inventory[{id:"minecraft:iron_hoe",tag:{NL:1b,drop:0b,lifestone:1b}}] run clear @s iron_hoe[minecraft:custom_data={NL:1b,drop:0b,lifestone:1b}] 1
 
 ## drop:0b 아이템이 덜 정리됐을 경우 다시 이 함수를 실행
 execute unless entity @s[team=roamer] if data entity @s Inventory[{tag:{drop:0b,NL:1b}}] run return run function nl_system:modules/hotbar_holder/base/inventory_changed_detection_adv
@@ -26,7 +26,7 @@ function nl_system:modules/hotbar_holder/base/update_inventory_info with storage
 ## 왼손 감지
 
 execute unless data entity @s Inventory[{Slot:-106b}] run function nl_system:systems/item/update/offhand
-execute unless entity @s[nbt={Inventory:[{Slot:-106b,tag:{offhand:1b,NL:1b}}]}] run advancement grant @s only nl_system:systems/actions/key_events/f_key/offhand_changed_detected
+execute unless entity @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{offhand:1b,NL:1b}}}]}] run advancement grant @s only nl_system:systems/actions/key_events/f_key/offhand_changed_detected
 
 ## 도서관 상자 처리
 advancement grant @s only nl_system:systems/library/chest_looting/obtained_lib_item impossible
@@ -37,7 +37,7 @@ execute unless entity @s[team=roamer] run function nl_system:modules/hotbar_hold
 
 ## 정보창 감지
 execute unless data entity @s Inventory[{Slot:8b}] run function nl_system:systems/item/update/info_book
-execute unless entity @s[nbt={Inventory:[{Slot:8b,tag:{info_book:1b,NL:1b}}]}] run function nl_system:modules/hotbar_holder/base/slot_update {"Slot":"8b","slotPath":"hotbar.8","Path":"info_book"}
+execute unless entity @s[nbt={Inventory:[{Slot:8b,components:{"minecraft:custom_data":{info_book:1b,NL:1b}}}]}] run function nl_system:modules/hotbar_holder/base/slot_update {"Slot":"8b","slotPath":"hotbar.8","Path":"info_book"}
 
 ## 인벤토리 정보 업데이트
 function nl_system:modules/hotbar_holder/base/update_inventory_info with storage nl:buffer player

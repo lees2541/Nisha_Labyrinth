@@ -6,5 +6,5 @@
 $execute if entity @a[tag=NL,distance=2..,nbt={Attributes:[{Name:"minecraft:generic.luck",Base:$(id).0d}]}] at @s facing entity @a[tag=NL,nbt={Attributes:[{Name:"minecraft:generic.luck",Base:$(id).0d}]},limit=1,sort=nearest] eyes positioned ^ ^ ^0.15 if predicate nl_system:location/blocks/air_or_unblockable run tp @s ~ ~ ~ facing entity @a[tag=NL,nbt={Attributes:[{Name:"minecraft:generic.luck",Base:$(id).0d}]},limit=1,sort=nearest] eyes
 
 
-$execute unless entity @a[tag=NL,nbt={Attributes:[{Name:"minecraft:generic.luck",Base:$(id).0d}]},nbt={SelectedItem:{tag:{lib:1b,prison_key:1b}}}] run data remove entity @e[type=marker,tag=allay,tag=$(tag),limit=1,sort=nearest] data.id
-$execute unless entity @a[tag=NL,nbt={Attributes:[{Name:"minecraft:generic.luck",Base:$(id).0d}]},nbt={SelectedItem:{tag:{lib:1b,prison_key:1b}}}] run scoreboard players set @s NL_mode 1
+$execute unless entity @a[tag=NL,nbt={Attributes:[{Name:"minecraft:generic.luck",Base:$(id).0d}]},nbt={SelectedItem:{components:{"minecraft:custom_data":{lib:1b,prison_key:1b}}}}] run data remove entity @e[type=marker,tag=allay,tag=$(tag),limit=1,sort=nearest] data.id
+$execute unless entity @a[tag=NL,nbt={Attributes:[{Name:"minecraft:generic.luck",Base:$(id).0d}]},nbt={SelectedItem:{components:{"minecraft:custom_data":{lib:1b,prison_key:1b}}}}] run scoreboard players set @s NL_mode 1

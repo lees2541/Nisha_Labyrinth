@@ -11,8 +11,8 @@ data remove storage nl:buffer player.item.switch.nbt.Slot
 
 function nl_system:modules/hotbar_holder/base/update_inventory_info with storage nl:buffer player
 
-data modify storage nl:buffer player.item.switch.count set from storage nl:buffer player.item.switch.nbt.Count
-data remove storage nl:buffer player.item.switch.nbt.Count
+data modify storage nl:buffer player.item.switch.count set from storage nl:buffer player.item.switch.nbt.count
+data remove storage nl:buffer player.item.switch.nbt.count
 
 
 function nl_system:modules/hotbar_holder/base/macro/item_check with storage nl:buffer player.item.switch

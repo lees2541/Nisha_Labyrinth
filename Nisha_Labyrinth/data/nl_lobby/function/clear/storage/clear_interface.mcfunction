@@ -82,7 +82,7 @@ data merge storage nl:buffer {\
     player:{\
         id:"(int)",\
         selectedSlot:"(int)",\
-        item:{switch:{id:"(str)",slot:"(int|str)",stack:"(int)",nbt:{tag:{},Slot:"(byte)",Count:"(int)"}}},\
+        item:{switch:{id:"(str)",slot:"(int|str)",stack:"(int)",nbt:{tag:{},Slot:"(byte)",count:"(int)"}}},\
         inventory:{},\
         status:{},\
         team:"(str)"\

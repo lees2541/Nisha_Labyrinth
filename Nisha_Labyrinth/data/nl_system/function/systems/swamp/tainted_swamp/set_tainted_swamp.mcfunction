@@ -9,5 +9,5 @@ say 늪생김 최대치 아직 안됨
 
 ## 오염된 늪이 최대개수가 안됐을 때
 execute as @e[type=interaction,tag=NL,tag=!occupied,tag=swamp,tag=!tainted,limit=1,sort=random] run data merge entity @s {Tags:["NL","swamp","occupied","tainted"]}
-execute as @e[type=interaction,tag=NL,tag=occupied,tag=swamp,tag=tainted] on passengers if entity @s[type=item_display,tag=NL,tag=swamp] run data modify entity @s item merge value {id:"minecraft:lime_dye",Count:1b}
+execute as @e[type=interaction,tag=NL,tag=occupied,tag=swamp,tag=tainted] on passengers if entity @s[type=item_display,tag=NL,tag=swamp] run data modify entity @s item merge value {id:"minecraft:lime_dye",count:1b}
 execute store result storage nl:in_game status.location.main.swamp.tainted int 1 run scoreboard players add #tainted NL_temp 1

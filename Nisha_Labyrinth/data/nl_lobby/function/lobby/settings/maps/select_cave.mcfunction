@@ -28,7 +28,7 @@ summon marker 716 45 608 {CustomNameVisible:0b,Tags:["NL","lifestone","marker"],
 
 ##상점 위치
 summon marker 677 36 626 {CustomNameVisible:0b,Tags:["NL","shop","marker"],CustomName:'{"text":"상점"}',data:{}}
-execute positioned as @e[type=marker,tag=NL,tag=marker,tag=shop,limit=1] run summon item_display ~1 ~3 ~ {Rotation:[90F,0F],Tags:["NL","shop","statue"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},item:{id:"minecraft:diamond_axe",Count:1b,tag:{CustomModelData:80005}}}
+execute positioned as @e[type=marker,tag=NL,tag=marker,tag=shop,limit=1] run summon item_display ~1 ~3 ~ {Rotation:[90F,0F],Tags:["NL","shop","statue"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},item:{id:"minecraft:diamond_axe",count:1,components:{"minecraft:custom_model_data":80005}}}
 execute at @e[type=marker,tag=marker,tag=shop,limit=1] run summon interaction ~1 ~2 ~ {width:1f,height:2f,response:1b,Tags:["NL","shop","statue"]}
 ################################
 
@@ -55,7 +55,7 @@ summon interaction 707 39 580 {width:0.8f,height:7f,response:1b,Tags:["NL","vine
 
 
 ## 발판 태그
-execute as @e[type=glow_item_frame,tag=NL,tag=cave] at @s run summon interaction ~ ~ ~ {width:0.9f,height:0.08f,response:1b,Tags:["NL","swamp"],Passengers:[{id:"minecraft:item_display",Tags:["NL","swamp"],brightness:{sky:10,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0.707f,0f,0f,0.707f],translation:[0f,0f,0f],scale:[0.5f,1.1f,0.5f]},item:{id:"minecraft:bamboo",Count:1b}}]}
+execute as @e[type=glow_item_frame,tag=NL,tag=cave] at @s run summon interaction ~ ~ ~ {width:0.9f,height:0.08f,response:1b,Tags:["NL","swamp"],Passengers:[{id:"minecraft:item_display",Tags:["NL","swamp"],brightness:{sky:10,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0.707f,0f,0f,0.707f],translation:[0f,0f,0f],scale:[0.5f,1.1f,0.5f]},item:{id:"minecraft:bamboo",count:1b}}]}
 ################################
 
 ## 도서관 경비병 및 루트

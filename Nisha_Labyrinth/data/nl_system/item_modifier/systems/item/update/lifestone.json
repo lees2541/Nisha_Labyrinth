@@ -4,26 +4,11 @@
     "name": "nl_system:systems/item/resources/lifestone"
   },
   {
-<<<<<<< HEAD
-    "function": "minecraft:copy_nbt",
-    "source": {
-      "type": "minecraft:storage",
-      "source": "nl:buffer"
-    },
-    "ops": [
-      {
-        "source": "operation.result",
-        "target": "CustomModelData",
-        "op": "replace"
-      }
-    ]
-=======
     "function": "minecraft:set_custom_model_data",
     "value": {
       "type": "minecraft:storage",
       "storage": "nl:buffer",
       "path": "operation.result"
     }
->>>>>>> newItemFormatUpdate
   }
 ]
