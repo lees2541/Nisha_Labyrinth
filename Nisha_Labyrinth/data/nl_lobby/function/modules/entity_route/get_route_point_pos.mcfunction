@@ -8,7 +8,11 @@
 #       position.Z
 
 
+$data modify storage nl:buffer position append from entity @e[type=text_display,tag=library,tag=NL,tag=point$(point),limit=1,sort=nearest] Pos[0]
+$data modify storage nl:buffer position append from entity @e[type=text_display,tag=library,tag=NL,tag=point$(point),limit=1,sort=nearest] Pos[1]
+$data modify storage nl:buffer position append from entity @e[type=text_display,tag=library,tag=NL,tag=point$(point),limit=1,sort=nearest] Pos[2]
 
-$execute store result storage nl:buffer position.X int 1 run data get entity @e[type=text_display,tag=library,tag=NL,tag=point$(point),limit=1,sort=nearest] Pos[0]
-$execute store result storage nl:buffer position.Y int 1 run data get entity @e[type=text_display,tag=library,tag=NL,tag=point$(point),limit=1,sort=nearest] Pos[1]
-$execute store result storage nl:buffer position.Z int 1 run data get entity @e[type=text_display,tag=library,tag=NL,tag=point$(point),limit=1,sort=nearest] Pos[2]
+
+#$execute store result storage nl:buffer position.X int 1 run data get entity @e[type=text_display,tag=library,tag=NL,tag=point$(point),limit=1,sort=nearest] Pos[0]
+#$execute store result storage nl:buffer position.Y int 1 run data get entity @e[type=text_display,tag=library,tag=NL,tag=point$(point),limit=1,sort=nearest] Pos[1]
+#$execute store result storage nl:buffer position.Z int 1 run data get entity @e[type=text_display,tag=library,tag=NL,tag=point$(point),limit=1,sort=nearest] Pos[2]

@@ -6,6 +6,6 @@
 
 
 
-$execute unless data entity @s WanderTarget unless data entity @s Passengers[{id:"minecraft:marker"}].data.route[$(mode)] store result entity @e[type=marker,tag=NL,tag=patrol,tag=$(tag),limit=1,sort=nearest] data.mode int 1 run return run scoreboard players set @s NL_mode 0
+$execute unless data entity @s wander_target unless data entity @s Passengers[{id:"minecraft:marker"}].data.route[$(mode)] store result entity @e[type=marker,tag=NL,tag=patrol,tag=$(tag),limit=1,sort=nearest] data.mode int 1 run return run scoreboard players set @s NL_mode 0
 
-$execute unless data entity @s WanderTarget run data modify entity @s WanderTarget set from entity @s Passengers[{id:"minecraft:marker"}].data.route[$(mode)]
+$execute unless data entity @s wander_target run data modify entity @s wander_target set from entity @s Passengers[{id:"minecraft:marker"}].data.route[$(mode)]

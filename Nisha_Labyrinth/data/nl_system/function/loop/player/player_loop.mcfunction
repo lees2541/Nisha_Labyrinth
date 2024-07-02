@@ -32,7 +32,7 @@ execute if entity @s[predicate=nl_system:status/action/sprinting,predicate=nl_sy
 
 #> 앉아있는 시간
 scoreboard players add @s[tag=sneaking] NL_sneaking_time 1
-scoreboard players set @s[team=!roamer,scores={NL_sneaking_time=25}] NL_flashlight 0
+scoreboard players set @s[team=!roamer,scores={NL_sneaking_time=15}] NL_flashlight 0
 scoreboard players set @s[team=roamer,scores={NL_sneaking_time=10}] NL_flashlight 0
 
 # 팀별 루프
