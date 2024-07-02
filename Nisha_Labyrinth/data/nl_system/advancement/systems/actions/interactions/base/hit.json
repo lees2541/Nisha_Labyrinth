@@ -1,7 +1,7 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:stone"
+        "id": "minecraft:stone"
       },
       "title": "Hit Interaction",
       "description": "Hit interaction entity",

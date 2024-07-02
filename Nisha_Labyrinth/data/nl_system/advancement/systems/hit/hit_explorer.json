@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:stone"
+      "id": "minecraft:stone"
     },
     "title": "hit_explorer",
     "description": "배회자가 탐험가에게 기본공격을 가할 시 발동(탐험의 피격판정 전 실행)",

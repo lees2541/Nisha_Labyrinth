@@ -1,7 +1,7 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:stone"
+        "id": "minecraft:stone"
       },
       "title": "석상이 반응합니다",
       "description": "",

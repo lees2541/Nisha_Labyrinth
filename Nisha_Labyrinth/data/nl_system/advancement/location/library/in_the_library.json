@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:written_book",
+      "id": "minecraft:written_book",
       "nbt": "{CustomModelData:302001}"
     },
     "title": "도서관",

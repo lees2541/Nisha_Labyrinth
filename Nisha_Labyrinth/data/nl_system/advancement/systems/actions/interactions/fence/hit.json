@@ -1,7 +1,7 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:stone"
+        "id": "minecraft:stone"
       },
       "title": "Hit Interaction Fence",
       "description": "울타리 상호작용",

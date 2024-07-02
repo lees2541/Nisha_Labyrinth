@@ -1,7 +1,7 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:stone"
+        "id": "minecraft:stone"
       },
       "title": "Interact with Allay",
       "description": "알레이 인터랙션과 상호작용",

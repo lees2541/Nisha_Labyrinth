@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:stone"
+      "id": "minecraft:stone"
     },
     "title": "Hit Interaction Altar",
     "description": "제단에 주흔 올림",

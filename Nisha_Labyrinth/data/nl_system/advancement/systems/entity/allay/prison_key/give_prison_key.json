@@ -1,7 +1,7 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:paper",
+        "id": "minecraft:paper",
         "nbt": "{CustomModelData:123}"
       },
       "title": "알레이가 이슬을 맛있게 먹었습니다!",

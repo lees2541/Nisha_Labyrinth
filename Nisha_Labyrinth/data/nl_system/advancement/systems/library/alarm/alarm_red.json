@@ -1,7 +1,7 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:written_book",
+        "id": "minecraft:written_book",
         "nbt": "{CustomModelData:302002}"
       },
       "title": "폐쇄!",

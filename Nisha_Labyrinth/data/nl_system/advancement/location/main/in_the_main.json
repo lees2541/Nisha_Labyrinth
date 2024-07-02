@@ -1,7 +1,7 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:stone"
+        "id": "minecraft:stone"
       },
       "title": "동굴 안",
       "description": "스산한 느낌이 듭니다",
