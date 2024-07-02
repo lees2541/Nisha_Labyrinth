@@ -26,11 +26,7 @@ effect give @s mining_fatigue infinite 3 true
 function nl_char:jobs/explorer/set_stats
 ## 아이템 지급
 function nl_char:items/explorer/explorer/explorer
-<<<<<<< HEAD
-give @s cooked_beef{NL:1b} 10
-=======
 give @s cooked_beef[custom_data = {NL:1b}] 10
->>>>>>> newItemFormatUpdate
 
 
 

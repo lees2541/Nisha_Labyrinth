@@ -1,26 +1,4 @@
 [
-<<<<<<< HEAD
-    {
-      "function": "minecraft:set_name",
-      "entity": "this",
-      "name": "생명석"
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        {
-          "text": "생명석이다"
-        }
-      ]
-    },
-    {
-      "function": "minecraft:set_nbt",
-      "tag": "{NL:1b,lifestone:1b,drop:1b,CustomModelData:100000}"
-    }
-  ]
-  
-=======
   {
     "function": "minecraft:set_name",
     "entity": "this",
@@ -45,4 +23,3 @@
     "value": 100000
   }
 ]
->>>>>>> newItemFormatUpdate

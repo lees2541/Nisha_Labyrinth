@@ -1,17 +1,4 @@
 [
-<<<<<<< HEAD
-    {
-      "function": "minecraft:set_name",
-      "entity": "this",
-      "name": "꼬기"
-    },
-    {
-      "function": "minecraft:set_nbt",
-      "tag": "{NL:1b,drop:1b}"
-    }
-  ]
-  
-=======
   {
     "function": "minecraft:set_name",
     "entity": "this",
@@ -22,4 +9,3 @@
     "tag": "{NL:1b,drop:1b}"
   }
 ]
->>>>>>> newItemFormatUpdate
