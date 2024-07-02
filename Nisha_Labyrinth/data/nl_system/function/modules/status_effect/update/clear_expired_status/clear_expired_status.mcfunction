@@ -1,6 +1,6 @@
 #> nl_system:modules/status_effect/update/clear_expired_status/clear_expired_status
 #
-#@context 대상 {Base:(id)}
+#@context 대상 {base:(id)}
 #@input
 #   storage nl:buffer
 #       status.subarray

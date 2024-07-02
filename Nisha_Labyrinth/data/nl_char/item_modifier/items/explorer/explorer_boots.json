@@ -31,7 +31,7 @@
     "modifiers": [
       {
         "attribute": "minecraft:generic.max_health",
-        "name": "Explorer_HP",
+        "id": "nl:explorer_hp",
         "amount": -4,
         "operation": "add_value",
         "slot": "feet"

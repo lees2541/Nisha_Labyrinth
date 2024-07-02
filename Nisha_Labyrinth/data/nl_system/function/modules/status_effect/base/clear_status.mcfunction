@@ -9,4 +9,4 @@ function nl_system:modules/status_effect/base/delete_status with storage nl:buff
 
 #$say $(type) 없애기
 
-function nl_system:modules/status_effect/update/update_status with entity @s Attributes[{Name:"minecraft:generic.luck"}]
+function nl_system:modules/status_effect/update/update_status with entity @s attributes[{id:"minecraft:generic.luck"}]
