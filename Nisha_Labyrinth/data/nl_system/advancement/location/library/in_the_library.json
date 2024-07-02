@@ -2,7 +2,9 @@
   "display": {
     "icon": {
       "id": "minecraft:written_book",
-      "nbt": "{CustomModelData:302001}"
+      "components": {
+        "minecraft:custom_model_data": 302001
+      }
     },
     "title": "도서관",
     "description": "무언가들이 배회하고 있습니다",

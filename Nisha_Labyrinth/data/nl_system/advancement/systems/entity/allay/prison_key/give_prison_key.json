@@ -1,45 +1,48 @@
 {
-    "display": {
-      "icon": {
-        "id": "minecraft:paper",
-        "nbt": "{CustomModelData:123}"
-      },
-      "title": "알레이가 이슬을 맛있게 먹었습니다!",
-      "description": "감옥을 여는 걸 도와준다네요",
-      "show_toast": true,
-      "announce_to_chat": false,
-      "hidden": true
-    },
-    "criteria": {
-      "give_prison_key": {
-        "trigger": "minecraft:player_interacted_with_entity",
-        "conditions": {
-          "player": {
-            "nbt": "{Tags:[\"NL\"]}"
-          },
-          "item": {
-            "items": [
-              "minecraft:paper"
-            ],
-            "nbt": "{NL:1b,prison_key:1b,lib:1b}"
-          },
-          "entity": {
-            "type": "minecraft:interaction",
-            "nbt": "{Tags:[\"allay\"]}"
-          }
-        }
-      },
-      "impossible": {
-        "trigger": "minecraft:impossible"
+  "display": {
+    "icon": {
+      "id": "minecraft:paper",
+      "components": {
+        "minecraft:custom_model_data": 123
       }
     },
-    "requirements": [
-      [
-        "give_prison_key"
-      ],
-      [
-        "impossible"
-      ]
+    "title": "알레이가 이슬을 맛있게 먹었습니다!",
+    "description": "감옥을 여는 걸 도와준다네요",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "give_prison_key": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"NL\"]}"
+        },
+        "item": {
+          "items": [
+            "minecraft:paper"
+          ],
+          "components": {
+            "minecraft:custom_data": "{NL:1b,prison_key:1b,lib:1b}"
+          }
+        },
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"allay\"]}"
+        }
+      }
+    },
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "give_prison_key"
+    ],
+    [
+      "impossible"
     ]
-  }
-  
+  ]
+}

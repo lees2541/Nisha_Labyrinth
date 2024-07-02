@@ -2,7 +2,9 @@
     "display": {
       "icon": {
         "id": "minecraft:written_book",
-        "nbt": "{CustomModelData:302002}"
+        "components": {
+        "minecraft:custom_model_data": 302002
+      }
       },
       "title": "폐쇄!",
       "description": "경비병들이 옵니다",

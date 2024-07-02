@@ -2,7 +2,9 @@
     "display": {
       "icon": {
         "id": "minecraft:written_book",
-        "nbt": "{CustomModelData:302004}"
+        "components": {
+        "minecraft:custom_model_data": 302004
+      }
       },
       "title": "감옥",
       "description": "나올 수 있을까요...",
