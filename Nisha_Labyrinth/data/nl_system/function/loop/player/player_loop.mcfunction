@@ -21,7 +21,7 @@ execute unless score @s NL_blindness_time matches 100 run scoreboard players rem
 
 #> 아이템이 버려질때 인벤토리 변화감지 발전과제 갱신
 #execute as @e[type=item,nbt=!{Item:{tag:{drop:0b}}},nbt={Item:{tag:{NL:1b}}}] if data entity @s Thrower run function nl_system:modules/dropped_item_control/dropped_item_check with entity @s
-execute as @e[type=item,nbt={Item:{componenets:{"minecraft:custom_data":{NL:1b}}}},nbt=!{Item:{componenets:{"minecraft:custom_data":{drop:0b}}}}] if data entity @s Thrower run function nl_system:modules/dropped_item_control/dropped_item_check with entity @s
+execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{NL:1b}}}},nbt=!{Item:{components:{"minecraft:custom_data":{drop:0b}}}}] if data entity @s Thrower run function nl_system:modules/dropped_item_control/dropped_item_check with entity @s
 #> 왼손에 아무것도 없을떄 대처
 execute unless items entity @s[tag=NL] weapon.offhand *[minecraft:custom_data~{offhand:1b}] at @s run function nl_system:systems/item/update/offhand
 

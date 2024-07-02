@@ -1,24 +1,23 @@
 {
-    "condition": "minecraft:any_of",
-    "terms": [
-      {
-        "condition": "minecraft:location_check",
-        "predicate": {
-          "block": {
-            "blocks": [
-              "minecraft:air"
-            ]
-          }
-        }
-      },
-      {
-        "condition": "minecraft:location_check",
-        "predicate": {
-          "block": {
-            "tag": "nl_system:unblockable"
-          }
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:air"
+          ]
         }
       }
-    ]
-  }
-  
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": "#nl_system:unblockable"
+        }
+      }
+    }
+  ]
+}

@@ -1,21 +1,22 @@
 [
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        {
-          "text": ""
-        }
-      ],
-      "replace": true
-    },
-    {
-      "function": "minecraft:set_name",
-      "name": " "
-    },
-    {
-      "function": "minecraft:set_nbt",
-      "tag": "{NL:1b,offhand:1b,default:1b}"
-    }
-  ]
-  
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": ""
+      }
+    ],
+    "mode": "replace_all"
+  },
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "target": "item_name",
+    "name": " "
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{NL:1b,offhand:1b,default:1b}"
+  }
+]

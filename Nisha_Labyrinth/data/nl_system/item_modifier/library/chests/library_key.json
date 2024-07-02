@@ -11,11 +11,12 @@
         {
           "text": "도서관 열쇠이다"
         }
-      ]
+      ],
+      "mode": "replace_all"
     },
     {
       "function": "minecraft:set_custom_data",
-      "tag": "{tag:{NL:1b,library_key:1b,lib:1b}}"
+      "tag": "{NL:1b,library_key:1b,lib:1b}"
     }
   ]
   

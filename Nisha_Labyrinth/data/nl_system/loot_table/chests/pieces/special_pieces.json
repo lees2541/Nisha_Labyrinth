@@ -17,8 +17,12 @@
                   "name": "방패조각"
                 },
                 {
-                  "function": "minecraft:set_nbt",
-                  "tag": "{NL:1b,piece:1b,shield:1b,CustomModelData:3000001}"
+                  "function": "minecraft:set_custom_data",
+                  "tag": "{NL:1b,piece:1b,shield:1b}"
+                },
+                {
+                  "function": "minecraft:set_custom_model_data",
+                  "value": 3000001
                 }
               ],
               "conditions": [
@@ -38,8 +42,12 @@
                   "name": "봉인해제 주문서 조각"
                 },
                 {
-                  "function": "minecraft:set_nbt",
-                  "tag": "{NL:1b,piece:1b,dispel:1b,CustomModelData:3000002}"
+                  "function": "minecraft:set_custom_data",
+                  "tag": "{NL:1b,piece:1b,dispel:1b}"
+                },
+                {
+                  "function": "minecraft:set_custom_model_data",
+                  "value": 3000002
                 }
               ],
               "conditions": [
@@ -59,8 +67,12 @@
                   "name": "부활 주문서 조각"
                 },
                 {
-                  "function": "minecraft:set_nbt",
-                  "tag": "{NL:1b,piece:1b,revival:1b,CustomModelData:3000003}"
+                  "function": "minecraft:set_custom_data",
+                  "tag": "{NL:1b,piece:1b,revival:1b}"
+                },
+                {
+                  "function": "minecraft:set_custom_model_data",
+                  "value": 3000003
                 }
               ],
               "conditions": [

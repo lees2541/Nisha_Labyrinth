@@ -12,7 +12,7 @@
           "text": "지니고 있거나, 사용을 하면 나갈 수 있다"
         }
       ],
-      "replace": true
+      "mode": "replace_all"
     },
     {
       "function": "minecraft:set_custom_data",

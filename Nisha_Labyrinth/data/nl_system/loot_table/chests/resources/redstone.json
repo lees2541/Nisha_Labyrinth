@@ -9,7 +9,7 @@
           "name": "minecraft:redstone",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
+              "function": "minecraft:set_custom_data",
               "tag": "{NL:1b,lib:1b}"
             }
           ]

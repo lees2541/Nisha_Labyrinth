@@ -9,11 +9,11 @@ execute store result storage nl:buffer player.id int 1 run scoreboard players ge
 execute store result storage nl:buffer player.selectedSlot int 1 run data get entity @s SelectedItemSlot
 ## 아이템 종류 체크
 
-execute unless entity @s[team=roamer] if data entity @s Inventory[{id:"minecraft:iron_hoe",tag:{NL:1b,drop:0b,lifestone:1b}}] run function nl_system:modules/storage/scoreboard/operation/resource_count/calc_resource {resource:lifestone,operator:add,operand:1}
-execute unless entity @s[team=roamer] if data entity @s Inventory[{id:"minecraft:iron_hoe",tag:{NL:1b,drop:0b,lifestone:1b}}] run clear @s iron_hoe[minecraft:custom_data={NL:1b,drop:0b,lifestone:1b}] 1
+execute unless entity @s[team=roamer] if data entity @s Inventory[{id:"minecraft:iron_hoe",components:{"minecraft:custom_data":{NL:1b,drop:0b,lifestone:1b}}}] run function nl_system:modules/storage/scoreboard/operation/resource_count/calc_resource {resource:lifestone,operator:add,operand:1}
+execute unless entity @s[team=roamer] if data entity @s Inventory[{id:"minecraft:iron_hoe",components:{"minecraft:custom_data":{NL:1b,drop:0b,lifestone:1b}}}] run clear @s iron_hoe[minecraft:custom_data={NL:1b,drop:0b,lifestone:1b}] 1
 
 ## drop:0b 아이템이 덜 정리됐을 경우 다시 이 함수를 실행
-execute unless entity @s[team=roamer] if data entity @s Inventory[{tag:{drop:0b,NL:1b}}] run return run function nl_system:modules/hotbar_holder/base/inventory_changed_detection_adv
+execute unless entity @s[team=roamer] if data entity @s Inventory[{components:{"minecraft:custom_data":{drop:0b,NL:1b}}}] run return run function nl_system:modules/hotbar_holder/base/inventory_changed_detection_adv
 execute unless function nl_system:systems/item/check_duplicate/lifestone run function nl_system:systems/item/update/lifestone
 ## 플레이어 정보 로드
 function nl_system:modules/hotbar_holder/base/update_resource with storage nl:buffer player
