@@ -1,17 +1,5 @@
 [
   {
-    "function": "minecraft:set_components",
-    "components": {
-      "minecraft:can_break": {
-        "predicates": [
-          {
-            "blocks": "#nl_system:breakable"
-          }
-        ]
-      }
-    }
-  },
-  {
     "function": "minecraft:set_name",
     "entity": "this",
     "name": "탐험가의 곡괭이"
@@ -44,7 +32,11 @@
     "tag": "{NL:1b}"
   },
   {
-    "function": "minecraft:set_item",
-    "item": "minecraft:acacia_wood"
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:can_break": {
+        "blocks": "#nl_system:breakable"
+      }
+    }
   }
 ]

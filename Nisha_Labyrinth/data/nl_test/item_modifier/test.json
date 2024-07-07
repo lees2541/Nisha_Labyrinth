@@ -1,6 +1,16 @@
 [
   {
-    "function": "minecraft:set_instrument",
-    "options": "#minecraft:goat_horns"
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "nl:test"
+    },
+    "ops": [
+      {
+        "source": "player.item.switch.nbt",
+        "target": "/",
+        "op": "replace"
+      }
+    ]
   }
 ]

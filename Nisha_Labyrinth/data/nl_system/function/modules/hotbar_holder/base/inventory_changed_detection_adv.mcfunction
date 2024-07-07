@@ -4,7 +4,7 @@
 #@context 인벤토리의 변화가 감지된 플레이어
 
 ## 플레이어 id 로드
-#say 감지
+say 감지
 execute store result storage nl:buffer player.id int 1 run scoreboard players get @s NL_player_id
 execute store result storage nl:buffer player.selectedSlot int 1 run data get entity @s SelectedItemSlot
 ## 아이템 종류 체크
@@ -24,9 +24,10 @@ function nl_system:modules/hotbar_holder/base/update_inventory_info with storage
 
 
 ## 왼손 감지
-
-execute unless data entity @s Inventory[{Slot:-106b}] run function nl_system:systems/item/update/offhand
-execute unless entity @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{offhand:1b,NL:1b}}}]}] run advancement grant @s only nl_system:systems/actions/key_events/f_key/offhand_changed_detected
+execute unless items entity @s weapon.offhand * run function nl_system:systems/item/update/offhand
+#execute unless data entity @s Inventory[{Slot:-106b}] run function nl_system:systems/item/update/offhand
+execute unless items entity @s weapon.offhand *[minecraft:custom_data~{offhand:1b,NL:1b}] run advancement grant @s only nl_system:systems/actions/key_events/f_key/offhand_changed_detected
+#execute unless entity @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{offhand:1b,NL:1b}}}]}] run advancement grant @s only nl_system:systems/actions/key_events/f_key/offhand_changed_detected
 
 ## 도서관 상자 처리
 advancement grant @s only nl_system:systems/library/chest_looting/obtained_lib_item impossible
