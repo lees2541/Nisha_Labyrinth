@@ -3,6 +3,7 @@
 #@public
 #@context 인벤토리의 변화가 감지된 플레이어
 
+execute if items entity @s player.cursor * run function nl_system:modules/hotbar_holder/cursor/cursor_detected
 ## 플레이어 id 로드
 say 감지
 execute store result storage nl:buffer player.id int 1 run scoreboard players get @s NL_player_id

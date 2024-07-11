@@ -6,7 +6,8 @@
     "title": "인벤토리바뀜감지",
     "description": "",
     "show_toast": false,
-    "announce_to_chat": false
+    "announce_to_chat": true,
+    "hidden": true
   },
   "criteria": {
     "inventory_changed": {

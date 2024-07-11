@@ -26,6 +26,7 @@ execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{NL:1b}}}
 execute unless items entity @s[tag=NL] weapon.offhand *[minecraft:custom_data~{offhand:1b}] at @s run function nl_system:systems/item/update/offhand
 
 
+
 #> 부쉬 안에서의 행동
 
 execute if entity @s[predicate=nl_system:status/action/sprinting,predicate=nl_system:status/location/block/in_tall_grass,predicate=nl_system:status/location/block/on_dirt] at @s run function nl_system:systems/bush/running_on_bush
