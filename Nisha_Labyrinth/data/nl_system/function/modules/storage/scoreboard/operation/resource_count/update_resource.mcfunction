@@ -18,7 +18,9 @@
 
 $execute store result storage nl:in_game player[{id:$(id)}].status.resource.$(item) int 1 run scoreboard players get @s NL_$(item)_count
 
-$execute if score @s NL_$(item)_count matches 0..9 run data modify storage nl:buffer operation.result set value 10000$(result)
-$execute if score @s NL_$(item)_count matches 10..99 run data modify storage nl:buffer operation.result set value 100010
+
+$execute if score @s NL_$(item)_count matches 0.. run data modify storage nl:buffer operation.result set value $(result)
+#$execute if score @s NL_$(item)_count matches 0..9 run data modify storage nl:buffer operation.result set value 10000$(result)
+#$execute if score @s NL_$(item)_count matches 10..99 run data modify storage nl:buffer operation.result set value 100010
 
 

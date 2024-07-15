@@ -1,1 +1,1 @@
-$say nbt: $(nbt)
+$say nbtnbt $(nbt)

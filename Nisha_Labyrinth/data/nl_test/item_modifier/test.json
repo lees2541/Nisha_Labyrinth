@@ -1,16 +1,6 @@
 [
   {
-    "function": "minecraft:copy_custom_data",
-    "source": {
-      "type": "minecraft:storage",
-      "source": "nl:test"
-    },
-    "ops": [
-      {
-        "source": "player.item.switch.nbt",
-        "target": "/",
-        "op": "replace"
-      }
-    ]
+    "function": "minecraft:set_item",
+    "item": "minecraft:iron_hoe"
   }
 ]

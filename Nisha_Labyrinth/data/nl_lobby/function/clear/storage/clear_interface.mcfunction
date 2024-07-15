@@ -41,7 +41,7 @@ data merge storage nl:settings {\
     players:{player:{id:0,character:0,UUID:[],name:""}},\
     perk:{},\
     altar:{gauge:{max:0,speed:0}},\
-    etc:{earlydeath:0}\
+    etc:{earlydeath:1}\
 }
 data remove storage nl:settings players
 

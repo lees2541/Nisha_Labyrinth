@@ -1,0 +1,30 @@
+[
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": "주술의 흔적"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "text": "주술의 흔적이다."
+        }
+      ],
+      "mode": "replace_all"
+    },
+    {
+      "function": "minecraft:set_item",
+      "item": "minecraft:redstone"
+    },
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": "{NL:1b,redstone:1b}"
+    },
+    {
+      "function": "minecraft:set_custom_model_data",
+      "value": 100000
+    }
+  ]
+  

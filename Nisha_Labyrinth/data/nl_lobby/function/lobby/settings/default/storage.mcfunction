@@ -12,5 +12,3 @@ data modify storage nl:default settings.altar.gauge.speed set value 10
 ## 도서관 알람 게이지 최대치 설정
 data modify storage nl:default settings.location.library.gauge.max set value 1000
 
-## 이른 죽음 횟수 설정
-data modify storage nl:default settings.etc.earlydeath set value 1

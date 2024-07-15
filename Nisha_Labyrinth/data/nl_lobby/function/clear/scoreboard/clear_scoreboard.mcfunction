@@ -36,7 +36,7 @@ scoreboard players set #library_key NL_count 0
 ## 기타
 scoreboard players set @a NL_alarm_timer 0
 scoreboard players reset @a NL_mode
-
+scoreboard players set @a NL_death 0
 
 
 

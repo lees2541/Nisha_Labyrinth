@@ -3,7 +3,7 @@
 #@context @e[type=marker,tag=library_key]
 
 
-
+say lib_key function running
 scoreboard players add #library_key NL_count 1
 
 tag @s remove library_key

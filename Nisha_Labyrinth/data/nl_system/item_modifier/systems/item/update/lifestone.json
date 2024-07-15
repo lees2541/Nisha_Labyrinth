@@ -1,7 +1,25 @@
 [
   {
+    "function": "minecraft:set_item",
+    "item": "minecraft:lapis_lazuli"
+  },
+  {
     "function": "minecraft:reference",
-    "name": "nl_system:systems/item/resources/lifestone"
+    "name": "nl_system:systems/item/resources/lifestone",
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": "this",
+          "score": "NL_lifestone_count",
+          "scale": 1
+        },
+        "range": {
+          "min": 1
+        }
+      }
+    ]
   },
   {
     "function": "minecraft:set_custom_model_data",
@@ -9,6 +27,68 @@
       "type": "minecraft:storage",
       "storage": "nl:buffer",
       "path": "operation.result"
-    }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": "this",
+          "score": "NL_lifestone_count",
+          "scale": 1
+        },
+        "range": {
+          "min": 50
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:iron_hoe",
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": "this",
+          "score": "NL_lifestone_count",
+          "scale": 1
+        },
+        "range": 0
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "value": 100000,
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": "this",
+          "score": "NL_lifestone_count",
+          "scale": 1
+        },
+        "range": 0
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{NL:1b,lifestone:1b}",
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": "this",
+          "score": "NL_lifestone_count",
+          "scale": 1
+        },
+        "range": 0
+      }
+    ]
   }
 ]

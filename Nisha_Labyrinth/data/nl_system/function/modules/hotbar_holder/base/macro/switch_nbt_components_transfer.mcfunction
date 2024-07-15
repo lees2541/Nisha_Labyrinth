@@ -1,0 +1,2 @@
+$data modify storage nl:buffer player.item.switch.nbt.components.minecraft:custom_data set from entity @s Inventory[{Slot:$(Slot)}].components.minecraft:custom_data
+$data modify storage nl:test player.item.switch.nbt.components.minecraft:custom_data set from entity @s Inventory[{Slot:$(Slot)}].components.minecraft:custom_data

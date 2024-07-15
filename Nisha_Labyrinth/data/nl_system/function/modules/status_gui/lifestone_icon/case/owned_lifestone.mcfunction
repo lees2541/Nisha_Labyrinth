@@ -1,6 +1,6 @@
 function nl_system:modules/storage/load_to_buffer/player_info/load_player_info
 
-data modify storage nl:buffer icon.call set value "uE601"
+data modify storage nl:buffer icon.call set value "uE611"
 
 #data modify storage nl:buffer icon.dir set value "font.l_icon"
 data modify storage nl:buffer icon.character set from storage nl:buffer player.character

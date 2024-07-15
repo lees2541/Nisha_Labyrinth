@@ -1,22 +1,25 @@
 [
   {
-    "function": "minecraft:set_name",
-    "entity": "this",
-    "name": "주술의 흔적"
+    "function": "minecraft:set_item",
+    "item": "minecraft:redstone"
   },
   {
-    "function": "minecraft:set_lore",
-    "entity": "this",
-    "lore": [
+    "function": "minecraft:reference",
+    "name": "nl_system:systems/item/resources/redstone",
+    "conditions": [
       {
-        "text": "주술의 흔적이다"
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": "this",
+          "score": "NL_redstone_count",
+          "scale": 1
+        },
+        "range": {
+          "min": 1
+        }
       }
-    ],
-    "mode": "replace_all"
-  },
-  {
-    "function": "minecraft:set_custom_data",
-    "tag": "{NL:1b,redstone:1b}"
+    ]
   },
   {
     "function": "minecraft:set_custom_model_data",
@@ -24,6 +27,68 @@
       "type": "minecraft:storage",
       "storage": "nl:buffer",
       "path": "operation.result"
-    }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": "this",
+          "score": "NL_redstone_count",
+          "scale": 1
+        },
+        "range": {
+          "min": 50
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:stone_hoe",
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": "this",
+          "score": "NL_redstone_count",
+          "scale": 1
+        },
+        "range": 0
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "value": 100000,
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": "this",
+          "score": "NL_redstone_count",
+          "scale": 1
+        },
+        "range": 50
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{NL:1b,redstone:1b}",
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": "this",
+          "score": "NL_redstone_count",
+          "scale": 1
+        },
+        "range": 0
+      }
+    ]
   }
 ]

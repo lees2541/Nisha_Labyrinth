@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cooked_beef"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:reference",
+            "name": "nl_char:items/common/cooked_beef"
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -3,11 +3,11 @@
     "icon": {
       "id": "minecraft:stone"
     },
-    "title": "",
+    "title": "obtained_lib_item",
     "description": "",
     "show_toast": false,
-    "announce_to_chat": false,
-    "hidden": true
+    "announce_to_chat": true,
+    "hidden": false
   },
   "parent": "nl_system:modules/hotbar_holder/base/inventory_changed_detection",
   "criteria": {
@@ -17,7 +17,7 @@
         "items": [
           {
             "components": {
-              "minecraft:custom_data": "{tag:{NL:1b,lib:1b}}"
+              "minecraft:custom_data": "{NL:1b,lib:1b}"
             }
           }
         ]

@@ -8,8 +8,9 @@
 
 
 ## 생명석 및 레드스톤 칸 감지
-execute as @s[tag=NL,nbt=!{Inventory:[{Slot:6b}]}] at @s run function nl_system:systems/item/update/lifestone
-execute as @s[tag=NL,nbt=!{Inventory:[{Slot:7b}]}] at @s run function nl_system:systems/item/update/redstone
+#execute unless items entity @s hotbar.6 *[minecraft:custom_data~{offhand:1b}] at @s run function nl_system:systems/item/update/offhand
+execute unless items entity @s hotbar.6 *[custom_data~{NL:1b,lifestone:1b}] run function nl_system:systems/item/update/lifestone
+execute unless items entity @s hotbar.7 *[custom_data~{NL:1b,redstone:1b}] run function nl_system:systems/item/update/redstone
 
 execute if score @s NL_death matches 1.. run function nl_system:systems/death/death_trigger
 

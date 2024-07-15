@@ -15,6 +15,10 @@
     "mode": "replace_all"
   },
   {
+    "function": "minecraft:set_item",
+    "item": "minecraft:lapis_lazuli"
+  },
+  {
     "function": "minecraft:set_custom_data",
     "tag": "{NL:1b,lifestone:1b,drop:1b}"
   },
