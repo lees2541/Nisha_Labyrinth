@@ -10,5 +10,5 @@ tp @a[team=prisoner,tag=!exit] 710 39 582
 team join explorer @a[tag=exit,team=prisoner,advancements={nl_system:location/prison/in_the_prison=false}] 
 tag @a[tag=exit] remove exit
 team join prisoner @a[team=explorer,advancements={nl_system:location/prison/in_the_prison=true}]
-
+function nl_system:modules/status_gui/profile_icon/case/default
 advancement revoke @a[team=explorer,advancements={nl_system:location/prison/in_the_prison=true}] only nl_system:location/prison/in_the_prison

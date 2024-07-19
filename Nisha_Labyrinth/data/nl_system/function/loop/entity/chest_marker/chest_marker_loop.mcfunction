@@ -1,0 +1,1 @@
+execute as @s[tag=library_key] at @s unless predicate nl_system:entity/chest_marker/library_key_exists run function nl_system:systems/library/chest_looting/obtained_function/obtained_lib_key

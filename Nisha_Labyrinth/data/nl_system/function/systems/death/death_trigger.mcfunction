@@ -11,7 +11,7 @@ team join prisoner @s[team=explorer]
 
 summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Glowing:1b,Small:1b,Tags:["NL","coordinate","nl_vfx","imprison","imp_arm"]}
 function nl_vfx:map/cave/trigger/imprison
-
+function nl_system:modules/status_gui/profile_icon/case/prisoner
 execute unless data storage nl:settings etc{earlydeath:0} run return run function nl_system:systems/death/early_death
 spawnpoint @a 715 39 580
 tag @s add prisoner

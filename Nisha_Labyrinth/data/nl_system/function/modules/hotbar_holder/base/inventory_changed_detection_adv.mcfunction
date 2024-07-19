@@ -37,7 +37,7 @@ execute unless items entity @s weapon.offhand *[minecraft:custom_data~{offhand:1
 #execute unless entity @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{offhand:1b,NL:1b}}}]}] run advancement grant @s only nl_system:systems/actions/key_events/f_key/offhand_changed_detected
 
 ## 도서관 상자 처리
-advancement grant @s only nl_system:systems/library/chest_looting/obtained_lib_item impossible
+#advancement grant @s only nl_system:systems/library/chest_looting/obtained_lib_item impossible
 
 
 ## 탐험가용

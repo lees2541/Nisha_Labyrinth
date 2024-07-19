@@ -55,7 +55,7 @@ summon interaction 707 39 580 {width:0.8f,height:7f,response:1b,Tags:["NL","vine
 
 
 ## 발판 태그
-execute as @e[type=glow_item_frame,tag=NL,tag=cave] at @s run summon interaction ~ ~ ~ {width:0.9f,height:0.08f,response:1b,Tags:["NL","swamp"],Passengers:[{id:"minecraft:item_display",Tags:["NL","swamp"],brightness:{sky:10,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0.707f,0f,0f,0.707f],translation:[0f,0f,0f],scale:[0.5f,1.1f,0.5f]},item:{id:"minecraft:bamboo",count:1b}}]}
+execute as @e[type=glow_item_frame,tag=NL,tag=cave] at @s run summon interaction ~ ~ ~ {width:0.9f,height:0.08f,response:1b,Tags:["NL","swamp"],Passengers:[{id:"minecraft:item_display",Tags:["NL","swamp","tag"],brightness:{sky:10,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0.707f,0f,0f,0.707f],translation:[0f,0f,0f],scale:[0.5f,1.1f,0.5f]},item:{id:"minecraft:bamboo",count:1b}}]}
 ################################
 
 ## 도서관 경비병 및 루트

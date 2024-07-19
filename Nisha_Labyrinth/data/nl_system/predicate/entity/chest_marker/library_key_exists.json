@@ -1,0 +1,10 @@
+{
+    "condition": "minecraft:location_check",
+    "predicate": {
+      "block": {
+        "blocks": "minecraft:chest",
+        "nbt": "{Items:[{components:{\"minecraft:custom_data\":{library_key:1b}}}]}"
+      }
+    }
+  }
+  

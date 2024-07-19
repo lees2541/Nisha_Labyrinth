@@ -16,7 +16,12 @@ execute as @e[type=area_effect_cloud,tag=NL,tag=NL_grass,nbt={Age:99}] at @s run
 
 ## 버릴 수 없는 드랍아이템 
 
+#> 도서관 상자위치의 마커 루프
+execute as @e[type=marker,tag=chest,tag=NL] run function nl_system:loop/entity/chest_marker/chest_marker_loop
 
+#> 스타캐치 엔티티 루프
+
+execute as @e[type=text_display,tag=gauge_bar,tag=NL] at @s run function nl_system:loop/entity/star_catch/is_vehicle_exists
 
 ## 상호작용 엔티티의 interaction nbt 삭제
 execute as @e[type=interaction,tag=NL] run data remove entity @s attack

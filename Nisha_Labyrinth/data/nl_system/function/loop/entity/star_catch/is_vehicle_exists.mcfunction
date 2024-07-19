@@ -1,0 +1,1 @@
+execute unless predicate nl_system:entity/star_catch/vehicle_exists run kill @s
