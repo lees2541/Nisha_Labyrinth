@@ -33,5 +33,13 @@ tag @s remove roamer
 tag @s remove prisoner
 tag @s remove sacrifice
 
+
+
+## gui 관련 태그 초기화
+tag @s remove no_life_gui_update
+
+
 ## 기본태그 초기화
 tag @s remove NL
+
+

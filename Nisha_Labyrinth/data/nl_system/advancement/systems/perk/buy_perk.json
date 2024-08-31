@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:stone"
+      },
+      "title": "퍽 업그레이드",
+      "description": "",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:villager_trade",
+        "conditions": {
+          "player": {
+            "nbt": "{Tags:[\"NL\"]}"
+          },
+          "item": {
+            "items": "minecraft:paper",
+            "components": {
+              "minecraft:item_name": "\"perk\""
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "nl_system:systems/perk/buy_perk_adv"
+    }
+  }
+  

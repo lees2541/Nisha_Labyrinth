@@ -1,6 +1,13 @@
 [
   {
-    "function": "minecraft:set_item",
-    "item": "minecraft:iron_hoe"
+    "function": "minecraft:copy_custom_data",
+    "source": "this",
+    "ops": [
+      {
+        "source": "Inventory[{Slot:8b}].components.minecraft:custom_data.player.character",
+        "target": "{}",
+        "op": "append"
+      }
+    ]
   }
 ]

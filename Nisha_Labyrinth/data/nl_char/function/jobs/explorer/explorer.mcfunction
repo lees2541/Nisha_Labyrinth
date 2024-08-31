@@ -27,6 +27,7 @@ function nl_char:jobs/explorer/set_stats
 ## 아이템 지급
 function nl_char:items/explorer/explorer/explorer
 #give @s cooked_beef[custom_data = {NL:1b}] 10
+loot give @s loot nl_char:command/items/common/tool
 loot give @s loot nl_char:command/items/cooked_beef
 loot give @s loot nl_char:command/items/cooked_beef
 loot give @s loot nl_char:command/items/cooked_beef

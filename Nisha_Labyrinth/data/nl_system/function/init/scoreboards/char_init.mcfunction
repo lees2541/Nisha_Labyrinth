@@ -21,8 +21,11 @@ scoreboard objectives add NL_sneaking_time dummy
 scoreboard objectives add NL_alarm_timer dummy
 #declare objective NL_alarm_timer 배회자가 앞에 있을 시 손전등이 깜박깜박하는 동작의 간격을 통제 
 
+scoreboard objectives add NL_food minecraft.used:minecraft.cooked_beef
+#declare objective NL_food 음식을 먹었을떄 감지
 
-
+scoreboard objectives add NL_perk dummy
+#declare objective NL_perk 현재 퍽 상태
 
 
 

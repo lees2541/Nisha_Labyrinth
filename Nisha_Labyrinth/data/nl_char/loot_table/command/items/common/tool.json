@@ -1,0 +1,65 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "nl_char:items/common/tool"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{roamer:1b,NL:1b}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:[\"roamer\",\"NL\"]}"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{explorer:1b,NL:1b}",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:[\"explorer\",\"NL\"]}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_custom_model_data",
+          "value": {
+            "type": "minecraft:score",
+            "target": "this",
+            "score": "NL_cmd_tool",
+            "scale": 1
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"NL\"]}"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

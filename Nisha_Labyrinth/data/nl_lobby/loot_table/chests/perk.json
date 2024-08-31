@@ -1,0 +1,45 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "target": "custom_name",
+                "name": "ㅎㅇㅎㅇ"
+              }
+            ]
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_count",
+            "count": 1
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"survivor\"]}",
+              "team": "explorer"
+            }
+          }
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "function": "minecraft:set_count",
+        "count": 1
+      }
+    ]
+  }
+  

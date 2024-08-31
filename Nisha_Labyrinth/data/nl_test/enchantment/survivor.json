@@ -1,0 +1,31 @@
+{
+    "description": "생존가",
+    "exclusive_set": "#minecraft:curse",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "primary_items": "#minecraft:enchantable/fishing",
+    "weight": 100,
+    "max_level": 5,
+    "min_cost": {
+      "base": 0,
+      "per_level_above_first": 1
+    },
+    "max_cost": {
+      "base": 0,
+      "per_level_above_first": 1
+    },
+    "anvil_cost": 1,
+    "slots": [
+      "any"
+    ],
+    "effects": {
+      "minecraft:hit_block": [
+        {
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "nl_test:test"
+          }
+        }
+      ]
+    }
+  }
+  

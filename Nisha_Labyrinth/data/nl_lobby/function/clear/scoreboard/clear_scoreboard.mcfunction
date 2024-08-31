@@ -25,7 +25,9 @@ scoreboard objectives remove NL_mined_life
 scoreboard objectives add NL_mined_life minecraft.mined:minecraft.bone_block
 scoreboard players reset @a NL_redstone_count
 scoreboard players reset @a NL_lifestone_count
-
+## 커스텀모델 데이터 관련
+scoreboard players reset @a NL_cmd_tool 
+scoreboard players reset @a NL_cmd_book
 
 ## 도서관 관련 
 
@@ -37,6 +39,7 @@ scoreboard players set #library_key NL_count 0
 scoreboard players set @a NL_alarm_timer 0
 scoreboard players reset @a NL_mode
 scoreboard players set @a NL_death 0
+scoreboard players set @a NL_perk 0
 
 
 

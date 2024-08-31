@@ -6,7 +6,7 @@
 
 
 
-execute as @a[tag=NL,team=!roamer] if function nl_system:modules/storage/load_to_buffer/player_info/load_player_info run function nl_system:modules/status_gui/lifestone_icon/update/update_icon with storage nl:buffer player
+execute as @a[tag=NL,team=!roamer,tag=!no_life_gui_update] if function nl_system:modules/storage/load_to_buffer/player_info/load_player_info run function nl_system:modules/status_gui/lifestone_icon/update/update_icon with storage nl:buffer player
 
 
 

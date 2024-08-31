@@ -1,1 +1,1 @@
-$say nbtnbt $(nbt)
+say hi

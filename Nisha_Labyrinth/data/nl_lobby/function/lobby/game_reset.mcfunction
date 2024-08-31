@@ -32,6 +32,9 @@ function nl_lobby:clear/bossbar/clear_bossbar
 ## 태그 클리어
 execute as @a run function nl_lobby:clear/tags/clear_all_tags
 
+## 로비룸 리셋
+function nl_lobby:lobby/lobby_room/set_marker
+function nl_lobby:lobby/lobby_room/set_room
 ## 맵 리셋
 execute as @e[type=interaction,tag=NL,tag=altar] at @s run setblock ~ ~1 ~ air destroy
 execute as @e[type=area_effect_cloud,tag=NL,tag=NL_grass] at @s run setblock ~ ~1 ~ minecraft:tall_grass[half=upper] keep

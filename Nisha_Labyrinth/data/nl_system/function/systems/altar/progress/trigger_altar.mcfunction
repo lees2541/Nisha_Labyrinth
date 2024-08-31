@@ -30,3 +30,6 @@ execute as @e[type=marker,tag=NL,tag=lifestone] at @s run setblock ~ ~ ~ bone_bl
 
 ## 제단에 올린사람 발광
 execute as @a[advancements={nl_system:systems/actions/interactions/altar/hit=true}] run effect give @s glowing 8
+
+## 캐릭터 스킬
+execute as @a[tag=explorer,tag=survivor] at @s run function nl_char:char_functions/explorer/survivor/skill/passive/set_on_altar

@@ -4,7 +4,6 @@ execute unless score @s NL_redstone_count matches 1.. run return run title @s ac
 
 $execute as @e[type=interaction,nbt={attack:{player:$(UUID)}},tag=NL,tag=altar,limit=1,sort=nearest] at @s if block ~ ~1 ~ redstone_wire run return fail
 
-
-
 $execute as @e[type=interaction,nbt={attack:{player:$(UUID)}},tag=NL,tag=altar,limit=1,sort=nearest] at @s run return run function nl_system:systems/altar/structure/set_on_altar
+
 

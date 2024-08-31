@@ -54,3 +54,4 @@ scoreboard objectives add NL_death deathCount
 scoreboard objectives add NL_count dummy
 #declare objective NL_count 범용 횟수 카운트 스코어보드, #xxx 형식으로 기록한다
 
+scoreboard objectives add NL_food_level food

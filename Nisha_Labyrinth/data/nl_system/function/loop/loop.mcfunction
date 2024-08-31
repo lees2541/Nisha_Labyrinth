@@ -21,3 +21,6 @@ function nl_system:loop/star_catch/starcatch_loop
 
 #> 기타 엔티티 루프
 function nl_system:loop/entity/entity_loop
+
+
+scoreboard players set @a NL_food 0
