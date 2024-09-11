@@ -1,7 +1,7 @@
 ## 레드스톤 자동 생성기 분포정도 설정
 
 data modify storage nl:default settings.redstone.rolls set value {red:2,yellow:2,green:2,area:3}
-
+data modify storage nl:default settings.manastone.rolls set value {red:1,yellow:1,green:2,area:2}
 ## 맵 종류 기본 설정
 data modify storage nl:default settings.map set value {type:cave}
 ## 오염된 늪 최대 개수 설정

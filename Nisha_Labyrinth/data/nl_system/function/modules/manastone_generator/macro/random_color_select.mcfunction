@@ -1,0 +1,3 @@
+execute unless data storage nl:settings manastone.rolls{red:0} run function nl_system:modules/manastone_generator/macro/choose_roll_type {"tag":"red"}
+execute unless data storage nl:settings manastone.rolls{green:0} run function nl_system:modules/manastone_generator/macro/choose_roll_type {"tag":"green"}
+execute unless data storage nl:settings manastone.rolls{yellow:0} run function nl_system:modules/manastone_generator/macro/choose_roll_type {"tag":"yellow"}
