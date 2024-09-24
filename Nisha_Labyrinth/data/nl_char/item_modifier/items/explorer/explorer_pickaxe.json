@@ -35,7 +35,7 @@
     "function": "minecraft:set_components",
     "components": {
       "minecraft:can_break": {
-        "blocks": "#nl_system:breakable"
+        "blocks": "#nl_system:nl_breakable"
       }
     }
   }
