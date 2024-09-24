@@ -1,0 +1,1 @@
+function nl_char:char_functions/explorer/survivor/skill/skill2/trigger

@@ -1,4 +1,4 @@
-function nl_char:jobs/explorer/magician/set_stats
+
 function nl_char:jobs/explorer/explorer
 
 tag @s add magician
