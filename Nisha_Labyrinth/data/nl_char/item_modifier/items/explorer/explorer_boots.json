@@ -30,7 +30,7 @@
     "function": "minecraft:set_attributes",
     "modifiers": [
       {
-        "attribute": "minecraft:generic.max_health",
+        "attribute": "minecraft:max_health",
         "id": "nl:explorer_hp",
         "amount": -4,
         "operation": "add_value",

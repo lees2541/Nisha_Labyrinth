@@ -1,7 +1,7 @@
 #> nl_system:modules/status_effect/update/update_status
 # 스토리지 nl:in_game player.status.effects 안의 데이터에 따라 gui_status의 시각정보를 업데이트 한다.
 #@api
-#@context 대상 with entity @s attributes[{id:"minecraft:generic.luck"}]
+#@context 대상 with entity @s attributes[{id:"minecraft:luck"}]
 #@input 
 #   $(base)는 해당 플레이어의 id이다
 

@@ -8,7 +8,7 @@
 #> 스코어보드
 # 공격스턴 관련
 execute if entity @s[scores={NL_attack_cool=1}] run tag @s remove hitstun
-execute if entity @s[scores={NL_attack_cool=1}] run function nl_system:modules/status_effect/update/update_status with entity @s attributes[{id:"minecraft:generic.luck"}]
+execute if entity @s[scores={NL_attack_cool=1}] run function nl_system:modules/status_effect/update/update_status with entity @s attributes[{id:"minecraft:luck"}]
 scoreboard players remove @s[scores={NL_attack_cool=1..}] NL_attack_cool 1
 
 # 스턴 관련

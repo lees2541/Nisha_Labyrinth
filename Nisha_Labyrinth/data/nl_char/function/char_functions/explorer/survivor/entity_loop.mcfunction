@@ -6,6 +6,6 @@ execute as @n[type=interaction,tag=NL,tag=occupied,tag=campfire] at @s run effec
 execute as @n[type=interaction,tag=NL,tag=occupied,tag=campfire] at @s run effect give @a[team=explorer,distance=..4] speed 2 0
 
 execute as @n[type=interaction,tag=NL,tag=occupied,tag=campfire] at @s unless block ~ ~ ~ soul_campfire run tag @s remove occupied
-execute as @n[type=interaction,tag=NL,tag=!occupied, tag=campfire] as @a[tag=explorer,tag=survivor,tag=no_life_gui_update] run function nl_char:char_functions/explorer/survivor/status/remove/remove_campfire with entity @s attributes[{id:"minecraft:generic.luck"}]
+execute as @n[type=interaction,tag=NL,tag=!occupied, tag=campfire] as @a[tag=explorer,tag=survivor,tag=no_life_gui_update] run function nl_char:char_functions/explorer/survivor/status/remove/remove_campfire with entity @s attributes[{id:"minecraft:luck"}]
 execute as @n[type=interaction,tag=NL,tag=!occupied, tag=campfire] run kill @e[type=item,nbt={Item:{id:"minecraft:bowl"}}]
 execute as @n[type=interaction,tag=NL,tag=!occupied, tag=campfire] run tag @s remove campfire
