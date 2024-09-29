@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:stone"
+      },
+      "title": "",
+      "description": "",
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:warped_fungus_on_a_stick"
+          }
+        }
+      }
+    }
+  }
+  

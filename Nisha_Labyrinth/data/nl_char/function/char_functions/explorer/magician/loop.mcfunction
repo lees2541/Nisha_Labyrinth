@@ -1,0 +1,1 @@
+execute if score @s NL_fos_count matches 1.. run tp @a[tag=!magician,team=explorer,limit=1]

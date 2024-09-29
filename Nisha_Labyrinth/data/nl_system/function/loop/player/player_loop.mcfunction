@@ -43,3 +43,5 @@ execute if entity @s[tag=roamer,tag=NL] at @s run function nl_system:loop/player
 
 execute at @s run function nl_system:loop/shader/shader_loop
 function nl_system:loop/status_gui/status/status_storage_loop
+
+scoreboard players set @a NL_fos_count 0

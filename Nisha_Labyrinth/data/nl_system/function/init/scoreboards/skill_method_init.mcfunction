@@ -2,7 +2,7 @@
 # 
 # @private
 # @within nl_system:init/scoreboards/init_scoreboards
-
+scoreboard objectives add NL_fos_count minecraft.used:minecraft.warped_fungus_on_a_stick
 
 
 scoreboard objectives add NL_skill_cool1 dummy
