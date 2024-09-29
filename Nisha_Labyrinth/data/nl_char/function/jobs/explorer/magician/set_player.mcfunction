@@ -5,6 +5,6 @@
 
 
 
-execute store result score @s NL_cmd_tool run data get storage nl:book.survivor player.custom_model_data.tool1
+execute store result score @s NL_cmd_tool run data get storage nl:book.magician player.custom_model_data.tool1
 
-execute store result score @s NL_cmd_book run data get storage nl:book.survivor player.custom_model_data.book1
+execute store result score @s NL_cmd_book run data get storage nl:book.magician player.custom_model_data.book1

@@ -1,2 +1,0 @@
-execute as @n[type=interaction,tag=mutton,tag=swamp,scores={NL_timer=1..}] run scoreboard players remove @s NL_timer 1
-execute as @n[type=interaction, tag=mutton,tag=swamp,scores={NL_timer=0}] run function nl_system:systems/swamp/default/set_default

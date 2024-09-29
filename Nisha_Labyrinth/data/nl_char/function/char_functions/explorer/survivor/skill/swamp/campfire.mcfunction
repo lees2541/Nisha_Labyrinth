@@ -1,3 +1,4 @@
+say hi
 execute on target unless items entity @s hotbar.* yellow_dye[custom_data~{NL:1b,campfire:1b}] run return 0
 execute on target unless items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data~{NL:1b,survivor:1b}] run return 0
 #execute on target unless score @s NL_lifestone_count matches 1.. run return 0

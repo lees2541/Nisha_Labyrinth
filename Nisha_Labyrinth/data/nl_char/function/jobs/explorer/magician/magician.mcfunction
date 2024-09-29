@@ -1,4 +1,7 @@
 
+
+
+function nl_char:jobs/explorer/magician/set_player
 function nl_char:jobs/explorer/explorer
 
 tag @s add magician
