@@ -5,6 +5,7 @@
 # @within nl_system:loop/loop
 
 ## 캐릭터별 루프
+
 execute if entity @s[tag=survivor] run function nl_char:char_functions/explorer/survivor/loop
 execute if entity @s[tag=magician] run function nl_char:char_functions/explorer/magician/loop
 

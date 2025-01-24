@@ -1,0 +1,1 @@
+execute if entity @a[tag=!magician,tag=NL,team=explorer] run function nl_char:char_functions/explorer/magician/skill/skill1/trigger

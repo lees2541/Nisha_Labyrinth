@@ -4,8 +4,12 @@
 #@private
 #@within nl_system:loop/loop
 
+#> 스킬감지
+advancement grant @s[scores={NL_fos_count=1..}] only nl_system:systems/actions/key_events/right_click/skill1 impossible
+
 
 #> 스코어보드
+
 # 공격스턴 관련
 execute if entity @s[scores={NL_attack_cool=1}] run tag @s remove hitstun
 execute if entity @s[scores={NL_attack_cool=1}] run function nl_system:modules/status_effect/update/update_status with entity @s attributes[{id:"minecraft:luck"}]
@@ -44,4 +48,8 @@ execute if entity @s[tag=roamer,tag=NL] at @s run function nl_system:loop/player
 execute at @s run function nl_system:loop/shader/shader_loop
 function nl_system:loop/status_gui/status/status_storage_loop
 
+
+
+#> 틱당 리셋
+advancement revoke @s from nl_system:systems/actions/key_events/right_click/skill1
 scoreboard players set @a NL_fos_count 0

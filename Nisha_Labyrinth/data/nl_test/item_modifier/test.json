@@ -1,13 +1,9 @@
-[
-  {
-    "function": "minecraft:copy_custom_data",
-    "source": "this",
-    "ops": [
-      {
-        "source": "Inventory[{Slot:8b}].components.minecraft:custom_data.player.character",
-        "target": "{}",
-        "op": "append"
-      }
-    ]
-  }
-]
+{
+  "function": "minecraft:set_custom_data",
+  "tag": {
+    "status": {
+      "ready": false
+    }
+  },
+  "conditions": []
+}

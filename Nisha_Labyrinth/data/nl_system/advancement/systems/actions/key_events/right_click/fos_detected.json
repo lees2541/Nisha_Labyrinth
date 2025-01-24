@@ -1,0 +1,49 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:warped_fungus_on_a_stick",
+        "count": 1
+      },
+      "title": "스킬1 사용",
+      "description": "",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "mainhand": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": {
+            "type": "minecraft:player",
+            "type_specific": {
+              "type": "minecraft:player"
+            },
+            "nbt": "{Tags:[\"NL\"]}",
+            "slots": {
+              "weapon.mainhand": {
+                "items": "minecraft:warped_fungus_on_a_stick",
+                "predicates": {
+                  "minecraft:custom_data": "{NL:1b}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "requirements": [
+      [
+        "mainhand"
+      ],
+      [
+        "impossible"
+      ]
+    ],
+    "rewards": {
+      "function": "nl_system:systems/actions/key_events/right_click/fos_detected_adv"
+    }
+  }
