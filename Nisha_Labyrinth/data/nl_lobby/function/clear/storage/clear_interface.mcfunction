@@ -6,7 +6,7 @@
 #declare storage nl:default 게임의 기본설정, 게임 초기화 시 이 저장소의 내용이 로비로 병합된다
 #declare storage nl:image_code 이미지 폰트 및 커스텀 모델 데이터 값을 저장한다
 #declare storage nl:status_data 상태이상(포괄적인 이름, 스턴 같은거)가 함유하는 실질적인 mob effect와 수치를 저장 
-say 스토리지 초기화
+say clear_interface1
 ## 스토리지 초기화
 data remove storage nl:settings map
 data remove storage nl:settings redstone
@@ -32,7 +32,7 @@ data remove storage nl:inven player
 
 
 
-
+say clear_interface2
 ## 스토리지 인터페이스 세팅
 
 data merge storage nl:settings {\
@@ -45,7 +45,7 @@ data merge storage nl:settings {\
 }
 data remove storage nl:settings players
 
-
+say clear_interface3
 data merge storage nl:in_game {\
     player:[\
         {id:1,character:"(str)", status:{resource:{redstone:0,lifestone:0},status:{},effects:{}}}\
@@ -71,7 +71,7 @@ data merge storage nl:in_game {\
 }
 data remove storage nl:in_game player
 
-
+say clear_interface4
 
 
 data merge storage nl:buffer {\
@@ -100,5 +100,5 @@ data merge storage nl:buffer {\
 }
 ## 버퍼 클리어
 
-
+say clear_interface5
 return 1

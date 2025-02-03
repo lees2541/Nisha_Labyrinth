@@ -9,11 +9,19 @@ execute as @a run function nl_char:status/reset_attribute
 function nl_lobby:clear/scoreboard/clear_scoreboard
 effect clear @a
 
-execute if data storage nl:lobby settings.player[0] run data modify storage nl:buffer player.character set from storage nl:lobby settings.player[0].character
-execute if data storage nl:lobby settings.player[0] run data modify storage nl:buffer player.team set from storage nl:lobby settings.player[0].team
-execute if data storage nl:lobby settings.player[0] run data modify storage nl:buffer player.id set from storage nl:lobby settings.player[0].id
-execute if data storage nl:lobby settings.player[0] run function nl_lobby:clear/indiv_reset_character with storage nl:buffer player
+say clear_players1
 
+execute if data storage nl:lobby settings.player[0] run data modify storage nl:buffer player.character set from storage nl:lobby settings.player[0].character
+
+say clear_players1_001
+execute if data storage nl:lobby settings.player[0] run data modify storage nl:buffer player.team set from storage nl:lobby settings.player[0].team
+say clear_players1_002
+execute if data storage nl:lobby settings.player[0] run data modify storage nl:buffer player.id set from storage nl:lobby settings.player[0].id
+say clear_players1_003
+say clear_players1_01
+say ho
+execute if data storage nl:lobby settings.player[0] run function nl_lobby:clear/indiv_reset_character with storage nl:buffer player
+say clear_players1_02
 execute if data storage nl:lobby settings.player[1] run data modify storage nl:buffer player.character set from storage nl:lobby settings.player[1].character
 execute if data storage nl:lobby settings.player[1] run data modify storage nl:buffer player.team set from storage nl:lobby settings.player[1].team
 execute if data storage nl:lobby settings.player[1] run data modify storage nl:buffer player.id set from storage nl:lobby settings.player[1].id
@@ -36,7 +44,7 @@ execute if data storage nl:lobby settings.player[4] run function nl_lobby:clear/
 
 
 
-
+say clear_players2
 #execute if data storage nl:in_game status{ongoing:2} run return 0
 return 1
 
