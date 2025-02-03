@@ -1,140 +1,167 @@
 [
-    {
-      "function": "minecraft:set_custom_model_data"
-    },
-    {
-      "function": "minecraft:set_book_cover",
-      "title": "정보"
-    },
-    {
-      "function": "minecraft:set_components",
-      "components": {
-        "minecraft:max_stack_size": 1
-      }
-    },
-    {
-      "function": "minecraft:set_custom_data",
-      "tag": {
-        "NL": true,
-        "info_book": true
-      }
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "nl_char:info_book/character_settings"
-    },
-    {
-      "function": "minecraft:set_written_book_pages",
-      "pages": [
-        [
-          {
-            "text": "[게임시작]",
-            "type": "text",
-            "extra": [
-              "\n\n"
-            ],
-            "color": "gold",
-            "bold": true,
-            "click_event": {
-              "action": "run_command",
-              "command": "/function nl_lobby:lobby/game_start"
-            }
+  {
+    "function": "minecraft:set_custom_model_data"
+  },
+  {
+    "function": "minecraft:set_book_cover",
+    "title": "정보"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:max_stack_size": 1
+    }
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "NL": true,
+      "info_book": true
+    }
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "nl_char:info_book/character_settings"
+  },
+  {
+    "function": "minecraft:set_written_book_pages",
+    "pages": [
+      [
+        {
+          "text": "[게임시작]",
+          "type": "text",
+          "extra": [
+            "\n\n"
+          ],
+          "color": "gold",
+          "bold": true,
+          "click_event": {
+            "action": "run_command",
+            "command": "/function nl_lobby:lobby/game_start"
+          }
+        },
+        {
+          "text": "<레드스톤 지급> ",
+          "type": "text",
+          "extra": [
+            {
+              "text": "<↑> ",
+              "type": "text",
+              "color": "green",
+              "bold": false,
+              "click_event": {
+                "action": "run_command",
+                "command": "scoreboard players add @s NL_mined_red 1"
+              }
+            },
+            {
+              "text": "<↓>",
+              "type": "text",
+              "color": "red",
+              "bold": false,
+              "click_event": {
+                "action": "run_command",
+                "command": "/function #nl_system:calc_resource {resource:redstone,operator:remove,operand:1}"
+              }
+            },
+            "\n\n"
+          ],
+          "color": "dark_red",
+          "bold": true
+        },
+        {
+          "text": "<생명석 지급> ",
+          "type": "text",
+          "extra": [
+            {
+              "text": "<↑> ",
+              "type": "text",
+              "color": "green",
+              "bold": false,
+              "click_event": {
+                "action": "run_command",
+                "command": "/scoreboard players add @s NL_mined_life 1"
+              }
+            },
+            {
+              "text": "<↓>",
+              "type": "text",
+              "color": "red",
+              "bold": false,
+              "click_event": {
+                "action": "run_command",
+                "command": "/function #nl_system:calc_resource {resource:lifestone,operator:remove,operand:1}"
+              }
+            },
+            "\n\n"
+          ],
+          "color": "blue",
+          "bold": true
+        },
+        {
+          "text": "<체력회복>  ",
+          "extra": [
+            "\n\n"
+          ],
+          "color": "light_purple",
+          "bold": true,
+          "click_event": {
+            "action": "run_command",
+            "command": "/effect give @s minecraft:instant_health 1 100"
+          }
+        },
+        {
+          "text": "<포만감 버프>",
+          "type": "text",
+          "extra": [
+            "\n\n\n"
+          ],
+          "color": "dark_red",
+          "bold": true,
+          "click_event": {
+            "action": "run_command",
+            "command": "/effect give @s minecraft:saturation 1 105"
+          }
+        },
+        {
+          "text": "[게임리셋]",
+          "type": "text",
+          "color": "blue",
+          "bold": true,
+          "click_event": {
+            "action": "run_command",
+            "command": "/function nl_lobby:lobby/game_reset"
+          }
+        }
+      ],
+      [
+        {
+          "text": "[생존가]",
+          "type": "text",
+          "extra": [
+            "\n"
+          ],
+          "click_event": {
+            "action": "run_command",
+            "command": "/function nl_lobby:lobby/jobs/choose_job {character:survivor,team:explorer}"
           },
-          {
-            "text": "<레드스톤 지급> ",
-            "type": "text",
-            "extra": [
-              {
-                "text": "<↑> ",
-                "type": "text",
-                "color": "green",
-                "bold": false,
-                "click_event": {
-                  "action": "run_command",
-                  "command": "scoreboard players add @s NL_mined_red 1"
-                }
-              },
-              {
-                "text": "<↓>",
-                "type": "text",
-                "color": "red",
-                "bold": false,
-                "click_event": {
-                  "action": "run_command",
-                  "command": "/function #nl_system:calc_resource {resource:redstone,operator:remove,operand:1}"
-                }
-              },
-              "\n\n"
-            ],
-            "color": "dark_red",
-            "bold": true
-          },
-          {
-            "text": "<생명석 지급> ",
-            "type": "text",
-            "extra": [
-              {
-                "text": "<↑> ",
-                "type": "text",
-                "color": "green",
-                "bold": false,
-                "click_event": {
-                  "action": "run_command",
-                  "command": "/scoreboard players add @s NL_mined_life 1"
-                }
-              },
-              {
-                "text": "<↓>",
-                "type": "text",
-                "color": "red",
-                "bold": false,
-                "click_event": {
-                  "action": "run_command",
-                  "command": "/function #nl_system:calc_resource {resource:lifestone,operator:remove,operand:1}"
-                }
-              },
-              "\n\n"
-            ],
-            "color": "blue",
-            "bold": true
-          },
-          {
-            "text": "<체력회복>  ",
-            "extra": [
-              "\n\n"
-            ],
-            "color": "light_purple",
-            "bold": true,
-            "click_event": {
-              "action": "run_command",
-              "command": "/effect give @s minecraft:instant_health 1 100"
-            }
-          },
-          {
-            "text": "<포만감 버프>",
-            "type": "text",
-            "extra": [
-              "\n\n\n"
-            ],
-            "color": "dark_red",
-            "bold": true,
-            "click_event": {
-              "action": "run_command",
-              "command": "/effect give @s minecraft:saturation 1 105"
-            }
-          },
-          {
-            "text": "[게임리셋]",
-            "type": "text",
-            "color": "blue",
-            "bold": true,
-            "click_event": {
-              "action": "run_command",
-              "command": "/function nl_lobby:lobby/game_reset"
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "text": "여러 역경을 헤쳐온 생존 전문가입니다.",
+              "extra": [
+                "\n",
+                "음식을 자급할 수 있으며",
+                "\n",
+                "탐험가들의 쉼터를 제공합니다",
+                "\n"
+              ],
+              "color": "red"
             }
           }
-        ]
-      ],
-      "mode": "replace_all"
-    }
-  ]
+        }
+      ]
+    ],
+    "mode": "replace_all"
+  }
+]

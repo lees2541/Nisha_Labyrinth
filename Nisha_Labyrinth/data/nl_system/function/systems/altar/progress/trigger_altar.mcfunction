@@ -11,7 +11,7 @@ scoreboard players operation #altar NL_altar_gauge = #max NL_altar_gauge
 bossbar set nl:altar_gauge color white
 
 
-$bossbar set nl:altar_gauge name {"text":"\uE50$(progress)\uE512"}
+$bossbar set nl:altar_gauge name {"text":"\\uE50$(progress)\\uE512"}
 
 title @a title {"text":"제단","color":"dark_red","bold":true}
 ## 도서관 상자 리셋
