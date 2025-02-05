@@ -1,0 +1,114 @@
+{
+    "function": "minecraft:set_written_book_pages",
+    "pages": [
+      [
+        {
+          "text": "[게임시작]",
+          "type": "text",
+          "extra": [
+            "\n\n"
+          ],
+          "color": "gold",
+          "bold": true,
+          "click_event": {
+            "action": "run_command",
+            "command": "/function nl_lobby:lobby/game_start"
+          }
+        },
+        {
+          "text": "<레드스톤 지급> ",
+          "type": "text",
+          "extra": [
+            {
+              "text": "<↑> ",
+              "type": "text",
+              "color": "green",
+              "bold": false,
+              "click_event": {
+                "action": "run_command",
+                "command": "scoreboard players add @s NL_mined_red 1"
+              }
+            },
+            {
+              "text": "<↓>",
+              "type": "text",
+              "color": "red",
+              "bold": false,
+              "click_event": {
+                "action": "run_command",
+                "command": "/function #nl_system:calc_resource {resource:redstone,operator:remove,operand:1}"
+              }
+            },
+            "\n\n"
+          ],
+          "color": "dark_red",
+          "bold": true
+        },
+        {
+          "text": "<생명석 지급> ",
+          "type": "text",
+          "extra": [
+            {
+              "text": "<↑> ",
+              "type": "text",
+              "color": "green",
+              "bold": false,
+              "click_event": {
+                "action": "run_command",
+                "command": "/scoreboard players add @s NL_mined_life 1"
+              }
+            },
+            {
+              "text": "<↓>",
+              "type": "text",
+              "color": "red",
+              "bold": false,
+              "click_event": {
+                "action": "run_command",
+                "command": "/function #nl_system:calc_resource {resource:lifestone,operator:remove,operand:1}"
+              }
+            },
+            "\n\n"
+          ],
+          "color": "blue",
+          "bold": true
+        },
+        {
+          "text": "<체력회복>  ",
+          "extra": [
+            "\n\n"
+          ],
+          "color": "light_purple",
+          "bold": true,
+          "click_event": {
+            "action": "run_command",
+            "command": "/effect give @s minecraft:instant_health 1 100"
+          }
+        },
+        {
+          "text": "<포만감 버프>",
+          "type": "text",
+          "extra": [
+            "\n\n\n"
+          ],
+          "color": "dark_red",
+          "bold": true,
+          "click_event": {
+            "action": "run_command",
+            "command": "/effect give @s minecraft:saturation 1 105"
+          }
+        },
+        {
+          "text": "[게임리셋]",
+          "type": "text",
+          "color": "blue",
+          "bold": true,
+          "click_event": {
+            "action": "run_command",
+            "command": "/function nl_lobby:lobby/game_reset"
+          }
+        }
+      ]
+    ],
+    "mode": "replace_all"
+  }

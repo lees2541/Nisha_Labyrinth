@@ -10,8 +10,8 @@ execute as @a[tag=NL,scores={NL_player_id=1..}] run advancement grant @s only nl
 ## 맵 종류에 따라 맵 불러오기
 execute if data storage nl:settings map{type:"cave"} run function nl_lobby:lobby/settings/maps/select_cave
 
-
-tellraw @a [{"text":"\"","color":"blue"},{"nbt":"map.type","storage":"nl:settings","color":"green","bold":true},{"text":"\"","color":"blue"},{"text":" 맵에서 시작합니다","color":"white"},{"text":"\n"},{"selector":"@a[tag=NL]","separator":" "},{"text":"\n"},{"text":"게임이 시작됩니다","color":"white","bold":true}]
+## \\u 이거 관련해서 임시조치함(추후 버그 픽스시 해제 요망)
+#tellraw @a [{"text":"\"","color":"blue"},{"nbt":"map.type","storage":"nl:settings","color":"green","bold":true},{"text":"\"","color":"blue"},{"text":" 맵에서 시작합니다","color":"white"},{"text":"\n"},{"selector":"@a[tag=NL]","separator":" "},{"text":"\n"},{"text":"게임이 시작됩니다","color":"white","bold":true}]
 execute at @e[type=marker,tag=marker,tag=NL,tag=shop,limit=1] run loot replace block ~ ~ ~ container.0 loot nl_system:chests/shop/drawing
 ## 게임 시스템 설정
 function nl_lobby:lobby/settings/systems/set_altar_system

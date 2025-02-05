@@ -1,105 +1,54 @@
 {
-	"condition": "minecraft:any_of",
+	"condition": "minecraft:all_of",
 	"terms": [
 	  {
 		"condition": "minecraft:entity_properties",
 		"entity": "this",
 		"predicate": {
-		  "slots": {
-			"inventory.*": {
-			  "items": "minecraft:lapis_lazuli"
+		  "type": "minecraft:player",
+		  "team": "explorer",
+		  "distance": {
+			"absolute": {}
+		  },
+		  "equipment": {
+			"offhand": {
+			  "items": "minecraft:diamond_hoe",
+			  "components": {
+				"minecraft:custom_data": {
+				  "NL": true,
+				  "alarm": true,
+				  "offhand": true
+				}
+			  }
 			}
 		  }
 		}
 	  },
 	  {
-		"condition": "minecraft:entity_properties",
-		"entity": "this",
-		"predicate": {
-		  "slots": {
-			"hotbar.0": {
-			  "items": "minecraft:lapis_lazuli"
-			}
-		  }
-		}
-	  },
-	  {
-		"condition": "minecraft:entity_properties",
-		"entity": "this",
-		"predicate": {
-		  "slots": {
-			"hotbar.1": {
-			  "items": "minecraft:lapis_lazuli"
-			}
-		  }
-		}
-	  },
-	  {
-		"condition": "minecraft:entity_properties",
-		"entity": "this",
-		"predicate": {
-		  "slots": {
-			"hotbar.2": {
-			  "items": "minecraft:lapis_lazuli"
-			}
-		  }
-		}
-	  },
-	  {
-		"condition": "minecraft:entity_properties",
-		"entity": "this",
-		"predicate": {
-		  "slots": {
-			"hotbar.3": {
-			  "items": "minecraft:lapis_lazuli"
-			}
-		  }
-		}
-	  },
-	  {
-		"condition": "minecraft:entity_properties",
-		"entity": "this",
-		"predicate": {
-		  "slots": {
-			"hotbar.4": {
-			  "items": "minecraft:lapis_lazuli"
-			}
-		  }
-		}
-	  },
-	  {
-		"condition": "minecraft:entity_properties",
-		"entity": "this",
-		"predicate": {
-		  "slots": {
-			"hotbar.5": {
-			  "items": "minecraft:lapis_lazuli"
-			}
-		  }
-		}
-	  },
-	  {
-		"condition": "minecraft:entity_properties",
-		"entity": "this",
-		"predicate": {
-		  "slots": {
-			"hotbar.7": {
-			  "items": "minecraft:lapis_lazuli"
-			}
-		  }
-		}
-	  },
-	  {
-		"condition": "minecraft:entity_properties",
-		"entity": "this",
-		"predicate": {
-		  "slots": {
-			"hotbar.8": {
-			  "items": "minecraft:lapis_lazuli"
+		"condition": "minecraft:inverted",
+		"term": {
+		  "condition": "minecraft:entity_properties",
+		  "entity": "this",
+		  "predicate": {
+			"type": "minecraft:player",
+			"team": "explorer",
+			"equipment": {
+			  "offhand": {
+				"items": "minecraft:diamond_hoe",
+				"components": {
+				  "minecraft:custom_model_data": {
+					"floats": [
+					  1
+					]
+				  },
+				  "minecraft:custom_data": {
+					"alarm": true
+				  }
+				}
+			  }
 			}
 		  }
 		}
 	  }
 	]
   }
-  

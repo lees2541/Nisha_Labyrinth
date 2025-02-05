@@ -21,9 +21,9 @@ data modify storage nl:image_code player.magician.font.icon5 set value "uE125"
 
 #> 책에 저장될 정보
 data modify storage nl:book.magician player.character.magician set value 1b
-data modify storage nl:book.magician player.custom_model_data.tool1 set value 1002001
-data modify storage nl:book.magician player.custom_model_data.tool2 set value 1002002
-data modify storage nl:book.magician player.custom_model_data.tool3 set value 1002003
+data modify storage nl:book.magician player.custom_model_data.tool1 set value 1
+data modify storage nl:book.magician player.custom_model_data.tool2 set value 2
+data modify storage nl:book.magician player.custom_model_data.tool3 set value 3
 data modify storage nl:book.magician player.custom_model_data.book1 set value 102001
 data modify storage nl:book.magician player.custom_model_data.book2 set value 3002001
 data modify storage nl:book.magician player.custom_model_data.book3 set value 3002002

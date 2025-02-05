@@ -1,15 +1,33 @@
 [
   {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "minecraft:custom/items/player/radar"
+    },
+    "conditions": []
+  },
+  {
     "function": "minecraft:set_custom_model_data",
-    "value": {
-      "type": "minecraft:storage",
-      "storage": "nl:buffer",
-      "path": "item.CustomModelData"
+    "floats": {
+      "values": [
+        {
+          "type": "minecraft:storage",
+          "storage": "nl:buffer",
+          "path": "item.CustomModelData"
+        }
+      ],
+      "mode": "replace_section",
+      "offset": 0,
+      "size": 1
     }
   },
   {
     "function": "minecraft:set_custom_data",
-    "tag": "{NL:1b,offhand:1b,alarm:1b}"
+    "tag": {
+      "NL": true,
+      "offhand": true,
+      "alarm": true
+    }
   },
   {
     "function": "minecraft:set_name",

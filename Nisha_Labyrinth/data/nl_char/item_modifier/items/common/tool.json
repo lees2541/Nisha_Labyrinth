@@ -1,14 +1,47 @@
 [
-    {
-      "function": "minecraft:copy_custom_data",
-      "source": "this",
-      "ops": [
-        {
-          "source": "Inventory[{Slot:8b}].components.minecraft:custom_data.player.character",
-          "target": "{}",
-          "op": "merge"
-        }
-      ]
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "NL": true,
+      "tool": true,
+      "ready": true
     }
-  ]
-  
+  },
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": "this",
+    "ops": [
+      {
+        "source": "Inventory[{Slot:8b}].components.minecraft:custom_data.player.character",
+        "target": "{}",
+        "op": "append"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "minecraft:custom/items/player/tool"
+    }
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "nl_char:items/common/tool/setting"
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "floats": {
+      "values": [
+        {
+          "type": "minecraft:score",
+          "target": "this",
+          "score": "NL_cmd_tool",
+          "scale": 1
+        }
+      ],
+      "mode": "replace_section",
+      "offset": 0,
+      "size": 1
+    }
+  }
+]

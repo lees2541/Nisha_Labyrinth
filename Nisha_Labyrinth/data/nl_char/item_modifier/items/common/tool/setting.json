@@ -1,0 +1,96 @@
+[    
+    {
+      "function": "minecraft:set_custom_model_data",
+      "floats": {
+        "values": [
+          1
+        ],
+        "mode": "replace_all"
+      },
+      "flags": {
+        "values": [
+          false
+        ],
+        "mode": "replace_all"
+      },
+      "conditions": []
+    },
+    {
+      "function": "minecraft:set_custom_model_data",
+      "strings": {
+        "values": [
+          "explorer"
+        ],
+        "mode": "replace_all"
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:player",
+            "nbt": "{Tags:[\"explorer\"]}"
+          }
+        }
+      ]
+    },
+    {
+        "function": "minecraft:set_custom_model_data",
+        "strings": {
+          "values": [
+            "roamer"
+          ],
+          "mode": "replace_all"
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:player",
+              "nbt": "{Tags:[\"roamer\"]}"
+            }
+          }
+        ]
+      },
+    {
+      "function": "minecraft:set_custom_model_data",
+      "strings": {
+        "values": [
+          "survivor"
+        ],
+        "mode": "insert",
+        "offset": 1
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:player",
+            "nbt": "{Tags:[\"survivor\"]}"
+          }
+        }
+      ]
+    },
+    {
+        "function": "minecraft:set_custom_model_data",
+        "strings": {
+          "values": [
+            "magician"
+          ],
+          "mode": "insert",
+          "offset": 1
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:player",
+              "nbt": "{Tags:[\"magician\"]}"
+            }
+          }
+        ]
+      }
+  ]

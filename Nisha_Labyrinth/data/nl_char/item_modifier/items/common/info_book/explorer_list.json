@@ -1,0 +1,53 @@
+{
+    "function": "minecraft:set_written_book_pages",
+    "pages": [
+      [
+        {
+          "text": "[생존가]",
+          "type": "text",
+          "extra": [
+            "\n"
+          ],
+          "color": "blue",
+          "click_event": {
+            "action": "run_command",
+            "command": "/function nl_lobby:lobby/jobs/choose_job {character:survivor,team:explorer}"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": {
+              "text": "여러 역경을 헤쳐온 생존 전문가입니다.",
+              "extra": [
+                "\n",
+                "음식을 자급할 수 있으며",
+                "\n",
+                "탐험가들의 쉼터를 제공합니다",
+                "\n"
+              ]
+            }
+          }
+        },
+        {
+          "text": "[주술사]",
+          "type": "text",
+          "extra": [
+            "\n"
+          ],
+          "color": "blue",
+          "click_event": {
+            "action": "run_command",
+            "command": "/function nl_lobby:lobby/jobs/choose_job {character:magician,team:explorer}"
+          },
+          "hover_event": {
+            "action": "show_text",
+            "value": [
+              "주술사 어쩌구 설명",
+              "\n",
+              "수정구를 이용해 순식간에 위기에서 벗어납니다"
+            ]
+          }
+        }
+      ]
+    ],
+    "mode": "append"
+  }

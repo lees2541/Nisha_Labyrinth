@@ -19,9 +19,9 @@ data modify storage nl:image_code player.survivor.font.lf_slot.skill1 set value 
 
 #> 책에 저장될 정보
 data modify storage nl:book.survivor player.character.survivor set value 1b
-data modify storage nl:book.survivor player.custom_model_data.tool1 set value 1001501
-data modify storage nl:book.survivor player.custom_model_data.tool2 set value 1001502
-data modify storage nl:book.survivor player.custom_model_data.tool3 set value 1001503
+data modify storage nl:book.survivor player.custom_model_data.tool1 set value 1
+data modify storage nl:book.survivor player.custom_model_data.tool2 set value 2
+data modify storage nl:book.survivor player.custom_model_data.tool3 set value 3
 data modify storage nl:book.survivor player.custom_model_data.book1 set value 103001
 data modify storage nl:book.survivor player.custom_model_data.book2 set value 3001001
 data modify storage nl:book.survivor player.custom_model_data.book3 set value 3001002
