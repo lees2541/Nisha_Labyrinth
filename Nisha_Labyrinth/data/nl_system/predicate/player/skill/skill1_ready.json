@@ -1,38 +1,34 @@
 [
-    {
-      "condition": "minecraft:inverted",
-      "term": {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "team": "prisoner"
-        }
-      }
-    },
-    {
+  {
+    "condition": "minecraft:inverted",
+    "term": {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Tags:[\"NL\"]}",
-        "equipment": {
-          "mainhand": {
-            "items": "minecraft:warped_fungus_on_a_stick",
-            "predicates": {
-              "minecraft:custom_data": {
-                "status": {
-                  "ready1": true
-                }
-              }
-            }
+        "team": "prisoner"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Tags:[\"NL\"]}",
+      "equipment": {
+        "mainhand": {
+          "items": "minecraft:warped_fungus_on_a_stick",
+          "predicates": {
+            "minecraft:custom_data": "{ready1:1b}"
           }
         }
       }
-    },
-    {
-      "condition": "minecraft:entity_scores",
-      "entity": "this",
-      "scores": {
-        "NL_skill_cool1": 0
-      }
     }
-  ]
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "NL_skill_cool1": 0
+    }
+  }
+]

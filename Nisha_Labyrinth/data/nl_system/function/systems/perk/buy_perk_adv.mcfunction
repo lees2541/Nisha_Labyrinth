@@ -13,3 +13,5 @@ clear @s paper[custom_data~{perk:1b}]
 
 loot give @s loot nl_char:command/items/common/tool
 function nl_char:items/give_info_book
+
+execute if function nl_system:modules/storage/load_to_buffer/player_info/load_player_info run function nl_system:systems/perk/set_perk with storage nl:buffer player

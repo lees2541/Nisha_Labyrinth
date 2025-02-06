@@ -1,0 +1,20 @@
+[
+    {
+      "function": "minecraft:set_custom_model_data",
+      "flags": {
+        "values": [
+          false
+        ],
+        "mode": "replace_section",
+        "offset": 0,
+        "size": 1
+      }
+    },
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": {
+        "ready1": true,
+        "ready2": true
+      }
+    }
+  ]

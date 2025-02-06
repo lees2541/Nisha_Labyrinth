@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:carrot_on_a_stick",
+            "functions": [
+              {
+                "function": "minecraft:reference",
+                "name": "nl_char:items/common/tool2"
+              }
+            ]
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:reference",
+            "name": "nl_char:items/explorer/magician/tool2",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "nbt": "{Tags:[\"magician\"]}"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

@@ -5,7 +5,7 @@
 #@within nl_system:loop/loop
 
 #> 스킬감지
-advancement grant @s[scores={NL_fos_count=1..}] only nl_system:systems/actions/key_events/right_click/skill1 impossible
+advancement grant @s[scores={NL_fos_count=1..}] only nl_system:systems/actions/key_events/right_click/fos_detected impossible
 
 
 #> 스코어보드
@@ -51,5 +51,5 @@ function nl_system:loop/status_gui/status/status_storage_loop
 
 
 #> 틱당 리셋
-advancement revoke @s from nl_system:systems/actions/key_events/right_click/skill1
+advancement revoke @s from nl_system:systems/actions/key_events/right_click/fos_detected
 scoreboard players set @a NL_fos_count 0

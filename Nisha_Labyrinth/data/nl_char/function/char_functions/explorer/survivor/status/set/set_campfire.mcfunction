@@ -1,6 +1,6 @@
 #> nl_char:char_functions/explorer/survivor/status/set/set_campfire
 # 캠프파이어가 설치 될 떄 플레이어 변화
-#@within nl_char:char_functions/explorer/survivor/skill/swamp/interact
+#@within nl_char:char_functions/explorer/survivor/skill/condition_check/interact_swamp
 $say $(id) $(character)
 tag @s add no_life_gui_update
 $function nl_system:modules/status_gui/lifestone_icon/update/input_storage {id:$(id),tag:"skill1",character:"$(character)"}

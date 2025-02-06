@@ -4,7 +4,8 @@
     "tag": {
       "NL": true,
       "tool": true,
-      "ready": true
+      "ready1": true,
+      "ready2": true
     }
   },
   {
@@ -42,6 +43,12 @@
       "mode": "replace_section",
       "offset": 0,
       "size": 1
+    },
+    "flags": {
+      "values": [
+        false
+      ],
+      "mode": "replace_all"
     }
   }
 ]

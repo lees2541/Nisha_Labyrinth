@@ -1,5 +1,5 @@
 #> nl_char:jobs/explorer/magician/set_stats
-#
+# 주술사의 스탯을 설정하는 함수
 # 
 
 #> 기본 이미지(우측 gui)
@@ -27,3 +27,8 @@ data modify storage nl:book.magician player.custom_model_data.tool3 set value 3
 data modify storage nl:book.magician player.custom_model_data.book1 set value 102001
 data modify storage nl:book.magician player.custom_model_data.book2 set value 3002001
 data modify storage nl:book.magician player.custom_model_data.book3 set value 3002002
+
+
+
+
+# 

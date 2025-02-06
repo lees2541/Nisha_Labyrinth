@@ -1,0 +1,13 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "nl_system:player/skill/skill1_ready"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "nl_system:player/skill/has_lifestone"
+      }
+    ]
+  }

@@ -1,0 +1,9 @@
+[
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": {
+        "magician": true,
+        "mode": 1
+      }
+    }
+  ]

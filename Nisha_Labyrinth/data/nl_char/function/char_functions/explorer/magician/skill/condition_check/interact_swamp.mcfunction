@@ -1,0 +1,2 @@
+execute if items entity @s weapon.mainhand carrot_on_a_stick[custom_data~{tool2:1b,mode:1,magician:1b}] run return run function nl_char:char_functions/explorer/magician/skill/skill3/set_in_portal
+execute if items entity @s weapon.mainhand carrot_on_a_stick[custom_data~{tool2:1b,mode:2,magician:1b}] run return run function nl_char:char_functions/explorer/magician/skill/skill3/set_out_portal
