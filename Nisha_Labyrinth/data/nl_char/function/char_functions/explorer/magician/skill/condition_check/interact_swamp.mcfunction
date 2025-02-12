@@ -1,2 +1,7 @@
-execute if items entity @s weapon.mainhand carrot_on_a_stick[custom_data~{tool2:1b,mode:1,magician:1b}] run return run function nl_char:char_functions/explorer/magician/skill/skill3/set_in_portal
-execute if items entity @s weapon.mainhand carrot_on_a_stick[custom_data~{tool2:1b,mode:2,magician:1b}] run return run function nl_char:char_functions/explorer/magician/skill/skill3/set_out_portal
+#> nl_char:char_functions/explorer/magician/skill/condition_check/interact_swamp
+# 상호작용된 발판 에서 발동
+# @context 해당 발판의 interaction 엔티티
+say 낙서놀이
+
+execute if entity @s[tag=!occupied] if function nl_char:char_functions/explorer/magician/skill/skill3/perk1/set_in_portal run return 1
+execute if entity @s[tag=!occupied] if function nl_char:char_functions/explorer/magician/skill/skill3/perk1/set_out_portal run return 1

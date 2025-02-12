@@ -1,0 +1,52 @@
+[
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "custom/items/player/tool2"
+      }
+    },
+    {
+      "function": "minecraft:set_custom_model_data",
+      "strings": {
+        "values": [
+          "explorer",
+          "magician"
+        ],
+        "mode": "replace_all"
+      }
+    },
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:consumable": {
+          "consume_seconds": 10,
+          "animation": "eat",
+          "sound": "minecraft:ambient.underwater.enter",
+          "has_consume_particles": true,
+          "on_consume_effects": [
+            {
+              "type": "minecraft:play_sound",
+              "sound": "minecraft:ambient.underwater.loop"
+            }
+          ]
+        },
+        "minecraft:tool": {
+          "rules": [],
+          "default_mining_speed": 1
+        },
+        "minecraft:damage": 0,
+        "minecraft:max_damage": 1000,
+        "minecraft:max_stack_size": 1
+      }
+    },
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": {
+        "NL": true,
+        "charging": true,
+        "magician": true,
+        "perk2": true
+      },
+      "conditions": []
+    }
+  ]

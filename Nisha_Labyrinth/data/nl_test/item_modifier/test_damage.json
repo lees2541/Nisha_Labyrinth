@@ -1,5 +1,6 @@
 {
-    "function": "minecraft:set_damage",
-    "damage": 0.4,
-    "conditions": []
-  }
+  "function": "minecraft:set_damage",
+  "damage": -0.01,
+  "add": true,
+  "conditions": []
+}

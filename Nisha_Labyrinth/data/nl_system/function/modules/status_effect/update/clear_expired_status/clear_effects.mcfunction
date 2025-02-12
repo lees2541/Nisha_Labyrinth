@@ -13,6 +13,6 @@
 #           .hide
 #               파티클 적용여부
 #@within nl_system:modules/status_effect/update/clear_expired_status/call_clear_function
-
+say 클리어 이펙트
 $execute unless data storage nl:in_game player[{id:$(player)}].status.status[].effect[{id:"$(id)"}] run effect clear @s $(id)
 

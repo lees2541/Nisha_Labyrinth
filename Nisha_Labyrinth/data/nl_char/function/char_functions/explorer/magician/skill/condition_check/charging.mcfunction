@@ -1,0 +1,1 @@
+execute if score @s NL_perk matches 2 run function nl_char:char_functions/explorer/magician/skill/skill3/perk2/charging

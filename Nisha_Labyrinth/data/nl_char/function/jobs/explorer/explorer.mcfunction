@@ -16,6 +16,7 @@ execute if score @s E_efficiency matches ..1 run scoreboard players set @s E_eff
 scoreboard players set @s NL_lifestone_count 0
 scoreboard players set @s NL_redstone_count 0
 scoreboard players set @s NL_flashlight 1
+scoreboard players set @s NL_charging_mode 0
 ## 상태 셋팅
 
 gamemode adventure @s

@@ -12,3 +12,7 @@ scoreboard objectives add NL_skill_cool3 dummy
 #declare objective NL_skill_cool1 1번 스킬의 남은 쿨타임(초)
 #declare objective NL_skill_cool2 2번 스킬의 남은 쿨타임(초)
 #declare objective NL_skill_cool3 3번 스킬의 남은 쿨타임(초)
+
+scoreboard objectives add NL_damage_speed dummy
+scoreboard objectives add NL_charging_mode dummy
+scoreboard objectives add NL_charging_gauge dummy

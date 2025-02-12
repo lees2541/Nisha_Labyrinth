@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:acacia_fence"
+    },
+    "title": "",
+    "description": ""
+  },
+  "criteria": {
+    ".": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {},
+        "item": {
+          "items": "minecraft:emerald",
+          "count": 1,
+          "predicates": {
+            "minecraft:custom_data": "{charging:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "nl_system:systems/actions/key_events/charging/consumable/charging_adv"
+  }
+}

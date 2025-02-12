@@ -6,7 +6,7 @@
 execute positioned as @s align xyz run setblock ~ ~1 ~ minecraft:redstone_wire keep
 
 execute on attacker if items entity @s hotbar.* redstone[!custom_data~{redstone:1b}] run return run clear @s redstone[!minecraft:custom_data~{redstone:1b}] 1
-say hoho
+#say hoho
 execute on attacker run function nl_system:modules/storage/scoreboard/operation/resource_count/calc_resource {resource:"redstone",operator:"remove",operand:1}
 
 

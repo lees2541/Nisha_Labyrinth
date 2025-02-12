@@ -9,7 +9,7 @@
 #           type
 #           tag
 #@within nl_system:modules/status_effect/update/clear_expired_status/clear_expired_status
-
+say 클리어펑션
 $data remove storage nl:in_game player[{id:$(id)}].status.status[{tag:$(tag)}]
 $data modify storage nl:buffer status.effect.player set value $(id)
 $tag @s remove $(tag)

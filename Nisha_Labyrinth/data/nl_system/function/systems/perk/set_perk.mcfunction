@@ -4,4 +4,4 @@
 
 
 $execute if score @s NL_perk matches 1 run return run function nl_char:char_functions/$(team)/$(character)/perk/perk1/set_perk1
-$execute if score @s NL_perk matches 2 run return run function nl_char:char_functions/$(team)/$(character)/perk/perk1/set_perk2
+$execute if score @s NL_perk matches 2 run return run function nl_char:char_functions/$(team)/$(character)/perk/perk2/set_perk2

@@ -43,3 +43,5 @@ tag @s remove no_life_gui_update
 tag @s remove NL
 
 
+## 주술사 태그 초기화
+tag @s remove lock_on

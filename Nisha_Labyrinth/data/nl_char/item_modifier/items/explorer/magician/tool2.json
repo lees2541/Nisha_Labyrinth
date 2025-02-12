@@ -1,9 +1,40 @@
 [
-    {
-      "function": "minecraft:set_custom_data",
-      "tag": {
-        "magician": true,
-        "mode": 1
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "magician": true,
+      "mode": 1,
+      "perk1": true
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "NL_mode": 1
+        }
       }
-    }
-  ]
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "magician": true,
+      "mode": 2,
+      "perk1": true
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "NL_mode": 2
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "nl_system:systems/item/update/common/custom_model_data_float"
+  }
+]

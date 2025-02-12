@@ -9,6 +9,9 @@ scoreboard players set @a NL_blindness_time 0
 scoreboard players set @a NL_skill_cool1 -1
 scoreboard players set @a NL_skill_cool2 -1
 scoreboard players set @a NL_skill_cool3 -1
+
+scoreboard players reset NL_damage_speed
+scoreboard players set @a NL_charging_gauge 1000
 ## 행동 상태 관련
 scoreboard players set @a NL_sneaking_time 0
 
