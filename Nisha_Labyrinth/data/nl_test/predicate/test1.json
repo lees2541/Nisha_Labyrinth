@@ -1,54 +1,7 @@
 {
-	"condition": "minecraft:all_of",
-	"terms": [
-	  {
-		"condition": "minecraft:entity_properties",
-		"entity": "this",
-		"predicate": {
-		  "type": "minecraft:player",
-		  "team": "explorer",
-		  "distance": {
-			"absolute": {}
-		  },
-		  "equipment": {
-			"offhand": {
-			  "items": "minecraft:diamond_hoe",
-			  "components": {
-				"minecraft:custom_data": {
-				  "NL": true,
-				  "alarm": true,
-				  "offhand": true
-				}
-			  }
-			}
-		  }
-		}
-	  },
-	  {
-		"condition": "minecraft:inverted",
-		"term": {
-		  "condition": "minecraft:entity_properties",
-		  "entity": "this",
-		  "predicate": {
-			"type": "minecraft:player",
-			"team": "explorer",
-			"equipment": {
-			  "offhand": {
-				"items": "minecraft:diamond_hoe",
-				"components": {
-				  "minecraft:custom_model_data": {
-					"floats": [
-					  1
-					]
-				  },
-				  "minecraft:custom_data": {
-					"alarm": true
-				  }
-				}
-			  }
-			}
-		  }
-		}
-	  }
-	]
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+	  "periodic_tick": 2
+	}
   }

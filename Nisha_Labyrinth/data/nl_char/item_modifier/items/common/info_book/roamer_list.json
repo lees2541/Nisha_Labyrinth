@@ -3,15 +3,15 @@
     "pages": [
       [
         {
-          "text": "[생존가]",
+          "text": "[헌터]",
           "type": "text",
           "extra": [
             "\n"
           ],
-          "color": "blue",
+          "color": "dark_red",
           "click_event": {
             "action": "run_command",
-            "command": "/function nl_lobby:lobby/jobs/choose_job {character:survivor,team:explorer}"
+            "command": "/function nl_lobby:lobby/jobs/choose_job {character:hunter,team:roamer}"
           },
           "hover_event": {
             "action": "show_text",

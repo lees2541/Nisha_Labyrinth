@@ -7,3 +7,6 @@ data modify storage nl:in_game status.altar.mode set value 0
 
 bossbar set nl:lib_alarm_gauge visible false
 bossbar set nl:lib_alarm_gauge value 0
+
+bossbar set nl_magician:blood_charging visible false
+bossbar set nl_magician:blood_charging value 0

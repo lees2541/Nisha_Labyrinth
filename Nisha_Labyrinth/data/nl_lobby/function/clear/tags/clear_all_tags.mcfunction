@@ -17,6 +17,7 @@ tag @s remove attacked
 tag @s remove hitstun
 tag @s remove stun
 tag @s remove early_death
+tag @s remove rooted
 
 ## 캐릭터 태그 초기화
 tag @s remove survivor

@@ -1,0 +1,3 @@
+execute if entity @e[type=interaction,tag=occupied,tag=out_portal] as @e[type=interaction,tag=occupied,tag=in_portal] at @s if entity @p[tag=sneaking,tag=NL,scores={NL_sneaking_time=15..},distance=..0.5] as @p[tag=sneaking,tag=NL,scores={NL_sneaking_time=15..},distance=..0.5] run function nl_char:char_functions/explorer/magician/skill/skill3/perk1/teleport_with_portal
+#execute if entity @e[type=interaction,tag=occupied,tag=out_portal] as @e[type=interaction,tag=occupied,tag=in_portal] at @s if entity @p[distance=..0.5] run say hi
+#say hi

@@ -1,8 +1,8 @@
 execute if entity @s[advancements={nl_system:systems/actions/key_events/charging/consumable/charging=true}] run say 차징임임
 
 
-execute if entity @s[scores={NL_charging_mode=0,NL_charging_gauge=..999}] store result bossbar test:nl_charging_gauge value run scoreboard players add @s NL_charging_gauge 5
-execute if entity @s[scores={NL_charging_mode=1,NL_charging_gauge=0..}] store result bossbar test:nl_charging_gauge value run scoreboard players remove @s NL_charging_gauge 10
+execute if entity @s[scores={NL_charging_mode=0,NL_charging_gauge=..999}] store result bossbar nl_magician:blood_charging value run scoreboard players add @s NL_charging_gauge 5
+execute if entity @s[scores={NL_charging_mode=1,NL_charging_gauge=0..}] store result bossbar nl_magician:blood_charging value run scoreboard players remove @s NL_charging_gauge 10
 
 #차징을 시작하면 차징모드를 1로 변경
 #execute if entity @s[advancements={nl_system:systems/actions/key_events/charging/consumable/charging=true},scores={NL_charging_mode=0}] run scoreboard players set @s NL_damage_speed -10
@@ -16,8 +16,8 @@ execute if entity @s[scores={NL_charging_mode=1,NL_charging_gauge=0..}] store re
 #execute if items entity @s weapon.mainhand emerald[custom_data~{perk2:1b,charging:1b},consumable] 
 #execute if entity @s[advancements={nl_system:systems/actions/key_events/charging/consumable/charging=false},scores={NL_charging_mode=1}] run function
 
-
-execute if entity @s[advancements={nl_system:systems/actions/key_events/charging/consumable/charging=false},scores={NL_charging_mode=1}] run function nl_char:char_functions/explorer/magician/perk/perk2/custom/disable_charging
+execute if entity @s[scores={NL_charging_mode=1,NL_charging_gauge=..10}] run function nl_char:char_functions/explorer/magician/skill/skill3/perk2/cancel_spell
+#execute if entity @s[advancements={nl_system:systems/actions/key_events/charging/consumable/charging=false},scores={NL_charging_mode=1}] run function nl_char:char_functions/explorer/magician/perk/perk2/custom/disable_charging
 execute if entity @s[advancements={nl_system:systems/actions/key_events/charging/consumable/charging=false},scores={NL_charging_mode=1},tag=lock_on] run function nl_char:char_functions/explorer/magician/skill/skill3/perk2/cancel_spell
 
 execute if entity @s[advancements={nl_system:systems/actions/key_events/charging/consumable/charging=false},scores={NL_charging_mode=1}] run scoreboard players set @s NL_mode 0

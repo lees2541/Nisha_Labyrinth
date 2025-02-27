@@ -1,15 +1,22 @@
 {
-    "function": "minecraft:set_custom_model_data",
-    "floats": {
-      "values": [
-        {
-          "type": "minecraft:score",
-          "target": "this",
-          "score": "NL_mode",
-          "scale": 1
-        }
-      ],
-      "mode": "insert",
-      "offset": 0
-    }
+  "function": "minecraft:set_custom_model_data",
+  "floats": {
+    "values": [
+      {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "NL_perk",
+        "scale": 1
+      },
+      {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "NL_mode",
+        "scale": 1
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 0,
+    "size": 2
   }
+}

@@ -22,7 +22,7 @@
   {
     "function": "minecraft:set_components",
     "components": {
-      "minecraft:item_model": "minecraft:custom/items/player/tool"
+      "minecraft:item_model": "minecraft:common/tool1"
     }
   },
   {
@@ -33,6 +33,12 @@
     "function": "minecraft:set_custom_model_data",
     "floats": {
       "values": [
+        {
+          "type": "minecraft:score",
+          "target": "this",
+          "score": "NL_perk",
+          "scale": 1
+        },
         {
           "type": "minecraft:score",
           "target": "this",

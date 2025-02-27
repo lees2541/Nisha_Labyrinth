@@ -20,7 +20,7 @@
     {
       "function": "minecraft:set_components",
       "components": {
-        "minecraft:item_model": "minecraft:custom/items/player/tool2"
+        "minecraft:item_model": "minecraft:common/tool2"
       }
     },
     {
