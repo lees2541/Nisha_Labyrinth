@@ -14,7 +14,7 @@ bossbar set nl:altar_gauge players @a
 bossbar set nl:altar_gauge visible true
 data modify storage nl:in_game status.altar.mode set value 0
 execute store result storage nl:in_game status.altar.progress int 1 run scoreboard players set #game NL_altar_progress 0
-bossbar set nl:altar_gauge name {"text":"\\uE500\\uE512"}
+bossbar set nl:altar_gauge name {"text":"\uE500\uE512"}
 scoreboard players set @a NL_altar_gauge 0
 scoreboard players set #var NL_altar_gauge 0
 
