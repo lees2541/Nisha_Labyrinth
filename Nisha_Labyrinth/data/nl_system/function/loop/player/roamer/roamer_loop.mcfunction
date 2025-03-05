@@ -4,6 +4,11 @@
 #
 # @within nl_system:loop/loop
 
+
+## 캐릭터 별 루프 실행
+execute if entity @s[tag=hunter] run function nl_char:char_functions/roamer/hunter/loop
+
+
 ## 스코어보드
 
 

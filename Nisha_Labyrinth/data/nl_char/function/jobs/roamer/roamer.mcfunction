@@ -14,7 +14,7 @@ scoreboard players set @s NL_flashlight 1
 
 
 function nl_char:status/roamer/set_roamer
-
+say hunter
 ## 아이템 지급
 function nl_char:items/roamer/roamer/roamer
 give @s cooked_beef 64

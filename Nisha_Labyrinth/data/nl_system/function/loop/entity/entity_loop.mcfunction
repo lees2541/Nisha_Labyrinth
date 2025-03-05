@@ -7,7 +7,7 @@
 
 #> 캐릭터 관련 엔티티 루프
 function nl_char:char_functions/explorer/explorer/loop/entity_loop
-
+function nl_char:char_functions/roamer/roamer/loop/entity_loop
 
 #> 지역 마커 루프
 execute as @e[type=marker,tag=area,tag=NL] at @s run function nl_system:loop/entity/area_marker/area_marker_loop with entity @s data

@@ -6,3 +6,5 @@ function nl_char:char_functions/explorer/survivor/entity_loop
 
 ## 주술사 루프
 function nl_char:char_functions/explorer/magician/entity_loop
+
+

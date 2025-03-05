@@ -9,6 +9,7 @@ execute as @a run function nl_char:status/reset_attribute
 function nl_lobby:clear/scoreboard/clear_scoreboard
 effect clear @a
 
+
 #say clear_players1
 
 execute if data storage nl:lobby settings.player[0] run data modify storage nl:buffer player.character set from storage nl:lobby settings.player[0].character
@@ -43,8 +44,9 @@ execute if data storage nl:lobby settings.player[4] run data modify storage nl:b
 execute if data storage nl:lobby settings.player[4] run function nl_lobby:clear/indiv_reset_character with storage nl:buffer player
 
 
-
-say clear_players2
+xp set @a 0 levels
+xp set @a 0 points
+#say clear_players2
 #execute if data storage nl:in_game status{ongoing:2} run return 0
 return 1
 

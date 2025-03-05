@@ -46,3 +46,6 @@ tag @s remove NL
 
 ## 주술사 태그 초기화
 tag @s remove lock_on
+
+## 헌터 태그 초기화
+tag @s remove trapped

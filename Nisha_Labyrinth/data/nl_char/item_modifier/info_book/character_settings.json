@@ -44,5 +44,29 @@
         }
       }
     ]
+  },
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "nl:book.hunter"
+    },
+    "ops": [
+      {
+        "source": "",
+        "target": "{}",
+        "op": "merge"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "team": "roamer",
+          "nbt": "{Tags:[\"hunter\"]}"
+        }
+      }
+    ]
   }
 ]

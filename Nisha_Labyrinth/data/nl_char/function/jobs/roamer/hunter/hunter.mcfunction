@@ -1,6 +1,6 @@
 function nl_char:jobs/roamer/roamer
 
-
+function nl_char:jobs/roamer/hunter/set_player
 
 tag @s add hunter
 

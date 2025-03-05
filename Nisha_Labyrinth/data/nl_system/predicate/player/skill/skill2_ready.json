@@ -1,27 +1,28 @@
 [
-    {
-      "condition": "minecraft:inverted",
-      "term": {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "team": "prisoner"
-        }
-      }
-    },
-    {
+  {
+    "condition": "minecraft:inverted",
+    "term": {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Tags:[\"NL\"]}"
-      }
-    },
-    {
-      "condition": "minecraft:entity_scores",
-      "entity": "this",
-      "scores": {
-        "NL_skill_cool2": 0
+        "team": "prisoner"
       }
     }
-  ]
-  
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Tags:[\"NL\"]}"
+    }
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "NL_skill_cool2": {
+        "max": -1
+      }
+    }
+  }
+]

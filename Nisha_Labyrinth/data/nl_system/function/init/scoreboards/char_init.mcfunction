@@ -28,5 +28,8 @@ scoreboard objectives add NL_perk dummy
 #declare objective NL_perk 현재 퍽 상태
 
 
+scoreboard objectives add NL_trap_count dummy
+#declare objective NL_trap_count 가진 함정의 개수
 
-
+scoreboard objectives add NL_trapped_time dummy
+#declare objective NL_trapped_time 함정에 발이 묶이는 시간

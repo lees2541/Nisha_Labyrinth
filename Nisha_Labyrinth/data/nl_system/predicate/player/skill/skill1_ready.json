@@ -28,7 +28,9 @@
     "condition": "minecraft:entity_scores",
     "entity": "this",
     "scores": {
-      "NL_skill_cool1": 0
+      "NL_skill_cool1": {
+        "max": 0
+      }
     }
   }
 ]

@@ -6,3 +6,4 @@ function nl_char:jobs/roamer/hunter/set_stats
 function nl_char:jobs/roamer/chopper/set_stats
 
 function nl_system:init/storage/status_effect_data
+say 이닛

@@ -5,7 +5,7 @@
 
 execute if items entity @s player.cursor * run function nl_system:modules/hotbar_holder/cursor/cursor_detected
 ## 플레이어 id 로드
-#say 감지
+say 감지
 execute store result storage nl:buffer player.id int 1 run scoreboard players get @s NL_player_id
 execute store result storage nl:buffer player.selectedSlot int 1 run data get entity @s SelectedItemSlot
 ## 아이템 종류 체크

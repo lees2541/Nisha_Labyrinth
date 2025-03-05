@@ -3,7 +3,7 @@
 #@within 
 # nl_system:systems/actions/key_events/f_key/offhand_changed_detected_adv
 
-#$say slot_update, Slot: $(Slot)
+$say slot_update, Slot: $(Slot)
 $execute unless data entity @s Inventory[{Slot:$(Slot)}] run return 0
 #say slot_update function
 data modify storage nl:test test.nbt set from entity @s Inventory[{Slot:7b}]

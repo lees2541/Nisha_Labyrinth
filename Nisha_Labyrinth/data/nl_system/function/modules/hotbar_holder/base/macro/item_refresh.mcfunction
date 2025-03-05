@@ -2,7 +2,7 @@
 # nl:buffer player.item.switch
 #@within nl_system:modules/hotbar_holder/**
 
-#say 아이템 리프레쉬
+say 아이템 리프레쉬
 #say 아이템 리프레쉬
 #$say slot: $(slot)
 $item replace entity @s $(slot) from entity @s $(slothPath)
