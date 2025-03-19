@@ -11,10 +11,8 @@ execute if entity @a[scores={NL_mined_life=1..},tag=NL] run function nl_system:s
 execute as @a[tag=NL] at @s run function nl_system:loop/player/player_loop
 
 
-execute as @e[type=wolf,tag=test,predicate=nl_test:test1] at @s if entity @p[distance=..7,team=explorer] run say here
-#execute as @e[type=wolf,tag=test,predicate=nl_test:test1] at @s if entity @p[distance=5.1..,team=explorer] run
-execute as @e[type=wolf,tag=test,predicate=nl_test:test1] run data modify entity @s Sitting set value 1b
-execute as @e[type=wolf,tag=test,predicate=nl_test:test1] run data modify entity @s Sitting set value 0b 
+
+
 
 ## 제단 시스템 루프
 execute if data storage nl:in_game status{ongoing:1} run function nl_system:loop/altar/altar_loop

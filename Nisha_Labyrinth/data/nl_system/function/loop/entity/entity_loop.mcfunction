@@ -9,6 +9,7 @@
 function nl_char:char_functions/explorer/explorer/loop/entity_loop
 function nl_char:char_functions/roamer/roamer/loop/entity_loop
 
+
 #> 지역 마커 루프
 execute as @e[type=marker,tag=area,tag=NL] at @s run function nl_system:loop/entity/area_marker/area_marker_loop with entity @s data
 
@@ -31,3 +32,5 @@ execute as @e[type=text_display,tag=gauge_bar,tag=NL] at @s run function nl_syst
 ## 상호작용 엔티티의 interaction nbt 삭제
 execute as @e[type=interaction,tag=NL] run data remove entity @s attack
 execute as @e[type=interaction,tag=NL] run data remove entity @s interaction
+
+## 헌터의 엔티티 루프

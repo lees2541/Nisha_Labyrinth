@@ -42,7 +42,7 @@
         {
           "type": "minecraft:score",
           "target": "this",
-          "score": "NL_cmd_tool",
+          "score": "NL_mode",
           "scale": 1
         }
       ],

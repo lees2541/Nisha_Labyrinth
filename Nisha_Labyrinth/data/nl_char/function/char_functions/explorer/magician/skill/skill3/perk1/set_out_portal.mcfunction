@@ -1,4 +1,4 @@
-say 낙서낙서낙서놀이
+#say 낙서낙서낙서놀이
 execute on target unless items entity @s weapon.mainhand carrot_on_a_stick[custom_data~{perk1:1b,tool2:1b,mode:2b,magician:1b}] run return fail
 
 

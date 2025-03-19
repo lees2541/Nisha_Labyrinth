@@ -21,6 +21,7 @@ advancement grant @a[tag=NL,tag=explorer] only nl_system:systems/actions/mined/m
 advancement revoke @a[tag=NL,tag=explorer] only nl_system:systems/actions/mined/mined_lifestone
 $execute at @s run function nl_char:char_functions/$(team)/$(character)/mined/mined_lifestone
 
+
 execute as @a[tag=explorer,tag=NL,tag=!survivor] run function nl_system:modules/storage/scoreboard/operation/resource_count/calc_resource {resource:"lifestone",operator:"add",operand:"1"}
 
 

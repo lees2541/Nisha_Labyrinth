@@ -1,7 +1,7 @@
-say 낙서낙서놀이
+#say 낙서낙서놀이
 
 execute on target unless items entity @s weapon.mainhand carrot_on_a_stick[custom_data~{perk1:1b,tool2:1b,mode:1b,magician:1b}] run return fail
-say 첫번쨰조건통과
+#say 첫번쨰조건통과
 tag @s add occupied
 tag @s add in_portal
 

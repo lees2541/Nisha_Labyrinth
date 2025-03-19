@@ -10,3 +10,4 @@
 
 say hopho
 $function nl_char:char_functions/$(team)/$(character)/skill/condition_check/skill2
+

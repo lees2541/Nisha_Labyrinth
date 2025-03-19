@@ -1,0 +1,55 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "paper",
+            "functions": [
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": {
+                  "NL": true,
+                  "perk": true,
+                  "perk1": true
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": "퍽1",
+                "target": "custom_name"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "paper",
+            "functions": [
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": {
+                  "NL": true,
+                  "perk": true,
+                  "perk2": true
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": "퍽2",
+                "target": "custom_name"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

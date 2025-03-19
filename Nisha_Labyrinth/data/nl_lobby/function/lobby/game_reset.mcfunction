@@ -18,7 +18,7 @@ execute as @e[type=marker,tag=!origin,tag=redstone,tag=redstone_gen] at @s run f
 say gamereset2.5
 ## 플레이어 리셋
 execute as @a[tag=NL] at @s run function nl_lobby:clear/clear_players
-
+team leave @a
 
 say gamereset3
 ## 게임진행 스토리지 리셋
@@ -50,6 +50,7 @@ function nl_lobby:lobby/lobby_room/set_room
 say gamereset5
 ## 맵 리셋
 execute as @e[type=interaction,tag=NL,tag=altar] at @s run setblock ~ ~1 ~ air destroy
+execute as @e[type=interaction,tag=NL,tag=swamp] at @s run setblock ~ ~ ~ air destroy
 execute as @e[type=area_effect_cloud,tag=NL,tag=NL_grass] at @s run setblock ~ ~1 ~ minecraft:tall_grass[half=upper] keep
 function nl_system:systems/library/access_control/close_library
 
@@ -79,6 +80,7 @@ kill @e[type=allay,tag=NL]
 kill @e[type=wandering_trader,tag=NL]
 kill @e[type=vindicator,tag=NL]
 kill @e[type=zombie,tag=NL]
+kill @e[tag=pet,tag=NL]
 
 say gamereset7
 
