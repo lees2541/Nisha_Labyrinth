@@ -1,0 +1,74 @@
+[
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": {
+        "NL": true,
+        "perk": true,
+        "perk1": true
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "NL_perk": 1
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": {
+        "NL": true,
+        "perk": true,
+        "perk2": true
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "NL_perk": 2
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": {
+        "entity": "@s",
+        "nbt": "Inventory[{Slot:8b}}].components.minecraft:custom_data.player.strings.name.perk1",
+        "source": "entity",
+        "type": "nbt"
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "NL_perk": 1
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": {
+        "entity": "@s",
+        "nbt": "Inventory[{Slot:8b}}].components.minecraft:custom_data.player.name.perk2",
+        "source": "entity",
+        "type": "nbt"
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "NL_perk": 2
+          }
+        }
+      ]
+    }
+  ]

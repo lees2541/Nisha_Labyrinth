@@ -1,55 +1,108 @@
 {
-    "type": "minecraft:command",
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "paper",
-            "functions": [
-              {
-                "function": "minecraft:set_custom_data",
-                "tag": {
-                  "NL": true,
-                  "perk": true,
-                  "perk1": true
-                }
-              },
-              {
-                "function": "minecraft:set_name",
-                "entity": "this",
-                "name": "퍽1",
-                "target": "custom_name"
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "paper",
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "NL": true,
+                "perk": true,
+                "perk1": true
               }
-            ]
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "paper",
-            "functions": [
-              {
-                "function": "minecraft:set_custom_data",
-                "tag": {
-                  "NL": true,
-                  "perk": true,
-                  "perk2": true
-                }
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "nbt": "Inventory[{Slot:8b}}].components.minecraft:custom_data.player.name.perk1",
+                "entity": "@s",
+                "source": "entity"
               },
-              {
-                "function": "minecraft:set_name",
-                "entity": "this",
-                "name": "퍽2",
-                "target": "custom_name"
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 2,
+                  "animation": "eat",
+                  "has_consume_particles": true
+                }
               }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "nbt": "Inventory[{Slot:8b}}].components.minecraft:custom_data.player.strings.lore.perk1",
+                  "entity": "@s",
+                  "source": "entity"
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "paper",
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "NL": true,
+                "perk": true,
+                "perk2": true
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "entity": "@s",
+                "nbt": "Inventory[{Slot:8b}}].components.minecraft:custom_data.player.name.perk2",
+                "source": "entity"
+              },
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 2,
+                  "animation": "eat",
+                  "has_consume_particles": true,
+                  "on_consume_effects": []
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "nbt": "Inventory[{Slot:8b}}].components.minecraft:custom_data.player.strings.lore.perk2",
+                  "entity": "@s",
+                  "source": "entity"
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
