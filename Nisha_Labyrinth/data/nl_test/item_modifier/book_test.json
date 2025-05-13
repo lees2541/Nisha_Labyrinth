@@ -1,0 +1,31 @@
+[
+    {
+      "function": "minecraft:set_book_cover",
+      "title": "xx의 서"
+    },
+    {
+      "function": "minecraft:set_written_book_pages",
+      "pages": [
+        [
+          {
+            "text": "perk1",
+            "extra": [
+              "\n"
+            ],
+            "click_event": {
+              "action": "run_command",
+              "command": "say perk1"
+            }
+          }
+        ],
+        {
+          "text": "perk2",
+          "click_event": {
+            "action": "run_command",
+            "command": "say perk2"
+          }
+        }
+      ],
+      "mode": "replace_all"
+    }
+  ]

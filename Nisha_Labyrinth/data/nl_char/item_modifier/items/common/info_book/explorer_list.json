@@ -1,53 +1,73 @@
 {
-    "function": "minecraft:set_written_book_pages",
-    "pages": [
-      [
-        {
-          "text": "[생존가]",
-          "type": "text",
-          "extra": [
-            "\n"
-          ],
-          "color": "blue",
-          "click_event": {
-            "action": "run_command",
-            "command": "/function nl_lobby:lobby/jobs/choose_job {character:survivor,team:explorer}"
-          },
-          "hover_event": {
-            "action": "show_text",
-            "value": {
-              "text": "여러 역경을 헤쳐온 생존 전문가입니다.",
-              "extra": [
-                "\n",
-                "음식을 자급할 수 있으며",
-                "\n",
-                "탐험가들의 쉼터를 제공합니다",
-                "\n"
-              ]
-            }
-          }
+  "function": "minecraft:set_written_book_pages",
+  "pages": [
+    [
+      {
+        "text": "[생존가]",
+        "type": "text",
+        "extra": [
+          "\n"
+        ],
+        "color": "blue",
+        "click_event": {
+          "action": "run_command",
+          "command": "/function nl_lobby:lobby/jobs/choose_job {character:survivor,team:explorer}"
         },
-        {
-          "text": "[주술사]",
-          "type": "text",
-          "extra": [
-            "\n"
-          ],
-          "color": "blue",
-          "click_event": {
-            "action": "run_command",
-            "command": "/function nl_lobby:lobby/jobs/choose_job {character:magician,team:explorer}"
-          },
-          "hover_event": {
-            "action": "show_text",
-            "value": [
-              "주술사 어쩌구 설명",
+        "hover_event": {
+          "action": "show_text",
+          "value": {
+            "text": "여러 역경을 헤쳐온 생존 전문가입니다.",
+            "extra": [
               "\n",
-              "수정구를 이용해 순식간에 위기에서 벗어납니다"
+              "음식을 자급할 수 있으며",
+              "\n",
+              "탐험가들의 쉼터를 제공합니다",
+              "\n"
             ]
           }
         }
-      ]
-    ],
-    "mode": "append"
-  }
+      },
+      {
+        "text": "[주술사]",
+        "type": "text",
+        "extra": [
+          "\n"
+        ],
+        "color": "blue",
+        "click_event": {
+          "action": "run_command",
+          "command": "/function nl_lobby:lobby/jobs/choose_job {character:magician,team:explorer}"
+        },
+        "hover_event": {
+          "action": "show_text",
+          "value": [
+            "주술사 어쩌구 설명",
+            "\n",
+            "수정구를 이용해 순식간에 위기에서 벗어납니다"
+          ]
+        }
+      },
+      {
+        "text": "[경호원]",
+        "type": "text",
+        "extra": [
+          "\n"
+        ],
+        "color": "blue",
+        "click_event": {
+          "action": "run_command",
+          "command": "/function nl_lobby:lobby/jobs/choose_job {character:guard,team:explorer}"
+        },
+        "hover_event": {
+          "action": "show_text",
+          "value": [
+            "경호원 어쩌구 설명",
+            "\n",
+            "빠따빠따빠따"
+          ]
+        }
+      }
+    ]
+  ],
+  "mode": "append"
+}

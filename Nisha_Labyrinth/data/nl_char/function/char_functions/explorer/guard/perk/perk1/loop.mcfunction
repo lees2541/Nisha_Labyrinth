@@ -1,0 +1,1 @@
+execute at @s[team=explorer,tag=guard] as @a[team=explorer,tag=!guard,distance=..7] run effect give @s resistance 1 0

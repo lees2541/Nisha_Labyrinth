@@ -8,6 +8,7 @@
 
 execute if entity @s[tag=survivor] run function nl_char:char_functions/explorer/survivor/loop
 execute if entity @s[tag=magician] run function nl_char:char_functions/explorer/magician/loop
+execute if entity @s[tag=guard] run function nl_char:char_functions/explorer/guard/loop
 
 
 ## 생명석 및 레드스톤 칸 감지

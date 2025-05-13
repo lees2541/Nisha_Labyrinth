@@ -1,0 +1,63 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:stone"
+      },
+      "title": "hit_explorer",
+      "description": "배회자가 탐험가에게 기본공격을 가할 시 발동(탐험의 피격판정 전 실행)",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player"
+                    },
+                    "team": "explorer",
+                    "nbt": "{Tags:[\"guard\"]}",
+                    "equipment": {
+                      "mainhand": {
+                        "items": [
+                          "minecraft:warped_fungus_on_a_stick"
+                        ],
+                        "predicates": {
+                          "minecraft:attribute_modifiers": {
+                            "modifiers": {
+                              "contains": [
+                                {
+                                  "attribute": "minecraft:entity_interaction_range",
+                                  "id": "bbata_range",
+                                  "amount": {
+                                    "min": 1
+                                  }
+                                }
+                              ],
+                              "count": []
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "nl_char:char_functions/explorer/guard/hit/hit_with_bbata_adv"
+    }
+  }

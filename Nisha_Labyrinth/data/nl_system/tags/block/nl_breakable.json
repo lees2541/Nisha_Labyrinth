@@ -2,6 +2,7 @@
   "values": [
     "#minecraft:campfires",
     "minecraft:bone_block",
-    "#minecraft:redstone_ores"
+    "#minecraft:redstone_ores",
+    "minecraft:lapis_block"
   ]
 }

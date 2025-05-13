@@ -58,6 +58,26 @@
     "function": "minecraft:set_custom_model_data",
     "strings": {
       "values": [
+        "guard"
+      ],
+      "mode": "insert",
+      "offset": 1
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"guard\"]}"
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "strings": {
+      "values": [
         "magician"
       ],
       "mode": "insert",

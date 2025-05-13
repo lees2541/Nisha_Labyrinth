@@ -1,0 +1,48 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_name": {
+        "text": "수호자의 훈장",
+        "type": "text"
+      },
+      "minecraft:custom_model_data": {
+        "flags": [
+          false
+        ]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "NL_perk": 0
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_name": {
+        "text": "꺼지지 않는 불꽃",
+        "type": "text"
+      },
+      "minecraft:custom_model_data": {
+        "flags": [
+          true
+        ]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "NL_perk": 1
+        }
+      }
+    ]
+  }
+]

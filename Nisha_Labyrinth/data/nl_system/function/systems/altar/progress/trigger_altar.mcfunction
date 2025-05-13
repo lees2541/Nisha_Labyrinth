@@ -38,3 +38,5 @@ function nl_system:modules/manastone_generator/manastone_generator_start
 
 ## 캐릭터 스킬
 execute as @a[tag=explorer,tag=survivor] at @s run function nl_char:char_functions/explorer/survivor/skill/passive/set_on_altar
+
+execute as @a[tag=explorer,tag=guard] at @s run function nl_char:char_functions/explorer/guard/skill/passive/set_on_altar

@@ -26,6 +26,8 @@ scoreboard objectives remove NL_mined_red
 scoreboard objectives add NL_mined_red minecraft.mined:minecraft.redstone_ore
 scoreboard objectives remove NL_mined_life
 scoreboard objectives add NL_mined_life minecraft.mined:minecraft.bone_block
+scoreboard objectives remove NL_mined_mana
+scoreboard objectives add NL_mined_mana minecraft.mined:minecraft.lapis_block
 scoreboard players reset @a NL_redstone_count
 scoreboard players reset @a NL_lifestone_count
 ## 커스텀모델 데이터 관련

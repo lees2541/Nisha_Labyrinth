@@ -21,8 +21,8 @@ scoreboard players set @s NL_charging_mode 0
 
 gamemode adventure @s
 
-effect give @s haste infinite 1 true
-effect give @s mining_fatigue infinite 3 true
+#effect give @s haste infinite 1 true
+#effect give @s mining_fatigue infinite 3 true
 
 function nl_char:jobs/explorer/set_stats
 ## 아이템 지급

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:written_book",
+            "functions": [
+              {
+                "function": "minecraft:reference",
+                "name": "nl_test:book_test"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

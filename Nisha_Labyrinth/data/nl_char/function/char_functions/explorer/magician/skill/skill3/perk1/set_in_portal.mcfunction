@@ -12,4 +12,8 @@ execute on passengers if entity @s[type=item_display,tag=swamp] run data merge e
 execute on target run scoreboard players set @s NL_mode 2
 execute on target run item modify entity @s weapon.mainhand nl_char:items/explorer/magician/tool2
 
+
+## 연출
+playsound minecraft:entity.creaking.spawn block @a[tag=explorer,tag=NL] ^ ^ ^0.3 1 2 0.6 
+
 return 1

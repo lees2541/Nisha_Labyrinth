@@ -1,0 +1,20 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:stone"
+      },
+      "title": "마석을 캤습니다!",
+      "description": {
+        "text": "  "
+      },
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+      "mined_red": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

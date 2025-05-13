@@ -80,6 +80,7 @@ kill @e[type=allay,tag=NL]
 kill @e[type=wandering_trader,tag=NL]
 kill @e[type=vindicator,tag=NL]
 kill @e[type=zombie,tag=NL]
+kill @e[type=villager,tag=NL]
 kill @e[tag=pet,tag=NL]
 
 say gamereset7

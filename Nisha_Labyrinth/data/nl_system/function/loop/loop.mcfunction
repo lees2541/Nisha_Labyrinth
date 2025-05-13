@@ -4,8 +4,10 @@
 
 
 ## 블럭캐기 감지
+execute if entity @a[scores={NL_mined_red=1..},tag=NL] run say 아무나 레드스톤 캤덩
 execute if entity @a[scores={NL_mined_red=1..},tag=NL] run function nl_system:systems/actions/mined/mined_redstone
 execute if entity @a[scores={NL_mined_life=1..},tag=NL] run function nl_system:systems/actions/mined/mined_lifestone
+execute if entity @a[scores={NL_mined_mana=1..},tag=NL] run function nl_system:systems/actions/mined/mined_mana
 
 ## 플레이어 루프
 execute as @a[tag=NL] at @s run function nl_system:loop/player/player_loop

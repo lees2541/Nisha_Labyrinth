@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:stone"
+      },
+      "title": "get_absoprtion",
+      "description": "Buffer",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "nl_system:systems/actions/key_events/charging/consumable/charging",
+    "criteria": {
+      "buffer": {
+        "trigger": "minecraft:effects_changed",
+        "conditions": {
+          "player": {
+            "type_specific": {
+              "type": "player"
+            },
+            "team": "explorer",
+            "nbt": "{Tags:[\"guard\"]}"
+          },
+          "effects": {
+            "minecraft:absorption": {}
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "nl_char:char_functions/explorer/guard/skill/passive/get_absorption"
+    }
+  }

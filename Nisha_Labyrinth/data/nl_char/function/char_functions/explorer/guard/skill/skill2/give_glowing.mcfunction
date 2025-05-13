@@ -1,0 +1,1 @@
+effect give @p[tag=explorer,tag=guard] glowing 3 1

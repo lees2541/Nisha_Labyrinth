@@ -1,5 +1,26 @@
 [
   {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "minecraft:lapis_block",
+            "speed": 10,
+            "correct_for_drops": false
+          },
+          {
+            "blocks": "#minecraft:redstone_ores",
+            "speed": 0.3,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 1,
+        "damage_per_block": 1
+      }
+    }
+  },
+  {
     "function": "minecraft:set_name",
     "entity": "this",
     "name": "탐험가의 곡괭이"

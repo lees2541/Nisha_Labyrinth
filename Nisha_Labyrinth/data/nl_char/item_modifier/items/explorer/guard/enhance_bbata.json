@@ -1,0 +1,41 @@
+[
+    {
+      "function": "minecraft:set_attributes",
+      "modifiers": [
+        {
+          "attribute": "minecraft:attack_speed",
+          "id": "bbata_speed",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "attribute": "minecraft:attack_knockback",
+          "id": "bbata_knockback",
+          "amount": 100,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "attribute": "minecraft:entity_interaction_range",
+          "id": "bbata_range",
+          "amount": 1.5,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ],
+      "replace": true,
+      "conditions": []
+    },
+    {
+      "function": "minecraft:set_custom_model_data",
+      "floats": {
+        "values": [
+          1
+        ],
+        "mode": "replace_section",
+        "offset": 1,
+        "size": 1
+      }
+    }
+  ]

@@ -1,0 +1,48 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_name": {
+        "text": "불길한 고리",
+        "type": "text"
+      },
+      "minecraft:custom_model_data": {
+        "flags": [
+          false
+        ]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "NL_perk": 0
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_name": {
+        "text": "모독의 성물",
+        "type": "text"
+      },
+      "minecraft:custom_model_data": {
+        "flags": [
+          true
+        ]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "NL_perk": 2
+        }
+      }
+    ]
+  }
+]
