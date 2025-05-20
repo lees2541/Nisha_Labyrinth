@@ -1,4 +1,4 @@
-#> nl_system:systems/actions/mined/ex_mined_manastone
+#> nl_system:systems/actions/mined/manastone/ex_mined_manastone
 # 플레이어가 마석을 캘 때 호출
 # @context 마석 캔 플레이어 with storage nl:buffer player
 # @input
@@ -14,15 +14,15 @@
 #       records.player[{id:$(id)}].mined.manastone
 #       records.explorer.mined.manastone
 #@private
-#@within nl_system:systems/actions/mined/mined_manastone
+#@within nl_system:systems/actions/mined/manastone/mined_manastone
 #@handles nl_char:char_functions/$(team)/$(character)/mined/mined_manastone
 
 say 탐험가 마석캤덩
-advancement grant @a[tag=NL,tag=explorer] only nl_system:systems/actions/mined/mined_manastone
-advancement revoke @a[tag=NL,tag=explorer] only nl_system:systems/actions/mined/mined_manastone
+advancement grant @a[tag=NL,tag=explorer] only nl_system:systems/actions/mined/manastone/mined_manastone
+advancement revoke @a[tag=NL,tag=explorer] only nl_system:systems/actions/mined/manastone/mined_manastone
 $execute at @s run function nl_char:char_functions/$(team)/$(character)/mined/mined_manastone
 execute at @s run playsound minecraft:maseok_break block @a[team=explorer] ^ ^ ^0.5 1 2 0.4
-
+function nl_lobby:info_book/cheats/give_manastone {amount:1}
 
 
 ## 캔 횟수 레코드에 저장

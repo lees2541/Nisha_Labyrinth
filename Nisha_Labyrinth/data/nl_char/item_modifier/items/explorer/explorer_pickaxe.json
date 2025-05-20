@@ -6,12 +6,17 @@
         "rules": [
           {
             "blocks": "minecraft:lapis_block",
-            "speed": 10,
-            "correct_for_drops": false
+            "speed": 0.5,
+            "correct_for_drops": true
           },
           {
             "blocks": "#minecraft:redstone_ores",
             "speed": 0.3,
+            "correct_for_drops": true
+          },
+          {
+            "blocks": "minecraft:bone_block",
+            "speed": 0.4,
             "correct_for_drops": true
           }
         ],

@@ -80,34 +80,6 @@
           "range": 2
         }
       ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "nl_system:chests/pieces/special_token"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:value_check",
-          "value": {
-            "type": "minecraft:score",
-            "target": {
-              "type": "minecraft:fixed",
-              "name": "#starcatch"
-            },
-            "score": "NL_temp",
-            "scale": 1
-          },
-          "range": 1
-        },
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.7
-        }
-      ]
     }
   ]
 }

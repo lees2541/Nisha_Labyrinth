@@ -32,3 +32,4 @@ summon marker 703 34 591 {Tags:["NL","chest","library"]}
 summon marker 703 41 593 {Tags:["NL","chest","library"]}
 
 execute as @e[type=marker,tag=chest,tag=library,tag=NL] at @s run setblock ~ ~ ~ chest replace
+execute as @e[type=marker,tag=chest,tag=library,tag=NL] at @s run data modify block ~ ~ ~ Items set value []

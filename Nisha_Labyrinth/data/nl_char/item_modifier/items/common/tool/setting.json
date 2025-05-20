@@ -1,5 +1,25 @@
 [
   {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:can_break": [
+        {
+          "blocks": "#nl_system:nl_breakable_rm"
+        }
+      ],
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#nl_system:nl_breakable_rm",
+            "speed": 1,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 1
+      }
+    }
+  },
+  {
     "function": "minecraft:set_custom_model_data",
     "floats": {
       "values": [

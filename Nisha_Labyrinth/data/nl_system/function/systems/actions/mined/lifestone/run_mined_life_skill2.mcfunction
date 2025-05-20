@@ -1,0 +1,1 @@
+$execute at @s run function nl_char:char_functions/$(team)/$(character)/mined/mined_lifestone

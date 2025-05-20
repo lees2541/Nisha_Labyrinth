@@ -1,1 +1,1 @@
-execute at @e[type=marker,tag=NL,tag=lobby,tag=perk] run setblock ~ ~ ~ chest{LootTable:"nl_lobby:chests/perk"} replace
+execute at @e[type=marker,tag=NL,tag=lobby,tag=perk] run setblock ~ ~ ~ chest{LootTable:"nl_lobby:chests/perk"} destroy

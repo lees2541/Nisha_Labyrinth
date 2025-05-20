@@ -4,6 +4,7 @@
 
 
 say 제단에올림
+playsound minecraft:alarm master @a ~ ~ ~ 3 1 1
 function nl_system:systems/altar/bossbar/turn_default
 data modify storage nl:in_game status.altar.mode set value 1
 $execute store result storage nl:in_game status.altar.progress int 1 run scoreboard players set #game NL_altar_progress $(progress)

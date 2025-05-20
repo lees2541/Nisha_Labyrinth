@@ -33,7 +33,7 @@ $scoreboard players operation #temp NL_$(resource)_count >< @s NL_$(resource)_co
 
 $function nl_system:systems/item/update/$(resource)
 
-
+execute as @a[tag=explorer,tag=NL] run function nl_system:systems/item/update/redstone
 
 
 
