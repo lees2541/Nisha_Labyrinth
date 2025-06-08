@@ -6,5 +6,5 @@ execute as @e[type=wolf,tag=wolf,tag=pet,predicate=nl_test:test1] run data modif
 
 execute as @n[type=wolf,tag=hunter,tag=pet,tag=NL] if data entity @s AngryAt unless data entity @s active_effects[{id:"minecraft:speed"}] at @s run function nl_char:char_functions/roamer/hunter/skill/skill3/stop_chasing
 
-execute as @n[type=wolf,tag=pet,tag=hunter] at @s if entity @a[team=explorer,tag=trapped,distance=..9] run effect give @s glowing 1
+execute as @n[type=wolf,tag=pet,tag=hunter] at @s if entity @a[team=explorer,tag=debuff,distance=..9] run effect give @s glowing 1
 

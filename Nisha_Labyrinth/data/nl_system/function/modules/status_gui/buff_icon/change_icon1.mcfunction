@@ -8,16 +8,16 @@
 #       call
 
 ## 바꿔야할것 \\u \u
-$execute if entity @s[team=!roamer,tag=$(character),scores={NL_player_id=1}] run scoreboard players display name player1_1 NL_status_gui {"text":"\$(call)","color":"white"}
+$execute if entity @s[team=!roamer,tag=$(character),scores={NL_player_id=1}] run scoreboard players display numberformat player1_1 NL_status_gui fixed {"text":"\$(call2)","color":"white"}
 
 
-$execute if entity @s[team=!roamer,tag=$(character),scores={NL_player_id=2}] run scoreboard players display name player2_1 NL_status_gui {"text":"\$(call)","color":"white"}
+$execute if entity @s[team=!roamer,tag=$(character),scores={NL_player_id=2}] run scoreboard players display numberformat player2_1 NL_status_gui fixed {"text":"\$(call2)","color":"white"}
 
 
-$execute if entity @s[team=!roamer,tag=$(character),scores={NL_player_id=3}] run scoreboard players display name player3_1 NL_status_gui {"text":"\$(call)","color":"white"}
+$execute if entity @s[team=!roamer,tag=$(character),scores={NL_player_id=3}] run scoreboard players display numberformat player3_1 NL_status_gui fixed {"text":"\$(call2)","color":"white"}
 
 
-$execute if entity @s[team=!roamer,tag=$(character),scores={NL_player_id=4}] run scoreboard players display name player4_1 NL_status_gui {"text":"\$(call)","color":"white"}
+$execute if entity @s[team=!roamer,tag=$(character),scores={NL_player_id=4}] run scoreboard players display numberformat player4_1 NL_status_gui fixed {"text":"\$(call2)","color":"white"}
 
 
 

@@ -14,6 +14,12 @@ data modify storage nl:image_code player.magician.font.icon3 set value "uE123"
 data modify storage nl:image_code player.magician.font.icon4 set value "uE124"
 #> 수감자가 됐을 때 이미지(우측 gui)
 data modify storage nl:image_code player.magician.font.icon5 set value "uE125"
+#> 스킬 이미지
+data modify storage nl:image_code player.magician.font.buff_slot.skill1_1 set value "uE612"
+data modify storage nl:image_code player.magician.font.buff_slot.skill1_2 set value "uE611"
+data modify storage nl:image_code player.magician.font.buff_slot.skill2_1 set value "uE611"
+data modify storage nl:image_code player.magician.font.buff_slot.skill2_2 set value "uE612"
+
 
 
 

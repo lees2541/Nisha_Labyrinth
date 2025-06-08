@@ -3,9 +3,12 @@
 #@context 대상 플레이어 {id:(id),tag:(tag),character:(character)}
 #@api
 
-
-$data modify storage nl:buffer icon.call set from storage nl:image_code player.$(character).font.buff_slot.$(tag)
+say buff아이콘 업데이트
+$say $(id)
+$data modify storage nl:buffer icon.call1 set from storage nl:image_code player.$(character).font.buff_slot.$(tag)_1
+$data modify storage nl:buffer icon.call2 set from storage nl:image_code player.$(character).font.buff_slot.$(tag)_2
 $data modify storage nl:buffer icon.tag set value "$(tag)"
+#$data modify storage nl:buffer icon.tag_2 set value "$(tag)"
 $data modify storage nl:buffer icon.character set value "$(character)"
 $data modify storage nl:buffer icon.id set value $(id)
 $data modify storage nl:in_game player[{id:$(id)}].icons.buff_slot prepend from storage nl:buffer icon

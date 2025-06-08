@@ -13,7 +13,8 @@ data modify storage nl:image_code player.guard.font.icon4 set value "uE184"
 #> 수감자가 됐을 때 이미지(우측 gui)
 data modify storage nl:image_code player.guard.font.icon5 set value "uE185"
 #> 스킬 이미지
-data modify storage nl:image_code player.guard.font.lf_slot.skill1 set value "uE612"
+data modify storage nl:image_code player.guard.font.buff_slot.skill1_1 set value "uE491"
+data modify storage nl:image_code player.guard.font.buff_slot.skill1_2 set value "uE492"
 
 
 

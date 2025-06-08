@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 1,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "custom/items/resource/manastone"
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "NL": true,
+                "drop": true,
+                "manastone": true
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "마석",
+                "color": "#8A2B13",
+                "bold": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

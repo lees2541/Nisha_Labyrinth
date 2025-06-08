@@ -1,4 +1,5 @@
 #> nl_char:jobs/roamer/hunter/set_stats
+# 데이터팩이 로드될 때 실행되는 함수
 
 
 #> 기본 이미지(우측 gui)

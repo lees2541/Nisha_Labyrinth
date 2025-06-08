@@ -4,7 +4,7 @@
 #
 #@input
 #   base: 플레이어 id
-tag @s remove no_life_gui_update
 
 
-$function nl_system:modules/status_gui/lifestone_icon/update/remove_storage {tag:"skill1",id:$(base)}
+
+$function nl_system:modules/status_gui/buff_icon/update/remove_storage {tag:"skill1",id:$(base)}

@@ -9,8 +9,8 @@ tag @s add in_portal
 execute on passengers if entity @s[type=item_display,tag=swamp] run data merge entity @s {id:"minecraft:item_display",transformation:{right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0f, 0.5f, 0f],scale:[1.0f,1.0f,1.0f]},Tags:["NL","magician","perk1","in_portal","swamp"],item:{id:"minecraft:emerald",count:1,components:{"minecraft:item_model":"explorer/magician/portal","minecraft:custom_model_data":{floats:[1]}}}}
 
 
-execute on target run scoreboard players set @s NL_mode 2
-execute on target run item modify entity @s weapon.mainhand nl_char:items/explorer/magician/tool2
+#execute on target run scoreboard players set @s NL_mode 2
+#execute on target run item modify entity @s weapon.mainhand nl_char:items/explorer/magician/tool2
 
 
 ## 연출

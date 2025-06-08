@@ -5,4 +5,4 @@
 
 
 $execute align xyz if block ~ ~ ~ chest run loot insert ~ ~ ~ loot nl_system:chests/$(path)
-$execute align xyz if block ~ ~ ~ chest run tag @s add $(tag)
+#$execute align xyz if block ~ ~ ~ chest run tag @s add $(tag)

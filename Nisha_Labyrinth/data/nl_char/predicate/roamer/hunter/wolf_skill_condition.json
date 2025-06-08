@@ -8,7 +8,7 @@
         "looking_at": {
           "type": "minecraft:player",
           "team": "explorer",
-          "nbt": "{Tags:[\"trapped\"]}"
+          "nbt": "{Tags:[\"debuff\"]}"
         }
       }
     }

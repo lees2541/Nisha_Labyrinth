@@ -1,0 +1,1 @@
+function nl_char:char_functions/explorer/magician/skill/skill3/perk2/cancel_spell

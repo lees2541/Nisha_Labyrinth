@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "nl_system:library/chests/mana_nugget"
+            }
+          ],
+          "conditions": []
+        }
+      ],
+      "functions": []
+    }
+  ]
+}

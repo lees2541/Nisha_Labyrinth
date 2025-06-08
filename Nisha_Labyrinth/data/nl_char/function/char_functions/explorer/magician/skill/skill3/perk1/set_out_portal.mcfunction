@@ -10,11 +10,14 @@ tag @s add out_portal
 execute on passengers if entity @s[type=item_display,tag=swamp] run data merge entity @s {id:"minecraft:item_display",billboard:"vertical",transformation:{right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0f, 0.5f, 0f],scale:[1.0f,1.0f,1.0f]},Tags:["NL","magician","perk1","out_portal","swamp"],item:{id:"minecraft:emerald",count:1,components:{"minecraft:item_model":"explorer/magician/portal","minecraft:custom_model_data":{floats:[2]}}}}
 
 
-execute on target run scoreboard players set @s NL_mode 1
-execute on target run item modify entity @s weapon.mainhand nl_char:items/explorer/magician/tool2
+#execute on target run scoreboard players set @s NL_mode 1
+#execute on target run item modify entity @s weapon.mainhand nl_char:items/explorer/magician/tool2
 
 
 ## 연출
 playsound minecraft:entity.creaking.spawn block @a[tag=explorer,tag=NL] ^ ^ ^0.3 1 2 0.6 
 
+scoreboard players set @s NL_count 0
+
+execute on target if function #nl_system:load_player_info run function nl_char:char_functions/explorer/magician/status/set/set_portal with storage nl:buffer player
 return 1

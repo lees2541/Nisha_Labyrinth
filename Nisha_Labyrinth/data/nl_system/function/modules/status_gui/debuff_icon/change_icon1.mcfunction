@@ -1,4 +1,4 @@
-#> nl_system:modules/status_gui/buff_icon/change_icon1
+#> nl_system:modules/status_gui/debuff_icon/change_icon1
 # 두 번쨰 버프 슬롯 업데이트 (아래)
 #@context 대상 with storage nl:buffer icon
 # @input

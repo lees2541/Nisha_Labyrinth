@@ -9,6 +9,6 @@ function nl_system:modules/storage/scoreboard/operation/resource_count/calc_reso
 
 
 ## 연출
-execute at @s run playsound minecraft:guard_roar player @a ^ ^ ^ 1 0 0.4
+execute at @s run playsound minecraft:guard_roar player @a ^ ^ ^ 1 1.25 0.4
 execute at @s run particle minecraft:flame ~ ~ ~ 0 0 0 1 250
 say 크아앙

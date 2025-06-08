@@ -5,6 +5,6 @@
 
 
 $execute if data storage nl:in_game player[{id:$(id)}].icons.buff_slot[0] run function nl_system:modules/status_gui/buff_icon/change_icon2 with storage nl:in_game player[{id:$(id)}].icons.buff_slot[0]
-$execute unless data storage nl:in_game player[{id:$(id)}].icons.buff_slot[0] run scoreboard players display name player$(id)_2 NL_status_gui ""
+$execute unless data storage nl:in_game player[{id:$(id)}].icons.buff_slot[0] run scoreboard players display numberformat player$(id)_2 NL_status_gui fixed {"text":"","color":"white"}
 $execute if data storage nl:in_game player[{id:$(id)}].icons.buff_slot[1] run function nl_system:modules/status_gui/buff_icon/change_icon1 with storage nl:in_game player[{id:$(id)}].icons.buff_slot[1]
-$execute unless data storage nl:in_game player[{id:$(id)}].icons.buff_slot[1] run scoreboard players display name player$(id)_1 NL_status_gui ""
+$execute unless data storage nl:in_game player[{id:$(id)}].icons.buff_slot[1] run scoreboard players display numberformat player$(id)_1 NL_status_gui fixed {"text":"","color":"white"}

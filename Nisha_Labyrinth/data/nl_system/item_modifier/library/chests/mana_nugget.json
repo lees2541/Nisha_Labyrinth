@@ -1,0 +1,36 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "text": "마력이 깃든 철조각",
+      "type": "text",
+      "color": "black",
+      "bold": true
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "쥐돌이에게 건네주면 장비를 업그레이드 할 수 있다.",
+        "type": "text"
+      }
+    ],
+    "mode": "replace_all"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "custom/items/resource/mana_nugget"
+    }
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "NL": true,
+      "drop": true,
+      "mana_nugget": true
+    }
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:warped_fungus_on_a_stick"
+  ],
+  "template": [
+    "minecraft:lapis_lazuli"
+  ],
+  "result": {
+    "id": "minecraft:slime_ball",
+    "components": {},
+    "count": 1
+  }
+}
