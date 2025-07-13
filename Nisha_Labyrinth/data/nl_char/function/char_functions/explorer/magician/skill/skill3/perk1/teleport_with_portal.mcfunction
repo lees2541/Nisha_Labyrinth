@@ -1,4 +1,6 @@
 playsound minecraft:entity.creaking.activate ambient @a ~ ~ ~ 1 2 0.5
 tp @s[tag=NL] @n[type=interaction, tag=occupied,tag=out_portal]
 execute as @n[type=interaction, tag=occupied,tag=out_portal] run scoreboard players add @s NL_count 1
+execute if score @n[type=interaction, tag=occupied,tag=out_portal] NL_count matches 1 at @n[type=interaction, tag=occupied,tag=in_portal] as @n[type=item_display,tag=NL,tag=magician,tag=swamp,tag=in_portal] run data merge entity @s {item:{id:"minecraft:emerald",count:1,components:{"minecraft:item_model":"explorer/magician/portal","minecraft:custom_model_data":{floats:[1,2]}}}}
+execute if score @n[type=interaction, tag=occupied,tag=out_portal] NL_count matches 2 at @n[type=interaction, tag=occupied,tag=in_portal] as @n[type=item_display,tag=NL,tag=magician,tag=swamp,tag=in_portal] run data merge entity @s {item:{id:"minecraft:emerald",count:1,components:{"minecraft:item_model":"explorer/magician/portal","minecraft:custom_model_data":{floats:[1,3]}}}}
 execute if score @n[type=interaction, tag=occupied,tag=out_portal] NL_count matches 3.. run function nl_char:char_functions/explorer/magician/skill/skill3/perk1/remove_portals

@@ -22,7 +22,7 @@ function nl_lobby:maps/cave/entities/set_allays/set_allays
 ###########################
 
 ## 생명석 위치
-summon marker 716 45 608 {CustomNameVisible:0b,Tags:["NL","lifestone","marker"],CustomName:'{"text":"생명석"}',data:{}}
+summon marker 716 45 608 {CustomNameVisible:0b,Tags:["NL","lifestone_point","marker"],CustomName:'{"text":"생명석"}',data:{}}
 
 ################################
 
@@ -47,6 +47,21 @@ function nl_lobby:maps/cave/locations/library/set_lib_chests
 ## 죽은 후 좌표 
 spawnpoint @a[tag=NL] 715 39 575
 ##############################
+## 감옥 해골
+summon item_display 713 40.3 587 {Rotation:[-180F,0F],Tags:["NL","skull","block","jail"],item:{id:"minecraft:paper",count:1,components:{"minecraft:item_model":"map/prison/prison_bone"}}}
+summon item_display 712 40.3 587 {Rotation:[-180F,0F],Tags:["NL","skull","block","jail"],item:{id:"minecraft:paper",count:1,components:{"minecraft:item_model":"map/prison/prison_bone"}}}
+summon item_display 711 40.3 587 {Rotation:[-180F,0F],Tags:["NL","skull","block","jail"],item:{id:"minecraft:paper",count:1,components:{"minecraft:item_model":"map/prison/prison_bone"}}}
+summon item_display 713 41.3 588 {Rotation:[-180F,0F],Tags:["NL","skull","block","jail"],item:{id:"minecraft:paper",count:1,components:{"minecraft:item_model":"map/prison/prison_bone"}}}
+summon item_display 712 41.3 588 {Rotation:[-180F,0F],Tags:["NL","skull","block","jail"],item:{id:"minecraft:paper",count:1,components:{"minecraft:item_model":"map/prison/prison_bone"}}}
+summon item_display 711 41.3 588 {Rotation:[-180F,0F],Tags:["NL","skull","block","jail"],item:{id:"minecraft:paper",count:1,components:{"minecraft:item_model":"map/prison/prison_bone"}}}
+
+summon interaction 713 40 587 {response:1b,Tags:["NL","skull","jail"],width:0.6f,height:0.7f}
+summon interaction 712 40 587 {response:1b,Tags:["NL","skull","jail"],width:0.6f,height:0.7f}
+summon interaction 711 40 587 {response:1b,Tags:["NL","skull","jail"],width:0.6f,height:0.7f}
+summon interaction 713 41 588 {response:1b,Tags:["NL","skull","jail"],width:0.6f,height:0.7f}
+summon interaction 712 41 588 {response:1b,Tags:["NL","skull","jail"],width:0.6f,height:0.7f}
+summon interaction 711 41 588 {response:1b,Tags:["NL","skull","jail"],width:0.6f,height:0.7f}
+
 
 ## 감옥 문 관련
 summon minecraft:block_display 713. 41 577.5 {Rotation:[0F,90F],Tags:["NL","prison_door","prison_door1"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,2f]},block_state:{Name:"minecraft:spruce_trapdoor"}}

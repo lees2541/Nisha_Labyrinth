@@ -7,6 +7,7 @@ execute store result score @s NL_cmd_book run data get storage nl:book.magician 
 
 
 scoreboard players set @s NL_skill_cool1 0
+scoreboard players set @s NL_magician_altar 0
 
 
 

@@ -1,0 +1,2 @@
+say "스컬 활성화"
+execute if items entity @s weapon.mainhand paper[minecraft:custom_data~{NL:1b}] if function #nl_system:load_player_info run function nl_system:systems/prison/activity/activate_skull with storage nl:buffer player

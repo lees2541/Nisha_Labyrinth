@@ -6,6 +6,120 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "paper"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_lore",
+          "entity": "this",
+          "lore": [
+            "해골에 쓰면 해골에 빛이난다. 멋지다."
+          ],
+          "mode": "replace_all"
+        },
+        {
+          "function": "minecraft:set_name",
+          "entity": "this",
+          "name": "영혼초"
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:item_model": "custom/items/prison/soul_herb"
+          }
+        },
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": {
+            "NL": true,
+            "soul_herb": true,
+            "drop": true
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.4
+        },
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#starcatch"
+            },
+            "score": "NL_temp",
+            "scale": 1
+          },
+          "range": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "paper"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_lore",
+          "entity": "this",
+          "lore": [
+            "해골에 쓰면 해골에 빛이난다. 멋지다."
+          ],
+          "mode": "replace_all"
+        },
+        {
+          "function": "minecraft:set_name",
+          "entity": "this",
+          "name": "영혼초"
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:item_model": "custom/items/prison/soul_herb"
+          }
+        },
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": {
+            "NL": true,
+            "soul_herb": true,
+            "drop": true
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.2
+        },
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#starcatch"
+            },
+            "score": "NL_temp",
+            "scale": 1
+          },
+          "range": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
           "name": "minecraft:wheat"
         }
       ],
@@ -17,7 +131,8 @@
             {
               "text": "퇴비에 넣거나 4조각으로 빵을 만들 수 있다"
             }
-          ]
+          ],
+          "mode": "replace_all"
         }
       ],
       "conditions": [
@@ -36,7 +151,7 @@
         },
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.7
+          "chance": 0.6
         }
       ]
     },
@@ -54,13 +169,14 @@
                 {
                   "text": "퇴비에 넣거나 4조각으로 빵을 만들 수 있다"
                 }
-              ]
+              ],
+              "mode": "replace_all"
             }
           ],
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 0.4
+              "chance": 0.3
             }
           ]
         }

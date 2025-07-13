@@ -6,7 +6,7 @@
 		"entity": "this",
 		"predicate": {
 		  "type": "minecraft:player",
-		  "team": "explorer",
+		  "nbt": "{Tags:[\"explorer\"]}",
 		  "distance": {
 			"absolute": {
 			  "min": 8,
@@ -34,7 +34,7 @@
 		  "entity": "this",
 		  "predicate": {
 			"type": "minecraft:player",
-			"team": "explorer",
+			"nbt": "{Tags:[\"explorer\"]}",
 			"equipment": {
 			  "offhand": {
 				"items": "minecraft:diamond_hoe",

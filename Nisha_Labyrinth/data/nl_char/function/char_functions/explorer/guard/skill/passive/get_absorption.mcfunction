@@ -1,4 +1,4 @@
-
+say 보호막생김!
 execute if items entity @a[tag=NL,tag=guard] weapon.offhand warped_fungus_on_a_stick[custom_data~{NL:1b, tool:1b}] run item modify entity @s weapon.offhand nl_char:items/explorer/guard/enhance_bbata
 execute if items entity @a[tag=NL,tag=guard] hotbar.1 warped_fungus_on_a_stick[custom_data~{NL:1b, tool:1b}] run item modify entity @s hotbar.1 nl_char:items/explorer/guard/enhance_bbata
 execute if items entity @a[tag=NL,tag=guard] hotbar.2 warped_fungus_on_a_stick[custom_data~{NL:1b, tool:1b}] run item modify entity @s hotbar.2 nl_char:items/explorer/guard/enhance_bbata

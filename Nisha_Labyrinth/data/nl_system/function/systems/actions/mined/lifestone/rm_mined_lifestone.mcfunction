@@ -8,7 +8,7 @@ say 배회자 생명석캤덩
 advancement grant @a[tag=NL,tag=roamer] only nl_system:systems/actions/mined/lifestone/mined_lifestone
 advancement revoke @a[tag=NL,tag=roamer] only nl_system:systems/actions/mined/lifestone/mined_lifestone
 $execute at @s run function nl_char:char_functions/$(team)/$(character)/mined/mined_lifestone
-
+execute as @e[type=marker,tag=NL,tag=chest,tag=library,tag=!lifestone,limit=1,sort=random] at @s run function nl_system:modules/chest/insert_loot/insert_loot_table {tag:"lifestone",path:"resources/lifestone"}
 execute as @a[tag=roamer,tag=NL] run function nl_system:modules/storage/scoreboard/operation/resource_count/calc_resource {resource:"lifestone",operator:"add",operand:"1"}
 
 

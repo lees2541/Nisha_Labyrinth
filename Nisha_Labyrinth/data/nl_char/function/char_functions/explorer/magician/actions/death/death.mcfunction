@@ -1,1 +1,1 @@
-function nl_char:char_functions/explorer/magician/skill/skill3/perk2/cancel_spell
+execute if entity @s[scores={NL_perk=2}] run function nl_char:char_functions/explorer/magician/skill/skill3/perk2/cancel_spell

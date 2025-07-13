@@ -7,6 +7,7 @@ execute at @e[tag=pseal] run playsound minecraft:pseal_drop player @a
 
 ## 추가한부분
 tp @a[team=prisoner,tag=!exit] 710 39 582
+execute as @a[tag=exit,team=prisoner,advancements={nl_system:location/prison/in_the_prison=false}] run function nl_system:modules/status_gui/profile_icon/case/default
 team join explorer @a[tag=exit,team=prisoner,advancements={nl_system:location/prison/in_the_prison=false}] 
 tag @a[tag=exit] remove exit
 team join prisoner @a[team=explorer,advancements={nl_system:location/prison/in_the_prison=true}]

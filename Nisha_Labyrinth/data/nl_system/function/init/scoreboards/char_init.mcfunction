@@ -33,3 +33,6 @@ scoreboard objectives add NL_trap_count dummy
 
 scoreboard objectives add NL_trapped_time dummy
 #declare objective NL_trapped_time 함정에 발이 묶이는 시간
+
+scoreboard objectives add NL_magician_altar dummy
+#declare objective NL_magician_altar 마법사 제단에 올린 횟수

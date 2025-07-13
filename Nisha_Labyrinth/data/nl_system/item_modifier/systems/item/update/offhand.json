@@ -1,5 +1,9 @@
 [
   {
+    "function": "minecraft:set_item",
+    "item": "minecraft:diamond_hoe"
+  },
+  {
     "function": "minecraft:reference",
     "name": "nl_char:items/roamer/offhand_default",
     "conditions": [
@@ -27,7 +31,7 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "team": "explorer",
+          "nbt": "{Tags:[\"explorer\"]}",
           "equipment": {
             "offhand": {
               "items": [

@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": "minecraft:cooked_mutton",
+  "result": {
+    "id": "minecraft:golden_apple",
+    "components": {
+      "minecraft:custom_name": {
+        "text": "완소식량",
+        "type": "text"
+      },
+      "minecraft:item_model": "minecraft:explorer/survivor/survivor_cooked",
+      "minecraft:consumable": {
+        "consume_seconds": 4,
+        "has_consume_particles": true,
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:absorption",
+                "amplifier": 0,
+                "duration": 2400,
+                "ambient": true,
+                "show_icon": true
+              },
+              {
+                "id": "minecraft:regeneration",
+                "amplifier": 2,
+                "duration": 100,
+                "ambient": true,
+                "show_icon": true
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "cookingtime": 600
+}

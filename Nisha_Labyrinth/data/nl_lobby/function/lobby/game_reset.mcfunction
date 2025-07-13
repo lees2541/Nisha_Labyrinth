@@ -54,6 +54,8 @@ execute as @e[type=interaction,tag=NL,tag=swamp] at @s run setblock ~ ~ ~ air de
 execute as @e[type=area_effect_cloud,tag=NL,tag=NL_grass] at @s run setblock ~ ~1 ~ minecraft:tall_grass[half=upper] keep
 function nl_system:systems/library/access_control/close_library
 
+# 감옥 비상탈출구 제거
+setblock 708 43 581 mossy_cobblestone destroy
 
 say gamereset6
 # 제단의 레드스톤 제거

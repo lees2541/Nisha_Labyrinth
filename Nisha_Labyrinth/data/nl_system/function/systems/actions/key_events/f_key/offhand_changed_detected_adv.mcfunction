@@ -15,5 +15,7 @@ item replace entity @s weapon.mainhand from entity @s weapon.offhand
 
 function nl_system:modules/hotbar_holder/base/slot_update {"Slot":"-106b","slotPath":"weapon.offhand","Path":"offhand"}
 
+execute if items entity @s weapon.mainhand diamond_hoe run item replace entity @s weapon.mainhand with air
+
 ## 버퍼발전과제 확성화
 advancement revoke @s only nl_system:systems/actions/key_events/f_key/offhand_changed_detected_buffer

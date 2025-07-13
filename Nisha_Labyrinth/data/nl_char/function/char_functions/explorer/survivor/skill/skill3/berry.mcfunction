@@ -1,2 +1,2 @@
-execute on target run give @s sweet_berries 1
+execute on target run give @s sweet_berries[item_model="explorer/survivor/survivor_food",custom_data={NL:1b,berry:1b,drop:1b},food={nutrition:3,saturation:1}] 1
 function nl_system:systems/swamp/default/set_default

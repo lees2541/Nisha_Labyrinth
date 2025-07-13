@@ -1,0 +1,28 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      "손에 든 채로 치명적은 공격을 받으면, 1회 살아난다"
+    ],
+    "mode": "replace_all"
+  },
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": "불사의 토템",
+    "target": "custom_name"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "explorer/magician/totem"
+    }
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "NL": true,
+      "totem": true
+    }
+  }
+]

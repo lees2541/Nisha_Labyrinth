@@ -3,7 +3,6 @@
       "icon": {
         "id": "minecraft:written_book",
         "components": {
-        "minecraft:custom_model_data": 302004
       }
       },
       "title": "감옥",

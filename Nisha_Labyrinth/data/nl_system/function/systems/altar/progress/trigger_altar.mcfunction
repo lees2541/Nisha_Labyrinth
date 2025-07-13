@@ -33,7 +33,7 @@ function nl_system:systems/library/insert_items/insert_items
 execute if entity @a[team=prisoner,tag=prisoner] as @e[type=marker,tag=library,tag=chest,tag=!library_key,tag=!prison_key,limit=1,sort=random] at @s run function nl_system:modules/chest/insert_loot/insert_loot_table {tag:prison_key,path:"keys/prison_key"}
 
 ## 생명석 스폰
-execute as @e[type=marker,tag=NL,tag=lifestone] at @s run setblock ~ ~ ~ bone_block destroy
+execute as @e[type=marker,tag=NL,tag=lifestone_point] at @s run setblock ~ ~ ~ bone_block destroy
 
 ## 제단에 올린사람 발광
 execute as @a[advancements={nl_system:systems/actions/interactions/altar/hit=true}] run effect give @s glowing 8
@@ -43,5 +43,5 @@ function nl_system:modules/manastone_generator/manastone_generator_start
 
 ## 캐릭터 스킬
 execute as @a[tag=explorer,tag=survivor] at @s run function nl_char:char_functions/explorer/survivor/skill/passive/set_on_altar
-
+execute as @a[tag=explorer,tag=magician] at @s run function nl_char:char_functions/explorer/magician/skill/passive/set_on_altar
 execute as @a[tag=explorer,tag=guard] at @s run function nl_char:char_functions/explorer/guard/skill/passive/set_on_altar
