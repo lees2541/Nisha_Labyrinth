@@ -10,5 +10,5 @@ execute store result storage nl:settings etc.earlydeath int 1 run scoreboard pla
 function nl_system:modules/status_gui/profile_icon/case/sacrifice
 
 execute as @e[type=marker,tag=NL,tag=chest,tag=library,tag=!library_key,limit=2,sort=random] at @s run function nl_system:modules/chest/insert_loot/insert_loot_table {tag:"library_key",path:"keys/library_key"}
-spawnpoint @a 715 39 580
+schedule function nl_system:systems/death/set_spawnpoint 2t replace
 return 1

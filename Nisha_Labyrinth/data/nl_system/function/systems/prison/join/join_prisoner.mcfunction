@@ -1,5 +1,5 @@
 team join prisoner @s
 
 tag @s add prisoner
-spawnpoint @s 715 39 580
+schedule function nl_system:systems/death/set_spawnpoint 2t
 

@@ -14,6 +14,6 @@ function nl_system:systems/death/activate_imprison with entity @s
 
 function nl_system:modules/status_gui/profile_icon/case/prisoner
 execute unless data storage nl:settings etc{earlydeath:0} run return run function nl_system:systems/death/early_death
-spawnpoint @a 715 39 580
+
 tag @s add prisoner
 

@@ -1,0 +1,11 @@
+{
+  "function": "minecraft:set_custom_model_data",
+  "floats": {
+    "values": [
+      2
+    ],
+    "mode": "replace_section",
+    "offset": 1,
+    "size": 1
+  }
+}

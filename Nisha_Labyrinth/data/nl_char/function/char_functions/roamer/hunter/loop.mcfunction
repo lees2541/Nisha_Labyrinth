@@ -1,3 +1,5 @@
+
+## 덫 개수, ui 동기화
 execute if entity @s[scores={NL_trap_count=0}] unless entity @s[level=0] run return run xp set @s 0 levels
 execute if entity @s[scores={NL_trap_count=1}] unless entity @s[level=1] run return run xp set @s 1 levels
 execute if entity @s[scores={NL_trap_count=2}] unless entity @s[level=2] run return run xp set @s 2 levels
@@ -14,3 +16,9 @@ execute if entity @s[scores={NL_trap_count=12}] unless entity @s[level=12] run r
 execute if entity @s[scores={NL_trap_count=13}] unless entity @s[level=13] run return run xp set @s 13 levels
 execute if entity @s[scores={NL_trap_count=14}] unless entity @s[level=14] run return run xp set @s 14 levels
 execute if entity @s[scores={NL_trap_count=15}] unless entity @s[level=15] run return run xp set @s 15 levels
+
+
+
+## 스킬사용가능유무 체크
+execute if entity @a[team=explorer,tag=NL,tag=debuff] if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_model_data={strings:["roamer","hunter"],floats:[0,0],flags:[0b]}] run item modify entity @s weapon.mainhand nl_char:items/roamer/hunter/skill_ready
+execute unless entity @a[team=explorer,tag=NL,tag=debuff] if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_model_data={strings:["roamer","hunter"],floats:[0,2],flags:[0b]}] run item modify entity @s weapon.mainhand nl_char:items/roamer/hunter/skill_not_ready

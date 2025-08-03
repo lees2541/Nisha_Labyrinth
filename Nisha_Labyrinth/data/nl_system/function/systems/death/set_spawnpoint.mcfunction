@@ -1,0 +1,1 @@
+spawnpoint @a[tag=explorer] 715 39 580
