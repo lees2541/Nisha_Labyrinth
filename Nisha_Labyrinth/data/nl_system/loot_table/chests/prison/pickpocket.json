@@ -14,14 +14,26 @@
           "function": "minecraft:set_lore",
           "entity": "this",
           "lore": [
-            "해골에 쓰면 해골에 빛이난다. 멋지다."
+            {
+              "text": "교단이 제사를 치를 때 사용하는 신비한 풀.",
+              "color": "white"
+            },
+            {
+              "text": "죽은 자의 영혼을 불러내는 힘이 있다고 한다. ",
+              "color": "white"
+            },
+            ""
           ],
           "mode": "replace_all"
         },
         {
           "function": "minecraft:set_name",
           "entity": "this",
-          "name": "영혼초"
+          "name": {
+            "text": "영혼초",
+            "color": "#59e3ae",
+            "bold": true
+          }
         },
         {
           "function": "minecraft:set_components",
@@ -71,14 +83,26 @@
           "function": "minecraft:set_lore",
           "entity": "this",
           "lore": [
-            "해골에 쓰면 해골에 빛이난다. 멋지다."
+            {
+              "text": "교단이 제사를 치를 때 사용하는 신비한 풀.",
+              "color": "white"
+            },
+            {
+              "text": "죽은 자의 영혼을 불러내는 힘이 있다고 한다. ",
+              "color": "white"
+            },
+            ""
           ],
           "mode": "replace_all"
         },
         {
           "function": "minecraft:set_name",
           "entity": "this",
-          "name": "영혼초"
+          "name": {
+            "text": "영혼초",
+            "color": "#59e3ae",
+            "bold": true
+          }
         },
         {
           "function": "minecraft:set_components",

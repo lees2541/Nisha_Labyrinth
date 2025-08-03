@@ -1,2 +1,2 @@
-execute on target run give @s cooked_mutton[item_model="explorer/survivor/survivor_protein",custom_data={NL:1b, drop:1b, food:1b}] 1
+execute on target run give @s cooked_mutton[item_model="explorer/survivor/survivor_protein",custom_data={NL:1b,drop:1b,food:1b},custom_name={"bold":true,"color":"green","text":"완소 식량"},lore=[{"color":"white","text":"단백질이 매우 풍부하고, 꽤나 달달 고소한 맛이 별미이다. "}]] 1
 function nl_system:systems/swamp/default/set_default

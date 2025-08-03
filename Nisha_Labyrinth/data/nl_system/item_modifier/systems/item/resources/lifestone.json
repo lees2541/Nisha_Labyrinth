@@ -2,14 +2,19 @@
   {
     "function": "minecraft:set_name",
     "entity": "this",
-    "name": "생명석"
+    "name": {
+      "text": "생명석",
+      "color": "#6bb6ef",
+      "bold": true
+    }
   },
   {
     "function": "minecraft:set_lore",
     "entity": "this",
     "lore": [
       {
-        "text": "생명석이다"
+        "text": "충만한 생명의 힘이 느껴지는 돌.",
+        "color": "#8ce2ee"
       }
     ],
     "mode": "replace_all"

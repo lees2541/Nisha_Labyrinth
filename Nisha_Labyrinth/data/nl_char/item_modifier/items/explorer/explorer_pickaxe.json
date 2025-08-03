@@ -28,14 +28,19 @@
   {
     "function": "minecraft:set_name",
     "entity": "this",
-    "name": "탐험가의 곡괭이"
+    "name": {
+      "text": "탐험가의 곡괭이",
+      "color": "white",
+      "bold": true
+    }
   },
   {
     "function": "minecraft:set_lore",
     "entity": "this",
     "lore": [
       {
-        "text": "곡괭이이다"
+        "text": "기본적으로 제공되는 평범한 곡괭이. 적당히 가볍고 쓸만하다.",
+        "color": "white"
       }
     ],
     "mode": "replace_all"

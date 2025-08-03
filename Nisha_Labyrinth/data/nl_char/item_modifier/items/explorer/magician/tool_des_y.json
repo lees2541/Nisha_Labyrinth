@@ -1,0 +1,32 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "운명의 수정구 <모독의 피>",
+      "color": "white",
+      "bold": true
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      "운명을 비트는 힘이 담긴 신비한 수정구.",
+      "더러운 피를 받아들여, 이치를 벗어나리.",
+      "",
+      {
+        "text": "<우클> 뒤틀림 (생명석 1개 소모)",
+        "color": "white",
+        "bold": true,
+        "italic": true
+      },
+      {
+        "text": "가장 멀리 있는 탐험가의 위치로 순간 이동합니다.",
+        "color": "white"
+      },
+      ""
+    ],
+    "mode": "replace_all"
+  }
+]

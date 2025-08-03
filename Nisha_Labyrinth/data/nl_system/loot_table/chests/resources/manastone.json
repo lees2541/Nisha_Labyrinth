@@ -11,6 +11,17 @@
           "quality": 1,
           "functions": [
             {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "원혼들의 사념에 물든 광석, 탐험가의 고유 각성 능력을 해금할 때 사용된다.",
+                  "color": "gold"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "custom/items/resource/manastone"

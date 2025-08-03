@@ -4,14 +4,69 @@
     "components": {
       "minecraft:custom_name": {
         "text": "찢어진 주술서",
-        "type": "text"
+        "type": "text",
+        "color": "#cfc4c4",
+        "bold": true
       },
       "minecraft:custom_model_data": {
         "flags": [
           false
-        ]
+        ],
+        "strings": [],
+        "colors": []
       }
     },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "NL_perk": 0
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "스승이 남긴 주술서, 중요 부분이 훼손되어 해석할 수 없다. ",
+        "color": "#f5f5f5",
+        "italic": true
+      },
+      "",
+      {
+        "text": "X. 깨우침 <잠김>",
+        "color": "gray"
+      },
+      {
+        "text": "주술사의 분필을 하나 획득합니다.",
+        "color": "gray"
+      },
+      {
+        "text": "분필을 사용하면 [태초의 원] 을 그립니다. (늪 위에 사용 가능) (생명석 1개 소모)",
+        "color": "gray"
+      },
+      {
+        "text": "재사용시, [좌표] 를 설치합니다. (늪 위에 사용 가능)",
+        "color": "gray"
+      },
+      "",
+      {
+        "text": "플레이어가 [태초의 원] 위에 앉으면, 1초 뒤 [좌표] 의 위치로 순간이동 합니다.",
+        "color": "gray"
+      },
+      {
+        "text": "[태초의 원] 은 3번 사용시 파괴됩니다.",
+        "color": "gray"
+      },
+      {
+        "text": "배회자가 사용시, 남은 사용 횟수와 상관 없이 파괴됩니다.",
+        "color": "gray"
+      }
+    ],
+    "mode": "replace_all",
     "conditions": [
       {
         "condition": "minecraft:entity_scores",

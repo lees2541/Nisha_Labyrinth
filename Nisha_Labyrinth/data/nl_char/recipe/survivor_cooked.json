@@ -5,8 +5,10 @@
     "id": "minecraft:golden_apple",
     "components": {
       "minecraft:custom_name": {
-        "text": "완소식량",
-        "type": "text"
+        "text": "완소 식량 (미디움 레어)",
+        "type": "text",
+        "color": "#ee77ea",
+        "bold": true
       },
       "minecraft:item_model": "minecraft:explorer/survivor/survivor_cooked",
       "minecraft:consumable": {
@@ -33,7 +35,16 @@
             ]
           }
         ]
-      }
+      },
+      "minecraft:lore": [
+        "왠만한 음식은 구우면 대체로 맛있어진다.",
+        "겉은 바삭하고 살은 달~콤하니 그 맛이 매우 일품이다. ",
+        "",
+        {
+          "text": "섭취시, 스태미나를 어느정도 채워줍니다.",
+          "color": "white"
+        }
+      ]
     }
   },
   "cookingtime": 600

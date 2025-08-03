@@ -2,9 +2,9 @@
   {
     "function": "minecraft:set_name",
     "name": {
-      "text": "마력이 깃든 철조각",
+      "text": "마력이 깃든 파편",
       "type": "text",
-      "color": "black",
+      "color": "#693a3a",
       "bold": true
     }
   },
@@ -13,9 +13,16 @@
     "entity": "this",
     "lore": [
       {
-        "text": "쥐돌이에게 건네주면 장비를 업그레이드 할 수 있다.",
-        "type": "text"
-      }
+        "text": "사악한 마력이 깃든 파편이다. 교단이 사용하던 도구들의 재료인 듯 하다. ",
+        "type": "text",
+        "color": "white"
+      },
+      "",
+      {
+        "text": "3개를 소모하여 곡괭이 와 신발을 강화할 수 있다.",
+        "color": "white"
+      },
+      ""
     ],
     "mode": "replace_all"
   },
