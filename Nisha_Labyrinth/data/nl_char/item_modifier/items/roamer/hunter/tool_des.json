@@ -1,0 +1,47 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "흑철의 나이프",
+      "color": "white",
+      "bold": true
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      "어느 사냥꾼이 애용했던 칠흑빛 나이프.",
+      "오랜 세월이 지났음에도, 날이 무뎌지기는 커녕 흠집 하나 나지 않았다.",
+      "",
+      {
+        "text": "피해량 : 8"
+      },
+      "",
+      {
+        "text": "<우클> 추격 명령",
+        "color": "white",
+        "bold": true,
+        "italic": true
+      },
+      {
+        "text": "표식을 가진 탐험가를 직접 조준하여 사용 가능.",
+        "color": "white"
+      },
+      {
+        "text": "헌터가 늑대에게 추격 명령을 내립니다.",
+        "color": "white"
+      },
+      {
+        "text": "(10초 지속, 늑대의 피해량은 3)",
+        "color": "white"
+      },
+      {
+        "text": "쿨타임 : 60초",
+        "color": "white"
+      }
+    ],
+    "mode": "replace_all"
+  }
+]

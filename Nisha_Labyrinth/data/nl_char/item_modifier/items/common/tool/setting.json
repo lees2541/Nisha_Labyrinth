@@ -1,6 +1,20 @@
 [
   {
     "function": "minecraft:reference",
+    "name": "nl_char:items/roamer/hunter/tool_des",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"hunter\"]}"
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:reference",
     "name": "nl_char:items/explorer/survivor/tool_des",
     "conditions": [
       {
