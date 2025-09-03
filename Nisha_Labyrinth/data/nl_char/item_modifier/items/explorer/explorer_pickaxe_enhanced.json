@@ -29,8 +29,8 @@
     "function": "minecraft:set_name",
     "entity": "this",
     "name": {
-      "text": "탐험가의 곡괭이",
-      "color": "white",
+      "text": "마력이 깃든 곡괭이",
+      "color": "red",
       "bold": true
     }
   },
@@ -39,7 +39,7 @@
     "entity": "this",
     "lore": [
       {
-        "text": "기본적으로 제공되는 평범한 곡괭이. 적당히 가볍고 쓸만하다.",
+        "text": "마력이 깃든 파편으로 보완한 곡괭이. 채굴 속도가 더 빨라진다.",
         "color": "white"
       }
     ],

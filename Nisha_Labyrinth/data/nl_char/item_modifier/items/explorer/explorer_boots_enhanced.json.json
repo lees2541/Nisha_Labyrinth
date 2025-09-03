@@ -3,7 +3,7 @@
     "function": "minecraft:set_name",
     "entity": "this",
     "name": {
-      "text": "탐험가의 신발",
+      "text": "영혼을 엮는자",
       "color": "gold"
     }
   },
@@ -12,11 +12,11 @@
     "entity": "this",
     "lore": [
       {
-        "text": "탐사를 위해 특수 제작된 신발. ",
+        "text": "마력이 깃든 파편을 덧댄 특수한 신발. 늪 위에서 이동속도가 더 빨라진다.",
         "color": "white"
       },
       {
-        "text": "늪 위를 지날 때 이동 속도가 살짝 빨라진다.",
+        "text": "원혼들의 목소리가 더 선명하게 들리는 듯 하다.",
         "color": "white"
       }
     ],
