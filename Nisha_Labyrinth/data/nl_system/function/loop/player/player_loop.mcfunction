@@ -50,6 +50,7 @@ function nl_system:loop/status_gui/status/status_storage_loop
 
 
 
+
 #> 틱당 리셋
 advancement revoke @s from nl_system:systems/actions/key_events/right_click/fos_detected
 scoreboard players set @a NL_fos_count 0
