@@ -1,0 +1,40 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "생존가의 나이프 <완소 식량>",
+      "color": "white",
+      "bold": true
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      "오지 탐험, 극한 생존을 위한 만능 나이프! ",
+      "드디어 찾아냈다! 이것이 우리의 배를 부르게 해줄 ‘완소 식량’ 이다.",
+      "",
+      {
+        "text": "<우클> 캠프 설치  (장작 1개 소모)",
+        "color": "white",
+        "bold": true,
+        "italic": true
+      },
+      {
+        "text": "늪 위에 [캠프 파이어] 를 설치합니다. ",
+        "color": "white"
+      },
+      {
+        "text": "[캠프 파이어] 로 특정 음식들을 요리해 상위 음식을 만들 수 있습니다.",
+        "color": "white"
+      },
+      {
+        "text": "[캠프 파이어] 주위에 있을 때, 탐험가들은 이동속도가 살짝 증가합니다. ",
+        "color": "white"
+      },
+      ""
+    ],
+    "mode": "replace_all"
+  }
+]

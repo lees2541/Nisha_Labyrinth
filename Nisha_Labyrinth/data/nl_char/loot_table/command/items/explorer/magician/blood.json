@@ -1,20 +1,61 @@
 {
-    "type": "minecraft:command",
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:emerald",
-            "functions": [
-              {
-                "function": "minecraft:reference",
-                "name": "nl_char:items/explorer/magician/blood"
-              }
-            ]
-          }
-        ]
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 0,
+      "entries": []
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "nl_char:items/explorer/magician/blood"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": {
+        "text": "더러운 피의 모독자",
+        "color": "#b80505",
+        "bold": true
       }
-    ]
-  }
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "text": "<우클 키다운> 피의 구속",
+          "color": "white",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "일정 거리내에서 배회자를 직접 바라본 상태에서 사용 가능.",
+          "color": "white"
+        },
+        "",
+        {
+          "text": "시전시, 즉시 일정량의 체력을 소모하고 자신과 배회자를 속박시킵니다.",
+          "color": "white"
+        },
+        {
+          "text": "그 후, 매초 소량의 체력을 추가로 소모하여 속박시간을 늘릴 수 있습니다. ",
+          "color": "white"
+        },
+        ""
+      ]
+    }
+  ]
+}

@@ -1,5 +1,184 @@
 [
   {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      "",
+      {
+        "text": "<우클> 좌표 설정",
+        "color": "white",
+        "bold": true,
+        "italic": true
+      },
+      {
+        "text": "[좌표] 를 설치합니다.",
+        "color": "white"
+      },
+      {
+        "text": "([좌표] 는 한번에 하나만 존재할 수 있습니다.)",
+        "color": "white"
+      },
+      "",
+      {
+        "text": "<F> 교체",
+        "color": "white",
+        "bold": true,
+        "italic": true
+      },
+      {
+        "text": "아이템을 [근원의 분필] 으로 교체합니다",
+        "color": "white"
+      },
+      ""
+    ],
+    "mode": "replace_all",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "offhand": {
+              "items": "minecraft:carrot_on_a_stick",
+              "predicates": {
+                "minecraft:custom_data": {
+                  "NL": true,
+                  "magician": true,
+                  "mode": 1,
+                  "tool2": true
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      "",
+      {
+        "text": "<우클> 근원의 진 (생명석 1개 소모)",
+        "color": "white",
+        "bold": true,
+        "italic": true
+      },
+      {
+        "text": "바닥에 마법진을 그립니다. ",
+        "color": "white"
+      },
+      {
+        "text": "탐험가가 마법진 위에 앉으면, 1초 뒤 [좌표] 로 순간 이동합니다",
+        "color": "white"
+      },
+      "",
+      {
+        "text": "총 3번 사용시 마법진은 파괴됩니다.",
+        "color": "white"
+      },
+      {
+        "text": "배회자가 사용할 시 사용 횟수와 상관없이 파괴됩니다.",
+        "color": "#f03838"
+      },
+      "",
+      {
+        "text": "<F> 교체",
+        "color": "white",
+        "bold": true,
+        "italic": true
+      },
+      {
+        "text": "아이템을 [태초의 나뭇가지] 로 교체합니다.",
+        "color": "white"
+      }
+    ],
+    "mode": "replace_all",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "offhand": {
+              "items": "minecraft:carrot_on_a_stick",
+              "predicates": {
+                "minecraft:custom_data": {
+                  "NL": true,
+                  "magician": true,
+                  "mode": 2,
+                  "tool2": true
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "태초의 나뭇가지",
+      "bold": true,
+      "underlined": true
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "offhand": {
+              "items": "minecraft:carrot_on_a_stick",
+              "predicates": {
+                "minecraft:custom_data": {
+                  "NL": true,
+                  "magician": true,
+                  "mode": 1,
+                  "tool2": true
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "근원의 분필",
+      "color": "#e1dbdb",
+      "bold": true,
+      "underlined": true
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "offhand": {
+              "items": "minecraft:carrot_on_a_stick",
+              "predicates": {
+                "minecraft:custom_data": {
+                  "NL": true,
+                  "magician": true,
+                  "mode": 2,
+                  "tool2": true
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
     "function": "minecraft:set_custom_model_data",
     "floats": {
       "values": [

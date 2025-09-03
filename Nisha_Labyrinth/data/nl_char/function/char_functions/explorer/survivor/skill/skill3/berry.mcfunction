@@ -1,2 +1,2 @@
-execute on target run give @s sweet_berries[item_model="explorer/survivor/survivor_food",custom_data={NL:1b,berry:1b,drop:1b},food={nutrition:3,saturation:1}] 1
+execute on target run give @s sweet_berries[item_model="explorer/survivor/survivor_food",custom_data={NL:1b,berry:1b,drop:1b},food={nutrition:3,saturation:1},custom_name={"bold":true,"color":"white","text":"동굴 열매"},lore=[{"color":"white","text":"동굴에서 발견되는 열매. 조금 떫고 새콤하지만, 꽤 영양가가 풍부해 먹을만 하다. "}]] 1
 function nl_system:systems/swamp/default/set_default

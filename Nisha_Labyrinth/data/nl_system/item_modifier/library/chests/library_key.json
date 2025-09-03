@@ -1,22 +1,32 @@
 [
-    {
-      "function": "minecraft:set_name",
-      "entity": "this",
-      "name": "도서관 열쇠"
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        {
-          "text": "도서관 열쇠이다"
-        }
-      ],
-      "mode": "replace_all"
-    },
-    {
-      "function": "minecraft:set_custom_data",
-      "tag": "{NL:1b,library_key:1b,lib:1b}"
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "도서관 열쇠",
+      "color": "#dda04b",
+      "bold": true
     }
-  ]
-  
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "잠긴 도서관의 봉인을 풀 수 있는 열쇠. ",
+        "color": "white"
+      },
+      "",
+      {
+        "text": "2개를 모으면 도서관의 봉인이 풀려 나갈 수 있게 된다.",
+        "color": "white"
+      },
+      ""
+    ],
+    "mode": "replace_all"
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{NL:1b,library_key:1b,lib:1b}"
+  }
+]

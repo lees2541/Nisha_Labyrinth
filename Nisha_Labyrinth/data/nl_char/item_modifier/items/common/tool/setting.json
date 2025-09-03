@@ -1,5 +1,61 @@
 [
   {
+    "function": "minecraft:reference",
+    "name": "nl_char:items/roamer/hunter/tool_des",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"hunter\"]}"
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "nl_char:items/explorer/survivor/tool_des",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"survivor\"]}"
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "nl_char:items/explorer/magician/tool_des",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"magician\"]}"
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "nl_char:items/explorer/guard/tool_des",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"guard\"]}"
+        }
+      }
+    ]
+  },
+  {
     "function": "minecraft:set_components",
     "components": {
       "minecraft:can_break": [

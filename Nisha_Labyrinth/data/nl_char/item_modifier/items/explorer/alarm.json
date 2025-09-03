@@ -1,5 +1,16 @@
 [
   {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      "탐사대 기술력의 정수가 담긴 경보기.",
+      "사악한 기운을 감지하는 신비한 기능을 가지고 있다. ",
+      "",
+      "배회자와의 거리에 따라, 위험 단계를 알려준다. "
+    ],
+    "mode": "replace_all"
+  },
+  {
     "function": "minecraft:set_components",
     "components": {
       "minecraft:item_model": "minecraft:custom/items/player/radar"
@@ -32,6 +43,10 @@
   {
     "function": "minecraft:set_name",
     "entity": "this",
-    "name": "경고기"
+    "name": {
+      "text": "경보기",
+      "color": "white",
+      "bold": true
+    }
   }
 ]

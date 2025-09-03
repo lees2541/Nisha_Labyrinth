@@ -2,10 +2,30 @@
   {
     "function": "minecraft:set_name",
     "entity": "this",
-    "name": "꼬기"
+    "name": {
+      "text": "보존 식량",
+      "color": "#fcfcfc",
+      "bold": true
+    }
   },
   {
     "function": "minecraft:set_custom_data",
     "tag": "{NL:1b,drop:2b}"
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "탐사 출발 전에 지급받은 식량이다. 보존성을 위해서인지 딱히 맛은 없다.",
+        "color": "#f7f7f7"
+      },
+      {
+        "text": "[ 포만도 : 중 ]",
+        "color": "#f2f2f2",
+        "italic": true
+      }
+    ],
+    "mode": "replace_all"
   }
 ]

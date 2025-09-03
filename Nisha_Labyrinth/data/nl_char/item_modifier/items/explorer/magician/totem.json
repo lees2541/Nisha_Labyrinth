@@ -2,14 +2,36 @@
   {
     "function": "minecraft:set_lore",
     "lore": [
-      "손에 든 채로 치명적은 공격을 받으면, 1회 살아난다"
+      {
+        "text": "“붉은 뱀의 피로 그 몸을 적시고, 불사의 권능을 찬탈하라.”",
+        "color": "#d10000",
+        "italic": true
+      },
+      {
+        "text": "",
+        "color": "#e0d1d1"
+      },
+      {
+        "text": "사망시, 죽음을 1회 방지. ",
+        "color": "#cfcfcf"
+      },
+      {
+        "text": "그 후, 잠시동안 대량의 체력 재생 / 방어막 / 야간 투시 효과를 얻습니다.",
+        "color": "#e8e8e8"
+      },
+      ""
     ],
     "mode": "replace_all"
   },
   {
     "function": "minecraft:set_name",
     "entity": "this",
-    "name": "불사의 토템",
+    "name": {
+      "text": "불사의 토템",
+      "color": "#ff0a0a",
+      "bold": true,
+      "underlined": true
+    },
     "target": "custom_name"
   },
   {

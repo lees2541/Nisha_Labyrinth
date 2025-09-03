@@ -5,6 +5,6 @@
 #@within 
 #
 say 캔 건 나 생존가다!
-execute unless entity @e[type=interaction,tag=occupied,tag=campfire,tag=NL] unless items entity @s hotbar.* yellow_dye[custom_data~{NL:1b,campfire:1b}] unless items entity @s inventory.* yellow_dye[custom_data~{NL:1b, campfire:1b}] run give @s[tag=survivor] yellow_dye[max_stack_size=1,custom_name='"장작과 불쏘시개"',lore=['"늪에 모닥불을 설치할 수 있게 된다(칼 들고 우클릭)"'],custom_data={NL:1b, campfire:1b},item_model="explorer/survivor/survivor_wood"]
+execute unless entity @e[type=interaction,tag=occupied,tag=campfire,tag=NL] unless items entity @s hotbar.* yellow_dye[custom_data~{NL:1b,campfire:1b}] unless items entity @s inventory.* yellow_dye[custom_data~{NL:1b, campfire:1b}] run give @s[tag=survivor] yellow_dye[max_stack_size=1,custom_name='"장작과 불쏘시개"',lore=['"모닥불을 피울 때 필요한 장작 더미."'],custom_data={NL:1b, campfire:1b},item_model="explorer/survivor/survivor_wood"]
 
 say 생존가 생명석캤덩

@@ -2,15 +2,26 @@
   {
     "function": "minecraft:set_name",
     "entity": "this",
-    "name": "감옥열쇠"
+    "name": {
+      "text": "감옥열쇠",
+      "color": "#2c22b4",
+      "bold": true
+    }
   },
   {
     "function": "minecraft:set_lore",
     "entity": "this",
     "lore": [
       {
-        "text": "알레이에게 가져다주면 감옥문을 열어 줄 수도?"
-      }
+        "text": "감옥의 결계를 해제할 수 있는 열쇠.",
+        "color": "white"
+      },
+      "",
+      {
+        "text": "2개를 소모하여 잠시동안 감옥의 결계를 해제할 수 있다.",
+        "color": "white"
+      },
+      ""
     ],
     "mode": "replace_all"
   },

@@ -6,7 +6,8 @@
     "components": {
       "minecraft:custom_name": {
         "text": "생존가의 따끈따끈한 특제 동굴 스튜",
-        "type": "text"
+        "type": "text",
+        "color": "gold"
       },
       "minecraft:item_model": "minecraft:explorer/survivor/survivor_stew",
       "minecraft:consumable": {
@@ -33,7 +34,15 @@
             ]
           }
         ]
-      }
+      },
+      "minecraft:lore": [
+        "동굴 열매로 끓인 뜨끈하고 든든한 스튜 한그릇.",
+        "",
+        {
+          "text": "섭취시 체력이 회복되며, 2분동안 방어막을 얻습니다.",
+          "color": "white"
+        }
+      ]
     }
   },
   "cookingtime": 600

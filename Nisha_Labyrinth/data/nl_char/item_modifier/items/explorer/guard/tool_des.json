@@ -1,0 +1,36 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "특수 합금 배트",
+      "color": "white",
+      "bold": true
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      "특수한 금속으로 만들어진 배트. 보기보단 꽤 가볍고, 손에 착착 감긴다. ",
+      "돌발 상황이 발생할때마다, 늘 최고의 해결책이었다.",
+      "",
+      {
+        "text": "<F> 기합! (생명석 1개 소모)",
+        "color": "white",
+        "bold": true,
+        "italic": true
+      },
+      {
+        "text": "크게 소리를 질러, 4의 방어막을 얻습니다. ",
+        "color": "white"
+      },
+      {
+        "text": "이때, 배회자는 경호원을 강제로 바라보게 됩니다",
+        "color": "white"
+      },
+      ""
+    ],
+    "mode": "replace_all"
+  }
+]
