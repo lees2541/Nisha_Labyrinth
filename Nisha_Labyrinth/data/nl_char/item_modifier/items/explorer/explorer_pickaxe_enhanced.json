@@ -1,0 +1,73 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "minecraft:lapis_block",
+            "speed": 0.5,
+            "correct_for_drops": true
+          },
+          {
+            "blocks": "#minecraft:redstone_ores",
+            "speed": 0.3,
+            "correct_for_drops": true
+          },
+          {
+            "blocks": "minecraft:bone_block",
+            "speed": 0.4,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 1,
+        "damage_per_block": 1
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "탐험가의 곡괭이",
+      "color": "white",
+      "bold": true
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "기본적으로 제공되는 평범한 곡괭이. 적당히 가볍고 쓸만하다.",
+        "color": "white"
+      }
+    ],
+    "mode": "replace_all"
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:efficiency": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "E_efficiency",
+        "scale": 1
+      },
+      "minecraft:unbreaking": 1
+    },
+    "add": false
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{NL:1b}"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:can_break": {
+        "blocks": "#nl_system:nl_breakable"
+      }
+    }
+  }
+]
