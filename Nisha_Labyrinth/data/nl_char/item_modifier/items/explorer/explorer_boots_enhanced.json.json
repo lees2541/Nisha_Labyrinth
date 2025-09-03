@@ -4,7 +4,8 @@
     "entity": "this",
     "name": {
       "text": "영혼을 엮는자",
-      "color": "gold"
+      "color": "gold",
+      "bold": true
     }
   },
   {
