@@ -9,3 +9,6 @@ $item replace entity @s inventory.1 with gold_nugget[item_name={"bold":true,"col
 
 $execute unless score @s NL_perk matches 2 run item modify entity @s inventory.0 nl_char:items/explorer/$(character)/perk_1
 $execute unless score @s NL_perk matches 1 run item modify entity @s inventory.1 nl_char:items/explorer/$(character)/perk_2
+
+execute if score @s NL_perk matches 1 run clear @s gold_nugget[custom_data~{perk:1b}]
+execute if score @s NL_perk matches 2 run clear @s iron_nugget[custom_data~{perk:1b}]

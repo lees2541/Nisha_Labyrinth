@@ -20,7 +20,7 @@
           "item": {
             "items": "minecraft:paper",
             "components": {
-              "minecraft:item_name": "\"perk\""
+              "minecraft:item_name": "perk"
             }
           }
         }

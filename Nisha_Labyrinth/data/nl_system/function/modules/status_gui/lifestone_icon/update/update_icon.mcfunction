@@ -6,4 +6,4 @@
 
 $execute if data storage nl:in_game player[{id:$(id)}].icons.lf_slot[0] run return run function nl_system:modules/status_gui/lifestone_icon/change_icon with storage nl:in_game player[{id:$(id)}].icons.lf_slot[0]
 execute if score @s NL_lifestone_count matches 1.. run return run function nl_system:modules/status_gui/lifestone_icon/case/owned_lifestone
-execute unless score @s NL_lifestone_count matches 1.. run scoreboard players display numberformat @s NL_status_gui blank
+execute unless score @s NL_lifestone_count matches 1.. run function nl_system:modules/status_gui/lifestone_icon/update/empty_icon

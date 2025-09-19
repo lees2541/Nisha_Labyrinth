@@ -4,7 +4,7 @@ tag @s add lock_on
 execute at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,Tags:["NL","magician_marker","lock_on"]}
 tag @p[team=roamer] add lock_on
 execute as @p[team=roamer,tag=lock_on] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,Tags:["NL","roamer_marker","lock_on"]}
-damage @s 2 magic by @s
+execute if score @s NL_heatlh matches 3.. run damage @s 2 magic by @s
 
 scoreboard players set @s NL_timer 40
 

@@ -1,0 +1,1 @@
+execute if function #nl_system:load_player_info run function nl_char:items/wearable/hats/wearing with storage nl:buffer player

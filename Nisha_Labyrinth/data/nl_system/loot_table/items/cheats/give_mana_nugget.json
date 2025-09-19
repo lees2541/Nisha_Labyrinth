@@ -2,15 +2,15 @@
   "type": "minecraft:command",
   "pools": [
     {
-      "rolls": 1,
+      "rolls": 3,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:emerald",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:reference",
-              "name": "nl_char:items/explorer/magician/blood"
+              "name": "nl_system:library/chests/mana_nugget"
             }
           ]
         }

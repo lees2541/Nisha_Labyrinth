@@ -10,5 +10,8 @@ function nl_char:items/explorer/explorer/give_pickaxe
 ## 책
 function nl_char:items/give_info_book
 
+## 모자
+function nl_char:items/wearable/hats/hats
+
 ## 퍽 아이템
 execute at @s if function nl_system:modules/storage/load_to_buffer/player_info/load_player_info run function nl_char:items/give_perk_items with storage nl:buffer player
