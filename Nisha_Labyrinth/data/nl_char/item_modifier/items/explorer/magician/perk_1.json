@@ -99,5 +99,13 @@
         }
       }
     ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      "ㅇㅇㅇ"
+    ],
+    "mode": "replace_all"
   }
 ]
