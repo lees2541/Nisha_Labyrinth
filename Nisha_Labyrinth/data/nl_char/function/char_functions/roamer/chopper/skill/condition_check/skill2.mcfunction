@@ -1,1 +1,1 @@
-function nl_char:char_functions/explorer/survivor/skill/skill2/trigger
+execute if entity @e[type=interaction,tag=occupied,tag=trap] run function nl_char:char_functions/roamer/hunter/skill/skill2/trigger

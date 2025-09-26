@@ -7,6 +7,7 @@
 attribute @s attack_damage base set 1
 attribute @s attack_speed base set 4
 attribute @s fall_damage_multiplier base set 1
+attribute @s max_health base set 20
 execute unless data storage nl:in_game status{ongoing:2} run attribute @s minecraft:luck base set 0
 ######################################################
 

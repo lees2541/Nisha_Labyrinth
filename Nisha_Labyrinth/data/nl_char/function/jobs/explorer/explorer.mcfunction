@@ -23,7 +23,6 @@ gamemode adventure @s
 
 #effect give @s haste infinite 1 true
 #effect give @s mining_fatigue infinite 3 true
-
 function nl_char:jobs/explorer/set_stats
 ## 아이템 지급
 function nl_char:items/explorer/explorer/explorer
@@ -33,6 +32,7 @@ loot give @s loot nl_char:command/items/cooked_beef
 loot give @s loot nl_char:command/items/cooked_beef
 loot give @s loot nl_char:command/items/cooked_beef
 loot give @s loot nl_char:command/items/cooked_beef
+
 
 
 

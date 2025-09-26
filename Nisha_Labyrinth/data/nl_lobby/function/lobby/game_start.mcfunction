@@ -25,4 +25,6 @@ function nl_system:loop/countdown/rm_enterance
 ## nl:settings에서 불러온 레드스톤을 맵에 적용
 function nl_lobby:modules/redstone_generator/redstone_generator_start
 
+
+execute as @a at @s run playsound minecraft:game_start master @s ~ ~ ~ 0.4
 data modify storage nl:in_game status.ongoing set value 1

@@ -39,7 +39,7 @@
               "command": "/function #nl_system:calc_resource {resource:redstone,operator:remove,operand:1}"
             }
           },
-          "\n\n"
+          "\n"
         ],
         "color": "dark_red",
         "bold": true
@@ -68,7 +68,7 @@
               "command": "/function #nl_system:calc_resource {resource:lifestone,operator:remove,operand:1}"
             }
           },
-          "\n\n"
+          "\n"
         ],
         "color": "blue",
         "bold": true
@@ -97,10 +97,23 @@
               "command": "/function nl_lobby:info_book/cheats/give_manastone {amount:10}"
             }
           },
-          "\n\n"
+          "\n"
         ],
         "color": "#8a2b13",
         "bold": true
+      },
+      {
+        "text": "<마력 파편 지급>",
+        "type": "text",
+        "extra": [
+          "\n\n"
+        ],
+        "color": "#47054f",
+        "bold": true,
+        "click_event": {
+              "action": "run_command",
+              "command": "/loot give @s loot nl_system:items/cheats/give_mana_nugget"
+        }
       },
       {
         "text": "<체력회복>  ",
@@ -118,7 +131,7 @@
         "text": "<포만감 버프>",
         "type": "text",
         "extra": [
-          "\n\n\n"
+          "\n\n"
         ],
         "color": "dark_red",
         "bold": true,
