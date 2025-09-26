@@ -1,5 +1,8 @@
 #> nl_char:jobs/roamer/chopper/set_stats
 
+# 기본이속은 0.1
+attribute @s movement_speed base set 0.102
+ 
 
 #> 기본 이미지(우측 gui)
 data modify storage nl:image_code player.chopper.font.icon1 set value "uE221"
