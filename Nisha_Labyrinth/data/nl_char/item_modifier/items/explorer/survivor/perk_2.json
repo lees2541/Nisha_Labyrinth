@@ -4,15 +4,66 @@
     "components": {
       "minecraft:custom_name": {
         "text": "생존가의 수첩",
-        "type": "text"
+        "type": "text",
+        "color": "#cfc4c4",
+        "bold": true
       },
       "minecraft:custom_model_data": {
-        "floats": [],
         "flags": [
           false
-        ]
+        ],
+        "strings": [],
+        "colors": []
       }
     },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "NL_perk": 0
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "새로운 탐험 지식들을 기록하기 위한 수첩. ",
+        "color": "#f5f5f5",
+        "italic": true
+      },
+      {
+        "text": "아직 아무것도 적혀있지 않다.",
+        "color": "#fcfcfc"
+      },
+      "",
+      {
+        "text": "Y. 완소 식량 <잠김>",
+        "color": "gray"
+      },
+      {
+        "text": "의식이 진행될때마다 랜덤한 늪 위에 [훌륭한 단백질원] 하나가 나타납니다.",
+        "color": "gray"
+      },
+      {
+        "text": "90초가 지나면 사라집니다.",
+        "color": "gray"
+      },
+      "",
+      {
+        "text": "[훌륭한 단백질원] 은 생존가만 수확이 가능합니다. ",
+        "color": "gray"
+      },
+      {
+        "text": "바로 먹거나, 캠프파이어에서 상위음식으로 만들 수 있습니다.",
+        "color": "gray"
+      },
+      ""
+    ],
+    "mode": "replace_all",
     "conditions": [
       {
         "condition": "minecraft:entity_scores",
@@ -28,7 +79,9 @@
     "components": {
       "minecraft:custom_name": {
         "text": "완료된 생존 수첩",
-        "type": "text"
+        "type": "text",
+        "color": "#fafafa",
+        "bold": true
       },
       "minecraft:custom_model_data": {
         "flags": [
@@ -36,6 +89,53 @@
         ]
       }
     },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "NL_perk": 2
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "생존가가 동굴에서 얻은 경험들로 써내린 수첩.",
+        "color": "white"
+      },
+      {
+        "text": "이것만 있으면 이곳에서 영원히라도 살아남을 수 있을 것 같다.",
+        "color": "white"
+      },
+      "",
+      {
+        "text": "Y. 완소 식량 <해금됨>",
+        "color": "white"
+      },
+      {
+        "text": "의식이 진행될때마다 랜덤한 늪 위에 [훌륭한 단백질원] 하나가 나타납니다.",
+        "color": "white"
+      },
+      {
+        "text": "90초가 지나면 사라집니다.",
+        "color": "white"
+      },
+      "",
+      {
+        "text": "[훌륭한 단백질원] 은 생존가만 수확이 가능합니다. ",
+        "color": "white"
+      },
+      {
+        "text": "바로 먹거나, 캠프파이어에서 상위음식으로 만들 수 있습니다.",
+        "color": "white"
+      },
+      ""
+    ],
+    "mode": "replace_all",
     "conditions": [
       {
         "condition": "minecraft:entity_scores",

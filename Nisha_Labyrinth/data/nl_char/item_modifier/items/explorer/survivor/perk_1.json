@@ -3,15 +3,49 @@
     "function": "minecraft:set_components",
     "components": {
       "minecraft:custom_name": {
-        "text": "작은 불씨",
-        "type": "text"
+        "text": "작은 불씨 ",
+        "type": "text",
+        "color": "#cfc4c4",
+        "bold": true
       },
       "minecraft:custom_model_data": {
         "flags": [
           false
-        ]
+        ],
+        "strings": [],
+        "colors": []
       }
     },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "NL_perk": 0
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "생존가의 집념이 담긴 작은 불씨.",
+        "color": "#f5f5f5",
+        "italic": true
+      },
+      "",
+      {
+        "text": "X. 극한적응 <잠김>",
+        "color": "gray"
+      },
+      {
+        "text": "허기가 60% 미만일때 약간의 체력 재생을 얻습니다.",
+        "color": "gray"
+      }
+    ],
+    "mode": "replace_all",
     "conditions": [
       {
         "condition": "minecraft:entity_scores",
@@ -27,7 +61,9 @@
     "components": {
       "minecraft:custom_name": {
         "text": "꺼지지 않는 불꽃",
-        "type": "text"
+        "type": "text",
+        "color": "#fafafa",
+        "bold": true
       },
       "minecraft:custom_model_data": {
         "flags": [
@@ -35,6 +71,36 @@
         ]
       }
     },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "NL_perk": 1
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "생존의 열망이 강렬하게 불타오른다.",
+        "color": "white"
+      },
+      "",
+      {
+        "text": "X. 극한적응 <해금됨>",
+        "color": "white"
+      },
+      {
+        "text": "허기가 60% 미만일때 약간의 체력 재생을 얻습니다.",
+        "color": "white"
+      },
+      ""
+    ],
+    "mode": "replace_all",
     "conditions": [
       {
         "condition": "minecraft:entity_scores",

@@ -1,0 +1,71 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "도살자의 식칼",
+      "color": "white",
+      "bold": true
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "고기를 써는데 사용되는 칼.",
+        "color": "red"
+      },
+      {
+        "text": "날카롭게 벼려져, 날이 매우 잘든다.",
+        "color": "red"
+      },
+      "",
+      {
+        "text": "피해량 : 10",
+        "color": "white"
+      },
+      "",
+      {
+        "text": "<F> 도살 (쿨타임 :150초)",
+        "color": "#b50303",
+        "bold": true,
+        "italic": true
+      },
+      {
+        "text": "춉퍼가 희생양을 위해 기도합니다. (행동 불가, 3초 지속)",
+        "color": "white"
+      },
+      {
+        "text": "이때, 탐험가들은 위치가 발각되며 1초동안 이동속도가 90% 둔화됩니다.",
+        "color": "white"
+      },
+      "",
+      {
+        "text": "기도가 끝나면, 춉퍼가 크게 포효하며 전방으로 매우 빠른 속도로 돌진합니다.",
+        "color": "white"
+      },
+      {
+        "text": "돌진에 피격된 탐험가는 6~12 의 피해를 입습니다. (돌진 거리에 비례해 피해량 증가)",
+        "color": "white"
+      },
+      "",
+      {
+        "text": "이 스킬로 탐험가를 처치했을시, 스킬이 재사용됩니다.",
+        "color": "white",
+        "bold": false
+      },
+      "",
+      {
+        "text": "(돌진 중 저지 불가)",
+        "color": "gray"
+      },
+      {
+        "text": "(돌진 중 방향을 바꿀 수 있으며, 전진 키를 해제할시 즉시 스킬이 종료됩니다.)",
+        "color": "gray"
+      },
+      ""
+    ],
+    "mode": "replace_all"
+  }
+]

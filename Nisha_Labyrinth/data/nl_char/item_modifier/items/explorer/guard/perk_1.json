@@ -3,15 +3,54 @@
     "function": "minecraft:set_components",
     "components": {
       "minecraft:custom_name": {
-        "text": "수호자의 훈장",
-        "type": "text"
+        "text": "신념의 증표",
+        "type": "text",
+        "color": "#cfc4c4",
+        "bold": true
       },
       "minecraft:custom_model_data": {
         "flags": [
           false
-        ]
+        ],
+        "strings": [],
+        "colors": []
       }
     },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "NL_perk": 0
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "과거에 수여 받은 수호자의 증명.",
+        "color": "white",
+        "italic": true
+      },
+      {
+        "text": "그 숭고한 신념을 대변하듯, 찬란한 황금빛이 눈을 사로잡는다. ",
+        "color": "white"
+      },
+      "",
+      {
+        "text": "X : 수호자의 맹세 <잠김>",
+        "color": "gray"
+      },
+      {
+        "text": "주위 아군이 입는 피해를 20% 감소시킵니다. ",
+        "color": "gray"
+      },
+      ""
+    ],
+    "mode": "replace_all",
     "conditions": [
       {
         "condition": "minecraft:entity_scores",
@@ -26,8 +65,10 @@
     "function": "minecraft:set_components",
     "components": {
       "minecraft:custom_name": {
-        "text": "꺼지지 않는 불꽃",
-        "type": "text"
+        "text": "수호자의 맹세",
+        "type": "text",
+        "color": "#fafafa",
+        "bold": true
       },
       "minecraft:custom_model_data": {
         "flags": [
@@ -35,6 +76,40 @@
         ]
       }
     },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "NL_perk": 1
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "황금의 방패, 굳건한 수호자, 숭고한 신념",
+        "color": "white"
+      },
+      {
+        "text": "그녀의 맹세는 결코 흔들리는 일 없이, 고고히 사람들을 지켰다.",
+        "color": "white"
+      },
+      "",
+      {
+        "text": "X : 수호자의 맹세 <해금됨>",
+        "color": "white"
+      },
+      {
+        "text": "주위 아군이 입는 피해를 20% 감소시킵니다. ",
+        "color": "white"
+      },
+      ""
+    ],
+    "mode": "replace_all",
     "conditions": [
       {
         "condition": "minecraft:entity_scores",

@@ -3,15 +3,50 @@
     "function": "minecraft:set_components",
     "components": {
       "minecraft:custom_name": {
-        "text": "생존가의 수첩",
-        "type": "text"
+        "text": "훼손된 경호원증",
+        "type": "text",
+        "color": "#cfc4c4",
+        "bold": true
       },
       "minecraft:custom_model_data": {
         "flags": [
           false
-        ]
+        ],
+        "strings": [],
+        "colors": []
       }
     },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "NL_perk": 0
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "수호자의 충직함은 세월의 흔적 속에서 빛을 잃고 조용히 잊혀져갔다.",
+        "color": "white",
+        "italic": true
+      },
+      "",
+      {
+        "text": "Y : 뒤틀린 믿음 <잠김>",
+        "color": "gray"
+      },
+      {
+        "text": "[빠따!] 적중 성공시, 체력을 4 회복합니다.",
+        "color": "gray"
+      },
+      ""
+    ],
+    "mode": "replace_all",
     "conditions": [
       {
         "condition": "minecraft:entity_scores",
@@ -26,8 +61,10 @@
     "function": "minecraft:set_components",
     "components": {
       "minecraft:custom_name": {
-        "text": "완료된 생존 수첩",
-        "type": "text"
+        "text": "오염된 경호원증",
+        "type": "text",
+        "color": "#fafafa",
+        "bold": true
       },
       "minecraft:custom_model_data": {
         "flags": [
@@ -35,6 +72,36 @@
         ]
       }
     },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "NL_perk": 2
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "배신당한 믿음은, 곧 갈 길을 잃은 채 그 의미를 망각하였다",
+        "color": "white"
+      },
+      "",
+      {
+        "text": "Y : 뒤틀린 믿음 <해금됨>",
+        "color": "white"
+      },
+      {
+        "text": "[빠따!] 적중 성공시, 체력을 4 회복합니다.",
+        "color": "white"
+      },
+      ""
+    ],
+    "mode": "replace_all",
     "conditions": [
       {
         "condition": "minecraft:entity_scores",

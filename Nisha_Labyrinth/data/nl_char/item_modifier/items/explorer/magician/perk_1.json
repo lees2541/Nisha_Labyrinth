@@ -49,7 +49,7 @@
         "color": "gray"
       },
       {
-        "text": "재사용시, [좌표] 를 설치합니다. (늪 위에 사용 가능)",
+        "text": "재사용시, [좌표] 를 설치합니다. (늪 위에 사용 가능",
         "color": "gray"
       },
       "",
@@ -82,7 +82,9 @@
     "components": {
       "minecraft:custom_name": {
         "text": "진리의 서",
-        "type": "text"
+        "type": "text",
+        "color": "#fafafa",
+        "bold": true
       },
       "minecraft:custom_model_data": {
         "flags": [
@@ -104,8 +106,51 @@
     "function": "minecraft:set_lore",
     "entity": "this",
     "lore": [
-      "ㅇㅇㅇ"
+      {
+        "text": "주술서를 복원하여, 주술의 정수를 깨우쳤다.",
+        "color": "white"
+      },
+      "",
+      {
+        "text": "X. 깨우침 <해금됨>",
+        "color": "white"
+      },
+      {
+        "text": "주술사의 분필을 하나 획득합니다.",
+        "color": "white"
+      },
+      {
+        "text": "분필을 사용하면 [태초의 원] 을 그립니다. (늪 위에 사용 가능) (생명석 1개 소모)",
+        "color": "white"
+      },
+      {
+        "text": "재사용시, [좌표] 를 설치합니다. (늪 위에 사용 가능)",
+        "color": "white"
+      },
+      "",
+      {
+        "text": "플레이어가 [태초의 원] 위에 앉으면, 1초 뒤 [좌표] 의 위치로 순간이동 합니다.",
+        "color": "white"
+      },
+      {
+        "text": "[태초의 원] 은 3번 사용시 파괴됩니다.",
+        "color": "white"
+      },
+      {
+        "text": "배회자가 사용시, 남은 사용 횟수와 상관 없이 파괴됩니다.",
+        "color": "white"
+      },
+      ""
     ],
-    "mode": "replace_all"
+    "mode": "replace_all",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "NL_perk": 1
+        }
+      }
+    ]
   }
 ]

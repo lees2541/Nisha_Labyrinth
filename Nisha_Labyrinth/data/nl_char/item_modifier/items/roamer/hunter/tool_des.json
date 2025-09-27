@@ -12,16 +12,23 @@
     "function": "minecraft:set_lore",
     "entity": "this",
     "lore": [
-      "어느 사냥꾼이 애용했던 칠흑빛 나이프.",
-      "오랜 세월이 지났음에도, 날이 무뎌지기는 커녕 흠집 하나 나지 않았다.",
+      {
+        "text": "어느 사냥꾼이 애용했던 칠흑빛 나이프.",
+        "color": "red"
+      },
+      {
+        "text": "오랜 세월이 지났음에도, 날이 무뎌지기는 커녕 흠집 하나 나지 않았다.",
+        "color": "red"
+      },
       "",
       {
-        "text": "피해량 : 8"
+        "text": "피해량 : 8",
+        "color": "white"
       },
       "",
       {
         "text": "<우클> 추격 명령",
-        "color": "white",
+        "color": "#d73333",
         "bold": true,
         "italic": true
       },
