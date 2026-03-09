@@ -1,6 +1,6 @@
 #Running custom per-step commands.
 
-say one step in the raycast
+# say one step in the raycast
 
 #Check if an entity was detected.
 

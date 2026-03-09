@@ -1,4 +1,4 @@
-say change
+#say change
 execute if items entity @s player.cursor diamond_hoe if items entity @s weapon.offhand *[!minecraft:custom_data~{NL:1b,offhand:1b}] run item replace entity @s player.cursor from entity @s weapon.offhand
 clear @s diamond_hoe
 item replace entity @s weapon.offhand with diamond_hoe 1 

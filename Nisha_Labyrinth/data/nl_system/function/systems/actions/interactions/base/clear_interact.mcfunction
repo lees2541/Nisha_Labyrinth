@@ -4,6 +4,6 @@
 
 ## 발전과제 관련 순서 버그로 인해 임시 삭제
 
-say 상호작용 uuid초기화
+# say 상호작용 uuid초기화
 
 $execute at @s as @e[type=interaction,sort=nearest,limit=1,nbt={interaction:{player:$(UUID)}},tag=NL] run data remove entity @s interaction

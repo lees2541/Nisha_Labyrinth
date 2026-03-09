@@ -17,3 +17,7 @@ scoreboard objectives add NL_lib_alarm_gauge dummy
 bossbar add nl_magician:blood_charging {"text":"Casting.."}
 bossbar set nl_magician:blood_charging max 1000
 #declare bossbar nl_magician:blood_charging 주술사의 퍽2를 사용할때 게이지를 보여주는 보스바, 스코어보드 NL_charging_gauge 와 연동
+
+bossbar add nl:chopper_dash {"text":"Dash"}
+bossbar set nl:chopper_dash max 100
+#declare bossbar nl:chopper_dash 쵸퍼의 대쉬 스킬 사용시 남은 시간을 보여주는 보스바, 스코어보드 NL_dash_time 과 연동

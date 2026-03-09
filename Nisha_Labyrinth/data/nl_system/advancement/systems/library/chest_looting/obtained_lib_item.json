@@ -6,7 +6,7 @@
     "title": "obtained_lib_item",
     "description": "",
     "show_toast": false,
-    "announce_to_chat": true,
+    "announce_to_chat": false,
     "hidden": false
   },
   "parent": "nl_system:modules/hotbar_holder/base/inventory_changed_detection",

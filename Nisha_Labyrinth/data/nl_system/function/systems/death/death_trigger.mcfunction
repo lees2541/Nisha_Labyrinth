@@ -1,7 +1,7 @@
 #> nl_system:systems/death/death_trigger
 # 플레이어가 죽었을 때 발동
 #@context 죽은 플레이어 with storage nl:buffer player
-say 으앙 주금
+# say 으앙 주금
 scoreboard players set @s NL_death 0
 function nl_lobby:clear/tags/clear_debuff
 function nl_lobby:clear/tags/clear_buff

@@ -6,7 +6,7 @@
       "title": "왼손감지",
       "description": "",
       "show_toast": true,
-      "announce_to_chat": true,
+      "announce_to_chat": false,
       "hidden": true
     },
     "criteria": {

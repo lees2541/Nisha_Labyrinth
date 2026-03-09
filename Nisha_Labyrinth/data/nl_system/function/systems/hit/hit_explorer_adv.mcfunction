@@ -4,7 +4,7 @@
 #@handles nl_system:systems/hit/hit_by_rm_adv 
 
 
-#say 나 배회잔데 때렸덩
+say 나 배회잔데 때렸덩
 #> hit은 타격의 성공유무를 알려주고 attack은 대미지가 들어갈 지 판단하는 태그
 tag @s[team=roamer] add hit
 tag @s[team=roamer] add attack
@@ -19,7 +19,7 @@ execute at @s run function nl_system:systems/hit/character_hit_function_call wit
 
 ## 마무리
 execute at @s run function nl_system:systems/status_effects/hit/hit
-execute as @a[limit=1,advancements={nl_system:systems/hit/hit_by_rm=true},team=explorer,tag=NL,tag=hit,tag=attacked] at @s run function nl_system:systems/hit/being_damaged
+execute as @a[limit=1,advancements={nl_system:systems/hit/hit_by_rm=true},team=explorer,tag=NL,tag=hit,tag=attacked] at @s run function nl_system:systems/hit/being_damaged with storage nl:in_game player[{id:5}]
 #execute at @s as @a[limit=1,advancements={nl_system:systems/hit/hit_by_rm=true},team=explorer,tag=NL,tag=hit,tag=attacked,sort=nearest] run function nl_system:modules/status_gui/profile_icon/hit
 function nl_system:modules/status_gui/profile_icon/case/hit
 tag @a[tag=NL] remove hit

@@ -1,4 +1,4 @@
-say droppeditemcheck
+# say droppeditemcheck
 execute on origin if entity @s[tag=!NL] run return 0
 execute on origin store result storage nl:buffer player.id int 1 run scoreboard players get @s NL_player_id
 ## 여기 밑 오류예외처리함

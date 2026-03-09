@@ -48,7 +48,8 @@ data remove storage nl:settings players
 say clear_interface3
 data merge storage nl:in_game {\
     player:[\
-        {id:1,character:"(str)", status:{resource:{redstone:0,lifestone:0},status:{},effects:{}}}\
+        {id:1,character:"(str)", prev_character:"(str)",debuff_icon:"(str)",status:{resource:{redstone:0,lifestone:0},status:{},effects:{}}},\
+        {id:5, character:"(str)", prev_character:"(str)",debuff_icon:"(str)",team:"roamer",damage:"(int)",UUID:[]}\
     ],\
     status:{\
         ongoing:0,altar:{mode:0,speed:"(float)"},location:{main:{},library:{alarm:0,opened:0b}},\

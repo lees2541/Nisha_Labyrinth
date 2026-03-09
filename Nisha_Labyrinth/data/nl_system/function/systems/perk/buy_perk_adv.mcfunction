@@ -1,5 +1,5 @@
 #> nl_system:systems/perk/buy_perk
-say 퍽구입
+# say 퍽구입
 execute if items entity @s player.cursor paper[custom_data~{perk1:1b}] store result score @s NL_cmd_book run data get entity @s Inventory[{Slot:8b}].components.minecraft:custom_data.player.custom_model_data.book2
 execute if items entity @s player.cursor paper[custom_data~{perk1:1b}] store result score @s NL_cmd_tool run data get entity @s Inventory[{Slot:8b}].components.minecraft:custom_data.player.custom_model_data.tool2
 execute if items entity @s player.cursor paper[custom_data~{perk1:1b}] run scoreboard players set @s NL_perk 1

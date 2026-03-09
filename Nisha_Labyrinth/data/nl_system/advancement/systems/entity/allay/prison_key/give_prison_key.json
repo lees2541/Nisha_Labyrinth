@@ -6,7 +6,7 @@
     "title": "알레이가 이슬을 맛있게 먹었습니다!",
     "description": "감옥을 여는 걸 도와준다네요",
     "show_toast": true,
-    "announce_to_chat": true,
+    "announce_to_chat": false,
     "hidden": true
   },
   "criteria": {

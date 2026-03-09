@@ -8,6 +8,6 @@
 #       파라미터
 
 
-say hopho
+#say hopho
 $function nl_char:char_functions/$(team)/$(character)/skill/condition_check/skill2
 

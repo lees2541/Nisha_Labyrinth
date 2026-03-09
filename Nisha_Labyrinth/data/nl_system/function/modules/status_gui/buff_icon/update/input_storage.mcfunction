@@ -3,8 +3,8 @@
 #@context 대상 플레이어 {id:(id),tag:(tag),character:(character)}
 #@api
 
-say buff아이콘 업데이트
-$say $(id)
+# say buff아이콘 업데이트
+# $say $(id)
 $data modify storage nl:buffer icon.call1 set from storage nl:image_code player.$(character).font.buff_slot.$(tag)_1
 $data modify storage nl:buffer icon.call2 set from storage nl:image_code player.$(character).font.buff_slot.$(tag)_2
 $data modify storage nl:buffer icon.tag set value "$(tag)"

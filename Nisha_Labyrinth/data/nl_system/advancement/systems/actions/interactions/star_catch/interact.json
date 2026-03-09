@@ -6,7 +6,7 @@
       "title": "스타캐치",
       "description": "",
       "show_toast": true,
-      "announce_to_chat": true,
+      "announce_to_chat": false,
       "hidden": true
     },
     "parent": "nl_system:systems/actions/interactions/base/interact",

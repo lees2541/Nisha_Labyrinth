@@ -4,7 +4,7 @@
 #@private
 #@within nl_system:systems/actions/mined/lifestone/mined_lifestone
 
-say 배회자 생명석캤덩
+# say 배회자 생명석캤덩
 advancement grant @a[tag=NL,tag=roamer] only nl_system:systems/actions/mined/lifestone/mined_lifestone
 advancement revoke @a[tag=NL,tag=roamer] only nl_system:systems/actions/mined/lifestone/mined_lifestone
 $execute at @s run function nl_char:char_functions/$(team)/$(character)/mined/mined_lifestone

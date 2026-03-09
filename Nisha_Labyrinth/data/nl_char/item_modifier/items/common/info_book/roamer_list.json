@@ -1,33 +1,48 @@
 {
-    "function": "minecraft:set_written_book_pages",
-    "pages": [
-      [
-        {
-          "text": "[헌터]",
-          "type": "text",
-          "extra": [
-            "\n"
-          ],
-          "color": "dark_red",
-          "click_event": {
-            "action": "run_command",
-            "command": "/function nl_lobby:lobby/jobs/choose_job {character:hunter,team:roamer}"
-          },
-          "hover_event": {
-            "action": "show_text",
-            "value": {
-              "text": "덫과 늑대를 이용해 사냥감을 사냥하는 헌터입니다.",
-              "extra": [
-                "\n",
-                "덫을 설치할 수 있으며",
-                "\n",
-                "덫에걸린 탐험가에게 늑대를 보내 사냥합니다.",
-                "\n"
-              ]
-            }
+  "function": "minecraft:set_written_book_pages",
+  "pages": [
+    [
+      {
+        "text": "[헌터]",
+        "type": "text",
+        "extra": [
+          "\n"
+        ],
+        "color": "dark_red",
+        "click_event": {
+          "action": "run_command",
+          "command": "/function nl_lobby:lobby/jobs/choose_job {character:hunter,team:roamer}"
+        },
+        "hover_event": {
+          "action": "show_text",
+          "value": {
+            "text": "덫과 늑대를 이용해 사냥감을 사냥하는 헌터입니다.",
+            "extra": [
+              "\n",
+              "덫을 설치할 수 있으며",
+              "\n",
+              "덫에걸린 탐험가에게 늑대를 보내 사냥합니다.",
+              "\n"
+            ]
           }
         }
-      ]
-    ],
-    "mode": "append"
-  }
+      },
+      {
+        "text": "[쵸퍼]",
+        "type": "text",
+        "color": "dark_red",
+        "click_event": {
+          "action": "run_command",
+          "command": "/function nl_lobby:lobby/jobs/choose_job {character:chopper,team:roamer}"
+        },
+        "hover_event": {
+          "action": "show_text",
+          "value": {
+            "text": "돼지는꿀꿀"
+          }
+        }
+      }
+    ]
+  ],
+  "mode": "append"
+}

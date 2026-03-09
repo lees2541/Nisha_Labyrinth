@@ -6,7 +6,7 @@
     "title": "get_absoprtion",
     "description": "Buffer",
     "show_toast": true,
-    "announce_to_chat": true,
+    "announce_to_chat": false,
     "hidden": false
   },
   "criteria": {

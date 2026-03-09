@@ -1,3 +1,3 @@
-say fail
+# say fail
 
 return 0

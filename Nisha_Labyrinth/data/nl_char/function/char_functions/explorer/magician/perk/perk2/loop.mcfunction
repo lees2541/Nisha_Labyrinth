@@ -1,4 +1,4 @@
-execute if entity @s[advancements={nl_system:systems/actions/key_events/charging/consumable/charging=true}] run say 차징임임
+#execute if entity @s[advancements={nl_system:systems/actions/key_events/charging/consumable/charging=true}] run say 차징임임
 
 
 execute if entity @s[scores={NL_charging_mode=0,NL_charging_gauge=..999}] store result bossbar nl_magician:blood_charging value run scoreboard players add @s NL_charging_gauge 5

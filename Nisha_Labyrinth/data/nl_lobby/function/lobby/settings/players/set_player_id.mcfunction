@@ -2,7 +2,7 @@
 # 처음 게임에 등록하는 플레이어게 id를 부여한다
 # 
 
-say set_player_id
+# say set_player_id
 
 data modify storage nl:buffer settings.player.status merge value {status:[]}
 

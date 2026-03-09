@@ -7,7 +7,7 @@
 
 ## 캐릭터 별 루프 실행
 execute if entity @s[tag=hunter] run function nl_char:char_functions/roamer/hunter/loop
-
+execute if entity @s[tag=chopper] run function nl_char:char_functions/roamer/chopper/loop
 
 ## 스코어보드
 

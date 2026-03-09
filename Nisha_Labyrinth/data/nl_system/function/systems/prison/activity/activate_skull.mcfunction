@@ -4,7 +4,7 @@
 
 # @within nl_system:systems/actions/interactions/prison/skull/interact_adv
 
-say hoho
+# say hoho
 $execute as @e[type=interaction,tag=skull,tag=jail,nbt={interaction:{player:$(UUID)}},limit=1,sort=nearest] at @s run say hohhohoho
 $execute as @e[type=interaction,tag=skull,tag=jail,nbt={interaction:{player:$(UUID)}},limit=1,sort=nearest] at @s run data modify entity @n[type=item_display,tag=skull,] item.components.minecraft:item_model set value "map/prison/prison_bone_on"
 $execute as @e[type=interaction,tag=skull,tag=jail,nbt={interaction:{player:$(UUID)}},limit=1,sort=nearest] at @s run kill @s

@@ -1,8 +1,8 @@
 #> nl_system:systems/entity/allay/prison_key/give_prison_key
 # 알레이가 감옥 열쇠를 받을떄 발동
-say 무야호
+# say 무야호
 $execute at @s as @e[type=interaction,tag=allay,nbt={interaction:{player:$(UUID)}},limit=1,sort=nearest] on vehicle if score @s NL_mode matches 4.. run return 1
-say 야호
+# say 야호
 clear @s paper[minecraft:custom_data={NL:1b,lib:1b,prison_key:1b}] 1
 
 $execute at @s as @e[type=interaction,tag=allay,nbt={interaction:{player:$(UUID)}},limit=1,sort=nearest] on vehicle run scoreboard players set @s NL_mode 4

@@ -15,6 +15,20 @@
   },
   {
     "function": "minecraft:reference",
+    "name": "nl_char:items/roamer/chopper/tool_des",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"chopper\"]}"
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:reference",
     "name": "nl_char:items/explorer/survivor/tool_des",
     "conditions": [
       {
@@ -209,6 +223,30 @@
             "type": "minecraft:player"
           },
           "nbt": "{Tags:[\"hunter\"]}"
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "strings": {
+      "values": [
+        "chopper"
+      ],
+      "mode": "replace_section",
+      "offset": 1,
+      "size": 1
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:player",
+          "type_specific": {
+            "type": "minecraft:player"
+          },
+          "nbt": "{Tags:[\"chopper\"]}"
         }
       }
     ]

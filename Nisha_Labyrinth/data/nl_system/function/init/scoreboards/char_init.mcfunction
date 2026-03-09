@@ -24,6 +24,9 @@ scoreboard objectives add NL_alarm_timer dummy
 scoreboard objectives add NL_food minecraft.used:minecraft.cooked_beef
 #declare objective NL_food 음식을 먹었을떄 감지
 
+scoreboard objectives add NL_food2 minecraft.used:minecraft.cooked_porkchop
+#declare objective NL_food2 음식을 먹었을떄 감지
+
 scoreboard objectives add NL_perk dummy
 #declare objective NL_perk 현재 퍽 상태
 
@@ -36,3 +39,7 @@ scoreboard objectives add NL_trapped_time dummy
 
 scoreboard objectives add NL_magician_altar dummy
 #declare objective NL_magician_altar 마법사 제단에 올린 횟수
+
+
+scoreboard objectives add NL_dash_time dummy
+#declare objective NL_dash_time 쵸퍼의 대쉬 시간

@@ -4,7 +4,7 @@
 
 
 ## 블럭캐기 감지
-execute if entity @a[scores={NL_mined_red=1..},tag=NL] run say 아무나 레드스톤 캤덩
+# execute if entity @a[scores={NL_mined_red=1..},tag=NL] run say 아무나 레드스톤 캤덩
 execute if entity @a[scores={NL_mined_red=1..},tag=NL] run function nl_system:systems/actions/mined/redstone/mined_redstone
 execute if entity @a[scores={NL_mined_life=1..},tag=NL] run function nl_system:systems/actions/mined/lifestone/mined_lifestone
 execute if entity @a[scores={NL_mined_mana=1..},tag=NL] run function nl_system:systems/actions/mined/manastone/mined_manastone
@@ -29,3 +29,4 @@ function nl_system:loop/entity/entity_loop
 
 
 scoreboard players set @a NL_food 0
+scoreboard players set @a NL_food2 0

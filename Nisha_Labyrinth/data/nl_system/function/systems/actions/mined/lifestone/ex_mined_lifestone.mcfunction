@@ -16,7 +16,7 @@
 #@private
 #@within nl_system:systems/actions/mined/lifestone/mined_lifestone
 
-say 탐험가 생명석캤덩
+# say 탐험가 생명석캤덩
 advancement grant @a[tag=NL,tag=explorer] only nl_system:systems/actions/mined/lifestone/mined_lifestone
 advancement revoke @a[tag=NL,tag=explorer] only nl_system:systems/actions/mined/lifestone/mined_lifestone
 

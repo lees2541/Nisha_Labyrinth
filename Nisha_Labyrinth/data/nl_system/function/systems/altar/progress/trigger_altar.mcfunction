@@ -3,7 +3,7 @@
 # @context 커맨드블럭 {progress:(int)}
 
 
-say 제단에올림
+# say 제단에올림
 playsound minecraft:alarm master @a ~ ~ ~ 3 1 1
 function nl_system:systems/altar/bossbar/turn_default
 data modify storage nl:in_game status.altar.mode set value 1

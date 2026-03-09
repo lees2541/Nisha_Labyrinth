@@ -17,7 +17,7 @@
 #@within nl_system:systems/actions/mined/redstone/mined_redstone
 #@handles nl_char:char_functions/$(team)/$(character)/mined/mined_redstone
 
-say 탐험가 주흔캤덩
+# say 탐험가 주흔캤덩
 advancement grant @a[tag=NL,tag=explorer] only nl_system:systems/actions/mined/redstone/mined_redstone
 advancement revoke @a[tag=NL,tag=explorer] only nl_system:systems/actions/mined/redstone/mined_redstone
 $execute at @s run function nl_char:char_functions/$(team)/$(character)/mined/mined_redstone

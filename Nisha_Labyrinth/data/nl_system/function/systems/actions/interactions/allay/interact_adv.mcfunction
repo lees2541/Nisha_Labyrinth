@@ -1,4 +1,4 @@
-say 알레이 상호작용
+# say 알레이 상호작용
 
 
 advancement grant @s only nl_system:systems/entity/allay/prison_key/give_prison_key impossible

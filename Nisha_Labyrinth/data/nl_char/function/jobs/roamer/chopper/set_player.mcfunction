@@ -1,14 +1,15 @@
 #> nl_char:jobs/roamer/hunter/set_player
 # 캐릭터 선택을 할때 실행되는 함수
-execute store result score @s NL_cmd_tool run data get storage nl:book.hunter player.custom_model_data.tool1
+execute store result score @s NL_cmd_tool run data get storage nl:book.chopper player.custom_model_data.tool1
 
-execute store result score @s NL_cmd_book run data get storage nl:book.hunter player.custom_model_data.book1
+execute store result score @s NL_cmd_book run data get storage nl:book.chopper player.custom_model_data.book1
 
 data modify storage nl:in_game player[{team: "roamer"}].debuff_icon set value "uE215"
 
 data modify storage nl:in_game player[{team:"roamer"}].damage set value 7
 
-scoreboard players set @s NL_trap_count 4
+bossbar set nl:chopper_dash players @s
+
 scoreboard players set @s NL_cmd_tool 0
 xp set @s 4 levels
 

@@ -17,7 +17,7 @@
 #@within nl_system:systems/actions/mined/manastone/mined_manastone
 #@handles nl_char:char_functions/$(team)/$(character)/mined/mined_manastone
 
-say 탐험가 마석캤덩
+# say 탐험가 마석캤덩
 advancement grant @a[tag=NL,tag=explorer] only nl_system:systems/actions/mined/manastone/mined_manastone
 advancement revoke @a[tag=NL,tag=explorer] only nl_system:systems/actions/mined/manastone/mined_manastone
 $execute at @s run function nl_char:char_functions/$(team)/$(character)/mined/mined_manastone
