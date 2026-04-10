@@ -2,8 +2,8 @@
 #particle bubble ~ ~ ~ 0.1 0.1 0.1 0.1 10 force
 #tp @s ~ ~ ~
 #say 부뒐
-execute positioned ~ ~ ~ run data modify entity @n[type=wolf,tag=hunter,tag=pet,tag=NL] AngryAt set from entity @a[distance=..2,tag=debuff,team=explorer,limit=1,sort=nearest] UUID
-execute positioned ~ ~ ~ run data modify entity @n[type=wolf,tag=hunter,tag=pet,tag=Nl] AngerTime set value 120
+execute positioned ~ ~ ~ run data modify entity @n[type=wolf,tag=hunter,tag=pet,tag=NL] angry_at set from entity @a[distance=..2,tag=debuff,team=explorer,limit=1,sort=nearest] UUID
+execute positioned ~ ~ ~ run data modify entity @n[type=wolf,tag=hunter,tag=pet,tag=Nl] anger_end_time set value 120
 execute positioned ~ ~ ~ if entity @p[distance=..2,tag=debuff,team=explorer] run effect give @n[type=wolf,tag=hunter,tag=pet,tag=NL] speed 10 0
 execute positioned ~ ~ ~ if entity @p[distance=..2,tag=debuff,team=explorer] run effect give @n[type=wolf,tag=hunter,tag=pet,tag=NL] glowing 10
 

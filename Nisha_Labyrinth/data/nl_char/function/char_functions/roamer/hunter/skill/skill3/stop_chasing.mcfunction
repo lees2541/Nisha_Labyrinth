@@ -3,7 +3,7 @@ attribute @n[type=wolf,tag=pet] follow_range base set 0
 
 
 summon armor_stand ~ ~ ~ {Tags:["test"]}
-data modify entity @n[type=wolf,tag=pet] AngryAt set from entity @n[type=armor_stand,tag=test] UUID
+data modify entity @n[type=wolf,tag=pet] angry_at set from entity @n[type=armor_stand,tag=test] UUID
 kill @n[type=armor_stand,tag=test]
 attribute @n[type=wolf,tag=pet] follow_range base set 30
-data modify entity @n[type=wolf,tag=pet] AngerTime set value 1
+data modify entity @n[type=wolf,tag=pet] anger_end_time set value 1

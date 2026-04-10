@@ -5,6 +5,7 @@
 #@within nl_system:loop/loop
 
 #> 스킬감지
+execute if score @s NL_fos_count matches 1.. run say 왜안딤
 advancement grant @s[scores={NL_fos_count=1..}] only nl_system:systems/actions/key_events/right_click/fos_detected impossible
 
 
@@ -53,4 +54,4 @@ function nl_system:loop/status_gui/status/status_storage_loop
 
 #> 틱당 리셋
 advancement revoke @s from nl_system:systems/actions/key_events/right_click/fos_detected
-scoreboard players set @a NL_fos_count 0
+scoreboard players set @s NL_fos_count 0

@@ -24,7 +24,10 @@ scoreboard players set #game NL_rm_enterance 81
 function nl_system:loop/countdown/rm_enterance
 ## nl:settings에서 불러온 레드스톤을 맵에 적용
 function nl_lobby:modules/redstone_generator/redstone_generator_start
+effect give @a[tag=NL] saturation 2 20 true
+effect give @a[tag=NL] instant_health 1 20 true
 
-
+stopwatch restart nl:pulse1
+stopwatch restart nl:pulse2
 execute as @a at @s run playsound minecraft:game_start master @s ~ ~ ~ 0.4
 data modify storage nl:in_game status.ongoing set value 1

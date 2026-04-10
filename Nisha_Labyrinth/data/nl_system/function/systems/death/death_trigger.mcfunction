@@ -13,6 +13,7 @@ team join prisoner @s[team=explorer]
 function nl_system:systems/death/activate_imprison with entity @s
 
 function nl_system:modules/status_gui/profile_icon/case/prisoner
+tag @s remove sacrifice
 execute unless data storage nl:settings etc{earlydeath:0} run return run function nl_system:systems/death/early_death
 
 tag @s add prisoner

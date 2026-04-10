@@ -38,6 +38,12 @@ data remove storage nl:buffer item.CustomModelData
 ## 배회자쪽으로 시선옮기면 불 깜박거리기
 execute if score @s NL_alarm_timer matches 0 at @e[team=roamer,limit=1,sort=nearest] unless predicate nl_system:status/explorer/alarm_distance/alarm1 at @s anchored eyes if function nl_system:systems/flashlight/alarm/condition_check run scoreboard players set @s NL_alarm_timer 20
 
+## 심장소리
+execute if stopwatch nl:pulse1 1.. if items entity @s weapon.offhand diamond_hoe[minecraft:custom_model_data={floats:[2.0f]}] run playsound minecraft:pulse1 master @s ~ ~ ~ 1 1 1
+execute if stopwatch nl:pulse2 0.7.. if items entity @s weapon.offhand diamond_hoe[minecraft:custom_model_data={floats:[3.0f]}] run playsound minecraft:pulse2 master @s ~ ~ ~ 1 1 1
+# execute if stopwatch nl:pulse1 1.. at @s run say 깜짝
+# execute if stopwatch nl:pulse2 0.5.. at @s run say 살려죠
+
 ## status_gui 업데이트
 execute if function #nl_system:load_player_info run function nl_system:modules/status_gui/buff_icon/update/update_icon with storage nl:buffer player
 function nl_system:modules/status_gui/debuff_icon/update/update_icon

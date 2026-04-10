@@ -27,6 +27,10 @@ function nl_system:loop/star_catch/starcatch_loop
 #> 기타 엔티티 루프
 function nl_system:loop/entity/entity_loop
 
+## 심장소리 구현
+execute if stopwatch nl:pulse1 1.. run stopwatch restart nl:pulse1
+execute if stopwatch nl:pulse2 0.7.. run stopwatch restart nl:pulse2
+
 
 scoreboard players set @a NL_food 0
 scoreboard players set @a NL_food2 0

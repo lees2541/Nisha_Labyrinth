@@ -3,7 +3,7 @@
 # 설정은 nl:default settings 안의 세팅으로 돌아간다
 #@api
 
-say gamereset1
+#say gamereset1
 
 data modify storage nl:in_game status.ongoing set value 0
 
@@ -11,30 +11,30 @@ data modify storage nl:in_game status.ongoing set value 0
 schedule clear nl_system:loop/countdown/rm_enterance_last_count
 schedule clear nl_system:loop/countdown/rm_enterance
 
-say gamereset2
+#say gamereset2
 ##
 execute as @e[type=marker,tag=!origin,tag=redstone,tag=redstone_gen] at @s run function nl_lobby:modules/redstone_generator/clear_redstone with entity @s data
 
-say gamereset2.5
+#say gamereset2.5
 ## 플레이어 리셋
 execute as @a[tag=NL] at @s run function nl_lobby:clear/clear_players
 team leave @a
 
-say gamereset3
+#say gamereset3
 ## 게임진행 스토리지 리셋
 execute unless function nl_lobby:clear/storage/clear_interface run say 스토리지 초기화 실패!
 
-say gamereset3.1
+#say gamereset3.1
 
 data modify storage nl:lobby settings set from storage nl:default settings
 
-say gamereset3.2
+#say gamereset3.2
 ## 클리어 스코어보드
 function nl_lobby:clear/scoreboard/clear_scoreboard
 function nl_lobby:clear/bossbar/clear_bossbar
 
 
-say gamereset4
+#say gamereset4
 
 ## 리셋 스코어보드
 
@@ -47,7 +47,7 @@ execute as @a run function nl_lobby:clear/tags/clear_all_tags
 function nl_lobby:lobby/lobby_room/set_marker
 function nl_lobby:lobby/lobby_room/set_room
 
-say gamereset5
+#say gamereset5
 ## 맵 리셋
 execute as @e[type=interaction,tag=NL,tag=altar] at @s run setblock ~ ~1 ~ air destroy
 execute as @e[type=interaction,tag=NL,tag=swamp] at @s run setblock ~ ~ ~ air destroy
@@ -57,7 +57,7 @@ function nl_system:systems/library/access_control/close_library
 # 감옥 비상탈출구 제거
 setblock 708 43 581 mossy_cobblestone destroy
 
-say gamereset6
+#say gamereset6
 # 제단의 레드스톤 제거
 setblock 678 43 575 minecraft:air replace
 setblock 677 39 581 minecraft:air replace
@@ -84,8 +84,9 @@ kill @e[type=vindicator,tag=NL]
 kill @e[type=zombie,tag=NL]
 kill @e[type=villager,tag=NL]
 kill @e[tag=pet,tag=NL]
-
-say gamereset7
+## 타이머 리셋
+function nl_lobby:clear/timer/clear_timer
+#say gamereset7
 
 
 execute as @e[type=glow_item_frame,tag=NL,tag=cave] run data merge entity @s {Fixed:1b,Invulnerable:1b,Tags:["NL","cave"]}
@@ -95,7 +96,9 @@ clear @a
 effect clear @a
 advancement revoke @a everything
 
-say gamereset8
+
+
+#say gamereset8
 
 execute as @a run function nl_char:items/give_info_book
 

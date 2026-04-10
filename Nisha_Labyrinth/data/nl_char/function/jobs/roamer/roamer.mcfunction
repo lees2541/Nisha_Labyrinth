@@ -11,7 +11,8 @@ tag @s add roamer
 gamemode adventure @s
 
 scoreboard players set @s NL_flashlight 1
-
+stopwatch create nl:pulse1
+stopwatch create nl:pulse2
 
 function nl_char:status/roamer/set_roamer
 say hunter
