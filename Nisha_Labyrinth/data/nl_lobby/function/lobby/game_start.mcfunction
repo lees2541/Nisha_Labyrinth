@@ -23,7 +23,9 @@ tp @a[team=explorer] 691 50 577.5 -90 0
 scoreboard players set #game NL_rm_enterance 81
 function nl_system:loop/countdown/rm_enterance
 ## nl:settings에서 불러온 레드스톤을 맵에 적용
+say red_gen 전
 function nl_lobby:modules/redstone_generator/redstone_generator_start
+say red_gen 후
 effect give @a[tag=NL] saturation 2 20 true
 effect give @a[tag=NL] instant_health 1 20 true
 

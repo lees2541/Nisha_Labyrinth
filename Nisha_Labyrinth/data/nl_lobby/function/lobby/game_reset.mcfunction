@@ -13,7 +13,7 @@ schedule clear nl_system:loop/countdown/rm_enterance
 
 #say gamereset2
 ##
-execute as @e[type=marker,tag=!origin,tag=redstone,tag=redstone_gen] at @s run function nl_lobby:modules/redstone_generator/clear_redstone with entity @s data
+execute as @e[type=marker,tag=redstone,tag=redstone_gen] at @s run function nl_lobby:modules/redstone_generator/clear_redstone with entity @s data
 
 #say gamereset2.5
 ## 플레이어 리셋
