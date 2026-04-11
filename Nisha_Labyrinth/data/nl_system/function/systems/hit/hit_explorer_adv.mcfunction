@@ -26,5 +26,7 @@ tag @a[tag=NL] remove hit
 tag @a[tag=NL] remove attack
 tag @a[tag=NL] remove attacked
 
+
+
 advancement revoke @a only nl_system:systems/hit/hit_by_rm
 advancement revoke @s only nl_system:systems/hit/hit_explorer_buffer
